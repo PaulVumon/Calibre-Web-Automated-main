@@ -391,7 +391,7 @@ class BookShelf(Base):
     order = Column(Integer)
     shelf = Column(Integer, ForeignKey('shelf.id'))
     date_added = Column(DateTime, default=lambda: datetime.now(timezone.utc))
-    last_modified = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    last_modified = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=True)
 
     def __repr__(self):
         return '<Book %r>' % self.id
@@ -811,10 +811,16 @@ def migrate_book_shelf_table(engine, _session):
 
         if 'last_modified' not in columns:
             log.info('Adding last_modified column to book_shelf_link table')
-            # Add the last_modified column
+            # Add the last_modified column with SQLite compatible syntax
             connection.execute(text("""
                 ALTER TABLE book_shelf_link
-                ADD COLUMN last_modified DATETIME DEFAULT CURRENT_TIMESTAMP
+                ADD COLUMN last_modified DATETIME
+            """))
+            # Update existing rows to have current timestamp as last_modified
+            connection.execute(text("""
+                UPDATE book_shelf_link
+                SET last_modified = CURRENT_TIMESTAMP
+                WHERE last_modified IS NULL
             """))
             connection.commit()
             log.info('Successfully added last_modified column to book_shelf_link table')
