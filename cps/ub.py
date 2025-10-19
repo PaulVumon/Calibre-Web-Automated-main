@@ -391,6 +391,7 @@ class BookShelf(Base):
     order = Column(Integer)
     shelf = Column(Integer, ForeignKey('shelf.id'))
     date_added = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    last_modified = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     def __repr__(self):
         return '<Book %r>' % self.id
@@ -504,7 +505,9 @@ def receive_before_flush(session, flush_context, instances):
     # Maintain the last_modified_bit for the Shelf table.
     for change in itertools.chain(session.new, session.deleted):
         if isinstance(change, BookShelf):
-            change.ub_shelf.last_modified = datetime.now(timezone.utc)
+            # L'objet change est déjà un BookShelf, pas un objet avec une relation ub_shelf
+            # On ajoute l'attribut directement sur l'objet BookShelf
+            change.last_modified = datetime.now(timezone.utc)
 
 
 # Baseclass representing Downloads from calibre-web in app.db

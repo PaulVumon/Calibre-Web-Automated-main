@@ -148,7 +148,7 @@ $(document).ready(function() {
     let currentSeriesName = null;
 
     // Bouton principal en haut de page
-    $('#add_series_to_shelf_btn').on('click', function(e) {
+    $('#add_entity_to_shelf_btn').on('click', function(e) {
         if ($('.add-series-grid').length === 0) {
             alert('{{_("No series found on this page")}}');
             return;
@@ -159,7 +159,7 @@ $(document).ready(function() {
         currentSeriesId = firstSeries.data('series-id');
         currentSeriesName = firstSeries.data('series-name');
 
-        openSeriesModal();
+        openEntityModal();
     });
 
     // Boutons individuels sur les cartes
@@ -169,19 +169,19 @@ $(document).ready(function() {
         currentSeriesId = $(this).data('series-id');
         currentSeriesName = $(this).data('series-name');
 
-        openSeriesModal();
+        openEntityModal();
     });
 
     // Fonction pour ouvrir le modal
-    function openSeriesModal() {
+    function openEntityModal() {
         if (!currentSeriesId || !currentSeriesName) {
             console.error('Missing series ID or name');
             return;
         }
 
-        $('#selectedSeriesName').text(currentSeriesName);
+        $('#selectedEntityName').text(currentSeriesName);
         $('#newShelfName').text(currentSeriesName);
-        $('#addSeriesToShelfModal').modal('show');
+        $('#addEntityToShelfModal').modal('show');
     }
 
     // Gestion des options de shelve
@@ -197,7 +197,7 @@ $(document).ready(function() {
     });
 
     // Bouton Confirm du modal
-    $('#confirmAddSeriesToShelfBtn').on('click', function() {
+    $('#confirmAddEntityToShelfBtn').on('click', function() {
         const shelfOption = $('input[name="shelfOption"]:checked').val();
 
         if (!currentSeriesId || !currentSeriesName) {
@@ -229,7 +229,7 @@ $(document).ready(function() {
         }
 
         // Désactiver le bouton pendant la requête
-        $('#confirmAddSeriesToShelfBtn').prop('disabled', true).val('{{_("Adding...")}}');
+        $('#confirmAddEntityToShelfBtn').prop('disabled', true).val('{{_("Adding...")}}');
 
         // Envoyer la requête AJAX
         console.log('Adding series', currentSeriesId, 'with option:', shelfOption);
@@ -242,7 +242,7 @@ $(document).ready(function() {
                 'X-Requested-With': 'XMLHttpRequest'
             },
             success: function(response) {
-                $('#addSeriesToShelfModal').modal('hide');
+                $('#addEntityToShelfModal').modal('hide');
 
                 if (response.status === 'success') {
                     // Message de succès
@@ -268,7 +268,7 @@ $(document).ready(function() {
                 }
             },
             error: function(xhr, status, error) {
-                $('#addSeriesToShelfModal').modal('hide');
+                $('#addEntityToShelfModal').modal('hide');
                 console.error('AJAX Error:', xhr.status, status, error);
                 console.error('Response Text:', xhr.responseText);
 
@@ -282,14 +282,14 @@ $(document).ready(function() {
             },
             complete: function() {
                 // Réactiver le bouton
-                $('#confirmAddSeriesToShelfBtn').prop('disabled', false).val('{{_("Add")}}');
+                $('#confirmAddEntityToShelfBtn').prop('disabled', false).val('{{_("Add")}}');
             }
         });
     });
 
     // Bouton Cancel du modal
-    $('#cancelAddSeriesToShelfBtn').on('click', function() {
-        $('#addSeriesToShelfModal').modal('hide');
+    $('#cancelAddEntityToShelfBtn').on('click', function() {
+        $('#addEntityToShelfModal').modal('hide');
     });
 });
 </script>
