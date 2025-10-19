@@ -42,6 +42,13 @@ See CONTRIBUTORS for full list of authors. -->
       {% if data == "series" %}
       <button class="update-view btn btn-primary" data-target="series_view" id="grid-button" data-view="grid">{{_('Grid')}}</button>
       {% endif %}
+
+      <!-- Bouton Add to Shelf générique pour toutes les entités -->
+      {% if data in ["series", "author", "category", "publisher"] %}
+      <div id="add_entity_to_shelf_btn" class="btn btn-primary" data-entity-type="{{ data }}">
+        <span class="glyphicon glyphicon-list"></span> {{_('Add to Shelf')}}
+      </div>
+      {% endif %}
     </div>
   <div class="container" id="{{_(title)}}">
     {% if title == "Downloads" %}
@@ -56,8 +63,7 @@ See CONTRIBUTORS for full list of authors. -->
       <div class="row" id="{{_(title)}}_row" {% if entry[0].sort %}data-name="{{entry[0].name}}"{% endif %} data-id="{% if entry[0].sort %}{{entry[0].sort}}{% else %}{% if entry[0].format %}{{entry[0].format}}{% else %}{% if entry[0].rating %}{{entry[0].rating}}{% else %}{{entry[0].name}}{% endif %}{% endif %}{% endif %}">
         <div class="col-xs-2 col-sm-2 col-md-1" align="left"><span class="badge">{{entry[1]}}</span></div>
         <div class="col-xs-10 col-sm-10 col-md-11">
-          <div class="d-flex justify-content-between align-items-center">
-            <a style="width: -webkit-fill-available; display: block;" id="list_{{loop.index0}}" href="{% if entry.format %}{{url_for('web.books_list', data=data, sort_param='stored', book_id=entry.format )}}{% else %}{{url_for('web.books_list', data=data, sort_param='stored', book_id=entry[0].id )}}{% endif %}">
+          <a style="width: -webkit-fill-available; display: block;" id="list_{{loop.index0}}" href="{% if entry.format %}{{url_for('web.books_list', data=data, sort_param='stored', book_id=entry.format )}}{% else %}{{url_for('web.books_list', data=data, sort_param='stored', book_id=entry[0].id )}}{% endif %}">
           {% if entry.name %}
           <div class="rating">
           {% for number in range(entry.name|int) %}
@@ -75,61 +81,176 @@ See CONTRIBUTORS for full list of authors. -->
           {% else %}
             {% if page == "authorlist" %}{{ entry[0].name.replace('|', ', ') }}{% else %}{{entry[0].name}}{% endif %}
           {% endif %}{% endif %}</a>
-          {% if data == "series" and entry[0].id %}
-            <div class="dropdown series-actions">
-              <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="seriesActionsDropdown{{loop.index0}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="{{_('Add series to shelf')}}">
-                <span class="glyphicon glyphicon-list"></span>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="seriesActionsDropdown{{loop.index0}}">
-                <h6 class="dropdown-header">{{_('Add to Shelf')}}</h6>
-                {% for shelf in user_shelves %}
-                  <a class="dropdown-item add-series-to-shelf" href="#" data-shelf-id="{{ shelf.id }}" data-series-id="{{ entry[0].id }}" data-series-name="{{ entry[0].name }}">
-                    {{ shelf.name }}
-                  </a>
-                {% endfor %}
-                {% if not user_shelves %}
-                  <span class="dropdown-item text-muted">
-                    {{_('No shelves found')}}<br>
-                    <small>{{_('Create shelves first to add series')}}</small>
-                  </span>
-                {% endif %}
-              </div>
-            </div>
-          {% endif %}
-          </div>
         </div>
       </div>
     {% endfor %}
     </div>
   </div>
+
+<!-- Modal pour Add to Shelf générique -->
+<div class="modal fade" id="addEntityToShelfModal" tabindex="-1" role="dialog" aria-labelledby="addEntityToShelfModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addEntityToShelfModalLabel">{{_('Add Entity to Shelf')}}</h4>
+      </div>
+      <div class="modal-body">
+        <p id="entitySelectLabel">{{_('Select an entity to add to shelf')}}:</p>
+        <select id="entitySelect" name="entity" class="form-control">
+          {% for entry in entries %}
+            {% if entry[0].id and entry[0].name %}
+              <option value="{{ entry[0].id }}" data-name="{{ entry[0].name }}">{{ entry[0].name }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+        <br>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="shelfOption" value="existing" checked>
+            {{_('Use existing shelf')}}
+          </label>
+        </div>
+
+        <select id="shelfSelect" name="shelf" class="form-control">
+          {% for shelf in user_shelves %}
+            <option value="{{ shelf.id }}">{{ shelf.name }}</option>
+          {% endfor %}
+          {% if not user_shelves %}
+            <option value="" disabled>{{_('No shelves found')}}</option>
+          {% endif %}
+        </select>
+
+        <div class="radio" style="margin-top: 15px;">
+          <label>
+            <input type="radio" name="shelfOption" value="create">
+            {{_('Create new shelf with entity name')}}
+          </label>
+        </div>
+
+        <div id="newShelfInfo" class="alert alert-info" style="margin-top: 10px; display: none;">
+          <strong>{{_('New shelf will be created')}}:</strong> <span id="newShelfName"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelAddEntityToShelfBtn" type="button" class="btn btn-default" data-dismiss="modal">{{_('Cancel')}}</button>
+        <input id="confirmAddEntityToShelfBtn" type="button" class="btn btn-primary" value="{{_('Add')}}">
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
 {% block js %}
 <script src="{{ url_for('static', filename='js/filter_list.js') }}"></script>
 <script>
 $(document).ready(function() {
-    $('.add-series-to-shelf').on('click', function(e) {
-        e.preventDefault();
+    // Variables globales
+    var currentEntityType = null;
 
-        var shelfId = $(this).data('shelf-id');
-        var seriesId = $(this).data('series-id');
-        var seriesName = $(this).data('series-name');
+    // Bouton principal Add to Shelf en haut de page
+    $('#add_entity_to_shelf_btn').on('click', function(e) {
+        currentEntityType = $(this).data('entity-type');
 
-        if (!shelfId || !seriesId) {
-            console.error('Missing shelf ID or series ID');
+        // Vérifier s'il y a des entités sur la page
+        if ($('#entitySelect option').length === 0) {
+            alert('{{_("No entities found on this page")}}');
             return;
         }
 
-        // Afficher un message de confirmation
-        if (!confirm("Add all books from series '" + seriesName + "' to this shelf?")) {
+        // Mettre à jour le titre du modal selon le type d'entité
+        updateModalTitle(currentEntityType);
+
+        // Configurer le nom de la shelle pour l'option création
+        var firstEntityName = $('#entitySelect option:first').data('name') || $('#entitySelect option:first').text();
+        $('#newShelfName').text(firstEntityName);
+
+        // Afficher le modal
+        $('#addEntityToShelfModal').modal('show');
+    });
+
+    // Mettre à jour le titre du modal selon le type d'entité
+    function updateModalTitle(entityType) {
+        var titles = {
+            'series': "{{_('Add Series to Shelf')}}",
+            'author': "{{_('Add Author to Shelf')}}",
+            'category': "{{_('Add Category to Shelf')}}",
+            'publisher': "{{_('Add Publisher to Shelf')}}"
+        };
+        var labels = {
+            'series': "{{_('Select a series to add to shelf')}}:",
+            'author': "{{_('Select an author to add to shelf')}}:",
+            'category': "{{_('Select a category to add to shelf')}}:",
+            'publisher': "{{_('Select a publisher to add to shelf')}}:"
+        };
+
+        $('#addEntityToShelfModalLabel').text(titles[entityType] || "{{_('Add Entity to Shelf')}}");
+        $('#entitySelectLabel').text(labels[entityType] || "{{_('Select an entity to add to shelf')}}:");
+    }
+
+    // Mettre à jour le nom de la shelle quand l'entité change
+    $('#entitySelect').on('change', function() {
+        var entityName = $(this).find(':selected').data('name') || $(this).find(':selected').text();
+        $('#newShelfName').text(entityName);
+    });
+
+    // Gestion des options de shelve
+    $('input[name="shelfOption"]').on('change', function() {
+        var option = $(this).val();
+        if (option === 'create') {
+            $('#shelfSelect').prop('disabled', true);
+            $('#newShelfInfo').show();
+        } else {
+            $('#shelfSelect').prop('disabled', false);
+            $('#newShelfInfo').hide();
+        }
+    });
+
+    // Bouton Confirm du modal
+    $('#confirmAddEntityToShelfBtn').on('click', function() {
+        var entityId = $('#entitySelect').val();
+        var entityName = $('#entitySelect option:selected').data('name') || $('#entitySelect option:selected').text();
+        var shelfOption = $('input[name="shelfOption"]:checked').val();
+
+        if (!entityId) {
+            alert('{{_("Please select an entity")}}');
+            return;
+        }
+
+        if (!currentEntityType) {
+            alert('{{_("Entity type not specified")}}');
+            return;
+        }
+
+        var ajaxUrl;
+        var confirmMessage;
+
+        if (shelfOption === 'create') {
+            // Créer une nouvelle shelle
+            ajaxUrl = '/shelf/create_and_add_entity/' + currentEntityType + '/' + entityId;
+            confirmMessage = "Create a new shelf named '" + entityName + "' and add all books from this " + currentEntityType + " to it?";
+        } else {
+            // Utiliser une shelle existante
+            var shelfId = $('#shelfSelect').val();
+            if (!shelfId) {
+                alert('{{_("Please select a shelf")}}');
+                return;
+            }
+            ajaxUrl = '/shelf/add_entity/' + currentEntityType + '/' + entityId + '/' + shelfId;
+            confirmMessage = "Add all books from " + currentEntityType + " '" + entityName + "' to this shelf?";
+        }
+
+        // Confirmation
+        if (!confirm(confirmMessage)) {
             return;
         }
 
         // Désactiver le bouton pendant la requête
-        $(this).addClass('disabled').text('{{_("Adding...")}}');
+        $('#confirmAddEntityToShelfBtn').prop('disabled', true).val('{{_("Adding...")}}');
 
         // Envoyer la requête AJAX
-        console.log('Adding series', seriesId, 'to shelf', shelfId);
-        var ajaxUrl = '/shelf/add_series/' + shelfId + '/' + seriesId;
+        console.log('Adding entity', currentEntityType, entityId, 'with option:', shelfOption);
         console.log('AJAX URL:', ajaxUrl);
 
         $.ajax({
@@ -139,25 +260,24 @@ $(document).ready(function() {
                 'X-Requested-With': 'XMLHttpRequest'
             },
             success: function(response) {
+                $('#addEntityToShelfModal').modal('hide');
+
                 if (response.status === 'success') {
-                    // Afficher un message de succès
+                    // Message de succès
                     var flashHtml = '<div class="alert alert-success alert-dismissible">' +
                         '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                         response.message +
                         '</div>';
                     $('body').prepend(flashHtml);
-
-                    // Fermer le dropdown
-                    $('.dropdown').removeClass('show');
                 } else if (response.status === 'info') {
-                    // Afficher un message d'info
+                    // Message d'info
                     var flashHtml = '<div class="alert alert-info alert-dismissible">' +
                         '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                         response.message +
                         '</div>';
                     $('body').prepend(flashHtml);
                 } else {
-                    // Afficher un message d'erreur
+                    // Message d'erreur
                     var flashHtml = '<div class="alert alert-danger alert-dismissible">' +
                         '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                         response.message +
@@ -166,10 +286,11 @@ $(document).ready(function() {
                 }
             },
             error: function(xhr, status, error) {
+                $('#addEntityToShelfModal').modal('hide');
                 console.error('AJAX Error:', xhr.status, status, error);
                 console.error('Response Text:', xhr.responseText);
 
-                // Afficher un message d'erreur détaillé
+                // Message d'erreur détaillé
                 var flashHtml = '<div class="alert alert-danger alert-dismissible">' +
                     '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
                     '<strong>Error ' + xhr.status + ':</strong> ' + error + '<br>' +
@@ -179,15 +300,14 @@ $(document).ready(function() {
             },
             complete: function() {
                 // Réactiver le bouton
-                $('.add-series-to-shelf').removeClass('disabled').each(function() {
-                    var originalText = $(this).text();
-                    if (originalText === '{{_("Adding...")}}') {
-                        // Restaurer le texte original en récupérant le nom de la shelve
-                        $(this).text($(this).closest('.dropdown-menu').find('[data-shelf-id="' + shelfId + '"]').text());
-                    }
-                });
+                $('#confirmAddEntityToShelfBtn').prop('disabled', false).val('{{_("Add")}}');
             }
         });
+    });
+
+    // Bouton Cancel du modal
+    $('#cancelAddEntityToShelfBtn').on('click', function() {
+        $('#addEntityToShelfModal').modal('hide');
     });
 });
 </script>

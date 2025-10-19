@@ -1,5 +1,38 @@
 {% import 'image.html' as image %}
 {% extends "layout.html" %}
+{% block header %}
+<style>
+.series-grid-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+}
+
+.add-series-grid {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.add-series-grid:hover {
+    opacity: 1;
+}
+
+.cover {
+    position: relative;
+}
+
+#add_series_to_shelf_btn {
+    margin-left: 10px;
+}
+
+/* S'assurer que le badge de comptage est visible avec le bouton */
+.series-grid-actions + .badge {
+    top: 5px;
+    left: 5px;
+}
+</style>
+{% endblock %}
 {% block body %}
 <h1 class="{{page}}">{{_(title)}}</h1>
 
@@ -19,6 +52,13 @@
         {% endfor %}
       </div>
         <div class="update-view btn btn-primary" data-target="series_view" id="list-button" data-view="list">{{_('List')}}</div>
+
+      <!-- Bouton Add to Shelf générique pour toutes les entités -->
+      {% if data in ["series", "author", "category", "publisher"] %}
+      <div id="add_entity_to_shelf_btn" class="btn btn-primary" data-entity-type="{{ data }}">
+        <span class="glyphicon glyphicon-list"></span> {{_('Add to Shelf')}}
+      </div>
+      {% endif %}
     </div>
 
     {% if entries[0] %}
@@ -32,6 +72,15 @@
                               <span class="badge">{{entry.count}}</span>
                             </span>
                       </a>
+                      <!-- Bouton Add to Shelf individuel sur la carte -->
+                      <div class="series-grid-actions">
+                        <button class="btn btn-xs btn-primary add-series-grid"
+                                data-series-id="{{ entry[0].series[0].id }}"
+                                data-series-name="{{ entry[0].series[0].name }}"
+                                title="{{_('Add this series to a shelf')}}">
+                          <span class="glyphicon glyphicon-list"></span>
+                        </button>
+                      </div>
                   </div>
                   <div class="meta">
                       <a href="{{url_for('web.books_list', data=data, sort_param='stored', book_id=entry[0].series[0].id )}}">
@@ -43,8 +92,205 @@
         </div>
     {% endif %}
 
+<!-- Modal pour Add to Shelf générique -->
+<div class="modal fade" id="addEntityToShelfModal" tabindex="-1" role="dialog" aria-labelledby="addEntityToShelfModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addEntityToShelfModalLabel">{{_('Add Entity to Shelf')}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{_('Selected entity')}}: <strong id="selectedEntityName"></strong></p>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="shelfOption" value="existing" checked>
+            {{_('Use existing shelf')}}
+          </label>
+        </div>
+
+        <select id="shelfSelect" name="shelf" class="form-control">
+          {% for shelf in user_shelves %}
+            <option value="{{ shelf.id }}">{{ shelf.name }}</option>
+          {% endfor %}
+          {% if not user_shelves %}
+            <option value="" disabled>{{_('No shelves found')}}</option>
+          {% endif %}
+        </select>
+
+        <div class="radio" style="margin-top: 15px;">
+          <label>
+            <input type="radio" name="shelfOption" value="create">
+            {{_('Create new shelf with entity name')}}
+          </label>
+        </div>
+
+        <div id="newShelfInfo" class="alert alert-info" style="margin-top: 10px; display: none;">
+          <strong>{{_('New shelf will be created')}}:</strong> <span id="newShelfName"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelAddEntityToShelfBtn" type="button" class="btn btn-default" data-dismiss="modal">{{_('Cancel')}}</button>
+        <input id="confirmAddEntityToShelfBtn" type="button" class="btn btn-primary" value="{{_('Add')}}">
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
 {% block js %}
 <script src="{{ url_for('static', filename='js/filter_grid.js') }}"></script>
+<script>
+$(document).ready(function() {
+    // Variables globales pour le modal
+    let currentSeriesId = null;
+    let currentSeriesName = null;
+
+    // Bouton principal en haut de page
+    $('#add_series_to_shelf_btn').on('click', function(e) {
+        if ($('.add-series-grid').length === 0) {
+            alert('{{_("No series found on this page")}}');
+            return;
+        }
+
+        // Par défaut, sélectionner la première série
+        const firstSeries = $('.add-series-grid').first();
+        currentSeriesId = firstSeries.data('series-id');
+        currentSeriesName = firstSeries.data('series-name');
+
+        openSeriesModal();
+    });
+
+    // Boutons individuels sur les cartes
+    $('.add-series-grid').on('click', function(e) {
+        e.stopPropagation();
+
+        currentSeriesId = $(this).data('series-id');
+        currentSeriesName = $(this).data('series-name');
+
+        openSeriesModal();
+    });
+
+    // Fonction pour ouvrir le modal
+    function openSeriesModal() {
+        if (!currentSeriesId || !currentSeriesName) {
+            console.error('Missing series ID or name');
+            return;
+        }
+
+        $('#selectedSeriesName').text(currentSeriesName);
+        $('#newShelfName').text(currentSeriesName);
+        $('#addSeriesToShelfModal').modal('show');
+    }
+
+    // Gestion des options de shelve
+    $('input[name="shelfOption"]').on('change', function() {
+        const option = $(this).val();
+        if (option === 'create') {
+            $('#shelfSelect').prop('disabled', true);
+            $('#newShelfInfo').show();
+        } else {
+            $('#shelfSelect').prop('disabled', false);
+            $('#newShelfInfo').hide();
+        }
+    });
+
+    // Bouton Confirm du modal
+    $('#confirmAddSeriesToShelfBtn').on('click', function() {
+        const shelfOption = $('input[name="shelfOption"]:checked').val();
+
+        if (!currentSeriesId || !currentSeriesName) {
+            console.error('Missing series data');
+            return;
+        }
+
+        let ajaxUrl;
+        let confirmMessage;
+
+        if (shelfOption === 'create') {
+            // Créer une nouvelle shelle
+            ajaxUrl = '/shelf/create_and_add_series/' + currentSeriesId;
+            confirmMessage = "Create a new shelf named '" + currentSeriesName + "' and add all books from this series to it?";
+        } else {
+            // Utiliser une shelle existante
+            const shelfId = $('#shelfSelect').val();
+            if (!shelfId) {
+                alert('{{_("Please select a shelf")}}');
+                return;
+            }
+            ajaxUrl = '/shelf/add_series/' + shelfId + '/' + currentSeriesId;
+            confirmMessage = "Add all books from series '" + currentSeriesName + "' to this shelf?";
+        }
+
+        // Confirmation
+        if (!confirm(confirmMessage)) {
+            return;
+        }
+
+        // Désactiver le bouton pendant la requête
+        $('#confirmAddSeriesToShelfBtn').prop('disabled', true).val('{{_("Adding...")}}');
+
+        // Envoyer la requête AJAX
+        console.log('Adding series', currentSeriesId, 'with option:', shelfOption);
+        console.log('AJAX URL:', ajaxUrl);
+
+        $.ajax({
+            url: ajaxUrl,
+            method: 'POST',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            success: function(response) {
+                $('#addSeriesToShelfModal').modal('hide');
+
+                if (response.status === 'success') {
+                    // Message de succès
+                    const flashHtml = '<div class="alert alert-success alert-dismissible">' +
+                        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        response.message +
+                        '</div>';
+                    $('body').prepend(flashHtml);
+                } else if (response.status === 'info') {
+                    // Message d'info
+                    const flashHtml = '<div class="alert alert-info alert-dismissible">' +
+                        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        response.message +
+                        '</div>';
+                    $('body').prepend(flashHtml);
+                } else {
+                    // Message d'erreur
+                    const flashHtml = '<div class="alert alert-danger alert-dismissible">' +
+                        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        response.message +
+                        '</div>';
+                    $('body').prepend(flashHtml);
+                }
+            },
+            error: function(xhr, status, error) {
+                $('#addSeriesToShelfModal').modal('hide');
+                console.error('AJAX Error:', xhr.status, status, error);
+                console.error('Response Text:', xhr.responseText);
+
+                // Message d'erreur détaillé
+                const flashHtml = '<div class="alert alert-danger alert-dismissible">' +
+                    '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                    '<strong>Error ' + xhr.status + ':</strong> ' + error + '<br>' +
+                    '<small>' + xhr.responseText + '</small>' +
+                    '</div>';
+                $('body').prepend(flashHtml);
+            },
+            complete: function() {
+                // Réactiver le bouton
+                $('#confirmAddSeriesToShelfBtn').prop('disabled', false).val('{{_("Add")}}');
+            }
+        });
+    });
+
+    // Bouton Cancel du modal
+    $('#cancelAddSeriesToShelfBtn').on('click', function() {
+        $('#addSeriesToShelfModal').modal('hide');
+    });
+});
+</script>
 {% endblock %}

@@ -1128,9 +1128,12 @@ def series_list():
                        .having(or_(func.max(db.Books.series_index), db.Books.series_index==""))
                        .order_by(order)
                        .all())
+            # Récupérer les shelves de l'utilisateur pour le mode grille aussi
+            user_shelves = ub.session.query(ub.Shelf).filter(ub.Shelf.user_id == current_user.id).all()
+
             return render_title_template('grid.html', entries=entries, folder='web.books_list', charlist=char_list,
                                          title=_("Series"), page="serieslist", data="series", bodyClass="grid-view",
-                                         order=order_no)
+                                         order=order_no, user_shelves=user_shelves)
     else:
         abort(404)
 

@@ -586,6 +586,329 @@ def add_series_to_shelf(shelf_id, series_id):
         return jsonify({'status': 'error', 'message': f'Database error: {e.orig}'}), 500
 
 
+@shelf.route("/shelf/create_and_add_series/<int:series_id>", methods=["POST"])
+@user_login_required
+def create_and_add_series_to_shelf(series_id):
+    xhr = request.headers.get('X-Requested-With') == 'XMLHttpRequest'
+
+    # Récupérer le nom de la série pour créer la shelve
+    series = calibre_db.session.query(db.Series).filter(db.Series.id == series_id).first()
+    if series is None:
+        log.error("Series not found: %s", series_id)
+        return jsonify({'status': 'error', 'message': 'Series not found'}), 404
+
+    # Créer une nouvelle shelve avec le nom de la série
+    try:
+        shelf_name = series.name
+        shelf = ub.Shelf()
+        shelf.name = shelf_name
+        shelf.is_public = 0  # Private shelf by default
+        shelf.user_id = current_user.id
+        shelf.last_modified = datetime.now(timezone.utc)
+
+        ub.session.add(shelf)
+        ub.session.flush()  # Pour obtenir l'ID du shelf
+
+        log.info("Created new shelf '%s' (ID: %s) for user %s", shelf_name, shelf.id, current_user.id)
+
+    except Exception as e:
+        ub.session.rollback()
+        log.error("Error creating shelf: %s", str(e))
+        return jsonify({'status': 'error', 'message': f'Error creating shelf: {str(e)}'}), 500
+
+    # Maintenant ajouter la série à cette nouvelle shelle
+    try:
+        # Récupérer tous les livres de cette série
+        books_in_series = calibre_db.session.query(db.Books)\
+            .join(db.books_series_link)\
+            .filter(db.books_series_link.c.series == series_id)\
+            .order_by(db.Books.series_index)\
+            .all()
+
+        if not books_in_series:
+            ub.session.rollback()
+            ub.session.delete(shelf)  # Supprimer le shelf vide
+            ub.session.commit()
+            log.error("No books found in series: %s", series.name)
+            return jsonify({'status': 'error', 'message': f"No books found in series: {series.name}"}), 404
+
+        # Ajouter les livres à la shelle
+        added_count = 0
+        for book in books_in_series:
+            book_shelf = ub.BookShelf(shelf=shelf.id, book_id=book.id, order=added_count + 1)
+            ub.session.add(book_shelf)
+            added_count += 1
+
+        shelf.last_modified = datetime.now(timezone.utc)
+        ub.session.commit()
+
+        log.info("Successfully created shelf '%s' and added %d books from series '%s'",
+                shelf_name, added_count, series.name)
+
+        return jsonify({
+            'status': 'success',
+            'message': f"Successfully created shelf '{shelf_name}' and added {added_count} books from series '{series.name}'",
+            'shelf_id': shelf.id,
+            'shelf_name': shelf_name,
+            'added_count': added_count
+        }), 200
+
+    except (OperationalError, InvalidRequestError) as e:
+        ub.session.rollback()
+        ub.session.delete(shelf)  # Supprimer le shelf en cas d'erreur
+        ub.session.commit()
+        log.error_or_exception("Database error: {}".format(e))
+        return jsonify({'status': 'error', 'message': f'Database error: {e.orig}'}), 500
+
+
+@shelf.route("/shelf/add_entity/<string:entity_type>/<int:entity_id>/<int:shelf_id>", methods=["POST"])
+@user_login_required
+def add_entity_to_shelf(entity_type, entity_id, shelf_id):
+    xhr = request.headers.get('X-Requested-With') == 'XMLHttpRequest'
+
+    # Vérifier que le type d'entité est valide
+    valid_entities = ['series', 'author', 'category', 'publisher']
+    if entity_type not in valid_entities:
+        return jsonify({'status': 'error', 'message': f'Invalid entity type: {entity_type}'}), 400
+
+    shelf = ub.session.query(ub.Shelf).filter(ub.Shelf.id == shelf_id).first()
+    if shelf is None:
+        log.error("Invalid shelf specified: %s", shelf_id)
+        if not xhr:
+            flash(_("Invalid shelf specified"), category="error")
+            return redirect(url_for('web.index'))
+        return jsonify({'status': 'error', 'message': 'Invalid shelf specified'}), 400
+
+    if not check_shelf_edit_permissions(shelf):
+        log.warning("User %s not allowed to edit shelf: %s", current_user.id, shelf.name)
+        if not xhr:
+            flash(_("Sorry you are not allowed to add a book to that shelf"), category="error")
+            return redirect(url_for('web.index'))
+        return jsonify({'status': 'error', 'message': 'You are not allowed to add books to this shelf'}), 403
+
+    # Récupérer les livres selon le type d'entité
+    try:
+        if entity_type == 'series':
+            # Logique existante pour les séries
+            entity = calibre_db.session.query(db.Series).filter(db.Series.id == entity_id).first()
+            if entity is None:
+                return jsonify({'status': 'error', 'message': 'Series not found'}), 404
+
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .join(db.books_series_link)\
+                .filter(db.books_series_link.c.series == entity_id)\
+                .order_by(db.Books.series_index)\
+                .all()
+            entity_name = entity.name
+            entity_label = "series"
+
+        elif entity_type == 'author':
+            # Récupérer tous les livres d'un auteur
+            entity = calibre_db.session.query(db.Authors).filter(db.Authors.id == entity_id).first()
+            if entity is None:
+                return jsonify({'status': 'error', 'message': 'Author not found'}), 404
+
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .join(db.books_authors_link)\
+                .filter(db.books_authors_link.c.author == entity_id)\
+                .order_by(db.Books.title)\
+                .all()
+            entity_name = entity.name
+            entity_label = "author"
+
+        elif entity_type == 'category':
+            # Récupérer tous les livres d'une catégorie (tag)
+            entity = calibre_db.session.query(db.Tags).filter(db.Tags.id == entity_id).first()
+            if entity is None:
+                return jsonify({'status': 'error', 'message': 'Category not found'}), 404
+
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .join(db.books_tags_link)\
+                .filter(db.books_tags_link.c.tag == entity_id)\
+                .order_by(db.Books.title)\
+                .all()
+            entity_name = entity.name
+            entity_label = "category"
+
+        elif entity_type == 'publisher':
+            # Récupérer tous les livres d'un éditeur
+            entity = calibre_db.session.query(db.Publishers).filter(db.Publishers.id == entity_id).first()
+            if entity is None:
+                return jsonify({'status': 'error', 'message': 'Publisher not found'}), 404
+
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .filter(db.Publishers.id == entity_id)\
+                .order_by(db.Books.title)\
+                .all()
+            entity_name = entity.name
+            entity_label = "publisher"
+
+        if not books_in_entity:
+            log.info("No books found in %s: %s", entity_type, entity_name)
+            if not xhr:
+                flash(_("No books found in %(name)s", name=entity_name), category="info")
+                return redirect(url_for('web.index'))
+            return jsonify({
+                'status': 'info',
+                'message': f"No books found in this {entity_label}: {entity_name}"
+            }), 200
+
+        # Récupérer les livres déjà dans la shelve
+        books_already_in_shelf = set()
+        existing_books = ub.session.query(ub.BookShelf).filter(ub.BookShelf.shelf == shelf_id).all()
+        for book_shelf in existing_books:
+            books_already_in_shelf.add(book_shelf.book_id)
+
+        # Ajouter les livres qui ne sont pas déjà dans la shelve
+        books_to_add = []
+        for book in books_in_entity:
+            if book.id not in books_already_in_shelf:
+                books_to_add.append(book)
+
+        if not books_to_add:
+            log.info("All books from %s '%s' are already in shelf '%s'", entity_type, entity_name, shelf.name)
+            if not xhr:
+                flash(_("All books from %(type)s '%(name)s' are already in shelf: %(shelf)s",
+                       type=entity_label, name=entity_name, shelf=shelf.name), category="info")
+                return redirect(url_for('web.index'))
+            return jsonify({
+                'status': 'info',
+                'message': f"All books from this {entity_label} are already in shelf '{shelf.name}'"
+            }), 200
+
+        # Obtenir le prochain ordre
+        maxOrder = ub.session.query(func.max(ub.BookShelf.order)).filter(ub.BookShelf.shelf == shelf_id).first()
+        if maxOrder[0] is None:
+            maxOrder = 0
+        else:
+            maxOrder = maxOrder[0]
+
+        # Ajouter les livres à la shelve
+        added_count = 0
+        for book in books_to_add:
+            maxOrder += 1
+            shelf.books.append(ub.BookShelf(shelf=shelf.id, book_id=book.id, order=maxOrder))
+            added_count += 1
+
+        shelf.last_modified = datetime.now(timezone.utc)
+        ub.session.commit()
+        log.info("Successfully added %d books from %s '%s' to shelf '%s'",
+                added_count, entity_type, entity_name, shelf.name)
+
+        return jsonify({
+            'status': 'success',
+            'message': f"Added {added_count} books from {entity_label} '{entity_name}' to shelf '{shelf.name}'",
+            'added_count': added_count
+        }), 200
+
+    except (OperationalError, InvalidRequestError) as e:
+        ub.session.rollback()
+        log.error_or_exception("Database error: {}".format(e))
+        if not xhr:
+            flash(_("Oops! Database Error: %(error)s.", error=e.orig), category="error")
+            return redirect(url_for('web.index'))
+        return jsonify({'status': 'error', 'message': f'Database error: {e.orig}'}), 500
+
+
+@shelf.route("/shelf/create_and_add_entity/<string:entity_type>/<int:entity_id>", methods=["POST"])
+@user_login_required
+def create_and_add_entity_to_shelf(entity_type, entity_id):
+    xhr = request.headers.get('X-Requested-With') == 'XMLHttpRequest'
+
+    # Vérifier que le type d'entité est valide
+    valid_entities = ['series', 'author', 'category', 'publisher']
+    if entity_type not in valid_entities:
+        return jsonify({'status': 'error', 'message': f'Invalid entity type: {entity_type}'}), 400
+
+    # Récupérer l'entité pour créer la shelle
+    try:
+        if entity_type == 'series':
+            entity = calibre_db.session.query(db.Series).filter(db.Series.id == entity_id).first()
+            entity_label = "series"
+        elif entity_type == 'author':
+            entity = calibre_db.session.query(db.Authors).filter(db.Authors.id == entity_id).first()
+            entity_label = "author"
+        elif entity_type == 'category':
+            entity = calibre_db.session.query(db.Tags).filter(db.Tags.id == entity_id).first()
+            entity_label = "category"
+        elif entity_type == 'publisher':
+            entity = calibre_db.session.query(db.Publishers).filter(db.Publishers.id == entity_id).first()
+            entity_label = "publisher"
+
+        if entity is None:
+            return jsonify({'status': 'error', 'message': f'{entity_label.capitalize()} not found'}), 404
+
+        # Créer une nouvelle shelle avec le nom de l'entité
+        shelf_name = entity.name
+        shelf = ub.Shelf()
+        shelf.name = shelf_name
+        shelf.is_public = 0  # Private shelf by default
+        shelf.user_id = current_user.id
+        shelf.last_modified = datetime.now(timezone.utc)
+
+        ub.session.add(shelf)
+        ub.session.flush()  # Pour obtenir l'ID du shelf
+
+        log.info("Created new shelf '%s' (ID: %s) for user %s", shelf_name, shelf.id, current_user.id)
+
+        # Maintenant ajouter les livres de cette entité à la nouvelle shelle
+        if entity_type == 'series':
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .join(db.books_series_link)\
+                .filter(db.books_series_link.c.series == entity_id)\
+                .order_by(db.Books.series_index)\
+                .all()
+        elif entity_type == 'author':
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .join(db.books_authors_link)\
+                .filter(db.books_authors_link.c.author == entity_id)\
+                .order_by(db.Books.title)\
+                .all()
+        elif entity_type == 'category':
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .join(db.books_tags_link)\
+                .filter(db.books_tags_link.c.tag == entity_id)\
+                .order_by(db.Books.title)\
+                .all()
+        elif entity_type == 'publisher':
+            books_in_entity = calibre_db.session.query(db.Books)\
+                .filter(db.Publishers.id == entity_id)\
+                .order_by(db.Books.title)\
+                .all()
+
+        if not books_in_entity:
+            ub.session.rollback()
+            ub.session.delete(shelf)  # Supprimer le shelf vide
+            ub.session.commit()
+            return jsonify({'status': 'error', 'message': f"No books found for this {entity_label}"}), 404
+
+        # Ajouter les livres à la shelle
+        added_count = 0
+        for book in books_in_entity:
+            book_shelf = ub.BookShelf(shelf=shelf.id, book_id=book.id, order=added_count + 1)
+            ub.session.add(book_shelf)
+            added_count += 1
+
+        shelf.last_modified = datetime.now(timezone.utc)
+        ub.session.commit()
+
+        log.info("Successfully created shelf '%s' and added %d books from %s '%s'",
+                shelf_name, added_count, entity_label, entity.name)
+
+        return jsonify({
+            'status': 'success',
+            'message': f"Successfully created shelf '{shelf_name}' and added {added_count} books from {entity_label} '{entity.name}'",
+            'shelf_id': shelf.id,
+            'shelf_name': shelf_name,
+            'added_count': added_count
+        }), 200
+
+    except (OperationalError, InvalidRequestError) as e:
+        ub.session.rollback()
+        log.error_or_exception("Database error: {}".format(e))
+        return jsonify({'status': 'error', 'message': f'Database error: {e.orig}'}), 500
+
+
 @shelf.route("/shelf/add_selected_to_shelf", methods=["POST"])
 @user_login_required
 def add_selected_to_shelf():
