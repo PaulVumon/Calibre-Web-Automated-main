@@ -1017,8 +1017,11 @@ def author_list():
             .join(db.books_authors_link).join(db.Books).filter(calibre_db.common_filters()) \
             .group_by(text('books_authors_link.author')).order_by(order).all()
         char_list = query_char_list(db.Authors.sort, db.books_authors_link)
+        # Récupérer les shelves de l'utilisateur pour l'interface
+        user_shelves = ub.session.query(ub.Shelf).filter(ub.Shelf.user_id == current_user.id).all()
         return render_title_template('list.html', entries=entries, folder='web.books_list', charlist=char_list,
-                                     title="Authors", page="authorlist", data='author', order=order_no)
+                                     title="Authors", page="authorlist", data='author', order=order_no,
+                                     user_shelves=user_shelves)
     else:
         abort(404)
 
@@ -1079,8 +1082,11 @@ def publisher_list():
         char_list = [entry[0].name[0].upper() for entry in entries if entry[0].name]
         char_list = sorted(list(set(char_list)))
 
+        # Récupérer les shelves de l'utilisateur pour l'interface
+        user_shelves = ub.session.query(ub.Shelf).filter(ub.Shelf.user_id == current_user.id).all()
         return render_title_template('list.html', entries=entries, folder='web.books_list', charlist=char_list,
-                                     title=_("Publishers"), page="publisherlist", data="publisher", order=order_no)
+                                     title=_("Publishers"), page="publisherlist", data="publisher", order=order_no,
+                                     user_shelves=user_shelves)
     else:
         abort(404)
 
@@ -1239,8 +1245,11 @@ def category_list():
             entries.append([db.Category(_("None"), "-1"), no_tag_count])
         entries = sorted(entries, key=lambda x: x[0].name.lower(), reverse=not order_no)
         char_list = generate_char_list(entries)
+        # Récupérer les shelves de l'utilisateur pour l'interface
+        user_shelves = ub.session.query(ub.Shelf).filter(ub.Shelf.user_id == current_user.id).all()
         return render_title_template('list.html', entries=entries, folder='web.books_list', charlist=char_list,
-                                     title=_("Categories"), page="catlist", data="category", order=order_no)
+                                     title=_("Categories"), page="catlist", data="category", order=order_no,
+                                     user_shelves=user_shelves)
     else:
         abort(404)
 

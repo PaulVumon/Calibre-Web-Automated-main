@@ -53,8 +53,8 @@
       </div>
         <div class="update-view btn btn-primary" data-target="series_view" id="list-button" data-view="list">{{_('List')}}</div>
 
-      <!-- Bouton Add to Shelf générique pour toutes les entités -->
-      {% if data in ["series", "author", "category", "publisher"] %}
+      <!-- Bouton Add to Shelf générique pour toutes les entités (sauf séries qui ont des boutons individuels) -->
+      {% if data in ["author", "category", "publisher"] %}
       <div id="add_entity_to_shelf_btn" class="btn btn-primary" data-entity-type="{{ data }}">
         <span class="glyphicon glyphicon-list"></span> {{_('Add to Shelf')}}
       </div>
