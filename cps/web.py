@@ -450,11 +450,8 @@ def render_books_list(data, sort_param, book_id, page):
                                                                 db.books_series_link,
                                                                 db.Books.id == db.books_series_link.c.book,
                                                                 db.Series)
-        # Récupérer les shelves de l'utilisateur pour l'interface
-        user_shelves = ub.session.query(ub.Shelf).filter(ub.Shelf.user_id == current_user.id).all()
         return render_title_template('index.html', random=random, entries=entries, pagination=pagination,
-                                     title=_(f'Books ({cwa_get_num_books_in_library()})'), page=website, order=order[1],
-                                     user_shelves=user_shelves)
+                                     title=_(f'Books ({cwa_get_num_books_in_library()})'), page=website, order=order[1])
 
 
 def render_rated_books(page, book_id, order):
