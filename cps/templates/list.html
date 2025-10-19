@@ -117,7 +117,7 @@ $(document).ready(function() {
         }
 
         // Afficher un message de confirmation
-        if (!confirm('{{_("Add all books from series '%(name)s' to this shelf?")}}'.replace('%(name)s', seriesName))) {
+        if (!confirm('{{_("Add all books from series %(name)s to this shelf?")}}'.replace('%(name)s', seriesName))) {
             return;
         }
 
