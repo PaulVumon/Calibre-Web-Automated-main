@@ -1,0 +1,4851 @@
+# Copyright (C) 2024 limeade23
+# This file is distributed under the same license as the Calibre-Web
+# First Author <https://www.epubguide.net/>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Calibre-Web Automated\n"
+"Report-Msgid-Bugs-To: https://github.com/crocodilestick/Calibre-Web-"
+"Automated\n"
+"POT-Creation-Date: 2025-09-03 14:59+0200\n"
+"PO-Revision-Date: 2025-09-08 00:53+0900\n"
+"Last-Translator: limeade23 <admin@limeade.me>\n"
+"Language-Team: Korean <>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Generated-By: Babel 2.13.1\n"
+"X-Generator: Poedit 3.7\n"
+
+#: cps/about.py:77
+msgid "Statistics"
+msgstr "통계"
+
+#: cps/admin.py:162
+msgid "Server restarted, please reload page."
+msgstr "서버가 재시작 되었습니다. 페이지를 새로고침 해주세요."
+
+#: cps/admin.py:164
+msgid "Performing Server shutdown, please close window."
+msgstr "서버를 종료하고 있습니다. 창을 닫아주세요."
+
+#: cps/admin.py:172
+msgid "Success! Database Reconnected"
+msgstr "성공적으로 데이터베이스를 다시 연결했습니다."
+
+#: cps/admin.py:175
+msgid "Unknown command"
+msgstr "알 수 없는 명령입니다."
+
+#: cps/admin.py:186
+msgid ""
+"Success! Books queued for Metadata Backup, please check Tasks for result"
+msgstr "메타데이터 백업이 작업에 추가되었습니다. 작업 결과를 확인해주세요."
+
+#: cps/admin.py:242 cps/editbooks.py:824 cps/editbooks.py:869
+#: cps/editbooks.py:1517 cps/updater.py:612 cps/uploader.py:97
+#: cps/uploader.py:106
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: cps/admin.py:268
+msgid "Admin page"
+msgstr "관리자 페이지"
+
+#: cps/admin.py:288
+msgid "Basic Configuration"
+msgstr "기본 설정"
+
+#: cps/admin.py:326
+msgid "UI Configuration"
+msgstr "UI 설정"
+
+#: cps/admin.py:350 cps/admin.py:1030 cps/db.py:820 cps/search.py:140
+#: cps/web.py:797
+#, python-format
+msgid "Custom Column No.%(column)d does not exist in calibre database"
+msgstr "사용자 정의 열 번호 %(column)d이(가) calibre 데이터베이스에 없습니다."
+
+#: cps/admin.py:368 cps/templates/admin.html:53
+msgid "Edit Users"
+msgstr "사용자 관리"
+
+#: cps/admin.py:412 cps/opds.py:525 cps/templates/grid.html:14
+#: cps/templates/list.html:19
+msgid "All"
+msgstr "모두"
+
+#: cps/admin.py:439 cps/admin.py:1542
+msgid "User not found"
+msgstr "사용자를 찾을 수 없습니다."
+
+#: cps/admin.py:453
+#, python-brace-format
+msgid "{} users deleted successfully"
+msgstr "{} 사용자를 삭제했습니다."
+
+#: cps/admin.py:476 cps/templates/config_view_edit.html:134
+#: cps/templates/user_edit.html:45 cps/templates/user_table.html:81
+msgid "Show All"
+msgstr "모두 보기"
+
+#: cps/admin.py:497 cps/admin.py:503
+msgid "Malformed request"
+msgstr "잘못된 요청입니다."
+
+#: cps/admin.py:515 cps/admin.py:2210
+msgid "Guest Name can't be changed"
+msgstr "게스트 이름은 변경할 수 없습니다."
+
+#: cps/admin.py:527
+msgid "Guest can't have this role"
+msgstr "게스트는 이 권한을 가질 수 없습니다."
+
+#: cps/admin.py:539 cps/admin.py:2164
+msgid "No admin user remaining, can't remove admin role"
+msgstr "남아있는 관리자가 없어 권한을 삭제할 수 없습니다."
+
+#: cps/admin.py:543 cps/admin.py:557
+msgid "Value has to be true or false"
+msgstr "true 또는 false여야 합니다."
+
+#: cps/admin.py:545
+msgid "Invalid role"
+msgstr "잘못된 권한입니다."
+
+#: cps/admin.py:549
+msgid "Guest can't have this view"
+msgstr "게스트는 사용할 수 없습니다."
+
+#: cps/admin.py:559
+msgid "Invalid view"
+msgstr "잘못된 설정입니다."
+
+#: cps/admin.py:562
+msgid "Guest's Locale is determined automatically and can't be set"
+msgstr "게스트의 언어는 자동으로 설정되며 변경할 수 없습니다."
+
+#: cps/admin.py:566
+msgid "No Valid Locale Given"
+msgstr "올바른 언어가 아닙니다."
+
+#: cps/admin.py:577
+msgid "No Valid Book Language Given"
+msgstr "제공된 책의 언어가 올바르지 않습니다."
+
+#: cps/admin.py:579 cps/editbooks.py:441
+msgid "Parameter not found"
+msgstr "매개변수를 찾을 수 없습니다."
+
+#: cps/admin.py:616
+msgid "Invalid Read Column"
+msgstr "읽기 항목이 유효하지 않습니다."
+
+#: cps/admin.py:622
+msgid "Invalid Restricted Column"
+msgstr "제한된 항목이 유효하지 않습니다."
+
+#: cps/admin.py:642 cps/admin.py:2021
+msgid "Calibre-Web Automated configuration updated"
+msgstr "Calibre-Web Automated 설정이 업데이트되었습니다."
+
+#: cps/admin.py:654
+msgid "Do you really want to delete the Kobo Token?"
+msgstr "Kobo 토큰을 삭제하시겠습니까?"
+
+#: cps/admin.py:656
+msgid "Do you really want to delete this domain?"
+msgstr "이 도메인을 삭제하시겠습니까?"
+
+#: cps/admin.py:658
+msgid "Do you really want to delete this user?"
+msgstr "이 사용자를 삭제하시겠습니까?"
+
+#: cps/admin.py:660
+msgid "Are you sure you want to delete this shelf?"
+msgstr "이 서재를 삭제하시겠습니까?"
+
+#: cps/admin.py:662
+msgid "Are you sure you want to change locales of selected user(s)?"
+msgstr "선택한 사용자의 언어를 변경하시겠습니까?"
+
+#: cps/admin.py:664
+msgid ""
+"Are you sure you want to change visible book languages for selected user(s)?"
+msgstr "선택한 사용자에 대해 표시되는 책 언어를 변경하시겠습니까?"
+
+#: cps/admin.py:666
+msgid ""
+"Are you sure you want to change the selected role for the selected user(s)?"
+msgstr "선택한 사용자의 권한을 변경하시겠습니까?"
+
+#: cps/admin.py:668
+msgid ""
+"Are you sure you want to change the selected restrictions for the selected "
+"user(s)?"
+msgstr "선택한 사용자의 제한을 변경하시겠습니까?"
+
+#: cps/admin.py:670
+msgid ""
+"Are you sure you want to change the selected visibility restrictions for the "
+"selected user(s)?"
+msgstr "선택한 사용자의 보기 제한을 변경하시겠습니까?"
+
+#: cps/admin.py:673
+msgid ""
+"Are you sure you want to change shelf sync behavior for the selected user(s)?"
+msgstr "선택한 사용자의 책장 동기화 설정을 변경하시겠습니까?"
+
+#: cps/admin.py:675
+msgid "Are you sure you want to change Calibre library location?"
+msgstr "Calibre 라이브러리 경로를 변경하시겠습니까?"
+
+#: cps/admin.py:677
+msgid ""
+"Calibre-Web Automated will search for updated Covers and update Cover "
+"Thumbnails, this may take a while?"
+msgstr ""
+"Calibre-Web Automated가 업데이트된 표지를 검색하고, 표지 미리보기를 갱신합니"
+"다. 시간이 걸릴 수 있습니다."
+
+#: cps/admin.py:680
+msgid ""
+"Are you sure you want delete Calibre-Web Automated's sync database to force "
+"a full sync with your Kobo Reader?"
+msgstr ""
+"Calibre-Web Automated의 동기화 데이터베이스를 삭제하여 Kobo Reader와 전체 동"
+"기화를 강제하시겠습니까?"
+
+#: cps/admin.py:919 cps/admin.py:925 cps/admin.py:935 cps/admin.py:945
+#: cps/templates/modal_dialogs.html:29 cps/templates/user_table.html:41
+#: cps/templates/user_table.html:58
+msgid "Deny"
+msgstr "거부"
+
+#: cps/admin.py:921 cps/admin.py:927 cps/admin.py:937 cps/admin.py:947
+#: cps/templates/modal_dialogs.html:28 cps/templates/user_table.html:44
+#: cps/templates/user_table.html:61
+msgid "Allow"
+msgstr "허용"
+
+#: cps/admin.py:980
+#, python-brace-format
+msgid "{} sync entries deleted"
+msgstr "{} 동기화 항목이 삭제되었습니다."
+
+#: cps/admin.py:1021
+msgid "Tag not found"
+msgstr "태그를 찾을 수 없습니다."
+
+#: cps/admin.py:1039
+msgid "Invalid Action"
+msgstr "잘못된 작업입니다."
+
+#: cps/admin.py:1166
+msgid "client_secrets.json Is Not Configured For Web Application"
+msgstr "client_secrets.json이 설정되지 않았습니다."
+
+#: cps/admin.py:1213
+msgid "Unable to fetch OAuth metadata from URL."
+msgstr "URL에서 OAuth 메타데이터를 불러올 수 없습니다."
+
+#: cps/admin.py:1231
+msgid "Unable to fetch OpenID configuration."
+msgstr "OpenID 설정을 불러올 수 없습니다."
+
+#: cps/admin.py:1293
+msgid "Logfile Location is not Valid, Please Enter Correct Path"
+msgstr "올바른 로그 파일의 경로를 입력해주세요."
+
+#: cps/admin.py:1299
+msgid "Access Logfile Location is not Valid, Please Enter Correct Path"
+msgstr "올바른 액섹스 로그 파일의 경로를 입력해주세요."
+
+#: cps/admin.py:1333
+msgid "Please Enter a LDAP Provider, Port, DN and User Object Identifier"
+msgstr "LDAP 공급자, 포트, DN 및 사용자 개체 식별자를 입력해주세요."
+
+#: cps/admin.py:1339
+msgid "Please Enter a LDAP Service Account and Password"
+msgstr "LDAP 서비스 계정과 비밀번호를 입력해주세요."
+
+#: cps/admin.py:1342
+msgid "Please Enter a LDAP Service Account"
+msgstr "LDAP 서비스 계정을 입력해주세요."
+
+#: cps/admin.py:1347
+#, python-format
+msgid "LDAP Group Object Filter Needs to Have One \"%s\" Format Identifier"
+msgstr "LDAP 그룹 개체 필터에는 하나의 \"%s\" 형식 식별자가 필요합니다."
+
+#: cps/admin.py:1349
+msgid "LDAP Group Object Filter Has Unmatched Parenthesis"
+msgstr "LDAP 그룹 개체 필터에 맞지 않는 괄호가 있습니다."
+
+#: cps/admin.py:1353
+#, python-format
+msgid "LDAP User Object Filter needs to Have One \"%s\" Format Identifier"
+msgstr "LDAP 사용자 개체 필터에는 하나의 \"%s\" 형식 식별자가 필요합니다."
+
+#: cps/admin.py:1355
+msgid "LDAP User Object Filter Has Unmatched Parenthesis"
+msgstr "LDAP 사용자 개체 필터에 맞지 않는 괄호가 있습니다."
+
+#: cps/admin.py:1362
+#, python-format
+msgid "LDAP Member User Filter needs to Have One \"%s\" Format Identifier"
+msgstr "LDAP 구성원 사용자 필터에는 하나의 \"%s\" 형식 식별자가 필요합니다."
+
+#: cps/admin.py:1364
+msgid "LDAP Member User Filter Has Unmatched Parenthesis"
+msgstr "LDAP 구성원 사용자 필터에 맞지 않는 괄호가 있습니다."
+
+#: cps/admin.py:1371
+msgid ""
+"LDAP CACertificate, Certificate or Key Location is not Valid, Please Enter "
+"Correct Path"
+msgstr "LDAP CA인증서, 인증서 또는 키 경로가 유효하지 않습니다."
+
+#: cps/admin.py:1402 cps/templates/admin.html:55
+msgid "Add New User"
+msgstr "사용자 생성"
+
+#: cps/admin.py:1411 cps/templates/admin.html:103
+msgid "Edit Email Server Settings"
+msgstr "이메일 서버 설정"
+
+#: cps/admin.py:1430
+msgid "Success! Gmail Account Verified."
+msgstr "Gmail 계정 인증에 성공했습니다."
+
+#: cps/admin.py:1450 cps/admin.py:1453 cps/admin.py:1841 cps/admin.py:2005
+#: cps/admin.py:2109 cps/admin.py:2238 cps/editbooks.py:771
+#: cps/editbooks.py:1471 cps/shelf.py:76 cps/shelf.py:139 cps/shelf.py:182
+#: cps/shelf.py:232 cps/shelf.py:269 cps/shelf.py:343 cps/shelf.py:465
+#: cps/tasks/convert.py:145 cps/web.py:1669
+#, python-format
+msgid "Oops! Database Error: %(error)s."
+msgstr "데이터베이스 오류가 발생했습니다: %(error)s."
+
+#: cps/admin.py:1460
+#, python-format
+msgid ""
+"Test e-mail queued for sending to %(email)s, please check Tasks for result"
+msgstr "%(email)s로 테스트 이메일을 전송했습니다."
+
+#: cps/admin.py:1463
+#, python-format
+msgid "There was an error sending the Test e-mail: %(res)s"
+msgstr "테스트 이메일 전송 중 오류가 발생했습니다: %(res)s"
+
+#: cps/admin.py:1465
+msgid "Please configure your e-mail address first..."
+msgstr "이메일 주소를 설정해주세요."
+
+#: cps/admin.py:1467
+msgid "Email Server Settings updated"
+msgstr "이메일 서버 설정이 업데이트되었습니다."
+
+#: cps/admin.py:1490 cps/templates/admin.html:198
+msgid "Edit Scheduled Tasks Settings"
+msgstr "예약 작업 설정"
+
+#: cps/admin.py:1502
+msgid "Invalid start time for task specified"
+msgstr "작업 시작 시간이 올바르지 않습니다."
+
+#: cps/admin.py:1507
+msgid "Invalid duration for task specified"
+msgstr "작업 종료 시간이 올바르지 않습니다."
+
+#: cps/admin.py:1517
+msgid "Scheduled tasks settings updated"
+msgstr "예약 작업 설정이 업데이트되었습니다."
+
+#: cps/admin.py:1527 cps/admin.py:1576 cps/admin.py:2234 cps/web.py:1449
+msgid "Oops! An unknown error occurred. Please try again later."
+msgstr "알 수 없는 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."
+
+#: cps/admin.py:1531
+msgid "Settings DB is not Writeable"
+msgstr "설정 데이터베이스에 저장할 수 없습니다."
+
+#: cps/admin.py:1561 cps/admin.py:2226
+#, python-format
+msgid "Edit User %(nick)s"
+msgstr "사용자 %(nick)s 수정"
+
+#: cps/admin.py:1573
+#, python-format
+msgid "Success! Password for user %(user)s reset"
+msgstr "사용자 %(user)s의 비밀번호가 재설정되었습니다."
+
+#: cps/admin.py:1579
+msgid "Oops! Please configure the SMTP mail settings."
+msgstr "SMTP를 설정해주세요."
+
+#: cps/admin.py:1590
+msgid "Logfile viewer"
+msgstr "로그 파일 보기"
+
+#: cps/admin.py:1656
+msgid "Requesting update package"
+msgstr "업데이트 패키지 요청 중"
+
+#: cps/admin.py:1657
+msgid "Downloading update package"
+msgstr "업데이트 패키지 다운로드 중"
+
+#: cps/admin.py:1658
+msgid "Unzipping update package"
+msgstr "업데이트 패키지 압축 해제 중"
+
+#: cps/admin.py:1659
+msgid "Replacing files"
+msgstr "파일 적용 중"
+
+#: cps/admin.py:1660
+msgid "Database connections are closed"
+msgstr "데이터베이스 연결이 종료됩니다."
+
+#: cps/admin.py:1661
+msgid "Stopping server"
+msgstr "서버를 중지하고 있습니다."
+
+#: cps/admin.py:1662
+msgid "Update finished, please press okay and reload page"
+msgstr "업데이트가 완료되었습니다. 확인을 누르고 페이지를 새로고침해주세요."
+
+#: cps/admin.py:1663 cps/admin.py:1664 cps/admin.py:1665 cps/admin.py:1666
+#: cps/admin.py:1667 cps/admin.py:1668
+msgid "Update failed:"
+msgstr "업데이트 실패: "
+
+#: cps/admin.py:1663 cps/updater.py:388 cps/updater.py:623 cps/updater.py:625
+msgid "HTTP Error"
+msgstr "HTTP 오류가 발생했습니다."
+
+#: cps/admin.py:1664 cps/updater.py:390 cps/updater.py:627
+msgid "Connection error"
+msgstr "연결 오류가 발생했습니다."
+
+#: cps/admin.py:1665 cps/updater.py:392 cps/updater.py:629
+msgid "Timeout while establishing connection"
+msgstr "연결 시도 중 시간이 초과되었습니다."
+
+#: cps/admin.py:1666 cps/updater.py:394 cps/updater.py:631
+msgid "General error"
+msgstr "일반 오류가 발생했습니다."
+
+#: cps/admin.py:1667
+msgid "Update file could not be saved in temp dir"
+msgstr "임시 폴더에 업데이트 파일을 저장할 수 없습니다."
+
+#: cps/admin.py:1668
+msgid "Files could not be replaced during update"
+msgstr "업데이트 중 파일을 변경할 수 없습니다."
+
+#: cps/admin.py:1692
+msgid "Failed to extract at least One LDAP User"
+msgstr "최소 한 명의 LDAP 사용자 정보를 가져오지 못했습니다."
+
+#: cps/admin.py:1737
+msgid "Failed to Create at Least One LDAP User"
+msgstr "최소 한 명의 LDAP 사용자 정보를 생성하지 못했습니다."
+
+#: cps/admin.py:1750
+#, python-format
+msgid "Error: %(ldaperror)s"
+msgstr "오류: %(ldaperror)s"
+
+#: cps/admin.py:1754
+msgid "Error: No user returned in response of LDAP server"
+msgstr "오류: LDAP 서버에서 반환된 사용자가 없습니다."
+
+#: cps/admin.py:1790
+msgid "At Least One LDAP User Not Found in Database"
+msgstr "데이터베이스에서 찾을 수 없는 LDAP 사용자가 있습니다."
+
+#: cps/admin.py:1792
+#, python-brace-format
+msgid "{} User Successfully Imported"
+msgstr "{} 명의 사용자를 가져왔습니다."
+
+#: cps/admin.py:1853
+msgid "Books path not valid"
+msgstr "책 경로가 유효하지 않습니다."
+
+#: cps/admin.py:1860
+msgid "DB Location is not Valid, Please Enter Correct Path"
+msgstr "데이터베이스 경로가 유효하지 않습니다."
+
+#: cps/admin.py:1888
+msgid "DB is not Writeable"
+msgstr "데이터베이스에 쓰기 권한이 없습니다."
+
+#: cps/admin.py:1901
+msgid "Keyfile Location is not Valid, Please Enter Correct Path"
+msgstr "키 파일 경로가 유효하지 않습니다."
+
+#: cps/admin.py:1905
+msgid "Certfile Location is not Valid, Please Enter Correct Path"
+msgstr "인증서 파일 경로가 유효하지 않습니다."
+
+#: cps/admin.py:1990
+msgid "Password length has to be between 1 and 40"
+msgstr "비밀번호는 1~40자 사이로 입력해주세요."
+
+#: cps/admin.py:2044
+msgid "Database Settings updated"
+msgstr "데이터베이스 설정이 업데이트되었습니다."
+
+#: cps/admin.py:2052
+msgid "Database Configuration"
+msgstr "데이터베이스 설정"
+
+#: cps/admin.py:2073 cps/web.py:1418
+msgid "Oops! Please complete all fields."
+msgstr "모든 항목을 입력해주세요."
+
+#: cps/admin.py:2082
+msgid "E-mail is not from valid domain"
+msgstr "이메일 주소가 올바르지 않습니다."
+
+#: cps/admin.py:2088
+msgid "Add new user"
+msgstr "새 사용자 생성"
+
+#: cps/admin.py:2099
+#, python-format
+msgid "User '%(user)s' created"
+msgstr "사용자 '%(user)s'이(가) 생성되었습니다."
+
+#: cps/admin.py:2105
+msgid "Oops! An account already exists for this Email. or name."
+msgstr "이미 등록된 이메일 주소 또는 이름입니다."
+
+#: cps/admin.py:2135
+#, python-format
+msgid "User '%(nick)s' deleted"
+msgstr "사용자 '%(nick)s'이(가) 삭제되었습니다."
+
+#: cps/admin.py:2138
+msgid "Can't delete Guest User"
+msgstr "게스트 사용자는 삭제할 수 없습니다."
+
+#: cps/admin.py:2141
+msgid "No admin user remaining, can't delete user"
+msgstr "남은 관리자가 없어 사용자를 삭제할 수 없습니다."
+
+#: cps/admin.py:2204 cps/web.py:1608
+msgid "Email can't be empty and has to be a valid Email"
+msgstr "이메일 주소는 비워둘 수 없고, 올바른 형식이어야 합니다."
+
+#: cps/admin.py:2230
+#, python-format
+msgid "User '%(nick)s' updated"
+msgstr "사용자 '%(nick)s의 정보를 수정했습니다."
+
+#: cps/admin.py:2281
+msgid "Connection successful!"
+msgstr "연결 성공!"
+
+#: cps/admin.py:2283 cps/admin.py:2326
+#, python-format
+msgid "Connection failed: Server returned status code %(code)s"
+msgstr "연결 실패: 서버가 %(code)s 오류를 답신했습니다."
+
+#: cps/admin.py:2285 cps/admin.py:2328
+msgid "Connection failed: Could not connect to server."
+msgstr "연결 실패: 서버에 연결할 수 없습니다."
+
+#: cps/admin.py:2287 cps/admin.py:2330
+msgid "Connection failed: Request timed out."
+msgstr "연결 실패: 요청 시간 초과."
+
+#: cps/admin.py:2289 cps/admin.py:2332
+msgid "Connection failed: Invalid JSON in response."
+msgstr "연결 실패: 응답에 잘못된 JSON이 포함되어 있습니다."
+
+#: cps/admin.py:2292 cps/admin.py:2335
+msgid "An unknown error occurred."
+msgstr "알 수 없는 오류가 발생했습니다."
+
+#: cps/admin.py:2318
+#, python-format
+msgid "Metadata is missing required fields: %(fields)s"
+msgstr "다음 필드에 메타데이터가 없습니다: %(fields)s"
+
+#: cps/admin.py:2323
+#, python-format
+msgid "Metadata URL is valid! Found %(count)s endpoints."
+msgstr "유효한 메타데이터 URL. %(count)s개의 엔드포인트를 발견했습니다."
+
+#: cps/constants.py:207
+msgid "Czech"
+msgstr "체코어"
+
+#: cps/constants.py:208
+msgid "German"
+msgstr "독일어"
+
+#: cps/constants.py:209
+msgid "Greek"
+msgstr "그리스어"
+
+#: cps/constants.py:210
+msgid "Spanish"
+msgstr "스페인어"
+
+#: cps/constants.py:211
+msgid "Finnish"
+msgstr "핀란드어"
+
+#: cps/constants.py:212
+msgid "French"
+msgstr "프랑스어"
+
+#: cps/constants.py:213
+msgid "Galician"
+msgstr "갈리시아어"
+
+#: cps/constants.py:214
+msgid "Hungarian"
+msgstr "헝가리어"
+
+#: cps/constants.py:215
+msgid "Indonesian"
+msgstr "인도네시아어"
+
+#: cps/constants.py:216
+msgid "Italian"
+msgstr "이탈리아어"
+
+#: cps/constants.py:217
+msgid "Japanese"
+msgstr "일본어"
+
+#: cps/constants.py:218
+msgid "Khmer"
+msgstr "크메르어"
+
+#: cps/constants.py:219
+msgid "Korean"
+msgstr "한국어"
+
+#: cps/constants.py:220
+msgid "Dutch"
+msgstr "네덜란드어"
+
+#: cps/constants.py:221
+msgid "Norwegian"
+msgstr "노르웨이어"
+
+#: cps/constants.py:222
+msgid "Polish"
+msgstr "폴란드어"
+
+#: cps/constants.py:223
+msgid "Portuguese"
+msgstr "포르투갈어"
+
+#: cps/constants.py:224
+msgid "Portuguese (Brazil)"
+msgstr "포르투갈어 (브라질)"
+
+#: cps/constants.py:225
+msgid "Russian"
+msgstr "러시아어"
+
+#: cps/constants.py:226
+msgid "Slovak"
+msgstr "슬로바키아어"
+
+#: cps/constants.py:227
+msgid "Slovenian"
+msgstr "슬로베니아어"
+
+#: cps/constants.py:228
+msgid "Swedish"
+msgstr "스웨덴어"
+
+#: cps/constants.py:229
+msgid "Turkish"
+msgstr "터키어"
+
+#: cps/constants.py:230
+msgid "Ukrainian"
+msgstr "우크라이나어"
+
+#: cps/constants.py:231
+msgid "Vietnamese"
+msgstr "베트남어"
+
+#: cps/constants.py:232
+msgid "Chinese (Simplified, China)"
+msgstr "중국어 (간체, 중국 본토)"
+
+#: cps/constants.py:233
+msgid "Chinese (Traditional, Taiwan)"
+msgstr "중국어 (번체, 대만)"
+
+#: cps/converter.py:20
+msgid "not installed"
+msgstr "설치되지 않았습니다."
+
+#: cps/converter.py:21
+msgid "Execution permissions missing"
+msgstr "실행 권한이 없습니다."
+
+#: cps/cwa_functions.py:164
+msgid ""
+"Library Refresh 🔄 Checking for any books that may have been missed, please "
+"wait..."
+msgstr "서재 새로고침 중 🔄 새 책을 찾고 있습니다. 잠시 기다려 주세요…"
+
+#: cps/cwa_functions.py:297
+msgid "Calibre-Web Automated User Settings"
+msgstr "Calibre-Web Automated 사용자 설정"
+
+#: cps/cwa_functions.py:319 cps/cwa_functions.py:321 cps/cwa_functions.py:325
+#: cps/cwa_functions.py:327 cps/cwa_functions.py:330 cps/cwa_functions.py:332
+msgid "Timestamp"
+msgstr "타임스탬프"
+
+#: cps/cwa_functions.py:319 cps/cwa_functions.py:321
+msgid "Book ID"
+msgstr "책 ID"
+
+#: cps/cwa_functions.py:319 cps/templates/book_edit.html:85
+#: cps/templates/search_form.html:8
+msgid "Book Title"
+msgstr "책 제목"
+
+#: cps/cwa_functions.py:319
+msgid "Book Author"
+msgstr "저자"
+
+#: cps/cwa_functions.py:319
+msgid "Trigger Type"
+msgstr "트리거 유형"
+
+#: cps/cwa_functions.py:321 cps/cwa_functions.py:327
+msgid "Filepath"
+msgstr "파일 위치"
+
+#: cps/cwa_functions.py:325 cps/cwa_functions.py:327 cps/cwa_functions.py:330
+#: cps/cwa_functions.py:332
+msgid "Filename"
+msgstr "파일명"
+
+#: cps/cwa_functions.py:325
+msgid "Manual?"
+msgstr "수동?"
+
+#: cps/cwa_functions.py:325
+msgid "No. Fixes"
+msgstr "아니오, 고칩니다."
+
+#: cps/cwa_functions.py:325 cps/cwa_functions.py:330 cps/cwa_functions.py:332
+msgid "Original Backed Up?"
+msgstr "원본이 백업되었습니까?"
+
+#: cps/cwa_functions.py:327
+msgid "Fixes Applied"
+msgstr "수정사항 적용."
+
+#: cps/cwa_functions.py:332
+msgid "Original Format"
+msgstr "원본 형식"
+
+#: cps/cwa_functions.py:332
+msgid "End Format"
+msgstr "결과 형식"
+
+#: cps/cwa_functions.py:347
+msgid "Calibre-Web Automated Sever Stats & Archive"
+msgstr "Calibre-Web Automated 서버 정보 & 아카이브"
+
+#: cps/cwa_functions.py:362
+msgid "Calibre-Web Automated - Full Enforcement History"
+msgstr "Calibre-Web Automated - 전체 적용 내역"
+
+#: cps/cwa_functions.py:371
+msgid "Calibre-Web Automated - Full Enforcement History (w/ Paths)"
+msgstr "Calibre-Web Automated - 전체 적용 내역 (경로 포함)"
+
+#: cps/cwa_functions.py:380
+msgid "Calibre-Web Automated - Full Import History"
+msgstr "Calibre-Web Automated - 전체 가져오기 내역"
+
+#: cps/cwa_functions.py:389
+msgid "Calibre-Web Automated - Full Conversion History"
+msgstr "Calibre-Web Automated - 전체 변환 내역"
+
+#: cps/cwa_functions.py:398
+msgid "Calibre-Web Automated - Full EPUB Fixer History (w/out Paths & Fixes)"
+msgstr "Calibre-Web Automated - 전체 EPUB Fixer 내역 (경로 & 수정 제외)"
+
+#: cps/cwa_functions.py:407
+msgid "Calibre-Web Automated - Full EPUB Fixer History (w/ Paths & Fixes)"
+msgstr "Calibre-Web Automated - 전체 EPUB Fixer 내역 (경로 & 수정 포함)"
+
+#: cps/cwa_functions.py:425
+msgid "✅ All Monitoring Services are running as intended! 👍"
+msgstr "✅ 모든 모니터링 서비스가 정상 실행중입니다! 👍"
+
+#: cps/cwa_functions.py:427
+msgid ""
+"🔴 The Ingest Service is running but the Metadata Change Detector is not"
+msgstr ""
+"🔴 가져오기 서비스는 실행중이지만, 메타데이터 변경점 감지기가 정지되었습니다."
+
+#: cps/cwa_functions.py:429
+msgid ""
+"🔴 The Metadata Change Detector is running but the Ingest Service is not"
+msgstr ""
+"🔴 메타데이터 변경점 감지기는 실행중이지만, 가져오기 서비스가 정지되었습니다."
+
+#: cps/cwa_functions.py:431
+msgid ""
+"⛔ Neither the Ingest Service or the Metadata Change Detector are running"
+msgstr "⛔ 가져오기 서비스와 메타데이터 변경점 감지기 모두 정지되었습니다."
+
+#: cps/cwa_functions.py:433
+msgid "An Error has occurred"
+msgstr "오류가 발생했습니다."
+
+#: cps/cwa_functions.py:604 cps/cwa_functions.py:611
+msgid "Calibre-Web Automated - Convert Library"
+msgstr "Calibre-Web Automated - 서재 변환"
+
+#: cps/cwa_functions.py:724 cps/cwa_functions.py:730
+msgid "Calibre-Web Automated - Send-to-Kindle EPUB Fixer Service"
+msgstr "Calibre-Web Automated - Send-to-Kindle EPUB Fixer 서비스"
+
+#: cps/cwa_functions.py:815
+msgid "You must be an admin to access this page."
+msgstr "이 페이지에 접근하려면 관리자권한이 필요합니다."
+
+#: cps/cwa_functions.py:830
+msgid "Both username and image data are required."
+msgstr "사용자명과 사진 데이터가 필요합니다."
+
+#: cps/cwa_functions.py:848
+msgid "Profile picture updated successfully."
+msgstr "프로필 사진이 갱신되었습니다."
+
+#: cps/cwa_functions.py:861
+msgid "CWA Profile Picture Management (WIP)"
+msgstr "CWA 프로필 사진 관리자 (개발중)"
+
+#: cps/db.py:1075 cps/templates/config_edit.html:217
+#: cps/templates/config_view_edit.html:63 cps/templates/email_edit.html:41
+#: cps/web.py:612 cps/web.py:646 cps/web.py:691 cps/web.py:731 cps/web.py:758
+#: cps/web.py:1072 cps/web.py:1109 cps/web.py:1160 cps/web.py:1192
+#: cps/web.py:1231
+msgid "None"
+msgstr "없음"
+
+#: cps/duplicates.py:38 cps/duplicates.py:47
+msgid "Duplicate Books"
+msgstr "책 복제"
+
+#: cps/editbooks.py:106
+msgid "Missing or invalid book id for format upload"
+msgstr "형식 업로드를 위한 책 ID가 없거나 잘못되었습니다."
+
+#: cps/editbooks.py:131 cps/editbooks.py:151 cps/templates/book_edit.html:53
+#: cps/templates/layout.html:148
+msgid "Upload done, processing, please wait..."
+msgstr "업로드 완료, 처리 중입니다. 잠시만 기다려 주세요."
+
+#: cps/editbooks.py:136 cps/editbooks.py:155
+msgid "Failed to queue upload for processing"
+msgstr "연산대기열로 업로드에 실패했습니다."
+
+#: cps/editbooks.py:171
+msgid "Source or destination format for conversion missing"
+msgstr "변환할 원본 또는 대상 형식이 지정되지 않았습니다."
+
+#: cps/editbooks.py:179
+#, python-format
+msgid "Book successfully queued for converting to %(book_format)s"
+msgstr "%(book_format)s 형식으로 변환하기 위해 작업에 추가되었습니다."
+
+#: cps/editbooks.py:183
+#, python-format
+msgid "There was an error converting this book: %(res)s"
+msgstr "책 변환 중 오류가 발생했습니다: %(res)s"
+
+#: cps/editbooks.py:298 cps/editbooks.py:967 cps/editbooks.py:1417
+msgid "File type isn't allowed to be uploaded to this server"
+msgstr "업로드할 수 없는 파일 형식입니다."
+
+#: cps/editbooks.py:303 cps/editbooks.py:973 cps/editbooks.py:1428
+#, python-format
+msgid "File extension '%(ext)s' is not allowed to be uploaded to this server"
+msgstr "파일 확장자 '%(ext)s'은(는) 서버에 업로드할 수 없습니다"
+
+#: cps/editbooks.py:307 cps/editbooks.py:977 cps/editbooks.py:1433
+msgid "File to be uploaded must have an extension"
+msgstr "확장자가 없는 파일은 업로드할 수 없습니다."
+
+#: cps/editbooks.py:643 cps/editbooks.py:1140 cps/web.py:579 cps/web.py:1712
+#: cps/web.py:1757 cps/web.py:1813
+msgid ""
+"Oops! Selected book is unavailable. File does not exist or is not accessible"
+msgstr "선택한 책을 사용할 수 없습니다. 파일이 없거나 접근할 수 없습니다."
+
+#: cps/editbooks.py:675 cps/editbooks.py:1500
+msgid "User has no rights to upload cover"
+msgstr "표지 업로드 권한이 없습니다."
+
+#: cps/editbooks.py:694 cps/editbooks.py:955
+msgid "Identifiers are not Case Sensitive, Overwriting Old Identifier"
+msgstr "식별자는 대소문자 구분 없어 덮어씁니다."
+
+#: cps/editbooks.py:706 cps/editbooks.py:929 cps/editbooks.py:1267
+#, python-format
+msgid "'%(langname)s' is not a valid language"
+msgstr "'%(langname)s'은(는) 올바른 언어가 아닙니다."
+
+#: cps/editbooks.py:758
+msgid "Metadata successfully updated"
+msgstr "메타데이터가 업데이트되었습니다."
+
+#: cps/editbooks.py:776
+#, python-brace-format
+msgid "Error editing book: {}"
+msgstr "책 편집 중 오류가 발생했습니다: {}"
+
+#: cps/editbooks.py:873
+msgid ""
+"Uploaded book probably exists in the library, consider to change before "
+"upload new: "
+msgstr "업로드된 책이 이미 존재하는 것 같습니다. 확인이 필요합니다: "
+
+#: cps/editbooks.py:985
+#, python-format
+msgid "File %(filename)s could not saved to temp dir"
+msgstr "파일 %(filename)s을(를) 임시 폴더에 저장할 수 없습니다."
+
+#: cps/editbooks.py:1005
+#, python-format
+msgid "Failed to Move Cover File %(file)s: %(error)s"
+msgstr "표지 파일 %(file)s을(를) 이동하지 못했습니다 :%(error)s"
+
+#: cps/editbooks.py:1062 cps/editbooks.py:1064
+msgid "Book Format Successfully Deleted"
+msgstr "책 형식이 삭제되었습니다."
+
+#: cps/editbooks.py:1071 cps/editbooks.py:1073
+msgid "Book Successfully Deleted"
+msgstr "책이 삭제되었습니다."
+
+#: cps/editbooks.py:1125
+msgid "You are missing permissions to delete books"
+msgstr "책을 삭제할 권한이 없습니다."
+
+#: cps/editbooks.py:1175
+msgid "edit metadata"
+msgstr "메타데이터 편집"
+
+#: cps/editbooks.py:1228
+#, python-format
+msgid "Seriesindex: %(seriesindex)s is not a valid number, skipping"
+msgstr "시리즈 순서 %(seriesindex)s은(는) 올바르지 않아 건너뜁니다."
+
+#: cps/editbooks.py:1422
+msgid "User has no rights to upload additional file formats"
+msgstr "추가 파일 형식을 업로드할 권한이 없습니다."
+
+#: cps/editbooks.py:1446
+#, python-format
+msgid "Failed to create path %(path)s (Permission denied)."
+msgstr "쓰기 권한이 없어 %(path)s 경로 생성에 실패했습니다."
+
+#: cps/editbooks.py:1453
+#, python-format
+msgid "Failed to store file %(file)s."
+msgstr "%(file)s 파일 저장에 실패했습니다."
+
+#: cps/editbooks.py:1478
+#, python-format
+msgid "File format %(ext)s added to %(book)s"
+msgstr "파일 형식 %(ext)s이(가) %(book)s에 추가되었습니다"
+
+#: cps/gdrive.py:43
+msgid ""
+"Google Drive setup not completed, try to deactivate and activate Google "
+"Drive again"
+msgstr ""
+"Google 드라이브 설정이 완료되지 않았습니다. Google 드라이브를 비활성화한 후 "
+"다시 활성화해 주세요."
+
+#: cps/gdrive.py:81
+msgid ""
+"Callback domain is not verified, please follow steps to verify domain in "
+"google developer console"
+msgstr ""
+"콜백 도메인이 인증되지 않았습니다. Google 개발자 콘솔에서 도메인 인증 절차를 "
+"진행해 주세요."
+
+#: cps/helper.py:75
+#, python-format
+msgid "%(format)s format not found for book id: %(book)d"
+msgstr "책 ID %(book)d의 %(format)s 형식을 찾을 수 없습니다."
+
+#: cps/helper.py:81 cps/tasks/convert.py:77
+#, python-format
+msgid "%(format)s not found on Google Drive: %(fn)s"
+msgstr "Google 드라이브에서 %(format)s 파일을 찾을 수 없습니다: %(fn)s"
+
+#: cps/helper.py:86
+#, python-format
+msgid "%(format)s not found: %(fn)s"
+msgstr "%(format)s을(를) 찾을 수 없습니다: %(fn)s"
+
+#: cps/helper.py:92 cps/helper.py:221 cps/templates/detail.html:59
+#: cps/templates/detail.html:60 cps/templates/detail.html:130
+msgid "Send to eReader"
+msgstr "전자책 리더로 보내기"
+
+#: cps/helper.py:93 cps/helper.py:113
+msgid "This Email has been sent via Calibre-Web Automated."
+msgstr "이 이메일은 Calibre-Web Automated에서 전송되었습니다."
+
+#: cps/helper.py:111
+msgid "Calibre-Web Automated Test Email"
+msgstr "Calibre-Web Automated 테스트 이메일"
+
+#: cps/helper.py:112
+msgid "Test Email"
+msgstr "테스트 이메일"
+
+#: cps/helper.py:129
+msgid "Get Started with Calibre-Web Automated"
+msgstr "Calibre-Web Automated 시작하기"
+
+#: cps/helper.py:134
+#, python-format
+msgid "Registration Email for user: %(name)s"
+msgstr "사용자 %(name)s의 등록 이메일"
+
+#: cps/helper.py:145 cps/helper.py:151
+#, python-format
+msgid "Convert %(orig)s to %(format)s and send to eReader"
+msgstr "%(orig)s을(를) %(format)s로 변환하여 전자책 리더로 보내기"
+
+#: cps/helper.py:170 cps/helper.py:174 cps/helper.py:178
+#, python-format
+msgid "Send %(format)s to eReader"
+msgstr "%(format)s을 전자책 리더로 보내기"
+
+#: cps/helper.py:218
+#, python-format
+msgid "%(book)s send to eReader"
+msgstr "%(book)s을(를) 전자책 리더로 보내기"
+
+#: cps/helper.py:223
+msgid "This Email has been sent via Automated."
+msgstr "이 이메일은 자동으로 전송되었습니다."
+
+#: cps/helper.py:225
+msgid "The requested file could not be read. Maybe wrong permissions?"
+msgstr "요청한 파일을 읽을 수 없습니다. 파일 접근 권한을 확인해주세요."
+
+#: cps/helper.py:371
+#, python-brace-format
+msgid "Read status could not set: {}"
+msgstr "읽기 상태를 설정할 수 없습니다: {}"
+
+#: cps/helper.py:394
+#, python-format
+msgid ""
+"Deleting bookfolder for book %(id)s failed, path has subfolders: %(path)s"
+msgstr "책 %(id)s의 폴더 삭제에 실패했습니다. %(path)s에 하위 폴더가 있습니다."
+
+#: cps/helper.py:400
+#, python-format
+msgid "Deleting book %(id)s failed: %(message)s"
+msgstr "책 %(id)s 삭제에 실패했습니다: %(message)s"
+
+#: cps/helper.py:411
+#, python-format
+msgid ""
+"Deleting book %(id)s from database only, book path in database not valid: "
+"%(path)s"
+msgstr ""
+"데이터베이스 경로가 올바르지 않아 책 %(id)s을(를) 데이터베이스에서만 삭제합니"
+"다: %(path)s"
+
+#: cps/helper.py:457
+#, python-format
+msgid ""
+"Rename author from: '%(src)s' to '%(dest)s' failed with error: %(error)s"
+msgstr "저자명 '%(src)s'에서 '%(dest)s'(으)로 변경하지 못했습니다: %(error)s"
+
+#: cps/helper.py:526 cps/helper.py:535
+#, python-format
+msgid "File %(file)s not found on Google Drive"
+msgstr "Google 드라이브에서 %(file)s 파일을 찾을 수 없습니다."
+
+#: cps/helper.py:577
+#, python-format
+msgid "Rename title from: '%(src)s' to '%(dest)s' failed with error: %(error)s"
+msgstr "제목을 '%(src)s'에서 '%(dest)s'(으)로 변경하지 못했습니다: %(error)s"
+
+#: cps/helper.py:616
+#, python-format
+msgid "Book path %(path)s not found on Google Drive"
+msgstr "Google 드라이브에서 경로 %(path)s을(를) 찾을 수 없습니다."
+
+#: cps/helper.py:676
+msgid "Found an existing account for this Email address"
+msgstr "이미 사용 중인 이메일 주소입니다."
+
+#: cps/helper.py:684
+msgid "This username is already taken"
+msgstr "이미 사용 중인 사용자 이름입니다."
+
+#: cps/helper.py:698
+msgid "Invalid Email address format"
+msgstr "올바른 이메일 주소가 아닙니다."
+
+#: cps/helper.py:720
+msgid "Password doesn't comply with password validation rules"
+msgstr "비밀번호가 설정된 규칙에 맞지 않습니다."
+
+#: cps/helper.py:866
+msgid ""
+"Python module 'advocate' is not installed but is needed for cover uploads"
+msgstr "표지 업로드에 필요한 Python 모듈 'advocate'이 설치되지 않았습니다."
+
+#: cps/helper.py:876
+msgid "Error Downloading Cover"
+msgstr "표지 다운로드 중 오류가 발생했습니다."
+
+#: cps/helper.py:879
+msgid "Cover Format Error"
+msgstr "표지 형식 오류입니다."
+
+#: cps/helper.py:882
+msgid ""
+"You are not allowed to access localhost or the local network for cover "
+"uploads"
+msgstr "표지 업로드를 위해 로컬 호스트나 로컬 네트워크에 접근할 수 없습니다."
+
+#: cps/helper.py:892
+msgid "Failed to create path for cover"
+msgstr "표지 경로 생성에 실패했습니다."
+
+#: cps/helper.py:908
+msgid "Cover-file is not a valid image file, or could not be stored"
+msgstr "표지 파일이 올바른 이미지 파일이 아니거나 저장할 수 없습니다."
+
+#: cps/helper.py:925
+msgid "Only jpg/jpeg/png/webp/bmp files are supported as coverfile"
+msgstr "jpg/jpeg/png/webp/bmp 형식만 지원합니다."
+
+#: cps/helper.py:937
+msgid "Invalid cover file content"
+msgstr "올바르지 않은 표지 파일입니다."
+
+#: cps/helper.py:941
+msgid "Only jpg/jpeg files are supported as coverfile"
+msgstr "표지 파일은 jpg/jpeg 형식만 지원합니다."
+
+#: cps/helper.py:1013 cps/helper.py:1170
+msgid "Cover"
+msgstr "표지"
+
+#: cps/helper.py:1030
+msgid "UnRar binary file not found"
+msgstr "UnRar 바이너리 파일을 찾을 수 없습니다."
+
+#: cps/helper.py:1041
+msgid "Error executing UnRar"
+msgstr "UnRar 실행 중 오류가 발생했습니다."
+
+#: cps/helper.py:1049
+msgid "Could not find the specified directory"
+msgstr "지정된 디렉토리를 찾을 수 없습니다."
+
+#: cps/helper.py:1052
+msgid "Please specify a directory, not a file"
+msgstr "파일이 아닌 폴더를 지정하세요."
+
+#: cps/helper.py:1066
+msgid "Calibre binaries not viable"
+msgstr "Calibre 바이너리 파일을 사용할 수 없습니다."
+
+#: cps/helper.py:1075
+#, python-format
+msgid "Missing calibre binaries: %(missing)s"
+msgstr "Calibre 바이너리 파일이 누락되었습니다: %(missing)s"
+
+#: cps/helper.py:1077
+#, python-format
+msgid "Missing executable permissions: %(missing)s"
+msgstr "실행 권한이 없습니다: %(missing)s"
+
+#: cps/helper.py:1082
+msgid "Error executing Calibre"
+msgstr "Calibre 실행 오류"
+
+#: cps/helper.py:1172 cps/templates/admin.html:236
+msgid "Queue all books for metadata backup"
+msgstr "메타데이터 백업이 작업에 추가되었습니다."
+
+#: cps/kobo_auth.py:80
+msgid ""
+"Please access Calibre-Web Automated from non localhost to get valid "
+"api_endpoint for kobo device"
+msgstr ""
+"Kobo 장치에 대한 유효한 api_endpoint를 얻으려면, 로컬 호스트가 아닌 곳에서 "
+"Calibre-Web에 접근하세요."
+
+#: cps/kobo_auth.py:106
+msgid "Kobo Setup"
+msgstr "Kobo 설정"
+
+#: cps/kosync.py:143
+msgid "KOReader Sync Plugin"
+msgstr "KOReader Sync 플러그인"
+
+#: cps/oauth_bb.py:64
+#, python-format
+msgid "Register with %(provider)s"
+msgstr "%(provider)s에 등록"
+
+#: cps/oauth_bb.py:108
+msgid "Login failed: Could not connect to the user info endpoint."
+msgstr "로그인 실패: 사용자 정보 엔드포인트에 접속할 수 없습니다."
+
+#: cps/oauth_bb.py:112
+msgid "Login failed: The OAuth provider returned an invalid user profile."
+msgstr "로그인 실패: OAuth 제공자가 잘못된 사용자 정보를 제공했습니다."
+
+#: cps/oauth_bb.py:125
+msgid "Login failed: User profile from provider is incomplete."
+msgstr "로그인 실패: 제공된 사용자 정보가 불완전합니다."
+
+#: cps/oauth_bb.py:212 cps/remotelogin.py:149
+#, python-format
+msgid "Success! You are now logged in as: %(nickname)s"
+msgstr "%(nickname)s로 로그인했습니다."
+
+#: cps/oauth_bb.py:222
+#, python-format
+msgid "Link to %(oauth)s Succeeded"
+msgstr "%(oauth)s에 성공적으로 연결되었습니다."
+
+#: cps/oauth_bb.py:229
+msgid "Login failed, No User Linked With OAuth Account"
+msgstr "로그인에 실패했습니다. OAuth 계정과 연결된 사용자가 없습니다."
+
+#: cps/oauth_bb.py:271
+#, python-format
+msgid "Unlink to %(oauth)s Succeeded"
+msgstr "%(oauth)s에 연결 해제에 성공했습니다."
+
+#: cps/oauth_bb.py:276
+#, python-format
+msgid "Unlink to %(oauth)s Failed"
+msgstr "%(oauth)s에 연결 해제에 실패했습니다."
+
+#: cps/oauth_bb.py:279
+#, python-format
+msgid "Not Linked to %(oauth)s"
+msgstr "%(oauth)s에 연결되지 않았습니다."
+
+#: cps/oauth_bb.py:395
+msgid "Failed to log in with GitHub."
+msgstr "GitHub 로그인에 실패했습니다."
+
+#: cps/oauth_bb.py:401
+msgid "Failed to fetch user info from GitHub."
+msgstr "GitHub에서 사용자 정보를 불러오지 못했습니다."
+
+#: cps/oauth_bb.py:413
+msgid "Failed to log in with Google."
+msgstr "Google 로그인에 실패했습니다."
+
+#: cps/oauth_bb.py:419
+msgid "Failed to fetch user info from Google."
+msgstr "Google에서 사용자 정보를 불러오지 못했습니다."
+
+#: cps/oauth_bb.py:431
+msgid "Failed to log in with Generic OAuth."
+msgstr "일반 OAuth 로그인에 실패했습니다."
+
+#: cps/oauth_bb.py:477
+msgid "GitHub Oauth error, please retry later."
+msgstr "GitHub Oauth 오류입니다. 잠시 후 다시 시도해 주세요."
+
+#: cps/oauth_bb.py:480
+#, python-brace-format
+msgid "GitHub Oauth error: {}"
+msgstr "GitHub 인증 오류가 발생했습니다: {}"
+
+#: cps/oauth_bb.py:501
+msgid "Google Oauth error, please retry later."
+msgstr "Google 인증 오류입니다. 잠시 후 다시 시도해 주세요."
+
+#: cps/oauth_bb.py:504
+#, python-brace-format
+msgid "Google Oauth error: {}"
+msgstr "Google 인증 오류가 발생했습니다: {}"
+
+#: cps/oauth_bb.py:524 cps/oauth_bb.py:528
+#, python-brace-format
+msgid "OAuth error: {}"
+msgstr "OAuth 오류: {}"
+
+#: cps/opds.py:284
+#, python-brace-format
+msgid "{} Stars"
+msgstr "{} Stars"
+
+#: cps/remotelogin.py:76 cps/templates/layout.html:131
+#: cps/templates/layout.html:173 cps/templates/login.html:4
+#: cps/templates/login.html:21 cps/web.py:1485
+msgid "Login"
+msgstr "로그인"
+
+#: cps/remotelogin.py:93 cps/remotelogin.py:127
+msgid "Token not found"
+msgstr "토큰을 찾을 수 없습니다."
+
+#: cps/remotelogin.py:102 cps/remotelogin.py:135
+msgid "Token has expired"
+msgstr "토큰이 만료되었습니다."
+
+#: cps/remotelogin.py:111
+msgid "Success! Please return to your device"
+msgstr "인증되었습니다. 기기로 돌아가 주세요."
+
+#: cps/render_template.py:40
+msgid "Books"
+msgstr "전체"
+
+#: cps/render_template.py:42
+msgid "Show recent books"
+msgstr "최근 책 보기"
+
+#: cps/render_template.py:43 cps/templates/index.xml:27
+msgid "Hot Books"
+msgstr "인기"
+
+#: cps/render_template.py:45
+msgid "Show Hot Books"
+msgstr "인기 책 보기"
+
+#: cps/render_template.py:47 cps/render_template.py:52
+msgid "Downloaded Books"
+msgstr "받은 적 있는"
+
+#: cps/render_template.py:49 cps/render_template.py:54
+#: cps/templates/user_table.html:167
+msgid "Show Downloaded Books"
+msgstr "다운로드 받은 적 있는 책 보기"
+
+#: cps/render_template.py:57 cps/templates/index.xml:36 cps/web.py:469
+msgid "Top Rated Books"
+msgstr "베스트"
+
+#: cps/render_template.py:59 cps/templates/user_table.html:161
+msgid "Show Top Rated Books"
+msgstr "평점 높은 책 보기"
+
+#: cps/render_template.py:60 cps/templates/index.xml:63
+#: cps/templates/index.xml:67 cps/web.py:816
+msgid "Read Books"
+msgstr "읽음"
+
+#: cps/render_template.py:62
+msgid "Show Read and Unread"
+msgstr "읽은 책과 안 읽은 책 보기"
+
+#: cps/render_template.py:64 cps/templates/index.xml:70
+#: cps/templates/index.xml:74 cps/web.py:819
+msgid "Unread Books"
+msgstr "읽지 않음"
+
+#: cps/render_template.py:66
+msgid "Show unread"
+msgstr "읽지 않은 책 보기"
+
+#: cps/render_template.py:67
+msgid "Discover"
+msgstr "둘러보기"
+
+#: cps/render_template.py:69 cps/templates/index.xml:58
+#: cps/templates/user_table.html:159 cps/templates/user_table.html:162
+msgid "Show Random Books"
+msgstr "무작위 추천 보기"
+
+#: cps/render_template.py:70 cps/templates/book_table.html:106
+#: cps/templates/index.xml:97 cps/web.py:1235
+msgid "Categories"
+msgstr "카테고리"
+
+#: cps/render_template.py:72 cps/templates/user_table.html:158
+msgid "Show Category Section"
+msgstr "카테고리 보기"
+
+#: cps/render_template.py:73 cps/templates/book_edit.html:100
+#: cps/templates/book_table.html:107 cps/templates/index.xml:106
+#: cps/templates/search_form.html:70 cps/web.py:1115 cps/web.py:1127
+msgid "Series"
+msgstr "시리즈"
+
+#: cps/render_template.py:75 cps/templates/user_table.html:157
+msgid "Show Series Section"
+msgstr "시리즈 보기"
+
+#: cps/render_template.py:76 cps/templates/book_table.html:105
+#: cps/templates/index.xml:79
+msgid "Authors"
+msgstr "저자"
+
+#: cps/render_template.py:78 cps/templates/user_table.html:160
+msgid "Show Author Section"
+msgstr "저자 보기"
+
+#: cps/render_template.py:80 cps/templates/book_table.html:111
+#: cps/templates/index.xml:88 cps/web.py:1083
+msgid "Publishers"
+msgstr "출판사"
+
+#: cps/render_template.py:82 cps/templates/user_table.html:163
+msgid "Show Publisher Section"
+msgstr "출판사 보기"
+
+#: cps/render_template.py:83 cps/templates/book_table.html:109
+#: cps/templates/index.xml:115 cps/templates/search_form.html:108
+#: cps/web.py:1207
+msgid "Languages"
+msgstr "언어"
+
+#: cps/render_template.py:86 cps/templates/user_table.html:155
+msgid "Show Language Section"
+msgstr "언어 보기"
+
+#: cps/render_template.py:87 cps/templates/index.xml:124 cps/web.py:1167
+msgid "Ratings"
+msgstr "평점"
+
+#: cps/render_template.py:89 cps/templates/user_table.html:164
+msgid "Show Ratings Section"
+msgstr "평점 보기"
+
+#: cps/render_template.py:90 cps/templates/index.xml:133
+msgid "File formats"
+msgstr "파일 형식"
+
+#: cps/render_template.py:92 cps/templates/user_table.html:165
+msgid "Show File Formats Section"
+msgstr "파일 형식 보기"
+
+#: cps/render_template.py:94 cps/web.py:842
+msgid "Archived Books"
+msgstr "보관함"
+
+#: cps/render_template.py:96 cps/templates/user_table.html:166
+msgid "Show Archived Books"
+msgstr "보관된 책 보기"
+
+#: cps/render_template.py:99 cps/web.py:903
+msgid "Books List"
+msgstr "책 목록"
+
+#: cps/render_template.py:101 cps/templates/user_table.html:168
+msgid "Show Books List"
+msgstr "책 목록 보기"
+
+#: cps/render_template.py:104
+msgid "Duplicates"
+msgstr "중복인 책"
+
+#: cps/render_template.py:106
+msgid "Show Duplicate Books"
+msgstr "중복인 책 보기"
+
+#: cps/search.py:40 cps/search.py:427 cps/templates/book_edit.html:256
+#: cps/templates/feed.xml:34 cps/templates/index.xml:12
+#: cps/templates/layout.html:110 cps/templates/layout.html:113
+#: cps/templates/search_form.html:247
+msgid "Search"
+msgstr "검색"
+
+#: cps/search.py:191
+msgid "Published after "
+msgstr "발행일 이후"
+
+#: cps/search.py:198
+msgid "Published before "
+msgstr "발행일 이전"
+
+#: cps/search.py:220
+#, python-format
+msgid "Rating <= %(rating)s"
+msgstr "평점 <= %(rating)s"
+
+#: cps/search.py:222
+#, python-format
+msgid "Rating >= %(rating)s"
+msgstr "평점 >= %(rating)s"
+
+#: cps/search.py:224
+#, python-format
+msgid "Read Status = '%(status)s'"
+msgstr "읽은 상태 = %(status)s"
+
+#: cps/search.py:341
+msgid "Error on search for custom columns, please restart Calibre-Web"
+msgstr ""
+"사용자 정의 열을 검색하는 동안 오류가 발생했습니다. Calibre-Web을 다시 시작"
+"해 주세요."
+
+#: cps/search.py:371 cps/search.py:403 cps/templates/layout.html:121
+msgid "Advanced Search"
+msgstr "상세 검색"
+
+#: cps/shelf.py:34 cps/shelf.py:100
+msgid "Invalid shelf specified"
+msgstr "잘못된 서재가 지정되었습니다."
+
+#: cps/shelf.py:40
+msgid "Sorry you are not allowed to add a book to that shelf"
+msgstr "추가할 권한이 없습니다."
+
+#: cps/shelf.py:49
+#, python-format
+msgid "Book is already part of the shelf: %(shelfname)s"
+msgstr "이미 등록된 책입니다: %(shelfname)s"
+
+#: cps/shelf.py:63
+#, python-format
+msgid "%(book_id)s is a invalid Book Id. Could not be added to Shelf"
+msgstr "추가할 수 없습니다. %(book_id)s는 잘못된 책 ID입니다."
+
+#: cps/shelf.py:83
+#, python-format
+msgid "Book has been added to shelf: %(sname)s"
+msgstr "책이 등록되었습니다: %(sname)s"
+
+#: cps/shelf.py:105
+msgid "You are not allowed to add a book to the shelf"
+msgstr "책을 추가할 권한이 없습니다."
+
+#: cps/shelf.py:123
+#, python-format
+msgid "Books are already part of the shelf: %(name)s"
+msgstr "이미 등록된 책입니다: %(name)s"
+
+#: cps/shelf.py:135
+#, python-format
+msgid "Books have been added to shelf: %(sname)s"
+msgstr "책들이 등록되었습니다: %(sname)s"
+
+#: cps/shelf.py:142
+#, python-format
+msgid "Could not add books to shelf: %(sname)s"
+msgstr "책을 추가할 수 없습니다: %(sname)s"
+
+#: cps/shelf.py:188
+#, python-format
+msgid "Book has been removed from shelf: %(sname)s"
+msgstr "책이 서재에서 삭제되었습니다: %(sname)s"
+
+#: cps/shelf.py:197
+msgid "Sorry you are not allowed to remove a book from this shelf"
+msgstr "서재에서 책을 삭제할 권한이 없습니다."
+
+#: cps/shelf.py:207 cps/templates/layout.html:270
+msgid "Create a Shelf"
+msgstr "서재 생성"
+
+#: cps/shelf.py:215
+msgid "Sorry you are not allowed to edit this shelf"
+msgstr "서재를 수정할 권한이 없습니다."
+
+#: cps/shelf.py:217
+msgid "Edit a shelf"
+msgstr "서재 편집"
+
+#: cps/shelf.py:226
+msgid "Error deleting Shelf"
+msgstr "서재를 삭제하는 중 오류가 발생했습니다."
+
+#: cps/shelf.py:228
+msgid "Shelf successfully deleted"
+msgstr "서재가 삭제되었습니다."
+
+#: cps/shelf.py:278
+#, python-format
+msgid "Change order of Shelf: '%(name)s'"
+msgstr "서재 순서가 변경되었습니다: '%(name)s'"
+
+#: cps/shelf.py:313
+msgid "Sorry you are not allowed to create a public shelf"
+msgstr "공개 서재를 생성할 권한이 없습니다."
+
+#: cps/shelf.py:330
+#, python-format
+msgid "Shelf %(title)s created"
+msgstr "서재 %(title)s가 생성되었습니다."
+
+#: cps/shelf.py:333
+#, python-format
+msgid "Shelf %(title)s changed"
+msgstr "서재 %(title)s가 변경되었습니다."
+
+#: cps/shelf.py:347
+msgid "There was an error"
+msgstr "오류가 발생했습니다."
+
+#: cps/shelf.py:369
+#, python-format
+msgid "A public shelf with the name '%(title)s' already exists."
+msgstr "'%(title)s' 공개 서재가 이미 존재합니다."
+
+#: cps/shelf.py:380
+#, python-format
+msgid "A private shelf with the name '%(title)s' already exists."
+msgstr "'%(title)s' 개인 서재가 이미 존재합니다."
+
+#: cps/shelf.py:470
+#, python-format
+msgid "Shelf: '%(name)s'"
+msgstr "서재: '%(name)s'"
+
+#: cps/shelf.py:476
+msgid "Error opening shelf. Shelf does not exist or is not accessible"
+msgstr ""
+"서재를 여는 동안 오류가 발생했습니다. 서재가 존재하지 않거나 접근할 수 없습니"
+"다"
+
+#: cps/tasks_status.py:37 cps/templates/layout.html:159
+#: cps/templates/tasks.html:7
+msgid "Tasks"
+msgstr "작업"
+
+#: cps/tasks_status.py:53
+msgid "Waiting"
+msgstr "대기 중"
+
+#: cps/tasks_status.py:55
+msgid "Failed"
+msgstr "실패"
+
+#: cps/tasks_status.py:57
+msgid "Started"
+msgstr "시작됨"
+
+#: cps/tasks_status.py:59
+msgid "Finished"
+msgstr "종료됨"
+
+#: cps/tasks_status.py:61
+msgid "Ended"
+msgstr "종료됨"
+
+#: cps/tasks_status.py:63
+msgid "Cancelled"
+msgstr "취소됨"
+
+#: cps/tasks_status.py:65
+msgid "Unknown Status"
+msgstr "알 수 없는 상태"
+
+#: cps/updater.py:430 cps/updater.py:441 cps/updater.py:542 cps/updater.py:557
+msgid "Unexpected data while reading update information"
+msgstr "업데이트 정보를 읽는 중 알 수 없는 문제가 발생했습니다."
+
+#: cps/updater.py:437 cps/updater.py:549
+msgid "No update available. You already have the latest version installed"
+msgstr "업데이트가 없습니다. 최신 버전이 설치되어 있습니다."
+
+#: cps/updater.py:456
+msgid ""
+"A new update is available. Click on the button below to update to the latest "
+"version."
+msgstr ""
+"새로운 업데이트가 있습니다. 아래 버튼을 클릭해 최신 버전으로 업데이트하세요."
+
+#: cps/updater.py:473
+msgid "Could not fetch update information"
+msgstr "업데이트 정보를 가져올 수 없습니다."
+
+#: cps/updater.py:484
+msgid "Click on the button below to update to the latest stable version."
+msgstr "아래 버튼을 클릭해 최신 버전으로 업데이트하세요."
+
+#: cps/updater.py:492 cps/updater.py:506 cps/updater.py:517
+#, python-format
+msgid ""
+"A new update is available. Click on the button below to update to version: "
+"%(version)s"
+msgstr ""
+"새로운 업데이트가 있습니다. %(version)s으로 업데이트하려면 아래 버튼을 클릭하"
+"세요."
+
+#: cps/updater.py:535
+msgid "No release information available"
+msgstr "업데이트 정보가 없습니다."
+
+#: cps/templates/index.html:6 cps/web.py:481
+msgid "Discover (Random Books)"
+msgstr "추천 (무작위)"
+
+#: cps/web.py:531
+msgid "Hot Books (Most Downloaded)"
+msgstr "인기 책 (가장 많이 다운로드된 책)"
+
+#: cps/web.py:562
+#, python-format
+msgid "Downloaded books by %(user)s"
+msgstr "%(user)s이(가) 다운로드한 책"
+
+#: cps/web.py:595
+#, python-format
+msgid "Author: %(name)s"
+msgstr "저자: %(name)s"
+
+#: cps/web.py:631
+#, python-format
+msgid "Publisher: %(name)s"
+msgstr "출판사: %(name)s"
+
+#: cps/web.py:659
+#, python-format
+msgid "Series: %(serie)s"
+msgstr "시리즈: %(serie)s"
+
+#: cps/web.py:673
+msgid "Rating: None"
+msgstr "평점: 없음"
+
+#: cps/web.py:682
+#, python-format
+msgid "Rating: %(rating)s stars"
+msgstr "평점: %(rating)s"
+
+#: cps/web.py:713
+#, python-format
+msgid "File format: %(format)s"
+msgstr "파일 형식: %(format)s"
+
+#: cps/web.py:748
+#, python-format
+msgid "Category: %(name)s"
+msgstr "카테고리: %(name)s"
+
+#: cps/web.py:777
+#, python-format
+msgid "Language: %(name)s"
+msgstr "언어: %(name)s"
+
+#: cps/templates/admin.html:17 cps/web.py:1042
+msgid "Downloads"
+msgstr "다운로드"
+
+#: cps/web.py:1194
+msgid "File formats list"
+msgstr "파일 형식 목록"
+
+#: cps/web.py:1349 cps/web.py:1370
+msgid "Please configure the SMTP mail settings first..."
+msgstr "SMTP 메일 설정을 해주세요."
+
+#: cps/web.py:1356
+#, python-format
+msgid "Success! Book queued for sending to %(eReadermail)s"
+msgstr "%(eReadermail)s에 전송 작업이 추가되었습니다."
+
+#: cps/web.py:1359 cps/web.py:1388
+#, python-format
+msgid "Oops! There was an error sending book: %(res)s"
+msgstr "전송 중 오류가 발생했습니다: %(res)s"
+
+#: cps/web.py:1361
+msgid "Oops! Please update your profile with a valid eReader Email."
+msgstr ""
+"문제가 발생했습니다. 프로필에 유효한 전자책 리더 이메일을 설정해 주세요."
+
+#: cps/web.py:1378
+msgid "No email addresses selected"
+msgstr ""
+
+#: cps/web.py:1386
+#, fuzzy
+msgid "Success! Book queued for sending to selected addresses"
+msgstr "%(eReadermail)s에 전송 작업이 추가되었습니다."
+
+#: cps/web.py:1405
+msgid "Please wait one minute to register next user"
+msgstr "다음 사용자를 등록은 1분 뒤 가능합니다."
+
+#: cps/templates/layout.html:132 cps/templates/layout.html:174
+#: cps/templates/login.html:27 cps/templates/register.html:17 cps/web.py:1406
+#: cps/web.py:1410 cps/web.py:1415 cps/web.py:1419 cps/web.py:1425
+#: cps/web.py:1450 cps/web.py:1454 cps/web.py:1467 cps/web.py:1470
+msgid "Register"
+msgstr "등록"
+
+#: cps/web.py:1409 cps/web.py:1517
+msgid "Connection error to limiter backend, please contact your administrator"
+msgstr ""
+"Flask-Limiter 시스템 연결에 문제가 발생했습니다. 관리자에게 문의하세요."
+
+#: cps/web.py:1414 cps/web.py:1466
+msgid ""
+"Oops! Email server is not configured, please contact your administrator."
+msgstr "이메일 서버가 설정되지 않았습니다. 관리자에게 문의하세요."
+
+#: cps/web.py:1452
+msgid "Oops! Your Email is not allowed."
+msgstr "사용할 수 없는 이메일입니다."
+
+#: cps/web.py:1455
+msgid "Success! Confirmation Email has been sent."
+msgstr "인증 이메일을 발송했습니다."
+
+#: cps/web.py:1500 cps/web.py:1523
+msgid "Cannot activate LDAP authentication"
+msgstr "LDAP 인증을 활성화할 수 없습니다."
+
+#: cps/web.py:1513
+msgid "Please wait one minute before next login"
+msgstr "1분 후 시도해 주세요."
+
+#: cps/web.py:1532
+#, python-format
+msgid "you are now logged in as: '%(nickname)s'"
+msgstr "'%(nickname)s'로 로그인했습니다."
+
+#: cps/web.py:1539
+#, python-format
+msgid ""
+"Fallback Login as: '%(nickname)s', LDAP Server not reachable, or user not "
+"known"
+msgstr ""
+"'%(nickname)s'(으)로 대체 로그인했습니다. LDAP 서버에 연결할 수 없거나 존재하"
+"지 않는 사용자입니다."
+
+#: cps/web.py:1544
+#, python-format
+msgid "Could not login: %(message)s"
+msgstr "로그인할 수 없습니다: %(message)s"
+
+#: cps/web.py:1548 cps/web.py:1573
+msgid "Wrong Username or Password"
+msgstr "사용자 이름 또는 비밀번호가 올바르지 않습니다."
+
+#: cps/web.py:1555
+msgid "New Password was sent to your email address"
+msgstr "새 비밀번호가 이메일로 전송되었습니다"
+
+#: cps/web.py:1559
+msgid "An unknown error occurred. Please try again later."
+msgstr "알 수 없는 오류가 발생했습니다. 나중에 다시 시도해 주세요."
+
+#: cps/web.py:1561
+msgid "Please enter valid username to reset password"
+msgstr "비밀번호를 재설정하려면 올바른 사용자 이름을 입력하세요."
+
+#: cps/web.py:1569
+#, python-format
+msgid "You are now logged in as: '%(nickname)s'"
+msgstr "'%(nickname)s'로 로그인했습니다."
+
+#: cps/web.py:1643 cps/web.py:1696
+#, python-format
+msgid "%(name)s's Profile"
+msgstr "%(name)s 프로필"
+
+#: cps/web.py:1660
+msgid "Success! Profile Updated"
+msgstr "프로필이 업데이트되었습니다."
+
+#: cps/web.py:1664
+msgid "Oops! An account already exists for this Email."
+msgstr "이미 등록된 이메일 주소입니다."
+
+#: cps/web.py:1770
+msgid "Invalid book ID."
+msgstr "잘못된 "
+
+#: cps/services/gmail.py:48
+msgid "Found no valid gmail.json file with OAuth information"
+msgstr "인증 정보가 포함된 유요한 gmail.json을 찾을 수 없습니다."
+
+#: cps/tasks/clean.py:18
+msgid "Delete temp folder contents"
+msgstr "임시 폴더 비우기"
+
+#: cps/tasks/convert.py:98
+#, python-format
+msgid "%(book)s send to E-Reader"
+msgstr "%(book)s을 전자책 리더로 전송"
+
+#: cps/tasks/convert.py:162
+#, python-format
+msgid "Calibre ebook-convert %(tool)s not found"
+msgstr "Calibre ebook-convert %(tool)s을(를) 찾을 수 없습니다."
+
+#: cps/tasks/convert.py:196
+#, python-format
+msgid "%(format)s format not found on disk"
+msgstr "%(format)s 형식을 찾을 수 없습니다."
+
+#: cps/tasks/convert.py:200
+msgid "Ebook converter failed with unknown error"
+msgstr "알 수 없는 오류로 변환에 실패했습니다."
+
+#: cps/tasks/convert.py:219
+#, python-format
+msgid "Kepubify-converter failed: %(error)s"
+msgstr "Kepubify 변환에 실패했습니다: %(error)s"
+
+#: cps/tasks/convert.py:239
+#, python-format
+msgid "Converted file not found or more than one file in folder %(folder)s"
+msgstr ""
+"변환된 파일을 찾을 수 없거나 %(folder)s 폴더에 하나 이상의 파일이 존재합니다."
+
+#: cps/tasks/convert.py:274 cps/tasks/convert.py:325
+#, python-format
+msgid "Calibre failed with error: %(error)s"
+msgstr "Calibre가 다음 오류로 실패했습니다: %(error)s"
+
+#: cps/tasks/convert.py:302
+#, python-format
+msgid "Ebook-converter failed: %(error)s"
+msgstr "변환에 실패했습니다: %(error)s"
+
+#: cps/tasks/convert.py:330
+msgid "Convert"
+msgstr "변환"
+
+#: cps/tasks/database.py:15
+msgid "Reconnecting Calibre database"
+msgstr "Calibre 데이터베이스를 다시 연결합니다."
+
+#: cps/tasks/mail.py:268
+msgid "E-mail"
+msgstr "이메일"
+
+#: cps/tasks/metadata_backup.py:23
+msgid "Backing up Metadata"
+msgstr "메타데이터를 백업하고 있습니다."
+
+#: cps/tasks/thumbnail.py:85
+#, python-format
+msgid "Generated %(count)s cover thumbnails"
+msgstr "%(count)s개의 표지 섬네일을 생성했습니다."
+
+#: cps/tasks/thumbnail.py:220 cps/tasks/thumbnail.py:433
+#: cps/tasks/thumbnail.py:501
+msgid "Cover Thumbnails"
+msgstr "표지 섬네일"
+
+#: cps/tasks/thumbnail.py:279
+#, python-brace-format
+msgid "Generated {0} series thumbnails"
+msgstr "{0}개의 시리즈 섬네일을 생성했습니다."
+
+#: cps/tasks/thumbnail.py:444
+msgid "Clearing cover thumbnail cache"
+msgstr "표지 섬네일 캐시를 삭제합니다."
+
+#: cps/tasks/upload.py:28 cps/templates/admin.html:21
+#: cps/templates/layout.html:151 cps/templates/user_table.html:145
+msgid "Upload"
+msgstr "업로드"
+
+#: cps/templates/admin.html:9
+msgid "Users&nbsp;&nbsp;👤"
+msgstr ""
+
+#: cps/templates/admin.html:14 cps/templates/login.html:9
+#: cps/templates/login.html:10 cps/templates/register.html:9
+#: cps/templates/user_edit.html:10 cps/templates/user_table.html:134
+msgid "Username"
+msgstr "사용자 이름"
+
+#: cps/templates/admin.html:15 cps/templates/register.html:14
+#: cps/templates/user_edit.html:15 cps/templates/user_table.html:135
+msgid "Email"
+msgstr "이메일 주소"
+
+#: cps/templates/admin.html:16
+msgid "Send to eReader Email"
+msgstr "전자책 리더로 보낼 이메일"
+
+#: cps/templates/admin.html:18 cps/templates/layout.html:162
+#: cps/templates/user_table.html:143
+msgid "Admin"
+msgstr "관리자"
+
+#: cps/templates/admin.html:19 cps/templates/login.html:13
+#: cps/templates/login.html:14 cps/templates/user_edit.html:23
+msgid "Password"
+msgstr "비밀번호"
+
+#: cps/templates/admin.html:23 cps/templates/detail.html:28
+#: cps/templates/detail.html:41 cps/templates/shelf.html:8
+#: cps/templates/user_table.html:146
+msgid "Download"
+msgstr "다운로드"
+
+#: cps/templates/admin.html:24
+msgid "View Books"
+msgstr "책 보기"
+
+#: cps/templates/admin.html:25 cps/templates/book_table.html:47
+#: cps/templates/book_table.html:325 cps/templates/user_table.html:131
+#: cps/templates/user_table.html:148
+msgid "Edit"
+msgstr "편집"
+
+#: cps/templates/admin.html:26 cps/templates/book_edit.html:17
+#: cps/templates/book_table.html:62 cps/templates/book_table.html:141
+#: cps/templates/book_table.html:190 cps/templates/duplicates.html:366
+#: cps/templates/modal_dialogs.html:63 cps/templates/modal_dialogs.html:116
+#: cps/templates/user_edit.html:82 cps/templates/user_table.html:149
+msgid "Delete"
+msgstr "삭제"
+
+#: cps/templates/admin.html:27
+msgid "Public Shelf"
+msgstr "공개 서재"
+
+#: cps/templates/admin.html:56
+msgid "Manage Profile Pictures"
+msgstr "계정 사진 변경"
+
+#: cps/templates/admin.html:58
+msgid "Import LDAP Users"
+msgstr "LDAP 사용자 가져오기"
+
+#: cps/templates/admin.html:65
+msgid "Email Server Settings&nbsp;&nbsp;📬"
+msgstr "이메일 서버 설정&nbsp;&nbsp;📬"
+
+#: cps/templates/admin.html:70 cps/templates/email_edit.html:31
+msgid "SMTP Hostname"
+msgstr "SMTP 서버명"
+
+#: cps/templates/admin.html:74 cps/templates/email_edit.html:35
+msgid "SMTP Port"
+msgstr "SMTP 포트"
+
+#: cps/templates/admin.html:78 cps/templates/email_edit.html:39
+msgid "Encryption"
+msgstr "보안 연결"
+
+#: cps/templates/admin.html:82 cps/templates/email_edit.html:47
+msgid "SMTP Login"
+msgstr "SMTP 로그인"
+
+#: cps/templates/admin.html:86 cps/templates/admin.html:97
+#: cps/templates/email_edit.html:55
+msgid "From Email"
+msgstr "보내는 이메일"
+
+#: cps/templates/admin.html:93
+msgid "Email Service"
+msgstr "이메일 서비스"
+
+#: cps/templates/admin.html:94
+msgid "Gmail via Oauth2"
+msgstr "Gmail via Oauth2"
+
+#: cps/templates/admin.html:109
+msgid "Configuration&nbsp;&nbsp;⚙️"
+msgstr "설정&nbsp;&nbsp;⚙️"
+
+#: cps/templates/admin.html:112
+msgid "Calibre Database Directory"
+msgstr "Calibre 데이터베이스 경로"
+
+#: cps/templates/admin.html:116 cps/templates/config_edit.html:68
+msgid "Log Level"
+msgstr "로그 레벨"
+
+#: cps/templates/admin.html:120
+msgid "Port"
+msgstr "포트"
+
+#: cps/templates/admin.html:125
+msgid "External Port"
+msgstr "외부 포트"
+
+#: cps/templates/admin.html:132 cps/templates/config_view_edit.html:28
+msgid "Books per Page"
+msgstr "페이지당 표시 개수"
+
+#: cps/templates/admin.html:136
+msgid "Uploads"
+msgstr "업로드"
+
+#: cps/templates/admin.html:140
+msgid "Anonymous Browsing"
+msgstr "익명 보기"
+
+#: cps/templates/admin.html:144
+msgid "Public Registration"
+msgstr "공개 등록"
+
+#: cps/templates/admin.html:148
+msgid "Magic Link Remote Login"
+msgstr "매직 링크 원격 로그인"
+
+#: cps/templates/admin.html:152
+msgid "Reverse Proxy Login"
+msgstr "리버스 프록시 로그인"
+
+#: cps/templates/admin.html:157 cps/templates/config_edit.html:186
+msgid "Reverse Proxy Header Name"
+msgstr "리버스 프록시 헤더 이름"
+
+#: cps/templates/admin.html:162
+msgid "Edit Calibre Database Configuration"
+msgstr "Calibre 데이터베이스 설정"
+
+#: cps/templates/admin.html:163
+msgid "Edit Basic Configuration"
+msgstr "기본 설정"
+
+#: cps/templates/admin.html:164
+msgid "Edit UI Configuration"
+msgstr "UI 설정"
+
+#: cps/templates/admin.html:170
+msgid "Scheduled Tasks&nbsp;&nbsp;⌛"
+msgstr "예약된 작업&nbsp;&nbsp;⌛"
+
+#: cps/templates/admin.html:173 cps/templates/schedule_edit.html:12
+#: cps/templates/tasks.html:18
+msgid "Start Time"
+msgstr "시작 시간"
+
+#: cps/templates/admin.html:177 cps/templates/schedule_edit.html:20
+msgid "Maximum Duration"
+msgstr "최대 기간"
+
+#: cps/templates/admin.html:181 cps/templates/schedule_edit.html:29
+msgid "Generate Thumbnails"
+msgstr "섬네일 생성"
+
+#: cps/templates/admin.html:185
+msgid "Generate series cover thumbnails"
+msgstr "시리즈 표지 섬네일 생성"
+
+#: cps/templates/admin.html:189 cps/templates/admin.html:228
+#: cps/templates/schedule_edit.html:37
+msgid "Reconnect Calibre Database"
+msgstr "Calibre 데이터베이스 다시 연결"
+
+#: cps/templates/admin.html:193 cps/templates/schedule_edit.html:41
+msgid "Generate Metadata Backup Files"
+msgstr "메타데이터 백업"
+
+#: cps/templates/admin.html:200
+msgid "Refresh Thumbnail Cache"
+msgstr "섬네일 캐시 새로 고침"
+
+#: cps/templates/admin.html:207
+msgid "CWA Admin Functions&nbsp;&nbsp;⚡"
+msgstr "CWA 관리자 기능&nbsp;&nbsp;⚡"
+
+#: cps/templates/admin.html:208
+msgid "CWA Settings"
+msgstr "CWA 설정"
+
+#: cps/templates/admin.html:209
+msgid "Show CWA Stats"
+msgstr "CWA 통계 보기"
+
+#: cps/templates/admin.html:210
+msgid "Check CWA Status"
+msgstr "CWA 상태 확인"
+
+#: cps/templates/admin.html:211
+msgid "Setup KOReader Sync"
+msgstr "KOReader Sync 설치"
+
+#: cps/templates/admin.html:214
+msgid "CWA Library Conversion Service"
+msgstr "CWA 서재 변환 서비스"
+
+#: cps/templates/admin.html:215
+msgid "CWA Send-to-Kindle EPUB Fixer Service"
+msgstr "CWA Send-to-Kindle EPUB 수정 서비스"
+
+#: cps/templates/admin.html:218
+msgid "CWA GitHub"
+msgstr "CWA Github"
+
+#: cps/templates/admin.html:219
+msgid "CWA Discord Server"
+msgstr "CWA Discord 서버"
+
+#: cps/templates/admin.html:223
+msgid "Administration&nbsp;&nbsp;🚀"
+msgstr "관리&nbsp;&nbsp;🚀"
+
+#: cps/templates/admin.html:224
+msgid "Download Debug Package"
+msgstr "디버그 패키지 다운로드"
+
+#: cps/templates/admin.html:225
+msgid "View Logs"
+msgstr "로그 보기"
+
+#: cps/templates/admin.html:231
+msgid "Restart"
+msgstr "재시작"
+
+#: cps/templates/admin.html:232
+msgid "Shutdown"
+msgstr "종료"
+
+#: cps/templates/admin.html:241
+msgid "Version Information&nbsp;&nbsp;📜"
+msgstr "버전 정보&nbsp;&nbsp;📜"
+
+#: cps/templates/admin.html:246
+msgid "Version"
+msgstr "버전"
+
+#: cps/templates/admin.html:247
+msgid "Details"
+msgstr "세부 정보"
+
+#: cps/templates/admin.html:254 cps/templates/admin.html:259
+msgid "Current Version"
+msgstr "현재 버전"
+
+#: cps/templates/admin.html:264 cps/templates/admin.html:269
+msgid "-"
+msgstr "-"
+
+#: cps/templates/admin.html:276
+msgid "Check for Update"
+msgstr "업데이트 확인"
+
+#: cps/templates/admin.html:277
+msgid "Perform Update"
+msgstr "업데이트 실행"
+
+#: cps/templates/admin.html:290
+msgid "Are you sure you want to restart?"
+msgstr "재시작하시겠습니까?"
+
+#: cps/templates/admin.html:295 cps/templates/admin.html:309
+#: cps/templates/admin.html:329 cps/templates/config_db.html:103
+#: cps/templates/duplicates.html:389 cps/templates/duplicates.html:411
+msgid "OK"
+msgstr "예"
+
+#: cps/templates/admin.html:296 cps/templates/admin.html:310
+#: cps/templates/book_edit.html:234 cps/templates/book_table.html:172
+#: cps/templates/book_table.html:191 cps/templates/book_table.html:211
+#: cps/templates/book_table.html:231 cps/templates/book_table.html:251
+#: cps/templates/book_table.html:271 cps/templates/book_table.html:326
+#: cps/templates/book_table.html:362 cps/templates/config_db.html:86
+#: cps/templates/config_edit.html:535 cps/templates/config_view_edit.html:176
+#: cps/templates/cwa_convert_library.html:23
+#: cps/templates/cwa_epub_fixer.html:23 cps/templates/detail.html:112
+#: cps/templates/detail.html:412 cps/templates/duplicates.html:367
+#: cps/templates/modal_dialogs.html:64 cps/templates/modal_dialogs.html:99
+#: cps/templates/modal_dialogs.html:117 cps/templates/modal_dialogs.html:135
+#: cps/templates/schedule_edit.html:45 cps/templates/shelf_edit.html:27
+#: cps/templates/tasks.html:47 cps/templates/user_edit.html:159
+msgid "Cancel"
+msgstr "취소"
+
+#: cps/templates/admin.html:308
+msgid "Are you sure you want to shutdown?"
+msgstr "종료하시겠습니까?"
+
+#: cps/templates/admin.html:320
+msgid "Updating, please do not reload this page"
+msgstr "업데이트 중입니다. 이 페이지를 새로고침 하지 마세요."
+
+#: cps/templates/author.html:15
+msgid "via"
+msgstr "통해"
+
+#: cps/templates/author.html:23
+msgid "In Library"
+msgstr "서재에 있음"
+
+#: cps/templates/author.html:26 cps/templates/index.html:74
+#: cps/templates/search.html:31 cps/templates/shelf.html:20
+msgid "Sort according to book date, newest first"
+msgstr "등록 최신순"
+
+#: cps/templates/author.html:27 cps/templates/index.html:75
+#: cps/templates/search.html:32 cps/templates/shelf.html:21
+msgid "Sort according to book date, oldest first"
+msgstr "등록 오래된 순"
+
+#: cps/templates/author.html:28 cps/templates/index.html:76
+#: cps/templates/search.html:33 cps/templates/shelf.html:22
+msgid "Sort title in alphabetical order"
+msgstr "이름순"
+
+#: cps/templates/author.html:29 cps/templates/index.html:77
+#: cps/templates/search.html:34 cps/templates/shelf.html:23
+msgid "Sort title in reverse alphabetical order"
+msgstr "이름 역순"
+
+#: cps/templates/author.html:30 cps/templates/index.html:80
+#: cps/templates/search.html:37 cps/templates/shelf.html:26
+msgid "Sort according to publishing date, newest first"
+msgstr "발행일 최신순"
+
+#: cps/templates/author.html:31 cps/templates/index.html:81
+#: cps/templates/search.html:38 cps/templates/shelf.html:27
+msgid "Sort according to publishing date, oldest first"
+msgstr "발행일 오래된 순"
+
+#: cps/templates/author.html:56 cps/templates/author.html:113
+#: cps/templates/index.html:30 cps/templates/index.html:113
+#: cps/templates/search.html:67 cps/templates/shelf.html:58
+msgid "reduce"
+msgstr "줄이기"
+
+#: cps/templates/author.html:97
+msgid "More by"
+msgstr "더보기"
+
+#: cps/templates/book_edit.html:11
+msgid "Delete Book"
+msgstr "책 삭제"
+
+#: cps/templates/book_edit.html:14
+msgid "Delete formats:"
+msgstr "형식 삭제:"
+
+#: cps/templates/book_edit.html:25
+msgid "Convert book format:"
+msgstr "책 형식 변경:"
+
+#: cps/templates/book_edit.html:30
+msgid "Convert from:"
+msgstr "변환 전 유형:"
+
+#: cps/templates/book_edit.html:32 cps/templates/book_edit.html:39
+msgid "select an option"
+msgstr "옵션 선택"
+
+#: cps/templates/book_edit.html:37
+msgid "Convert to:"
+msgstr "변환 후 유형:"
+
+#: cps/templates/book_edit.html:46
+msgid "Convert book"
+msgstr "책 변환"
+
+#: cps/templates/book_edit.html:53 cps/templates/book_edit.html:71
+#: cps/templates/layout.html:148 cps/templates/layout.html:247
+msgid "Uploading..."
+msgstr "업로드 중"
+
+#: cps/templates/book_edit.html:53 cps/templates/book_edit.html:270
+#: cps/templates/book_table.html:339 cps/templates/layout.html:148
+#: cps/templates/layout.html:316 cps/templates/modal_dialogs.html:34
+#: cps/templates/user_edit.html:178
+msgid "Close"
+msgstr "닫기"
+
+#: cps/templates/book_edit.html:53 cps/templates/duplicates.html:400
+#: cps/templates/layout.html:148
+msgid "Error"
+msgstr "오류"
+
+#: cps/templates/book_edit.html:58
+msgid "Upload Format"
+msgstr "다른 형식 업로드"
+
+#: cps/templates/book_edit.html:92 cps/templates/book_edit.html:345
+#: cps/templates/search_form.html:12
+msgid "Author"
+msgstr "저자"
+
+#: cps/templates/book_edit.html:96 cps/templates/search_form.html:52
+msgid "Tags"
+msgstr "태그"
+
+#: cps/templates/book_edit.html:104 cps/templates/book_table.html:108
+msgid "Series ID"
+msgstr "시리즈 ID"
+
+#: cps/templates/book_edit.html:107
+msgid "Published Date"
+msgstr "발행일"
+
+#: cps/templates/book_edit.html:116 cps/templates/book_edit.html:346
+#: cps/templates/detail.html:266 cps/templates/listenmp3.html:102
+#: cps/templates/search_form.html:16
+msgid "Publisher"
+msgstr "출판사"
+
+#: cps/templates/book_edit.html:120 cps/templates/detail.html:231
+#: cps/templates/listenmp3.html:69 cps/templates/user_edit.html:33
+msgid "Language"
+msgstr "언어"
+
+#: cps/templates/book_edit.html:124
+msgid "Rating"
+msgstr "평점"
+
+#: cps/templates/book_edit.html:128 cps/templates/book_edit.html:347
+#: cps/templates/search_form.html:154
+msgid "Description"
+msgstr "설명"
+
+#: cps/templates/book_edit.html:132
+msgid "Identifiers"
+msgstr "식별자"
+
+#: cps/templates/book_edit.html:136 cps/templates/book_edit.html:356
+msgid "Identifier Type"
+msgstr "식별자 유형"
+
+#: cps/templates/book_edit.html:137 cps/templates/book_edit.html:357
+msgid "Identifier Value"
+msgstr "식별자 값"
+
+#: cps/templates/book_edit.html:138 cps/templates/book_edit.html:358
+#: cps/templates/user_table.html:24
+msgid "Remove"
+msgstr "삭제"
+
+#: cps/templates/book_edit.html:143
+msgid "Add Identifier"
+msgstr "식별자 추가"
+
+#: cps/templates/book_edit.html:147
+msgid ""
+"Fetch Cover from URL (JPEG - Image will be downloaded and stored in database)"
+msgstr "URL로 표지 추가 (JPEG 이미지를 다운로드합니다)"
+
+#: cps/templates/book_edit.html:151
+msgid "Upload Cover from Local Disk"
+msgstr "내 컴퓨터에서 표지 업로드"
+
+#: cps/templates/book_edit.html:163 cps/templates/search_form.html:46
+#: cps/templates/search_form.html:167
+msgid "Yes"
+msgstr "예"
+
+#: cps/templates/book_edit.html:164 cps/templates/search_form.html:47
+#: cps/templates/search_form.html:168
+msgid "No"
+msgstr "아니오"
+
+#: cps/templates/book_edit.html:229
+msgid "View Book on Save"
+msgstr "저장 후 상세정보로"
+
+#: cps/templates/book_edit.html:232 cps/templates/book_edit.html:250
+msgid "Fetch Metadata"
+msgstr "메타데이터 가져오기"
+
+#: cps/templates/book_edit.html:233 cps/templates/config_db.html:85
+#: cps/templates/config_edit.html:534 cps/templates/config_view_edit.html:175
+#: cps/templates/email_edit.html:65 cps/templates/schedule_edit.html:44
+#: cps/templates/shelf_edit.html:25 cps/templates/shelf_order.html:41
+#: cps/templates/user_edit.html:157
+msgid "Save"
+msgstr "저장"
+
+#: cps/templates/book_edit.html:253
+msgid "Keyword"
+msgstr "키워드"
+
+#: cps/templates/book_edit.html:254
+msgid "Search keyword"
+msgstr "키워드 검색"
+
+#: cps/templates/book_edit.html:266 cps/templates/book_edit.html:342
+msgid "Loading..."
+msgstr "불러오는 중"
+
+#: cps/templates/book_edit.html:343
+msgid "Search error!"
+msgstr "오류가 발생했습니다!"
+
+#: cps/templates/book_edit.html:344
+msgid "No Result(s) found! Please try another keyword."
+msgstr "검색 결과가 없습니다. 다른 검색어로 검색해 보세요."
+
+#: cps/templates/book_edit.html:348
+msgid "Source"
+msgstr "출처"
+
+#: cps/templates/book_table.html:12 cps/templates/book_table.html:108
+#: cps/templates/user_table.html:14 cps/templates/user_table.html:77
+#: cps/templates/user_table.html:100
+msgid "This Field is Required"
+msgstr "이 항목은 필수입니다."
+
+#: cps/templates/book_table.html:44 cps/templates/book_table.html:171
+msgid "Merge"
+msgstr "병합"
+
+#: cps/templates/book_table.html:50 cps/templates/book_table.html:210
+msgid "Archive"
+msgstr "보관"
+
+#: cps/templates/book_table.html:53 cps/templates/book_table.html:230
+msgid "Unarchive"
+msgstr "보관 해제"
+
+#: cps/templates/book_table.html:56 cps/templates/book_table.html:250
+msgid "Mark as read"
+msgstr "읽음으로 표시"
+
+#: cps/templates/book_table.html:59 cps/templates/book_table.html:270
+msgid "Mark as unread"
+msgstr "읽지 않음으로 표시"
+
+#: cps/templates/book_table.html:65
+msgid "Add to Shelf"
+msgstr "책장에 추가"
+
+#: cps/templates/book_table.html:67
+msgid " Exchange author & title"
+msgstr "저자와 제목 바꾸기"
+
+#: cps/templates/book_table.html:72
+msgid "Select all"
+msgstr "모두 선택"
+
+#: cps/templates/book_table.html:75
+msgid "Clear all"
+msgstr "선택 해제"
+
+#: cps/templates/book_table.html:84
+msgid "Update Title Sort automatically  "
+msgstr "자동으로 제목 정렬 업데이트 "
+
+#: cps/templates/book_table.html:88
+msgid "Update Author Sort automatically"
+msgstr "자동으로 저자 정렬 업데이트"
+
+#: cps/templates/book_table.html:102 cps/templates/book_table.html:108
+msgid "Enter Title"
+msgstr "제목 입력"
+
+#: cps/templates/book_table.html:102 cps/templates/config_view_edit.html:24
+#: cps/templates/shelf_edit.html:8
+msgid "Title"
+msgstr "제목"
+
+#: cps/templates/book_table.html:103
+msgid "Enter Title Sort"
+msgstr "제목 정렬 입력"
+
+#: cps/templates/book_table.html:103
+msgid "Title Sort"
+msgstr "제목 정렬"
+
+#: cps/templates/book_table.html:104
+msgid "Enter Author Sort"
+msgstr "저자 정렬 입력"
+
+#: cps/templates/book_table.html:104
+msgid "Author Sort"
+msgstr "저자 정렬"
+
+#: cps/templates/book_table.html:105
+msgid "Enter Authors"
+msgstr "저자 입력"
+
+#: cps/templates/book_table.html:106
+msgid "Enter Categories"
+msgstr "카테고리 입력"
+
+#: cps/templates/book_table.html:107
+msgid "Enter Series"
+msgstr "시리즈 입력"
+
+#: cps/templates/book_table.html:109
+msgid "Enter Languages"
+msgstr "언어 입력"
+
+#: cps/templates/book_table.html:110
+msgid "Publishing Date"
+msgstr "발행일"
+
+#: cps/templates/book_table.html:111
+msgid "Enter Publishers"
+msgstr "출판사 입력"
+
+#: cps/templates/book_table.html:112
+msgid "Enter comments"
+msgstr "설명 입력"
+
+#: cps/templates/book_table.html:112
+msgid "Comments"
+msgstr "설명"
+
+#: cps/templates/book_table.html:114
+msgid "Archived?"
+msgstr "보관됨?"
+
+#: cps/templates/book_table.html:116
+msgid "Read?"
+msgstr "읽음?"
+
+#: cps/templates/book_table.html:119 cps/templates/book_table.html:121
+#: cps/templates/book_table.html:123 cps/templates/book_table.html:125
+#: cps/templates/book_table.html:129 cps/templates/book_table.html:131
+#: cps/templates/book_table.html:135
+msgid "Enter "
+msgstr "입력 "
+
+#: cps/templates/book_table.html:158 cps/templates/book_table.html:182
+#: cps/templates/book_table.html:202 cps/templates/book_table.html:222
+#: cps/templates/book_table.html:242 cps/templates/book_table.html:262
+#: cps/templates/duplicates.html:355 cps/templates/modal_dialogs.html:46
+#: cps/templates/tasks.html:37
+msgid "Are you really sure?"
+msgstr "정말로 하시겠습니까?"
+
+#: cps/templates/book_table.html:162
+msgid "Books with Title will be merged from:"
+msgstr "다음 책들을 병합합니다:"
+
+#: cps/templates/book_table.html:166
+msgid "Into Book with Title:"
+msgstr "다음 책으로 병합:"
+
+#: cps/templates/book_table.html:186
+msgid "The following books will be deleted:"
+msgstr "다음 책이 삭제됩니다:"
+
+#: cps/templates/book_table.html:206
+msgid "The following books will be archived:"
+msgstr "다음 책이 보관됩니다:"
+
+#: cps/templates/book_table.html:226
+msgid "The following books will be unarchived:"
+msgstr "다음 책이 보관해제됩니다:"
+
+#: cps/templates/book_table.html:246
+msgid "The following books will be marked read:"
+msgstr "다읍 책이 읽음표시됩니다:"
+
+#: cps/templates/book_table.html:266
+msgid "The following books will be marked unread:"
+msgstr "다음 책의 읽음표시가 해제됩니다:"
+
+#: cps/templates/book_table.html:282 cps/templates/detail.html:410
+msgid "Edit Metadata"
+msgstr "메타데이터 편집"
+
+#: cps/templates/book_table.html:285
+msgid "Edit the fields you want changed. Blank fields will be ignored:"
+msgstr "바꾸고자 하는 입력란을 수정하십시오. 빈 입력란은 무시됩니다:"
+
+#: cps/templates/book_table.html:340
+msgid "Select a Shelf"
+msgstr "책장 생성"
+
+#: cps/templates/book_table.html:343
+msgid "Please select a shelf to add the selected books to:"
+msgstr "선택한 책을 추가할 책장을 선택하십시오:"
+
+#: cps/templates/book_table.html:345
+msgid "-- Select a Shelf --"
+msgstr "-- 책장 선택 --"
+
+#: cps/templates/book_table.html:363 cps/templates/email_edit.html:81
+#: cps/templates/email_edit.html:108 cps/templates/user_table.html:27
+msgid "Add"
+msgstr "추가"
+
+#: cps/templates/config_db.html:13
+msgid "Location of Calibre Database (metadata.db file)"
+msgstr "Calibre 데이터베이스 경로 (metadata.db 파일)"
+
+#: cps/templates/config_db.html:23
+msgid ""
+"CWA is configured so that your Calibre Database (<code>metadata.db</code> "
+"file) should always be somewhere in <code>/calibre-library</code>.\n"
+"        CWA automatically searches whatever directory you've bound to <code>/"
+"calibre-library</code> in your docker-compose file for existing Calibre\n"
+"        Libraries/metadata.db files on start up. If it finds just one "
+"existing library, it mounts it automatically, if it find multiple, by "
+"default\n"
+"        it will mount the largest one automatically and if it doesn't find "
+"any, it will automatically create and mount a new one. For more details,\n"
+"        <a href=\"https://github.com/crocodilestick/Calibre-Web-Automated/"
+"wiki/Configuration#database-configuration\">see here</a>!"
+msgstr ""
+"CWA는 Calibre 데이터베이스(metadata.db 파일)가 항상 <code>/calibre-library</"
+"code>에 위치하도록 구성되어 있습니다.\n"
+"CWA는 시작 시, docker-compose 파일에서 <code>/calibre-library</code>에 지정"
+"한 디렉터리를 자동으로 검색하여 기존 Calibre 라이브러리(metadata.db 파일)를 "
+"탐색합니다.\n"
+"\t•\t서재가 하나인 경우 그 서재를 자동으로 연동합니다.\n"
+"\t•\t여러 개의 서재가 탐색된 경우, 기본적으로 가장 큰 서재에 자동으로 연결합"
+"니다.\n"
+"\t•\t서재를 찾지 못하면 새 서재를 자동으로 생성하고 연동합니다.\n"
+"\n"
+"       <a href=\"https://github.com/crocodilestick/Calibre-Web-Automated/"
+"wiki/Configuration#database-configuration\"> 자세한 내용은 여기에서 확인할 "
+"수 있습니다."
+
+#: cps/templates/config_db.html:29
+msgid ""
+"Therefore, when configuring your docker-compose file for CWA, <b>DO NOT "
+"CHANGE THE PATHS IN THE VOLUMES SECTION ON THE RIGHT SIDE OF THE COLONS!</b>"
+msgstr ""
+"따라서, CWA에 docker-compose 파일을 설정할 때 <b>절대 콜론( : ) 오른쪽의 "
+"VOLUMES 경로는 변경하지 마십시오!</b>"
+
+#: cps/templates/config_db.html:30
+msgid ""
+"These paths are internal to CWA only, you can change what they're bind to to "
+"your heart's content on the left-hand side but there's no reason to\n"
+"        change the paths on the right-hand side.<br><br>If you would like "
+"your <code>metadata.db</code> file in a different location to the rest of "
+"your\n"
+"        library, use the <b>Separate Book Files from Library Option below "
+"and there, enter the path to the rest of the library</b>"
+msgstr ""
+"이 경로들은 CWA 내부에서만 사용됩니다. 콜론 왼쪽 경로는 자유롭게 변경가능하"
+"나,\n"
+"        오른쪽 경로는 변경할 이유가 없습니다.<br><br>만약 "
+"<code>metadata.db<code> 파일을 나머지 서재와 다른 위치에 두고 싶다면, \n"
+"<b>아래의 ‘책 파일을 서재와 분리하기’ 옵션을 사용하고, 거기에 라이브러리의 나"
+"머지 경로를 입력하십시오.</b>"
+
+#: cps/templates/config_db.html:34
+msgid ""
+"E.g. As long as your library's <code>metadata.db</code> file is bound "
+"somewhere within <code>/calibre-library</code>, you could bind the dir\n"
+"        containing the corresponding book files ect. to something like "
+"<code>/books</code> and enter <code>/books</code> in the field that pops up "
+"below\n"
+"        once you've checked the <b>Separate Book Files from Library</b> "
+"option."
+msgstr ""
+"예시: 서재의 <code>metadata.db</code> 파일이 <code>/calibre-library</code> "
+"안 어딘가에 연동되어 있다면, <b>책 파일을 서재와 분리하기</b> 옵션을 선택하"
+"면 나타나는 입력란에 <code>/books</code>를 입력하여 해당 책 파일들이 들어 있"
+"는 경로를 <code>/books</code> 같은 경로에 연동할 수 있습니다."
+
+#: cps/templates/config_db.html:38
+msgid "Split Library Functionality"
+msgstr "서재 기능 분할"
+
+#: cps/templates/config_db.html:41
+msgid ""
+"<b>Separate Book Files from Library</b> - <code>metadata.db</code> file "
+"should remain in <code>/calibre-library</code>, however your library files "
+"can be wherever you desire"
+msgstr ""
+"<b>책 파일을 서재에서 분리</b> - <code>metadata.db</code> 파일은 <code>/"
+"calibre-library</code> 내에 유지해야 합니다. 단, 서재 파일은 자유롭게 옮기셔"
+"도 됩니다."
+
+#: cps/templates/config_db.html:54
+msgid "Use Google Drive?"
+msgstr "Google 드라이브 사용"
+
+#: cps/templates/config_db.html:59
+msgid "Authenticate Google Drive"
+msgstr "Google 드라이브 인증"
+
+#: cps/templates/config_db.html:64
+msgid "Google Drive Calibre folder"
+msgstr "Google 드라이브 Calibre 폴더"
+
+#: cps/templates/config_db.html:72
+msgid "Metadata Watch Channel ID"
+msgstr "Google 드라이브 API ID"
+
+#: cps/templates/config_db.html:75
+msgid "Revoke"
+msgstr "취소"
+
+#: cps/templates/config_db.html:101
+msgid "New db location is invalid, please enter valid path"
+msgstr "데이터베이스 경로가 올바르지 않습니다. 유효한 경로를 입력해주세요."
+
+#: cps/templates/config_edit.html:18
+msgid "Server Configuration"
+msgstr "서버 설정"
+
+#: cps/templates/config_edit.html:25
+msgid "Server Port"
+msgstr "서버 포트"
+
+#: cps/templates/config_edit.html:28
+msgid "SSL certfile location (leave it empty for non-SSL Servers)"
+msgstr "SSL 인증서 파일 경로 (미사용 시 공란)"
+
+#: cps/templates/config_edit.html:35
+msgid "SSL Keyfile location (leave it empty for non-SSL Servers)"
+msgstr "SSL 키 파일 경로 (미사용시 공란)"
+
+#: cps/templates/config_edit.html:43
+msgid "Update Channel"
+msgstr "업데이트 채널"
+
+#: cps/templates/config_edit.html:45
+msgid "Stable"
+msgstr "안정 버전"
+
+#: cps/templates/config_edit.html:46
+msgid "Nightly"
+msgstr "실험 버전"
+
+#: cps/templates/config_edit.html:50
+msgid "Trusted Hosts (Comma Separated)"
+msgstr "신뢰할 수 있는 호스트 (쉼표로 구분)"
+
+#: cps/templates/config_edit.html:61
+msgid "Logfile Configuration"
+msgstr "로그 파일 설정"
+
+#: cps/templates/config_edit.html:77
+msgid "Location and name of logfile (calibre-web.log for no entry)"
+msgstr "로그 파일 경로 및 파일명 (공란일 경우 calibre-web.log로 저장됩니다)"
+
+#: cps/templates/config_edit.html:82
+msgid "Enable Access Log"
+msgstr "액세스 로그 사용"
+
+#: cps/templates/config_edit.html:85
+msgid "Location and name of access logfile (access.log for no entry)"
+msgstr "액세스 로그 파일 경로 및 파일명 (공란일 경우 access.log로 저장됩니다)"
+
+#: cps/templates/config_edit.html:96
+msgid "Feature Configuration"
+msgstr "기능 설정"
+
+#: cps/templates/config_edit.html:104
+msgid "Convert non-English characters in title and author while saving to disk"
+msgstr "제목과 저자가 영문이 아닐 경우 영문(발음 그대로)으로 변환하여 저장"
+
+#: cps/templates/config_edit.html:108
+msgid ""
+"Embed Metadata to Ebook File on Download/Conversion/e-mail (needs Calibre/"
+"Kepubify binaries)"
+msgstr ""
+"다운로드/변환/이메일 전송 시 전자책 파일에 메타데이터 포함 (Calibre/Kepubify "
+"필요)"
+
+#: cps/templates/config_edit.html:112
+msgid "Enable Uploads"
+msgstr "업로드 사용"
+
+#: cps/templates/config_edit.html:112
+msgid "(Please ensure that users also have upload permissions)"
+msgstr "(사용자에게 업로드 권한이 있어야 가능)"
+
+#: cps/templates/config_edit.html:116
+msgid "Allowed Upload Fileformats"
+msgstr "허용할 업로드 파일 형식"
+
+#: cps/templates/config_edit.html:122
+msgid "Enable Anonymous Browsing"
+msgstr "익명 탐색 사용"
+
+#: cps/templates/config_edit.html:126
+msgid "Enable Public Registration"
+msgstr "공개 등록 사용"
+
+#: cps/templates/config_edit.html:131
+msgid "Use Email as Username"
+msgstr "이메일을 사용자 이름으로 사용"
+
+#: cps/templates/config_edit.html:136
+msgid "Enable Magic Link Remote Login"
+msgstr "매직 링크 원격 로그인 사용"
+
+#: cps/templates/config_edit.html:141
+msgid "Enable Kobo sync"
+msgstr "Kobo sync 사용"
+
+#: cps/templates/config_edit.html:146
+msgid "Proxy unknown requests to Kobo Store"
+msgstr "Kobo 스토어에 알 수 없는 요청 프록시 전달"
+
+#: cps/templates/config_edit.html:149
+msgid "Server External Port (for port forwarded API calls)"
+msgstr "서버 외부 포트 (포트 포워딩 API 호출용)"
+
+#: cps/templates/config_edit.html:154
+msgid "Sync Kobo read progress to Hardcover (Requires API key per user)"
+msgstr ""
+"Kobo 읽기 진행 상황을 Hardcover와 동기화하기 (사용자별 API 키가 필요합니다)"
+
+#: cps/templates/config_edit.html:161
+msgid "Use Goodreads"
+msgstr "Goodreads 사용"
+
+#: cps/templates/config_edit.html:165
+msgid "Goodreads API Key"
+msgstr "Goodreads API 키"
+
+#: cps/templates/config_edit.html:172
+msgid "Enable Hardcover Sync"
+msgstr "Kobo sync 활성화"
+
+#: cps/templates/config_edit.html:176
+msgid "Hardcover API Key"
+msgstr "Hardcover API 키"
+
+#: cps/templates/config_edit.html:182
+msgid "Allow Reverse Proxy Authentication"
+msgstr "리버스 프록시 인증 허용"
+
+#: cps/templates/config_edit.html:193
+msgid "Login type"
+msgstr "로그인 방식"
+
+#: cps/templates/config_edit.html:195
+msgid "Use Standard Authentication"
+msgstr "기본 인증 사용"
+
+#: cps/templates/config_edit.html:197
+msgid "Use LDAP Authentication"
+msgstr "LDAP 인증 사용"
+
+#: cps/templates/config_edit.html:200
+msgid "Use OAuth"
+msgstr "OAuth 사용"
+
+#: cps/templates/config_edit.html:207
+msgid "LDAP Server Host Name or IP Address"
+msgstr "LDAP 서버 호스트 이름 또는 IP 주소"
+
+#: cps/templates/config_edit.html:211
+msgid "LDAP Server Port"
+msgstr "LDAP 서버 포트"
+
+#: cps/templates/config_edit.html:215
+msgid "LDAP Encryption"
+msgstr "LDAP 암호화"
+
+#: cps/templates/config_edit.html:218
+msgid "TLS"
+msgstr "TLS"
+
+#: cps/templates/config_edit.html:219
+msgid "SSL"
+msgstr "SSL"
+
+#: cps/templates/config_edit.html:223
+msgid ""
+"LDAP CACertificate Path (Only needed for Client Certificate Authentication)"
+msgstr "LDAP CA 인증서 경로 (클라이언트 인증서 인증 시에만 필요)"
+
+#: cps/templates/config_edit.html:230
+msgid ""
+"LDAP Certificate Path (Only needed for Client Certificate Authentication)"
+msgstr "LDAP 인증서 경로 (클라이언트 인증서 인증 시에만 필요)"
+
+#: cps/templates/config_edit.html:237
+msgid "LDAP Keyfile Path (Only needed for Client Certificate Authentication)"
+msgstr "LDAP 키 파일 경로 (클라이언트 인증서 인증 시에만 필요)"
+
+#: cps/templates/config_edit.html:246
+msgid "LDAP Authentication"
+msgstr "LDAP 인증"
+
+#: cps/templates/config_edit.html:248
+msgid "Anonymous"
+msgstr "익명"
+
+#: cps/templates/config_edit.html:249
+msgid "Unauthenticated"
+msgstr "미인증"
+
+#: cps/templates/config_edit.html:250
+msgid "Simple"
+msgstr "단순 인증"
+
+#: cps/templates/config_edit.html:255
+msgid "LDAP Administrator Username"
+msgstr "LDAP 관리자 아이디"
+
+#: cps/templates/config_edit.html:261
+msgid "LDAP Administrator Password"
+msgstr "LDAP 관리자 비밀번호"
+
+#: cps/templates/config_edit.html:266
+msgid "LDAP Distinguished Name (DN)"
+msgstr "LDAP 식별 이름 (DN)"
+
+#: cps/templates/config_edit.html:270
+msgid "LDAP User Object Filter"
+msgstr "LDAP 사용자 객체 필터"
+
+#: cps/templates/config_edit.html:275
+msgid "LDAP Server is OpenLDAP?"
+msgstr "OpenLDAP 서버인 경우 체크"
+
+#: cps/templates/config_edit.html:277
+msgid "Following Settings are Needed For User Import"
+msgstr "사용자를 가져오기 위해 다음 설정이 필요합니다."
+
+#: cps/templates/config_edit.html:279
+msgid "LDAP Group Object Filter"
+msgstr "LDAP 그룹 객체 필터"
+
+#: cps/templates/config_edit.html:283
+msgid "LDAP Group Name"
+msgstr "LDAP 그룹 이름"
+
+#: cps/templates/config_edit.html:287
+msgid "LDAP Group Members Field"
+msgstr "LDAP 그룹 구성원 필드"
+
+#: cps/templates/config_edit.html:291
+msgid "LDAP Member User Filter Detection"
+msgstr "LDAP 사용자 감지 필터"
+
+#: cps/templates/config_edit.html:293
+msgid "Autodetect"
+msgstr "자동 감지"
+
+#: cps/templates/config_edit.html:294
+msgid "Custom Filter"
+msgstr "사용자 지정 필터"
+
+#: cps/templates/config_edit.html:299
+msgid "LDAP Member User Filter"
+msgstr "LDAP 구성원 사용자 필터"
+
+#: cps/templates/config_edit.html:309
+msgid "Generic OAuth Provider"
+msgstr ""
+
+#: cps/templates/config_edit.html:313
+msgid "OAuth Metadata URL (for auto-discovery)"
+msgstr ""
+
+#: cps/templates/config_edit.html:317
+msgid "Test Metadata"
+msgstr "메타데이터 시험"
+
+#: cps/templates/config_edit.html:320
+msgid "Leave empty to use manual configuration below"
+msgstr "수동으로 설정하려면 이하를 빈칸으로 두십시오"
+
+#: cps/templates/config_edit.html:326
+msgid "Use Manual Endpoint URLs (override auto-discovery)"
+msgstr "수동 엔드포인트 URL 사용 (자동 검색 무시)"
+
+#: cps/templates/config_edit.html:327
+msgid ""
+"Check this to manually configure individual OAuth endpoints instead of using "
+"auto-discovery"
+msgstr ""
+"자동 검색 대신, 개별 OAuth 엔드포인트를 수동으로 설정하려면 이 항목을 체크하"
+"십시오."
+
+#: cps/templates/config_edit.html:332
+msgid "Manual Endpoint Configuration"
+msgstr "수동 엔드포인트 설정"
+
+#: cps/templates/config_edit.html:335
+msgid "OAuth Base URL"
+msgstr ""
+
+#: cps/templates/config_edit.html:340
+msgid "Authorization Endpoint"
+msgstr ""
+
+#: cps/templates/config_edit.html:345
+msgid "Token Endpoint"
+msgstr "토큰 엔드포인트"
+
+#: cps/templates/config_edit.html:350
+msgid "UserInfo Endpoint"
+msgstr "UserInfo 엔드포인트"
+
+#: cps/templates/config_edit.html:358
+msgid "Test Connection"
+msgstr "연결 확인"
+
+#: cps/templates/config_edit.html:367
+msgid "OAuth Scopes"
+msgstr "OAuth 범위"
+
+#: cps/templates/config_edit.html:369
+msgid "Space-separated list of OAuth scopes"
+msgstr "공백으로 구분된 OAuth 범위 목록"
+
+#: cps/templates/config_edit.html:373
+msgid "OAuth Client Id"
+msgstr "OAuth 클라이언트 ID"
+
+#: cps/templates/config_edit.html:377
+msgid "OAuth Client Secret"
+msgstr "OAuth 클라이언트 비밀키"
+
+#: cps/templates/config_edit.html:382
+msgid "Field Mapping Configuration"
+msgstr "필드 매핑 설정"
+
+#: cps/templates/config_edit.html:384
+msgid "Username Field"
+msgstr "사용자명 필드"
+
+#: cps/templates/config_edit.html:386
+msgid "JWT field to extract username from"
+msgstr "JWT에서 사용자 이름을 추출할 필드"
+
+#: cps/templates/config_edit.html:389
+msgid "Email Field"
+msgstr "이메일 필드"
+
+#: cps/templates/config_edit.html:391
+msgid "JWT field to extract email from"
+msgstr "이메일을 추출할 JWT 필드"
+
+#: cps/templates/config_edit.html:394
+msgid "OAuth group for Admin"
+msgstr "관리자용 OAuth 그룹"
+
+#: cps/templates/config_edit.html:398
+msgid "Login Button Text"
+msgstr "로그인 버튼 문자"
+
+#: cps/templates/config_edit.html:404
+#, python-format
+msgid "Obtain %(provider)s OAuth Credential"
+msgstr "%(provider)s OAuth 인증 정보 받기"
+
+#: cps/templates/config_edit.html:407
+#, python-format
+msgid "%(provider)s OAuth Client Id"
+msgstr "%(provider)s OAuth 클라이언트 ID"
+
+#: cps/templates/config_edit.html:411
+#, python-format
+msgid "%(provider)s OAuth Client Secret"
+msgstr "%(provider)s OAuth 클라이언트 비밀키"
+
+#: cps/templates/config_edit.html:427
+msgid "External binaries"
+msgstr "외부 바이너리 설정"
+
+#: cps/templates/config_edit.html:433
+msgid "Path to Calibre Binaries"
+msgstr "Calibre 바이너리 경로"
+
+#: cps/templates/config_edit.html:441
+msgid "Calibre E-Book Converter Settings"
+msgstr "Calibre E-Book 컨버터 설정"
+
+#: cps/templates/config_edit.html:444
+msgid "Path to Kepubify E-Book Converter"
+msgstr "Kepubify 전자책 컨버터 경로"
+
+#: cps/templates/config_edit.html:452
+msgid "Location of Unrar binary"
+msgstr "UnRar 바이너리 경로"
+
+#: cps/templates/config_edit.html:468
+msgid "Security Settings"
+msgstr "보안 설정"
+
+#: cps/templates/config_edit.html:476
+msgid "Limit failed login attempts"
+msgstr "로그인 실패 횟수 제한"
+
+#: cps/templates/config_edit.html:480
+msgid "Configure Backend for Limiter"
+msgstr "Flask-Limiter 데이터베이스 주소"
+
+#: cps/templates/config_edit.html:484
+msgid "Options for Limiter Backend"
+msgstr "Flask-Limiter 옵션"
+
+#: cps/templates/config_edit.html:490
+msgid "Check if file extensions matches file content on upload"
+msgstr "업로드 시 파일 형식 일치 검사"
+
+#: cps/templates/config_edit.html:493
+msgid "Session protection"
+msgstr "세션 보호"
+
+#: cps/templates/config_edit.html:495
+msgid "Basic"
+msgstr "기본"
+
+#: cps/templates/config_edit.html:496
+msgid "Strong"
+msgstr "강력"
+
+#: cps/templates/config_edit.html:501
+msgid "User Password policy"
+msgstr "비밀번호 강도 규칙 사용"
+
+#: cps/templates/config_edit.html:505
+msgid "Minimum password length"
+msgstr "최소 비밀번호 길이"
+
+#: cps/templates/config_edit.html:510
+msgid "Enforce number"
+msgstr "숫자 필수"
+
+#: cps/templates/config_edit.html:514
+msgid "Enforce lowercase characters"
+msgstr "소문자 필수"
+
+#: cps/templates/config_edit.html:518
+msgid "Enforce uppercase characters"
+msgstr "대문자 필수"
+
+#: cps/templates/config_edit.html:522
+msgid "Enforce characters (needed For Chinese/Japanese/Korean Characters)"
+msgstr "한자/일본어/한국어 문자 필수"
+
+#: cps/templates/config_edit.html:526
+msgid "Enforce special characters"
+msgstr "특수문자 필수"
+
+#: cps/templates/config_view_edit.html:17
+msgid "View Configuration"
+msgstr "환경 설정"
+
+#: cps/templates/config_view_edit.html:32
+msgid "No. of Random Books to Display"
+msgstr "랜덤 보기시 표시할 책 수"
+
+#: cps/templates/config_view_edit.html:36
+msgid "No. of Authors to Display Before Hiding (0=Disable Hiding)"
+msgstr "숨기기 전 표시할 저자 수 (0=숨기기 비활성화)"
+
+#: cps/templates/config_view_edit.html:40
+msgid ""
+"Default Theme (users can select their own preferred theme however new users "
+"will receive this theme by default)"
+msgstr ""
+"기본 테마 (새 사용자는 이 테마를 기본적으로 사용하게 됩니다. 사용자들은 각자 "
+"개별 설정도 가능합니다.)"
+
+#: cps/templates/config_view_edit.html:42
+msgid "Standard Theme"
+msgstr "기본 테마"
+
+#: cps/templates/config_view_edit.html:43
+msgid "caliBlur! Dark Theme"
+msgstr "caliBlur! 다크 테마"
+
+#: cps/templates/config_view_edit.html:44
+msgid ""
+"Per-user theme switching enabled; this global default only affects new users "
+"& anonymous"
+msgstr ""
+"사용자별 테마 전환 활성화; 이 전역 기본값은 새 사용자와 익명 사용자에게만 적"
+"용됩니다"
+
+#: cps/templates/config_view_edit.html:48
+msgid "Regular Expression for Ignoring Columns"
+msgstr "열을 무시하는 정규식"
+
+#: cps/templates/config_view_edit.html:52
+msgid "Link Read/Unread Status to Calibre Column"
+msgstr "읽음/읽지 않음 상태를 Calibre 데이터에 저장"
+
+#: cps/templates/config_view_edit.html:61
+msgid "View Restrictions based on Calibre column"
+msgstr "Calibre 데이터 기반 화면 표시 제한"
+
+#: cps/templates/config_view_edit.html:70
+msgid "Regular Expression for Title Sorting"
+msgstr "제목 정렬 정규식"
+
+#: cps/templates/config_view_edit.html:81
+msgid "Default Settings for New Users"
+msgstr "새 사용자 기본 설정"
+
+#: cps/templates/config_view_edit.html:89 cps/templates/user_edit.html:111
+msgid "Admin User"
+msgstr "관리자"
+
+#: cps/templates/config_view_edit.html:93 cps/templates/user_edit.html:116
+msgid "Allow Downloads"
+msgstr "다운로드 허용"
+
+#: cps/templates/config_view_edit.html:97 cps/templates/user_edit.html:120
+msgid "Allow eBook Viewer"
+msgstr "책 보기 허용"
+
+#: cps/templates/config_view_edit.html:102 cps/templates/user_edit.html:125
+msgid "Allow Uploads"
+msgstr "업로드 허용"
+
+#: cps/templates/config_view_edit.html:107 cps/templates/user_edit.html:130
+msgid "Allow Edit"
+msgstr "편집 허용"
+
+#: cps/templates/config_view_edit.html:112 cps/templates/user_edit.html:135
+msgid "Allow Delete Books"
+msgstr "책 삭제 허용"
+
+#: cps/templates/config_view_edit.html:117 cps/templates/user_edit.html:141
+msgid "Allow Changing Password"
+msgstr "비밀번호 변경 허용"
+
+#: cps/templates/config_view_edit.html:121 cps/templates/user_edit.html:145
+msgid "Allow Editing Public Shelves"
+msgstr "공개 서재 편집 허용"
+
+#: cps/templates/config_view_edit.html:124
+msgid "Default Language"
+msgstr "기본 언어"
+
+#: cps/templates/config_view_edit.html:132
+msgid "Default Visible Language of Books"
+msgstr "책의 기본 표시 언어"
+
+#: cps/templates/config_view_edit.html:148
+msgid "Default Visibilities for New Users"
+msgstr "새 사용자 기본 기능"
+
+#: cps/templates/config_view_edit.html:164 cps/templates/user_edit.html:99
+#: cps/templates/user_table.html:154
+msgid "Show Random Books in Detail View"
+msgstr "목록 보기에서 무작위 추천 표시"
+
+#: cps/templates/config_view_edit.html:167 cps/templates/user_edit.html:102
+msgid "Add Allowed/Denied Tags"
+msgstr "허용/거부 태그 추가"
+
+#: cps/templates/config_view_edit.html:168
+msgid "Add Allowed/Denied custom column values"
+msgstr "허용/거부 사용자 정의 열 값 추가"
+
+#: cps/templates/cwa_convert_library.html:10
+#: cps/templates/cwa_epub_fixer.html:10
+msgid "Run Archive"
+msgstr "보관 적용"
+
+#: cps/templates/cwa_convert_library.html:11
+#: cps/templates/cwa_epub_fixer.html:11 cps/templates/cwa_read_log.html:9
+msgid "Download Log"
+msgstr "로그 다운로드"
+
+#: cps/templates/cwa_convert_library.html:24
+#: cps/templates/cwa_epub_fixer.html:24 cps/templates/index.xml:7
+msgid "Start"
+msgstr "시작하기"
+
+#: cps/templates/cwa_settings.html:17
+msgid "Enable/Disable Calibre-Web Automated Services"
+msgstr "Calibre-Web Automated 서비스 활성화/비활성화"
+
+#: cps/templates/cwa_settings.html:24
+msgid "Enable CWA Auto-Convert"
+msgstr "CWA 자동 컨버터 활성화"
+
+#: cps/templates/cwa_settings.html:26
+msgid ""
+"On by default, when active all ingested books will automatically be "
+"converted to the target format specified below (epub by default) \n"
+"        <em>EXCEPT</em> those you have specifically told CWA to ignore below."
+msgstr ""
+"활성화가 기본값입니다. 활성화된 경우, 가져온 모든 책을 이하의 확장자로 변환합"
+"니다. (기본값 epub)\n"
+"        CWA에 무시하도록 지정한 이하의 <em>예외</em>를 제외합니다."
+
+#: cps/templates/cwa_settings.html:35
+msgid "Enable CWA Automatic Cover & Metadata Enforcement Service"
+msgstr "CWA 자동 표지 & 메타데이터 적용 서비스 활성화"
+
+#: cps/templates/cwa_settings.html:37
+msgid ""
+"On by default, when active, whenever the Metadata and/or Cover Image is "
+"edited in the Web UI, the CWA Metadata Enforcement service \n"
+"        will then apply those changes the ebook files themselves. Normally "
+"in Stock CW or when this setting is disabled, the changes made \n"
+"        are only applied to what you see in the Web UI, not the ebook files "
+"themselves. This feature currently only supports files in EPUB \n"
+"        or AZW3 format."
+msgstr ""
+"활성화가 기본값입니다. 활성화된 경우, Web UI에서 표지/메타데이터가 수정될 때 "
+"마다\n"
+"        CWA 자동 표지 & 메타데이터 적용 서비스가 수정된 점을 책 파일에 적용합"
+"니다. Normally in Stock CW or when this setting is disabled, the changes "
+"made CW 기본값 또는 비활성화된 경우, 수정된 내용은 Web UI에만 적용되고 책 파"
+"일에는 저장되지 않습니다.\n"
+"        이 기능은 현재 EPUB, AZW3 확장자만 지원합니다."
+
+#: cps/templates/cwa_settings.html:48
+msgid "Enable CWA Kindle EPUB Fixer"
+msgstr "CWA Kindle EPUB Fixer 활성화"
+
+#: cps/templates/cwa_settings.html:50
+msgid ""
+"When active, the encoding among other attributes of all EPUB files processed "
+"by CWA will be checked and fixed to ensure maximum \n"
+"        compatibility with Amazon's Send-to-Kindle Service."
+msgstr ""
+"활성화된 경우, EPUB의 인코딩을 포함한 모든 속성을 CWA가 확인하고,\n"
+"        아마존 Send-to-Kindle 서비스와 최대한 호환되도록 수정합니다."
+
+#: cps/templates/cwa_settings.html:59
+msgid "Web UI Settings"
+msgstr "Web UI 설정"
+
+#: cps/templates/cwa_settings.html:66
+msgid "Enable CWA Update Notifications"
+msgstr "CWA 업데이트 알림 켜기"
+
+#: cps/templates/cwa_settings.html:68
+msgid ""
+"When active, you will receive notifications in the Web UI when a new version "
+"of CWA is released"
+msgstr "켜진 경우, Web UI에서 새 CWA 버전 알림을 받습니다."
+
+#: cps/templates/cwa_settings.html:76
+msgid "Enable Contribute Translations Notifications"
+msgstr "번역 공헌 알림 켜기"
+
+#: cps/templates/cwa_settings.html:78
+msgid ""
+"When disabled, you will no longer receive notifications in the Web UI when "
+"using a language other than English if the translations for your chosen "
+"language are not complete."
+msgstr ""
+"비활성화된 경우, 사용중인 언어가 번역 미완료인 경우 Web UI에서 알림을 받지 않"
+"습니다. (영어 제외)"
+
+#: cps/templates/cwa_settings.html:86
+msgid "Enable Blurred Backgrounds on Mobile (&lt;768px)"
+msgstr "모바일에서 흐린 배경 활성화 (&lt;768px)"
+
+#: cps/templates/cwa_settings.html:88
+msgid ""
+"When active, the blurred cover background effect is also rendered on small "
+"screens. Disable if you notice scrolling or animation lag."
+msgstr ""
+"활성화된 경우, 흐림 효과는 작은 창에서도 나타납니다. 스크롤이나 전환 효과가 "
+"느린 경우 비활성화하십시오."
+
+#: cps/templates/cwa_settings.html:93
+msgid "Automatic Backup Settings"
+msgstr "자동 백업 설정"
+
+#: cps/templates/cwa_settings.html:100
+msgid "Enable CWA Import Auto-Backup"
+msgstr "CWA 자동 백업 불러오기 활성화"
+
+#: cps/templates/cwa_settings.html:102
+msgid ""
+"When active, a copy of all imported files will be stored in <i>/config/"
+"processed_books/imported</i>"
+msgstr ""
+"활성화된 경우, 모든 불러온 파일의 복사본이 <i>/config/processed_books/"
+"imported</i>에 저장됩니다."
+
+#: cps/templates/cwa_settings.html:110
+msgid "Enable CWA Conversion Auto-Backup"
+msgstr "CWA 변환 자동 백업 활성화"
+
+#: cps/templates/cwa_settings.html:112
+msgid ""
+"When active, the originals of ingested files that undergo conversion will be "
+"stored in /config/processed_books/converted"
+msgstr ""
+"활성화된 경우, 변환 대상인 원본 파일이 /config/processed_books/converted에 저"
+"장됩니다."
+
+#: cps/templates/cwa_settings.html:120
+msgid "Enable CWA EPUB Fixer Auto-Backup"
+msgstr "CWA EPUB Fixer 자동 백업 활성화"
+
+#: cps/templates/cwa_settings.html:122
+msgid ""
+"When active, the originals of EPUBs processed by the CWA Kindle EPUB Fixer "
+"service will be stored in /config/processed_books/fixed_originals"
+msgstr ""
+"활성화된 경우, CWA Kindle EPUB Fixer 서비스 대상인 원본 EPUB 파일이 /config/"
+"processed_books/fixed_originals에 저장됩니다."
+
+#: cps/templates/cwa_settings.html:132
+msgid "Enable CWA Auto-Zip Backups"
+msgstr "CWA 자동 압축 백업 활성화"
+
+#: cps/templates/cwa_settings.html:134
+msgid ""
+"When active, just before midnight each day, the cwa-auto-zipper service will "
+"make zip archives of all the backed up converted, imported and failed files "
+"from that day. This is to help keep the subdirectories of /config/"
+"processed_books organised and to minimise disk space usage."
+msgstr ""
+"활성화된 경우, 매일 자정 직전에 CWA-자동압축 서비스가 zip 아카이브 파일을 생"
+"성합니다. 당일 변환된 파일, 가져오기 한 파일, 변환/가져오기에 실패한 파일을 "
+"포합합니다. /config/processed_books 이하 경로를 정리하고 저장소 사용량을 최소"
+"화합니다."
+
+#: cps/templates/cwa_settings.html:139
+msgid "CWA Auto-Conversion Target Format - EPUB by Default"
+msgstr "CWA 자동 변환 목표 확장자 - 기본값 EPUB"
+
+#: cps/templates/cwa_settings.html:142
+msgid ""
+"When the Auto-Convert feature is active, all ingested books will be "
+"automatically converted to the format chosen here (except those formats "
+"selected in the ignore list below)"
+msgstr ""
+"자동 변환이 활성화된 경우, 가져오기 한 모든 책이 지정된 형식으로 변환됩니다. "
+"(예외처리된 이하의 형식 목록 제외)"
+
+#: cps/templates/cwa_settings.html:144
+msgid "Choose a target format:"
+msgstr "목표 책 형식 지정:"
+
+#: cps/templates/cwa_settings.html:155
+msgid ""
+"NOTE: CWA's Metadata Enforcement service can currently only support file in "
+"either EPUB and AZW3 format. Files in other formats will simply be ignored "
+"by the service"
+msgstr ""
+"참고: CWA 메타데이터 적용 서비스는, 현재 EPUB과 AZW3 형식만 지원합니다. 이외"
+"의 형식은 무시합니다."
+
+#: cps/templates/cwa_settings.html:160
+msgid "CWA Auto-Convert - Ignored Formats"
+msgstr "CWA 자동 변환 - 무시할 형식"
+
+#: cps/templates/cwa_settings.html:162
+msgid ""
+"The formats selected here will be ignored by CWA's Auto-Conversion feature "
+"when it's active, meaning they will be imported as is."
+msgstr ""
+"지정된 형식은 CWA 자동 변환이 활성화되어 있어도 변환하지 않고, 현재 형식 그대"
+"로 가져옵니다."
+
+#: cps/templates/cwa_settings.html:187
+msgid "CWA Auto-Ingest - Ignored Formats"
+msgstr "CWA 자동 가져오기 - 무시할 형식"
+
+#: cps/templates/cwa_settings.html:189
+msgid ""
+"The formats selected here will be ignored by CWA's Auto-Ingest feature, "
+"meaning files in these formats won't be added to the library by CWA during "
+"the ingest process"
+msgstr ""
+"지정된 형식은 CWA 자동 가져오기 기능을 사용하지 않습니다. 이 형식의 파일들은 "
+"CWA 가져오기 프로세스를 통해서는 서재에 추가되지 않습니다."
+
+#: cps/templates/cwa_settings.html:214
+msgid "CWA Auto-Ingest Automerge"
+msgstr "CWA 자동 가져오기 자동병합"
+
+#: cps/templates/cwa_settings.html:217
+msgid "Calibre can detect Duplicate Book Titles on Import and depending on the"
+msgstr "Calibre는 가져오기 중 중복된 책을 감지합니다. 책 제목과 "
+
+#: cps/templates/cwa_settings.html:217
+msgid "automerge"
+msgstr "자동병합"
+
+#: cps/templates/cwa_settings.html:218
+msgid ""
+"setting. It can be set to delete either instance of a duplicated book or "
+"keep both (default)."
+msgstr ""
+"설정. 중복된 책 중 한 쪽을 삭제하거나, 모두 유지(기본값) 중 선택할 수 있습니"
+"다."
+
+#: cps/templates/cwa_settings.html:236
+msgid "Discards duplicate import, keeps library copy"
+msgstr "중복으로 가져오기 된 책을 삭제하고, 현재 서재에 있는 파일을 유지합니다"
+
+#: cps/templates/cwa_settings.html:240
+msgid "Overwrites library copy with newly imported file"
+msgstr "서재에 있는 책을 새로 가져오기한 파일로 덮어씁니다"
+
+#: cps/templates/cwa_settings.html:244
+msgid "Creates a duplicate record, keeping both copies"
+msgstr "중복된 항목을 모두 저장합니다."
+
+#: cps/templates/cwa_settings.html:253
+msgid "Ingest Processing Timeout"
+msgstr "가져오기 프로세스 시간 초과"
+
+#: cps/templates/cwa_settings.html:255
+msgid ""
+"Maximum time (in minutes) to allow for processing a single book before "
+"timing out. Files that timeout are moved to the failed backup folder for "
+"investigation."
+msgstr ""
+"개별 책당 최대 연산 시간(단위: 분). 시간 초과한 책은 검사를 위해 실패한 백업 "
+"폴더로 이동됩니다."
+
+#: cps/templates/cwa_settings.html:257
+msgid "Timeout (minutes):"
+msgstr "시간 초과 (분):"
+
+#: cps/templates/cwa_settings.html:265
+msgid "Range: 5-120 minutes (default: 15)"
+msgstr "범위: 5-120분 (기본값: 15)"
+
+#: cps/templates/cwa_stats.html:43 cps/templates/cwa_stats.html:65
+#: cps/templates/cwa_stats.html:87 cps/templates/cwa_stats.html:106
+#: cps/templates/cwa_stats.html:130 cps/templates/cwa_stats.html:149
+msgid "Click to See More"
+msgstr "더보기"
+
+#: cps/templates/detail.html:66
+msgid "Please select at least one email address"
+msgstr "최소 하나 이상의 이메일 주소를 선택하십시오."
+
+#: cps/templates/detail.html:67
+msgid "Error sending email"
+msgstr "이메일 전송 오류"
+
+#: cps/templates/detail.html:74
+msgid "Select eReader Email Addresses"
+msgstr "eReader 이메일 주소 선택"
+
+#: cps/templates/detail.html:80
+msgid "Choose email addresses:"
+msgstr "이메일 주소 선택:"
+
+#: cps/templates/detail.html:84
+msgid "Select All"
+msgstr "모두 선택"
+
+#: cps/templates/detail.html:100
+msgid "Select format:"
+msgstr "형식 선택:"
+
+#: cps/templates/detail.html:113
+msgid "Send"
+msgstr "보내기"
+
+#: cps/templates/detail.html:150 cps/templates/detail.html:151
+#: cps/templates/detail.html:164 cps/templates/detail.html:165
+msgid "Read in Browser"
+msgstr "웹에서 보기"
+
+#: cps/templates/detail.html:174 cps/templates/detail.html:194
+msgid "Listen in Browser"
+msgstr "웹에서 듣기"
+
+#: cps/templates/detail.html:224 cps/templates/listenmp3.html:62
+#, python-format
+msgid "Book %(index)s of %(range)s"
+msgstr "책 %(index)s / %(range)s"
+
+#: cps/templates/detail.html:275 cps/templates/listenmp3.html:111
+msgid "Published"
+msgstr "발행일"
+
+#: cps/templates/detail.html:325 cps/templates/listenmp3.html:158
+msgid "Mark As Unread"
+msgstr "읽지 않음으로 표시"
+
+#: cps/templates/detail.html:326 cps/templates/listenmp3.html:158
+msgid "Mark As Read"
+msgstr "읽음으로 표시"
+
+#: cps/templates/detail.html:336 cps/templates/listenmp3.html:166
+msgid "Restore from archive"
+msgstr "보관함에서 복원"
+
+#: cps/templates/detail.html:337 cps/templates/listenmp3.html:166
+msgid "Add to archive"
+msgstr "보관함에 추가"
+
+#: cps/templates/detail.html:348 cps/templates/listenmp3.html:177
+msgid "Description:"
+msgstr "설명:"
+
+#: cps/templates/detail.html:363 cps/templates/listenmp3.html:190
+#: cps/templates/search.html:16
+msgid "Add to shelf"
+msgstr "서재에 추가"
+
+#: cps/templates/detail.html:375 cps/templates/detail.html:394
+#: cps/templates/feed.xml:81 cps/templates/layout.html:267
+#: cps/templates/listenmp3.html:201 cps/templates/listenmp3.html:218
+#: cps/templates/search.html:22
+msgid "(Public)"
+msgstr "(공개)"
+
+#: cps/templates/duplicates.html:283
+msgid "CWA Duplicates Manager"
+msgstr "CWA 중복 관리자"
+
+#: cps/templates/duplicates.html:285
+msgid ""
+"Books with matching titles and authors. Visual inspection recommended to "
+"identify true duplicates."
+msgstr "제목과 저자가 동일한 책. 실제로 중복인지 확인하는 것을 추천드립니다."
+
+#: cps/templates/duplicates.html:290
+msgid "Select Duplicates"
+msgstr "중복인 책을 선택"
+
+#: cps/templates/duplicates.html:291
+msgid "Select None"
+msgstr "선택하지 않기"
+
+#: cps/templates/duplicates.html:292
+msgid "Delete Selected"
+msgstr "선택한 책 삭제"
+
+#: cps/templates/duplicates.html:343
+msgid "No Duplicate Books Found"
+msgstr "중복된 책이 없습니다"
+
+#: cps/templates/duplicates.html:344
+msgid "Your library has no books with duplicate title and author combinations."
+msgstr "서재에 중복된 제목과 저자인 조합의 책이 없습니다."
+
+#: cps/templates/duplicates.html:345
+msgid ""
+"This search looks for books with identical titles AND authors to avoid false "
+"positives."
+msgstr "위양성을 피하기 위해, 완전히 동일한 제목과 저자인 책을 검색합니다."
+
+#: cps/templates/duplicates.html:359
+msgid "The following books will be permanently deleted:"
+msgstr "다음 책이 영구히 삭제됩니다:"
+
+#: cps/templates/duplicates.html:363
+msgid "This action cannot be undone!"
+msgstr "되돌릴 수 없습니다!"
+
+#: cps/templates/duplicates.html:378
+msgid "Success"
+msgstr "성공"
+
+#: cps/templates/duplicates.html:385
+msgid "Selected duplicate books have been deleted successfully!"
+msgstr "선택한 중복된 책이 삭제되었습니다!"
+
+#: cps/templates/duplicates.html:407
+msgid "An error occurred while processing your request."
+msgstr "요청 실행중 오류가 발생했습니다."
+
+#: cps/templates/email_edit.html:13
+msgid "Email Account Type"
+msgstr "이메일 유형 선택"
+
+#: cps/templates/email_edit.html:15
+msgid "Standard Email Account"
+msgstr "표준 이메일 계정"
+
+#: cps/templates/email_edit.html:16
+msgid "Gmail Account"
+msgstr "Gmail 계정"
+
+#: cps/templates/email_edit.html:22
+msgid "Setup Gmail Account"
+msgstr "Gmail 계정 설정"
+
+#: cps/templates/email_edit.html:24
+msgid "Revoke Gmail Access"
+msgstr "Gmail 접근 권한 해제"
+
+#: cps/templates/email_edit.html:42
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#: cps/templates/email_edit.html:43
+msgid "SSL/TLS"
+msgstr "SSL/TLS"
+
+#: cps/templates/email_edit.html:51
+msgid "SMTP Password"
+msgstr "SMTP 비밀번호"
+
+#: cps/templates/email_edit.html:58
+msgid "Attachment Size Limit"
+msgstr "첨부파일 최대 크기"
+
+#: cps/templates/email_edit.html:66
+msgid "Save and Send Test Email"
+msgstr "저장 및 테스트 메일 전송"
+
+#: cps/templates/email_edit.html:70 cps/templates/layout.html:90
+#: cps/templates/shelf_order.html:42 cps/templates/user_table.html:174
+msgid "Back"
+msgstr "뒤로"
+
+#: cps/templates/email_edit.html:74
+msgid "Allowed Domains (Whitelist)"
+msgstr "허용하는 도메인 (화이트 리스트)"
+
+#: cps/templates/email_edit.html:78 cps/templates/email_edit.html:105
+msgid "Add Domain"
+msgstr "도메인 추가"
+
+#: cps/templates/email_edit.html:86 cps/templates/email_edit.html:96
+msgid "Enter domainname"
+msgstr "도메인 입력"
+
+#: cps/templates/email_edit.html:92
+msgid "Denied Domains (Blacklist)"
+msgstr "차단 도메인 (블랙리스트)"
+
+#: cps/templates/feed.xml:22 cps/templates/layout.html:300
+msgid "Next"
+msgstr "다음"
+
+#: cps/templates/generate_kobo_auth_url.html:6
+msgid ""
+"Open the .kobo/Kobo/Kobo eReader.conf file in a text editor and add (or "
+"edit):"
+msgstr ""
+"텍스트 편집기에서 .kobo/Kobo/Kobo eReader.conf 파일을 열고 다음을 추가하거나 "
+"수정하세요:"
+
+#: cps/templates/generate_kobo_auth_url.html:11
+msgid "Kobo Token:"
+msgstr "Kobo 토큰:"
+
+#: cps/templates/grid.html:21
+msgid "List"
+msgstr "목록"
+
+#: cps/templates/http_error.html:34
+msgid ""
+"Calibre-Web Automated Instance is unconfigured, please contact your "
+"administrator"
+msgstr "Calibre-Web이 아직 구성되지 않았습니다. 관리자에게 문의하세요."
+
+#: cps/templates/http_error.html:44
+msgid "Create Issue"
+msgstr "이슈 생성"
+
+#: cps/templates/http_error.html:51
+msgid "Return to Home"
+msgstr "홈으로"
+
+#: cps/templates/http_error.html:53
+msgid "Logout User"
+msgstr "로그아웃"
+
+#: cps/templates/index.html:71
+msgid "Sort ascending according to download count"
+msgstr "다운로드 수 오름차순 정렬"
+
+#: cps/templates/index.html:72
+msgid "Sort descending according to download count"
+msgstr "다운로드 수 내림차순 정렬"
+
+#: cps/templates/index.html:78 cps/templates/search.html:35
+#: cps/templates/shelf.html:24
+msgid "Sort authors in alphabetical order"
+msgstr "저자명 오름차순 정렬"
+
+#: cps/templates/index.html:79 cps/templates/search.html:36
+#: cps/templates/shelf.html:25
+msgid "Sort authors in reverse alphabetical order"
+msgstr "저자명 내림차순 정렬"
+
+#: cps/templates/index.html:83
+msgid "Sort ascending according to series index"
+msgstr "시리즈 순서 오름차순 정렬"
+
+#: cps/templates/index.html:84
+msgid "Sort descending according to series index"
+msgstr "시리즈 순서 내림차순 정렬"
+
+#: cps/templates/index.xml:19
+msgid "Alphabetical Books"
+msgstr "책 이름 오름차순 정렬"
+
+#: cps/templates/index.xml:23
+msgid "Books sorted alphabetically"
+msgstr "책 이름 오름차순 정렬"
+
+#: cps/templates/index.xml:31
+msgid "Popular publications from this catalog based on Downloads."
+msgstr "다운로드 기준 인기 책"
+
+#: cps/templates/index.xml:40
+msgid "Popular publications from this catalog based on Rating."
+msgstr "평점 기준 인기 책"
+
+#: cps/templates/index.xml:45
+msgid "Recently added Books"
+msgstr "최근 추가된 책"
+
+#: cps/templates/index.xml:49
+msgid "The latest Books"
+msgstr "최신 책"
+
+#: cps/templates/index.xml:54
+msgid "Random Books"
+msgstr "랜덤 책"
+
+#: cps/templates/index.xml:83
+msgid "Books ordered by Author"
+msgstr "저자별 정렬"
+
+#: cps/templates/index.xml:92
+msgid "Books ordered by publisher"
+msgstr "출판사별 정렬"
+
+#: cps/templates/index.xml:101
+msgid "Books ordered by category"
+msgstr "카테고리별 정렬"
+
+#: cps/templates/index.xml:110
+msgid "Books ordered by series"
+msgstr "시리즈별 정렬"
+
+#: cps/templates/index.xml:119
+msgid "Books ordered by Languages"
+msgstr "언어별 정렬"
+
+#: cps/templates/index.xml:128
+msgid "Books ordered by Rating"
+msgstr "평점별 정렬"
+
+#: cps/templates/index.xml:137
+msgid "Books ordered by file formats"
+msgstr "파일 형식별 정렬"
+
+#: cps/templates/index.xml:142 cps/templates/layout.html:265
+#: cps/templates/search_form.html:88
+msgid "Shelves"
+msgstr "서재"
+
+#: cps/templates/index.xml:146
+msgid "Books organized in shelves"
+msgstr "서재별 정렬"
+
+#: cps/templates/layout.html:90 cps/templates/login.html:30
+msgid "Home"
+msgstr "홈"
+
+#: cps/templates/layout.html:96
+msgid "Toggle Navigation"
+msgstr "메뉴 열기/닫기"
+
+#: cps/templates/layout.html:111
+msgid "Search Library"
+msgstr "검색"
+
+#: cps/templates/layout.html:129 cps/templates/layout.html:166
+msgid "Account"
+msgstr "계정"
+
+#: cps/templates/layout.html:135 cps/templates/layout.html:168
+msgid "Logout"
+msgstr "로그아웃"
+
+#: cps/templates/layout.html:143
+msgid "Switch Theme"
+msgstr "테마 변경"
+
+#: cps/templates/layout.html:162 cps/templates/read.html:78
+#: cps/templates/readcbr.html:70 cps/templates/readcbr.html:96
+msgid "Settings"
+msgstr "설정"
+
+#: cps/templates/layout.html:164
+msgid "Refresh Library"
+msgstr "서재 새로고침"
+
+#: cps/templates/layout.html:205
+msgid "See Changelog"
+msgstr "변경점 확인"
+
+#: cps/templates/layout.html:215
+msgid "Contribute here!"
+msgstr "여기에서 기여하세요!"
+
+#: cps/templates/layout.html:248
+msgid "Please do not refresh the page"
+msgstr "페이지를 새로고침하지 마세요."
+
+#: cps/templates/layout.html:258
+msgid "Browse"
+msgstr "탐색"
+
+#: cps/templates/layout.html:271 cps/templates/stats.html:3
+msgid "About"
+msgstr "서재 정보"
+
+#: cps/templates/layout.html:285
+msgid "Previous"
+msgstr "이전"
+
+#: cps/templates/layout.html:312
+msgid "Book Details"
+msgstr "책 상세정보"
+
+#: cps/templates/list.html:25 cps/templates/list.html:27
+msgid "Filter by initial"
+msgstr "초성 필터"
+
+#: cps/templates/list.html:43
+msgid "Grid"
+msgstr "격자"
+
+#: cps/templates/listenmp3.html:159
+msgid "Read"
+msgstr "읽음"
+
+#: cps/templates/listenmp3.html:167
+msgid "Archived"
+msgstr "보관됨"
+
+#: cps/templates/login.html:18
+msgid "Remember Me"
+msgstr "로그인 유지"
+
+#: cps/templates/login.html:23
+msgid "Forgot Password?"
+msgstr "비밀번호를 잊으셨나요?"
+
+#: cps/templates/login.html:34
+msgid "Log in with Magic Link"
+msgstr "매직 링크로 로그인"
+
+#: cps/templates/login.html:53
+msgid "Log in with SSO"
+msgstr "SSO로 로그인"
+
+#: cps/templates/logviewer.html:6
+msgid "Show Calibre-Web Log: "
+msgstr "Calibre-Web 로그 표시: "
+
+#: cps/templates/logviewer.html:8
+msgid "Calibre-Web Log: "
+msgstr "Calibre-Web 로그:"
+
+#: cps/templates/logviewer.html:8
+msgid "Stream output, can't be displayed"
+msgstr "스트림 출력, 표시할 수 없음"
+
+#: cps/templates/logviewer.html:12
+msgid "Show Access Log: "
+msgstr "액세스 로그 표시: "
+
+#: cps/templates/logviewer.html:18
+msgid "Download Calibre-Web Log"
+msgstr "Calibre-Web 로그 다운로드"
+
+#: cps/templates/logviewer.html:21
+msgid "Download Access Log"
+msgstr "액세스 로그 다운로드"
+
+#: cps/templates/modal_dialogs.html:6
+msgid "Select Allowed/Denied Tags"
+msgstr "허용/거부 태그 선택"
+
+#: cps/templates/modal_dialogs.html:7
+msgid "Select Allowed/Denied Custom Column Values"
+msgstr "허용/거부 사용자 정의 항목 선택"
+
+#: cps/templates/modal_dialogs.html:8
+msgid "Select Allowed/Denied Tags of User"
+msgstr "사용자의 허용/거부 태그 선택"
+
+#: cps/templates/modal_dialogs.html:9
+msgid "Select Allowed/Denied Custom Column Values of User"
+msgstr "사용자 정의 항목 허용/거부 선택"
+
+#: cps/templates/modal_dialogs.html:15
+msgid "Enter Tag"
+msgstr "태그 입력"
+
+#: cps/templates/modal_dialogs.html:24
+msgid "Add View Restriction"
+msgstr "보기 제한 추가"
+
+#: cps/templates/modal_dialogs.html:50
+msgid "This book format will be permanently erased from database"
+msgstr "이 책의 형식은 데이터베이스에서 삭제됩니다."
+
+#: cps/templates/modal_dialogs.html:51
+msgid "This book will be permanently erased from database"
+msgstr "이 책은 데이터베이스에서 삭제됩니다."
+
+#: cps/templates/modal_dialogs.html:52
+msgid "and hard disk"
+msgstr "그리고 디스크에서도 삭제됩니다."
+
+#: cps/templates/modal_dialogs.html:56
+msgid ""
+"Important Kobo Note: deleted books will remain on any paired Kobo device."
+msgstr "Kobo 알림: 삭제된 책은 연결된 Kobo 기기에 남아있습니다."
+
+#: cps/templates/modal_dialogs.html:57
+msgid ""
+"Books must first be archived and the device synced before a book can safely "
+"be deleted."
+msgstr "책을 안전하게 삭제하려면 먼저 보관 처리 후 기기 동기화가 필요합니다."
+
+#: cps/templates/modal_dialogs.html:76
+msgid "Choose File Location"
+msgstr "파일 위치 선택"
+
+#: cps/templates/modal_dialogs.html:82
+msgid "type"
+msgstr "유형"
+
+#: cps/templates/modal_dialogs.html:83
+msgid "name"
+msgstr "이름"
+
+#: cps/templates/modal_dialogs.html:84
+msgid "size"
+msgstr "크기"
+
+#: cps/templates/modal_dialogs.html:90
+msgid "Parent Directory"
+msgstr "상위 폴더"
+
+#: cps/templates/modal_dialogs.html:98
+msgid "Select"
+msgstr "선택"
+
+#: cps/templates/modal_dialogs.html:134 cps/templates/tasks.html:46
+msgid "Ok"
+msgstr "확인"
+
+#: cps/templates/osd.xml:5
+msgid "Calibre-Web Automated eBook Catalog"
+msgstr "Calibre-Web Automated 책 목록"
+
+#: cps/templates/read.html:7
+msgid "epub Reader"
+msgstr "epub 리더"
+
+#: cps/templates/read.html:84 cps/templates/readcbr.html:104
+msgid "Light"
+msgstr "밝은색"
+
+#: cps/templates/read.html:86 cps/templates/readcbr.html:105
+msgid "Dark"
+msgstr "어두운색"
+
+#: cps/templates/read.html:88
+msgid "Sepia"
+msgstr "세피아"
+
+#: cps/templates/read.html:90
+msgid "Black"
+msgstr "검은색"
+
+#: cps/templates/read.html:95
+msgid "Reflow text when sidebars are open."
+msgstr "사이드바가 열릴 경우 텍스트를 재정렬합니다."
+
+#: cps/templates/read.html:100
+msgid "Font Sizes"
+msgstr "글자 크기"
+
+#: cps/templates/read.html:105
+msgid "Font"
+msgstr "글꼴"
+
+#: cps/templates/read.html:106
+msgid "Default"
+msgstr "기본값"
+
+#: cps/templates/read.html:107
+msgid "Yahei"
+msgstr "Yahei"
+
+#: cps/templates/read.html:108
+msgid "SimSun"
+msgstr "SimSun"
+
+#: cps/templates/read.html:109
+msgid "KaiTi"
+msgstr "KaiTi"
+
+#: cps/templates/read.html:110
+msgid "Arial"
+msgstr "Arial"
+
+#: cps/templates/read.html:113
+msgid "Spread"
+msgstr "페이지 보기"
+
+#: cps/templates/read.html:114
+msgid "Two columns"
+msgstr "두쪽 보기"
+
+#: cps/templates/read.html:115
+msgid "One column"
+msgstr "한쪽 보기"
+
+#: cps/templates/readcbr.html:8
+msgid "Comic Reader"
+msgstr "만화 리더"
+
+#: cps/templates/readcbr.html:75
+msgid "Keyboard Shortcuts"
+msgstr "키보드 단축키"
+
+#: cps/templates/readcbr.html:78
+msgid "Previous Page"
+msgstr "이전 페이지"
+
+#: cps/templates/readcbr.html:79 cps/templates/readcbr.html:159
+msgid "Next Page"
+msgstr "다음 페이지"
+
+#: cps/templates/readcbr.html:80
+msgid "Single Page Display"
+msgstr "한 페이지 보기"
+
+#: cps/templates/readcbr.html:81
+msgid "Long Strip Display"
+msgstr "연속 보기"
+
+#: cps/templates/readcbr.html:82
+msgid "Scale to Best"
+msgstr "최적 크기"
+
+#: cps/templates/readcbr.html:83
+msgid "Scale to Width"
+msgstr "너비에 맞춤"
+
+#: cps/templates/readcbr.html:84
+msgid "Scale to Height"
+msgstr "높이에 맞춤"
+
+#: cps/templates/readcbr.html:85
+msgid "Scale to Native"
+msgstr "원본 크기"
+
+#: cps/templates/readcbr.html:86
+msgid "Rotate Right"
+msgstr "오른쪽으로 회전"
+
+#: cps/templates/readcbr.html:87
+msgid "Rotate Left"
+msgstr "왼쪽으로 회전"
+
+#: cps/templates/readcbr.html:88
+msgid "Flip Image"
+msgstr "이미지 반전"
+
+#: cps/templates/readcbr.html:101 cps/templates/user_edit.html:53
+msgid "Theme"
+msgstr "테마"
+
+#: cps/templates/readcbr.html:110
+msgid "Display"
+msgstr "표시 방식"
+
+#: cps/templates/readcbr.html:113
+msgid "Single Page"
+msgstr "단일 페이지"
+
+#: cps/templates/readcbr.html:114
+msgid "Long Strip"
+msgstr "세로 스크롤"
+
+#: cps/templates/readcbr.html:119
+msgid "Scale"
+msgstr "크기 조절"
+
+#: cps/templates/readcbr.html:122
+msgid "Best"
+msgstr "최적"
+
+#: cps/templates/readcbr.html:123
+msgid "Width"
+msgstr "폭"
+
+#: cps/templates/readcbr.html:124
+msgid "Height"
+msgstr "높이"
+
+#: cps/templates/readcbr.html:125
+msgid "Native"
+msgstr "원본 크기"
+
+#: cps/templates/readcbr.html:130
+msgid "Rotate"
+msgstr "회전"
+
+#: cps/templates/readcbr.html:141
+msgid "Flip"
+msgstr "뒤집기"
+
+#: cps/templates/readcbr.html:144
+msgid "Horizontal"
+msgstr "수평"
+
+#: cps/templates/readcbr.html:145
+msgid "Vertical"
+msgstr "수직"
+
+#: cps/templates/readcbr.html:150
+msgid "Direction"
+msgstr "방향"
+
+#: cps/templates/readcbr.html:153
+msgid "Left to Right"
+msgstr "왼쪽에서 오른쪽"
+
+#: cps/templates/readcbr.html:154
+msgid "Right to Left"
+msgstr "오른쪽에서 왼쪽"
+
+#: cps/templates/readcbr.html:162
+msgid "Reset to Top"
+msgstr "맨 위로 이동"
+
+#: cps/templates/readcbr.html:163
+msgid "Remember Position"
+msgstr "위치 기억하기"
+
+#: cps/templates/readcbr.html:168
+msgid "Scrollbar"
+msgstr "스크롤바"
+
+#: cps/templates/readcbr.html:171
+msgid "Show"
+msgstr "보기"
+
+#: cps/templates/readcbr.html:172
+msgid "Hide"
+msgstr "숨기기"
+
+#: cps/templates/readdjvu.html:5
+msgid "DJVU Reader"
+msgstr "DJVU 리더"
+
+#: cps/templates/readpdf.html:32
+msgid "PDF Reader"
+msgstr "PDF 리더"
+
+#: cps/templates/readtxt.html:6
+msgid "txt Reader"
+msgstr "텍스트 리더"
+
+#: cps/templates/register.html:4
+msgid "Register New Account"
+msgstr "새 사용자 등록"
+
+#: cps/templates/register.html:10
+msgid "Choose a username"
+msgstr "사용자 이름 선택"
+
+#: cps/templates/register.html:15
+msgid "Your Email"
+msgstr "이메일 주소"
+
+#: cps/templates/remote_login.html:5
+msgid "Magic Link - Authorise New Device"
+msgstr "매직 링크 - 새 장치 승인"
+
+#: cps/templates/remote_login.html:7
+msgid "On another device, login and visit:"
+msgstr "다른 기기에서 로그인하여 방문하세요:"
+
+#: cps/templates/remote_login.html:17
+msgid "Once verified, you will automatically be logged in on this device."
+msgstr "승인되면 자동으로 로그인 됩니다."
+
+#: cps/templates/remote_login.html:20
+msgid "This verification link will expire in 10 minutes."
+msgstr "인증 링크는 10분 후 만료됩니다."
+
+#: cps/templates/schedule_edit.html:33
+msgid "Generate Series Cover Thumbnails"
+msgstr "시리즈 미리보기 표지 생성"
+
+#: cps/templates/search.html:6
+msgid "No Results Found"
+msgstr "검색 결과가 없습니다."
+
+#: cps/templates/search.html:7
+msgid "Search Term:"
+msgstr "검색어:"
+
+#: cps/templates/search.html:9
+msgid "Results for:"
+msgstr "결과:"
+
+#: cps/templates/search_form.html:21
+msgid "Published Date From"
+msgstr "발행일(시작)"
+
+#: cps/templates/search_form.html:31
+msgid "Published Date To"
+msgstr "발행일(종료)"
+
+#: cps/templates/search_form.html:42
+msgid "Read Status"
+msgstr "읽은 상태"
+
+#: cps/templates/search_form.html:44 cps/templates/search_form.html:165
+msgid "Any"
+msgstr "모두"
+
+#: cps/templates/search_form.html:45 cps/templates/search_form.html:166
+msgid "Empty"
+msgstr "없음"
+
+#: cps/templates/search_form.html:60
+msgid "Exclude Tags"
+msgstr "태그 제외"
+
+#: cps/templates/search_form.html:78
+msgid "Exclude Series"
+msgstr "시리즈 제외"
+
+#: cps/templates/search_form.html:96
+msgid "Exclude Shelves"
+msgstr "서재 제외"
+
+#: cps/templates/search_form.html:116
+msgid "Exclude Languages"
+msgstr "언어 제외"
+
+#: cps/templates/search_form.html:127
+msgid "Extensions"
+msgstr "확장자"
+
+#: cps/templates/search_form.html:135
+msgid "Exclude Extensions"
+msgstr "확장자 제외"
+
+#: cps/templates/search_form.html:145
+msgid "Rating Above"
+msgstr "평점(이상)"
+
+#: cps/templates/search_form.html:149
+msgid "Rating Below"
+msgstr "평점(이하)"
+
+#: cps/templates/search_form.html:175 cps/templates/search_form.html:187
+#: cps/templates/search_form.html:201
+msgid "From:"
+msgstr "시작:"
+
+#: cps/templates/search_form.html:179 cps/templates/search_form.html:191
+#: cps/templates/search_form.html:211
+msgid "To:"
+msgstr "종료:"
+
+#: cps/templates/shelf.html:13
+msgid "Delete this Shelf"
+msgstr "이 서재 삭제"
+
+#: cps/templates/shelf.html:14
+msgid "Edit Shelf Properties"
+msgstr "서재 속성 편집"
+
+#: cps/templates/shelf.html:17
+msgid "Arrange books manually"
+msgstr "수동으로 책 정렬"
+
+#: cps/templates/shelf.html:18
+msgid "Disable Change order"
+msgstr "정렬 변경 비활성화"
+
+#: cps/templates/shelf.html:18
+msgid "Enable Change order"
+msgstr "정렬 변경 활성화"
+
+#: cps/templates/shelf.html:28
+msgid "Sort according to book added to shelf, newest first"
+msgstr "추가된 기준으로 최신순"
+
+#: cps/templates/shelf.html:29
+msgid "Sort according to book added to shelf, oldest first"
+msgstr "추가된 기준으로 오래된 순"
+
+#: cps/templates/shelf_edit.html:14
+msgid "Share with Everyone"
+msgstr "모두와 공유"
+
+#: cps/templates/shelf_edit.html:21
+msgid "Sync this shelf with Kobo device"
+msgstr "이 서재를 Kobo 기기와 동기화"
+
+#: cps/templates/shelf_order.html:5
+msgid "Drag to Rearrange Order"
+msgstr "드래그하여 순서 변경"
+
+#: cps/templates/shelf_order.html:33
+msgid "Hidden Book"
+msgstr "숨긴 책"
+
+#: cps/templates/stats.html:7
+msgid "Library Statistics"
+msgstr "서재 통계"
+
+#: cps/templates/stats.html:12
+msgid "Books in this Library"
+msgstr "이 서재의 책들"
+
+#: cps/templates/stats.html:16
+msgid "Authors in this Library"
+msgstr "이 서재의 저자"
+
+#: cps/templates/stats.html:20
+msgid "Categories in this Library"
+msgstr "이 서재의 카테고리"
+
+#: cps/templates/stats.html:24
+msgid "Series in this Library"
+msgstr "이 서재의 시리즈"
+
+#: cps/templates/stats.html:29
+msgid "System Statistics"
+msgstr "시스템 통계"
+
+#: cps/templates/stats.html:33
+msgid "Program"
+msgstr "프로그램"
+
+#: cps/templates/stats.html:34
+msgid "Installed Version"
+msgstr "설치 버전"
+
+#: cps/templates/tasks.html:12
+msgid "User"
+msgstr "사용자"
+
+#: cps/templates/tasks.html:14
+msgid "Task"
+msgstr "작업"
+
+#: cps/templates/tasks.html:15
+msgid "Status"
+msgstr "상태"
+
+#: cps/templates/tasks.html:16
+msgid "Progress"
+msgstr "진행률"
+
+#: cps/templates/tasks.html:17
+msgid "Run Time"
+msgstr "실행 시간"
+
+#: cps/templates/tasks.html:19
+msgid "Message"
+msgstr "메시지"
+
+#: cps/templates/tasks.html:21
+msgid "Actions"
+msgstr "작업"
+
+#: cps/templates/tasks.html:41
+msgid ""
+"This task will be cancelled. Any progress made by this task will be saved."
+msgstr "작업이 취소됩니다. 진행된 부분은 저장됩니다."
+
+#: cps/templates/tasks.html:42
+msgid ""
+"If this is a scheduled task, it will be re-ran during the next scheduled "
+"time."
+msgstr "예약된 작업일 경우, 다음 예약 시간에 이어서 실행됩니다."
+
+#: cps/templates/user_edit.html:20
+msgid "Reset user Password"
+msgstr "사용자 비밀번호 초기화"
+
+#: cps/templates/user_edit.html:28
+msgid ""
+"Send to eReader Email Address. Use comma to separate emails for multiple "
+"eReaders"
+msgstr ""
+"전자책 리더기로 전송할 이메일. 여러 전자책 리더기를 사용할 경우, 쉼표로 구분"
+"하여 입력하십시오."
+
+#: cps/templates/user_edit.html:43
+msgid "Language of Books"
+msgstr "책 언어"
+
+#: cps/templates/user_edit.html:63
+msgid "OAuth Settings"
+msgstr "OAuth 설정"
+
+#: cps/templates/user_edit.html:65
+msgid "Link"
+msgstr "연결"
+
+#: cps/templates/user_edit.html:67
+msgid "Unlink"
+msgstr "연결 해제"
+
+#: cps/templates/user_edit.html:74
+msgid "Hardcover API token"
+msgstr "Hardcover API 토큰"
+
+#: cps/templates/user_edit.html:79
+msgid "Kobo Sync Token"
+msgstr "Kobo 동기화 토큰"
+
+#: cps/templates/user_edit.html:81
+msgid "Create/View"
+msgstr "생성/보기"
+
+#: cps/templates/user_edit.html:85
+msgid "Force full kobo sync"
+msgstr "강제 Kobo 전체 동기화"
+
+#: cps/templates/user_edit.html:103
+msgid "Add allowed/Denied Custom Column Values"
+msgstr "허용/거부할 사용자 정의 항목 추가"
+
+#: cps/templates/user_edit.html:152
+msgid "Sync only books in selected shelves with Kobo"
+msgstr "선택한 서재의 책만 Kobo와 동기화"
+
+#: cps/templates/user_edit.html:162 cps/templates/user_table.html:169
+msgid "Delete User"
+msgstr "사용자 삭제"
+
+#: cps/templates/user_edit.html:174
+msgid "Generate Kobo Auth URL"
+msgstr "Kobo 인증 URL 생성"
+
+#: cps/templates/user_table.html:80 cps/templates/user_table.html:103
+msgid "Select..."
+msgstr "선택…"
+
+#: cps/templates/user_table.html:124
+msgid "Remove Selections"
+msgstr "선택 항목 삭제"
+
+#: cps/templates/user_table.html:131
+msgid "Edit User"
+msgstr "사용자 편집"
+
+#: cps/templates/user_table.html:134
+msgid "Enter Username"
+msgstr "사용자 이름 입력"
+
+#: cps/templates/user_table.html:135
+msgid "Enter Email"
+msgstr "이메일 입력"
+
+#: cps/templates/user_table.html:136
+msgid "Enter eReader Email"
+msgstr "전자책 리더 이메일 입력"
+
+#: cps/templates/user_table.html:136
+msgid "eReader Email"
+msgstr "전자책 리더 이메일"
+
+#: cps/templates/user_table.html:137
+msgid "Locale"
+msgstr "언어"
+
+#: cps/templates/user_table.html:138
+msgid "Visible Book Languages"
+msgstr "표시할 책 언어"
+
+#: cps/templates/user_table.html:139
+msgid "Edit Allowed Tags"
+msgstr "허용 태그 편집"
+
+#: cps/templates/user_table.html:139
+msgid "Allowed Tags"
+msgstr "허용 태그"
+
+#: cps/templates/user_table.html:140
+msgid "Edit Denied Tags"
+msgstr "제외 태그 편집"
+
+#: cps/templates/user_table.html:140
+msgid "Denied Tags"
+msgstr "제외 태그"
+
+#: cps/templates/user_table.html:141
+msgid "Edit Allowed Column Values"
+msgstr "허용 항목 편집"
+
+#: cps/templates/user_table.html:141
+msgid "Allowed Column Values"
+msgstr "허용 항목"
+
+#: cps/templates/user_table.html:142
+msgid "Edit Denied Column Values"
+msgstr "제외 항목 편집"
+
+#: cps/templates/user_table.html:142
+msgid "Denied Column Values"
+msgstr "제외 항목"
+
+#: cps/templates/user_table.html:144
+msgid "Change Password"
+msgstr "비밀번호 변경"
+
+#: cps/templates/user_table.html:147
+msgid "View"
+msgstr "보기"
+
+#: cps/templates/user_table.html:150
+msgid "Edit Public Shelves"
+msgstr "공개 서재 편집"
+
+#: cps/templates/user_table.html:152
+msgid "Sync selected Shelves with Kobo"
+msgstr "선택한 서재 Kobo 동기화"
+
+#: cps/templates/user_table.html:156
+msgid "Show Read/Unread Section"
+msgstr "읽음/읽지 않음 표시"
+
+#, python-format
+#~ msgid "File %(file)s uploaded"
+#~ msgstr "파일 %(file)s이(가) 업로드되었습니다."
+
+#~ msgid "Ratings list"
+#~ msgstr "평점 목록"
+
+#~ msgid "Merge selected books"
+#~ msgstr "선택한 책 병합"
+
+#, fuzzy
+#~ msgid "Clear selections"
+#~ msgstr "선택 항목 삭제"
+
+#, fuzzy
+#~ msgid "Edit selected books"
+#~ msgstr "선택한 책 병합"
+
+#, fuzzy
+#~ msgid "Archive selected books"
+#~ msgstr "선택한 책 병합"
+
+#, fuzzy
+#~ msgid "Unarchive selected books"
+#~ msgstr "선택한 책 병합"
+
+#, fuzzy
+#~ msgid "Mark selected books as read"
+#~ msgstr "선택한 책 병합"
+
+#, fuzzy
+#~ msgid "Mark selected books as unread"
+#~ msgstr "선택한 책 병합"
+
+#~ msgid "Mark Book as Read or Unread"
+#~ msgstr "읽음/읽지 않음으로 표시"
+
+#~ msgid ""
+#~ "Mark Book as archived or not, to hide it in Calibre-Web and delete it "
+#~ "from Kobo Reader"
+#~ msgstr "책을 보관하면 Calibre-Web에서 숨겨지고 Kobo 리더에서 삭제됩니다."
+
+#, fuzzy, python-format
+#~ msgid "%(seriesindex)s is not a valid number, skipping"
+#~ msgstr "시리즈 순서 %(seriesindex)s은(는) 올바르지 않아 건너뜁니다."
+
+#~ msgid "Calibre-Web configuration updated"
+#~ msgstr "Calibre-Web 설정이 업데이트되었습니다."
+
+#~ msgid ""
+#~ "Are you sure you want delete Calibre-Web's sync database to force a full "
+#~ "sync with your Kobo Reader?"
+#~ msgstr ""
+#~ "Kobo Reader와 전체 동기화를 강제하기 위해 Calibre-Web의 동기화 데이터베이"
+#~ "스를 삭제하시겠습니까?"
+
+#~ msgid "Calibre-Web Test Email"
+#~ msgstr "Calibre-Web 테스트 이메일"
+
+#~ msgid "This Email has been sent via Calibre-Web."
+#~ msgstr "이 이메일은 Calibre-Web으로 전송되었습니다."
+
+#~ msgid "Get Started with Calibre-Web"
+#~ msgstr "Calibre-Web 시작하기"
+
+#~ msgid ""
+#~ "Please access Calibre-Web from non localhost to get valid api_endpoint "
+#~ "for kobo device"
+#~ msgstr ""
+#~ "Kobo 장치에 대한 유효한 api_endpoint를 얻으려면 로컬 호스트가 아닌 곳에서 "
+#~ "Calibre-Web에 접근하세요."
+
+#~ msgid ""
+#~ "Calibre-Web will search for updated Covers and update Cover Thumbnails, "
+#~ "this may take a while?"
+#~ msgstr ""
+#~ "Calibre-Web이 업데이트된 표지를 검색하고 표지 미리보기를 업데이트합니다. "
+#~ "시간이 걸릴 수 있습니다."
+
+#, fuzzy
+#~ msgid "This Email has been sent via  Autmoated."
+#~ msgstr "이 이메일은 Calibre-Web으로 전송되었습니다."
+
+#, fuzzy
+#~ msgid "This Email has been sent via  Automated."
+#~ msgstr "이 이메일은 Calibre-Web으로 전송되었습니다."
+
+#, fuzzy
+#~ msgid "Downloads per User"
+#~ msgstr "다운로드"
+
+#, fuzzy
+#~ msgid "This Email has been sent via  Autoated."
+#~ msgstr "이 이메일은 Calibre-Web으로 전송되었습니다."
+
+#, fuzzy
+#~ msgid "unknown error"
+#~ msgstr "연결 오류가 발생했습니다."
+
+#, fuzzy
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr "로그인할 수 없습니다: %(message)s"
+
+#, fuzzy
+#~ msgid "{value!r} is not a valid boolean."
+#~ msgstr "이메일 주소가 올바르지 않습니다."
+
+#, fuzzy
+#~ msgid "directory"
+#~ msgstr "방향"
+
+#, fuzzy
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr "Calibre 바이너리 파일을 사용할 수 없습니다."
+
+#, fuzzy
+#~ msgid "Repeat for confirmation"
+#~ msgstr "기능 설정"
+
+#, fuzzy
+#~ msgid "Value must be an iterable."
+#~ msgstr "true 또는 false여야 합니다."
+
+#~ msgid "Users"
+#~ msgstr "사용자"
+
+#~ msgid "Configuration"
+#~ msgstr "설정"
+
+#~ msgid "Click the cover to load metadata to the form"
+#~ msgstr "검색 결과를 사용하려면 표지를 클릭하세요."
+
+#~ msgid "Series Index"
+#~ msgstr "시리즈 순서"
+
+#~ msgid "Separate Book Files from Library"
+#~ msgstr "책 저장 경로 분리"

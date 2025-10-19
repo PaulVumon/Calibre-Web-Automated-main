@@ -1,0 +1,4921 @@
+# Slovak (Slovakia) translations for .
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the  project.
+# Branislav Hanáček <brango@brango.sk>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  Calibre-Web Automated\n"
+"Report-Msgid-Bugs-To: https://github.com/crocodilestick/Calibre-Web-"
+"Automated\n"
+"POT-Creation-Date: 2025-09-03 14:59+0200\n"
+"PO-Revision-Date: 2023-11-01 06:12+0100\n"
+"Last-Translator: Branislav Hanáček <brango@brango.sk>\n"
+"Language-Team: \n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: cps/about.py:77
+msgid "Statistics"
+msgstr "Štatistika"
+
+#: cps/admin.py:162
+msgid "Server restarted, please reload page."
+msgstr "Server bol reštartovaný, znovu načítajte stránku."
+
+#: cps/admin.py:164
+msgid "Performing Server shutdown, please close window."
+msgstr "Vypínam server, zavrite prosím okno."
+
+#: cps/admin.py:172
+msgid "Success! Database Reconnected"
+msgstr "Spojenie s databázovo bolo úspešne znovu naviazané"
+
+#: cps/admin.py:175
+msgid "Unknown command"
+msgstr "Neznámy príkaz"
+
+#: cps/admin.py:186
+msgid ""
+"Success! Books queued for Metadata Backup, please check Tasks for result"
+msgstr ""
+"Úspech! Knihy boli zaradená do zálohovania metadát, skontrolujte si Úlohy na "
+"kontrolu"
+
+#: cps/admin.py:242 cps/editbooks.py:824 cps/editbooks.py:869
+#: cps/editbooks.py:1517 cps/updater.py:612 cps/uploader.py:97
+#: cps/uploader.py:106
+msgid "Unknown"
+msgstr "Neznámy"
+
+#: cps/admin.py:268
+msgid "Admin page"
+msgstr "Stránka správcu"
+
+#: cps/admin.py:288
+msgid "Basic Configuration"
+msgstr "Základná konfigurácia"
+
+#: cps/admin.py:326
+msgid "UI Configuration"
+msgstr "Konfigurácia používateľského rozhrania"
+
+#: cps/admin.py:350 cps/admin.py:1030 cps/db.py:820 cps/search.py:140
+#: cps/web.py:797
+#, python-format
+msgid "Custom Column No.%(column)d does not exist in calibre database"
+msgstr ""
+"Používateľom definovaný stĺpec č. %(column)d v Calibre databáze neexistuje"
+
+#: cps/admin.py:368 cps/templates/admin.html:53
+msgid "Edit Users"
+msgstr "Upraviť používateľov"
+
+#: cps/admin.py:412 cps/opds.py:525 cps/templates/grid.html:14
+#: cps/templates/list.html:19
+msgid "All"
+msgstr "Všetko"
+
+#: cps/admin.py:439 cps/admin.py:1542
+msgid "User not found"
+msgstr "Používateľ sa nenašiel"
+
+#: cps/admin.py:453
+#, python-brace-format
+msgid "{} users deleted successfully"
+msgstr "Zmazaných {} používateľov"
+
+#: cps/admin.py:476 cps/templates/config_view_edit.html:134
+#: cps/templates/user_edit.html:45 cps/templates/user_table.html:81
+msgid "Show All"
+msgstr "Zobraziť všetko"
+
+#: cps/admin.py:497 cps/admin.py:503
+msgid "Malformed request"
+msgstr "Chybne vytvorená žiadosť"
+
+#: cps/admin.py:515 cps/admin.py:2210
+msgid "Guest Name can't be changed"
+msgstr "Meno hosťa nie je možné zmeniť"
+
+#: cps/admin.py:527
+msgid "Guest can't have this role"
+msgstr "Hosť nemôže mať túto rolu"
+
+#: cps/admin.py:539 cps/admin.py:2164
+msgid "No admin user remaining, can't remove admin role"
+msgstr "Nezostáva žiadny správca, nie je možné odobrať rolu správcu"
+
+#: cps/admin.py:543 cps/admin.py:557
+msgid "Value has to be true or false"
+msgstr "Hodnota musí byť pravda alebo nepravda"
+
+#: cps/admin.py:545
+msgid "Invalid role"
+msgstr "Neplatná rola"
+
+#: cps/admin.py:549
+msgid "Guest can't have this view"
+msgstr "Hosť nemôže mať toto zobrazenie"
+
+#: cps/admin.py:559
+msgid "Invalid view"
+msgstr "Neplatné zobrazenie"
+
+#: cps/admin.py:562
+msgid "Guest's Locale is determined automatically and can't be set"
+msgstr ""
+"Nastavenie jazyka pre hosťa sa určí automaticky a nie je možné ho nastaviť"
+
+#: cps/admin.py:566
+msgid "No Valid Locale Given"
+msgstr "Nebolo poskytnuté platné nastavenie jazyka"
+
+#: cps/admin.py:577
+msgid "No Valid Book Language Given"
+msgstr "Nebolo poskytnuté platné jazykové nastavenie pre knihu"
+
+#: cps/admin.py:579 cps/editbooks.py:441
+msgid "Parameter not found"
+msgstr "Parameter sa nenašiel"
+
+#: cps/admin.py:616
+msgid "Invalid Read Column"
+msgstr "Neplatný stĺpec na čítanie"
+
+#: cps/admin.py:622
+msgid "Invalid Restricted Column"
+msgstr "Neplatný stĺpec na obmedzenie"
+
+#: cps/admin.py:642 cps/admin.py:2021
+#, fuzzy
+msgid "Calibre-Web Automated configuration updated"
+msgstr "Konfigurácia Calibre-Web bola aktualizovaná"
+
+#: cps/admin.py:654
+msgid "Do you really want to delete the Kobo Token?"
+msgstr "Naozaj chcete zmazať Kobo-žetón?"
+
+#: cps/admin.py:656
+msgid "Do you really want to delete this domain?"
+msgstr "Naozaj chcete zmazať túto doménu?"
+
+#: cps/admin.py:658
+msgid "Do you really want to delete this user?"
+msgstr "Naozaj chcete zmazať tohot používateľa?"
+
+#: cps/admin.py:660
+msgid "Are you sure you want to delete this shelf?"
+msgstr "Naozaj chcete zmazať túto poličku?"
+
+#: cps/admin.py:662
+msgid "Are you sure you want to change locales of selected user(s)?"
+msgstr "Naozaj chcete zmeniť nastavenia jazykov pre vybraných používateľov?"
+
+#: cps/admin.py:664
+msgid ""
+"Are you sure you want to change visible book languages for selected user(s)?"
+msgstr ""
+"Naozaj chcete zmeniť viditeľné jazkyky pre knihy pre vybraných používateľov?"
+
+#: cps/admin.py:666
+msgid ""
+"Are you sure you want to change the selected role for the selected user(s)?"
+msgstr "Naozaj chcete zmeniť vybrané role pre vybraných používateľov?"
+
+#: cps/admin.py:668
+msgid ""
+"Are you sure you want to change the selected restrictions for the selected "
+"user(s)?"
+msgstr "Naozaj chcete zmeniť vybrané obmedzenia pre vybraných používateľov?"
+
+#: cps/admin.py:670
+msgid ""
+"Are you sure you want to change the selected visibility restrictions for the "
+"selected user(s)?"
+msgstr ""
+"Naozaj chcete zmeniť vybrané obmedzenia viditeľnosti pre vybraných "
+"používateľov?"
+
+#: cps/admin.py:673
+msgid ""
+"Are you sure you want to change shelf sync behavior for the selected user(s)?"
+msgstr ""
+"Naozaj chcete zmeniť synchronizačné správanie sa police pre vybraných "
+"používateľov?"
+
+#: cps/admin.py:675
+msgid "Are you sure you want to change Calibre library location?"
+msgstr "Naozaj chcete zmenit umiestnenie pre knižnicu Calibre?"
+
+#: cps/admin.py:677
+#, fuzzy
+msgid ""
+"Calibre-Web Automated will search for updated Covers and update Cover "
+"Thumbnails, this may take a while?"
+msgstr ""
+"Calilbre-Web vyhľadá aktualizované obálky a aktualizuje ich náhľady, môže to "
+"chvíľu trvať?"
+
+#: cps/admin.py:680
+#, fuzzy
+msgid ""
+"Are you sure you want delete Calibre-Web Automated's sync database to force "
+"a full sync with your Kobo Reader?"
+msgstr ""
+"Naozaj chcete zmazať synchronizačnú databázu Calibre-Web aby ste vynútili "
+"úplnú synchronizáciu s vašou Kobo čítačkou?"
+
+#: cps/admin.py:919 cps/admin.py:925 cps/admin.py:935 cps/admin.py:945
+#: cps/templates/modal_dialogs.html:29 cps/templates/user_table.html:41
+#: cps/templates/user_table.html:58
+msgid "Deny"
+msgstr "Odmietnuť"
+
+#: cps/admin.py:921 cps/admin.py:927 cps/admin.py:937 cps/admin.py:947
+#: cps/templates/modal_dialogs.html:28 cps/templates/user_table.html:44
+#: cps/templates/user_table.html:61
+msgid "Allow"
+msgstr "Povoliť"
+
+#: cps/admin.py:980
+#, python-brace-format
+msgid "{} sync entries deleted"
+msgstr "Zmazalo sa {} synchronizačných položiek"
+
+#: cps/admin.py:1021
+msgid "Tag not found"
+msgstr "Štítok sa nenašiel"
+
+#: cps/admin.py:1039
+msgid "Invalid Action"
+msgstr "Neplatná akcia"
+
+#: cps/admin.py:1166
+msgid "client_secrets.json Is Not Configured For Web Application"
+msgstr "client_secrets.json nie je nakonfiguraovaný pre webovú aplikáciu"
+
+#: cps/admin.py:1213
+msgid "Unable to fetch OAuth metadata from URL."
+msgstr ""
+
+#: cps/admin.py:1231
+msgid "Unable to fetch OpenID configuration."
+msgstr ""
+
+#: cps/admin.py:1293
+msgid "Logfile Location is not Valid, Please Enter Correct Path"
+msgstr ""
+"Umiestnenie denníkového súboru je neplatné, zadajte prosím správnu cestu"
+
+#: cps/admin.py:1299
+msgid "Access Logfile Location is not Valid, Please Enter Correct Path"
+msgstr ""
+"Umiestnenie súbor denníka prístupov nie je platné, zadajte prosím správnu "
+"cestu"
+
+#: cps/admin.py:1333
+msgid "Please Enter a LDAP Provider, Port, DN and User Object Identifier"
+msgstr ""
+"Zadajte prosím poskytovateľa LDAP, port, DN a identifikátor používateľa"
+
+#: cps/admin.py:1339
+msgid "Please Enter a LDAP Service Account and Password"
+msgstr "Zadajte prosím konto a heslo pre LDAP službu"
+
+#: cps/admin.py:1342
+msgid "Please Enter a LDAP Service Account"
+msgstr "Zadajte prosím konto pre LDAP službu"
+
+#: cps/admin.py:1347
+#, python-format
+msgid "LDAP Group Object Filter Needs to Have One \"%s\" Format Identifier"
+msgstr ""
+"Filter pre LDAP objekt skupiny potrebuje jeden \"%s\" formátový identifikátor"
+
+#: cps/admin.py:1349
+msgid "LDAP Group Object Filter Has Unmatched Parenthesis"
+msgstr "Filter pre LDAP objekt skupiny má nezhodu v zátvorkách"
+
+#: cps/admin.py:1353
+#, python-format
+msgid "LDAP User Object Filter needs to Have One \"%s\" Format Identifier"
+msgstr ""
+"Filter pre LDAP objekt používateľa potrebuje jeden \"%s\" formátový "
+"identifikátor"
+
+#: cps/admin.py:1355
+msgid "LDAP User Object Filter Has Unmatched Parenthesis"
+msgstr "Filter pre LDAP objekt používateľa má nezhodu v zátvorkách"
+
+#: cps/admin.py:1362
+#, python-format
+msgid "LDAP Member User Filter needs to Have One \"%s\" Format Identifier"
+msgstr ""
+"Filter pre LDAP členstvo používateľa potrebuje jeden \"%s\" formátový "
+"identifikátor"
+
+#: cps/admin.py:1364
+msgid "LDAP Member User Filter Has Unmatched Parenthesis"
+msgstr "Filter pre LDAP členstvo používateľa má nezhodu v zátvorkách"
+
+#: cps/admin.py:1371
+msgid ""
+"LDAP CACertificate, Certificate or Key Location is not Valid, Please Enter "
+"Correct Path"
+msgstr ""
+"LDAP CA-certifikát, certifikát alebo umiestnenie kľúča nie je platné. "
+"Zadajte prosím správnu cestu"
+
+#: cps/admin.py:1402 cps/templates/admin.html:55
+msgid "Add New User"
+msgstr "Pridať nového používateľa"
+
+#: cps/admin.py:1411 cps/templates/admin.html:103
+msgid "Edit Email Server Settings"
+msgstr "Upraviť nastavenie pre poštový server"
+
+#: cps/admin.py:1430
+msgid "Success! Gmail Account Verified."
+msgstr "Úspech! Gmail konto bolo verifikované."
+
+#: cps/admin.py:1450 cps/admin.py:1453 cps/admin.py:1841 cps/admin.py:2005
+#: cps/admin.py:2109 cps/admin.py:2238 cps/editbooks.py:771
+#: cps/editbooks.py:1471 cps/shelf.py:76 cps/shelf.py:139 cps/shelf.py:182
+#: cps/shelf.py:232 cps/shelf.py:269 cps/shelf.py:343 cps/shelf.py:465
+#: cps/tasks/convert.py:145 cps/web.py:1669
+#, python-format
+msgid "Oops! Database Error: %(error)s."
+msgstr "Chyba databázy: %(error)s."
+
+#: cps/admin.py:1460
+#, python-format
+msgid ""
+"Test e-mail queued for sending to %(email)s, please check Tasks for result"
+msgstr ""
+"Testovací e-mail bol zaradený na odoslanie na %(email)s, skontrolujte si "
+"výsledok v sekcii Úlohy"
+
+#: cps/admin.py:1463
+#, python-format
+msgid "There was an error sending the Test e-mail: %(res)s"
+msgstr "Pri odosielaní testovacieho e-mailu sa vyskytla chyba: %(res)s"
+
+#: cps/admin.py:1465
+msgid "Please configure your e-mail address first..."
+msgstr "Prosím, najskôr si nastavte e-mailovú adresu..."
+
+#: cps/admin.py:1467
+msgid "Email Server Settings updated"
+msgstr "Nastavenia poštového servera boli aktualizované"
+
+#: cps/admin.py:1490 cps/templates/admin.html:198
+msgid "Edit Scheduled Tasks Settings"
+msgstr "Upraviť nastavenia naplánovaných úloh"
+
+#: cps/admin.py:1502
+msgid "Invalid start time for task specified"
+msgstr "Bol uvedený neplatný čas spustenia"
+
+#: cps/admin.py:1507
+msgid "Invalid duration for task specified"
+msgstr "Bol uvedený neplatný doba behu"
+
+#: cps/admin.py:1517
+msgid "Scheduled tasks settings updated"
+msgstr "Nastavenia naplánovaných úloh boli aktualizované"
+
+#: cps/admin.py:1527 cps/admin.py:1576 cps/admin.py:2234 cps/web.py:1449
+msgid "Oops! An unknown error occurred. Please try again later."
+msgstr "Vyskytla sa neočakávaná chyba. Prosím, skúste to opäť neskôr."
+
+#: cps/admin.py:1531
+msgid "Settings DB is not Writeable"
+msgstr "Nie je možné zapisovať do databázy nastavení"
+
+#: cps/admin.py:1561 cps/admin.py:2226
+#, python-format
+msgid "Edit User %(nick)s"
+msgstr "Upraviť používateľa %(nick)s"
+
+#: cps/admin.py:1573
+#, python-format
+msgid "Success! Password for user %(user)s reset"
+msgstr "Úspech! Heslo pre používateľa %(user)s bolo resetované"
+
+#: cps/admin.py:1579
+msgid "Oops! Please configure the SMTP mail settings."
+msgstr "Nastavte prosím poštový server."
+
+#: cps/admin.py:1590
+msgid "Logfile viewer"
+msgstr "Prezerač denníkového súboru"
+
+#: cps/admin.py:1656
+msgid "Requesting update package"
+msgstr "Žiadosť o aktualizačný balík"
+
+#: cps/admin.py:1657
+msgid "Downloading update package"
+msgstr "Sťahuje sa aktualizačný balík"
+
+#: cps/admin.py:1658
+msgid "Unzipping update package"
+msgstr "Rozbaľuje sa aktualizačný balík"
+
+#: cps/admin.py:1659
+msgid "Replacing files"
+msgstr "Nahradzujú sa súbory"
+
+#: cps/admin.py:1660
+msgid "Database connections are closed"
+msgstr "Spojenia s databázou sú uzavreté"
+
+#: cps/admin.py:1661
+msgid "Stopping server"
+msgstr "Zastavuje sa server"
+
+#: cps/admin.py:1662
+msgid "Update finished, please press okay and reload page"
+msgstr "Aktualizácia dokončená, stlačte prosím OK a znovu načítajte stránku"
+
+#: cps/admin.py:1663 cps/admin.py:1664 cps/admin.py:1665 cps/admin.py:1666
+#: cps/admin.py:1667 cps/admin.py:1668
+msgid "Update failed:"
+msgstr "Aktualizácia zlyhala:"
+
+#: cps/admin.py:1663 cps/updater.py:388 cps/updater.py:623 cps/updater.py:625
+msgid "HTTP Error"
+msgstr "HTTP chyba"
+
+#: cps/admin.py:1664 cps/updater.py:390 cps/updater.py:627
+msgid "Connection error"
+msgstr "Chyba spojenia"
+
+#: cps/admin.py:1665 cps/updater.py:392 cps/updater.py:629
+msgid "Timeout while establishing connection"
+msgstr "Časový limit pre naviazanie spojenia vypršal"
+
+#: cps/admin.py:1666 cps/updater.py:394 cps/updater.py:631
+msgid "General error"
+msgstr "Všeobecná chyba"
+
+#: cps/admin.py:1667
+msgid "Update file could not be saved in temp dir"
+msgstr "Súbor aktualizácie nebolo možné uložiť do dočasného adresára"
+
+#: cps/admin.py:1668
+msgid "Files could not be replaced during update"
+msgstr "Nebolo možné nahradiť súbory počas aktualizácie"
+
+#: cps/admin.py:1692
+msgid "Failed to extract at least One LDAP User"
+msgstr "Extrakcia minimálne jedného LDAP používateľa zlyhala"
+
+#: cps/admin.py:1737
+msgid "Failed to Create at Least One LDAP User"
+msgstr "Vytvorenie minimálne jedného LDAP používateľa zlyhalo"
+
+#: cps/admin.py:1750
+#, python-format
+msgid "Error: %(ldaperror)s"
+msgstr "Chyba: %(ldaperror)s"
+
+#: cps/admin.py:1754
+msgid "Error: No user returned in response of LDAP server"
+msgstr "Chyba: Odpoveď LDAP servera neobsahuje žiadneho používateľa"
+
+#: cps/admin.py:1790
+msgid "At Least One LDAP User Not Found in Database"
+msgstr "Minimálne jeden LDAP používateľ sa nenachádza v databáze"
+
+#: cps/admin.py:1792
+#, python-brace-format
+msgid "{} User Successfully Imported"
+msgstr "Používateľ bol naimportovaný"
+
+#: cps/admin.py:1853
+msgid "Books path not valid"
+msgstr ""
+
+#: cps/admin.py:1860
+msgid "DB Location is not Valid, Please Enter Correct Path"
+msgstr "Umiestnenie databáze nie je platné, zadajte prosím správnu cestu"
+
+#: cps/admin.py:1888
+msgid "DB is not Writeable"
+msgstr "Do databázy nie je možné zapisovať"
+
+#: cps/admin.py:1901
+msgid "Keyfile Location is not Valid, Please Enter Correct Path"
+msgstr ""
+"Umiestnenie súboru s kľúčmi nie je platné, zadajte prosím správnu cestu"
+
+#: cps/admin.py:1905
+msgid "Certfile Location is not Valid, Please Enter Correct Path"
+msgstr ""
+"Umiestnenie súboru s certifikátmi nie je platné, zadajte prosím správnu cestu"
+
+#: cps/admin.py:1990
+msgid "Password length has to be between 1 and 40"
+msgstr "Heslo musí byť dlhé 1 až 40 znakov"
+
+#: cps/admin.py:2044
+msgid "Database Settings updated"
+msgstr "Nastavenia databáze boli aktualizované"
+
+#: cps/admin.py:2052
+msgid "Database Configuration"
+msgstr "Konfigurácia databázy"
+
+#: cps/admin.py:2073 cps/web.py:1418
+msgid "Oops! Please complete all fields."
+msgstr "Vyplňte prosím všetky polia."
+
+#: cps/admin.py:2082
+msgid "E-mail is not from valid domain"
+msgstr "E-mail nie je z platnej domény"
+
+#: cps/admin.py:2088
+msgid "Add new user"
+msgstr "Pridať nového používateľa"
+
+#: cps/admin.py:2099
+#, python-format
+msgid "User '%(user)s' created"
+msgstr "Používateľ '%(user)s' bol vytvorený"
+
+#: cps/admin.py:2105
+msgid "Oops! An account already exists for this Email. or name."
+msgstr "Účet s týmto menom alebo e-mailovou adresou už existuje."
+
+#: cps/admin.py:2135
+#, python-format
+msgid "User '%(nick)s' deleted"
+msgstr "Používateľ '%(nick)s' bol zmazaný"
+
+#: cps/admin.py:2138
+msgid "Can't delete Guest User"
+msgstr "Nie je možné zmazať používateľa Hosť"
+
+#: cps/admin.py:2141
+msgid "No admin user remaining, can't delete user"
+msgstr "Nezostáva žiadny používateľ, nie je možné odobrať rolu správcu"
+
+#: cps/admin.py:2204 cps/web.py:1608
+msgid "Email can't be empty and has to be a valid Email"
+msgstr "E-mailová adresa nemôže byť prázdna a musí byť platná"
+
+#: cps/admin.py:2230
+#, python-format
+msgid "User '%(nick)s' updated"
+msgstr "Používateľ '%(nick)s' bol aktualizovaný"
+
+#: cps/admin.py:2281
+#, fuzzy
+msgid "Connection successful!"
+msgstr "Chyba spojenia"
+
+#: cps/admin.py:2283 cps/admin.py:2326
+#, python-format
+msgid "Connection failed: Server returned status code %(code)s"
+msgstr ""
+
+#: cps/admin.py:2285 cps/admin.py:2328
+msgid "Connection failed: Could not connect to server."
+msgstr ""
+
+#: cps/admin.py:2287 cps/admin.py:2330
+msgid "Connection failed: Request timed out."
+msgstr ""
+
+#: cps/admin.py:2289 cps/admin.py:2332
+msgid "Connection failed: Invalid JSON in response."
+msgstr ""
+
+#: cps/admin.py:2292 cps/admin.py:2335
+#, fuzzy
+msgid "An unknown error occurred."
+msgstr "Vyskytla sa neočakávaná chyba. Prosím, skúste to opäť neskôr."
+
+#: cps/admin.py:2318
+#, python-format
+msgid "Metadata is missing required fields: %(fields)s"
+msgstr ""
+
+#: cps/admin.py:2323
+#, python-format
+msgid "Metadata URL is valid! Found %(count)s endpoints."
+msgstr ""
+
+#: cps/constants.py:207
+msgid "Czech"
+msgstr ""
+
+#: cps/constants.py:208
+msgid "German"
+msgstr ""
+
+#: cps/constants.py:209
+msgid "Greek"
+msgstr ""
+
+#: cps/constants.py:210
+msgid "Spanish"
+msgstr ""
+
+#: cps/constants.py:211
+#, fuzzy
+msgid "Finnish"
+msgstr "Hotová"
+
+#: cps/constants.py:212
+msgid "French"
+msgstr ""
+
+#: cps/constants.py:213
+msgid "Galician"
+msgstr ""
+
+#: cps/constants.py:214
+msgid "Hungarian"
+msgstr ""
+
+#: cps/constants.py:215
+msgid "Indonesian"
+msgstr ""
+
+#: cps/constants.py:216
+msgid "Italian"
+msgstr ""
+
+#: cps/constants.py:217
+msgid "Japanese"
+msgstr ""
+
+#: cps/constants.py:218
+msgid "Khmer"
+msgstr ""
+
+#: cps/constants.py:219
+msgid "Korean"
+msgstr ""
+
+#: cps/constants.py:220
+msgid "Dutch"
+msgstr ""
+
+#: cps/constants.py:221
+msgid "Norwegian"
+msgstr ""
+
+#: cps/constants.py:222
+#, fuzzy
+msgid "Polish"
+msgstr "Vydavateľ"
+
+#: cps/constants.py:223
+msgid "Portuguese"
+msgstr ""
+
+#: cps/constants.py:224
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: cps/constants.py:225
+msgid "Russian"
+msgstr ""
+
+#: cps/constants.py:226
+msgid "Slovak"
+msgstr ""
+
+#: cps/constants.py:227
+msgid "Slovenian"
+msgstr ""
+
+#: cps/constants.py:228
+msgid "Swedish"
+msgstr ""
+
+#: cps/constants.py:229
+msgid "Turkish"
+msgstr ""
+
+#: cps/constants.py:230
+msgid "Ukrainian"
+msgstr ""
+
+#: cps/constants.py:231
+msgid "Vietnamese"
+msgstr ""
+
+#: cps/constants.py:232
+msgid "Chinese (Simplified, China)"
+msgstr ""
+
+#: cps/constants.py:233
+msgid "Chinese (Traditional, Taiwan)"
+msgstr ""
+
+#: cps/converter.py:20
+msgid "not installed"
+msgstr "nie je naištalované"
+
+#: cps/converter.py:21
+msgid "Execution permissions missing"
+msgstr "Chýba právo na vykonanie"
+
+#: cps/cwa_functions.py:164
+msgid ""
+"Library Refresh 🔄 Checking for any books that may have been missed, please "
+"wait..."
+msgstr ""
+
+#: cps/cwa_functions.py:297
+#, fuzzy
+msgid "Calibre-Web Automated User Settings"
+msgstr "Nastavenie Calibre prevádzača e-kníh"
+
+#: cps/cwa_functions.py:319 cps/cwa_functions.py:321 cps/cwa_functions.py:325
+#: cps/cwa_functions.py:327 cps/cwa_functions.py:330 cps/cwa_functions.py:332
+msgid "Timestamp"
+msgstr ""
+
+#: cps/cwa_functions.py:319 cps/cwa_functions.py:321
+#, fuzzy
+msgid "Book ID"
+msgstr "Knihy"
+
+#: cps/cwa_functions.py:319 cps/templates/book_edit.html:85
+#: cps/templates/search_form.html:8
+msgid "Book Title"
+msgstr "Názov knihy"
+
+#: cps/cwa_functions.py:319
+#, fuzzy
+msgid "Book Author"
+msgstr "Autor"
+
+#: cps/cwa_functions.py:319
+msgid "Trigger Type"
+msgstr ""
+
+#: cps/cwa_functions.py:321 cps/cwa_functions.py:327
+#, fuzzy
+msgid "Filepath"
+msgstr "Súborové formáty"
+
+#: cps/cwa_functions.py:325 cps/cwa_functions.py:327 cps/cwa_functions.py:330
+#: cps/cwa_functions.py:332
+#, fuzzy
+msgid "Filename"
+msgstr "meno"
+
+#: cps/cwa_functions.py:325
+msgid "Manual?"
+msgstr ""
+
+#: cps/cwa_functions.py:325
+msgid "No. Fixes"
+msgstr ""
+
+#: cps/cwa_functions.py:325 cps/cwa_functions.py:330 cps/cwa_functions.py:332
+msgid "Original Backed Up?"
+msgstr ""
+
+#: cps/cwa_functions.py:327
+msgid "Fixes Applied"
+msgstr ""
+
+#: cps/cwa_functions.py:332
+msgid "Original Format"
+msgstr ""
+
+#: cps/cwa_functions.py:332
+#, fuzzy
+msgid "End Format"
+msgstr "Formát nahrávania"
+
+#: cps/cwa_functions.py:347
+msgid "Calibre-Web Automated Sever Stats & Archive"
+msgstr ""
+
+#: cps/cwa_functions.py:362
+msgid "Calibre-Web Automated - Full Enforcement History"
+msgstr ""
+
+#: cps/cwa_functions.py:371
+msgid "Calibre-Web Automated - Full Enforcement History (w/ Paths)"
+msgstr ""
+
+#: cps/cwa_functions.py:380
+msgid "Calibre-Web Automated - Full Import History"
+msgstr ""
+
+#: cps/cwa_functions.py:389
+msgid "Calibre-Web Automated - Full Conversion History"
+msgstr ""
+
+#: cps/cwa_functions.py:398
+msgid "Calibre-Web Automated - Full EPUB Fixer History (w/out Paths & Fixes)"
+msgstr ""
+
+#: cps/cwa_functions.py:407
+msgid "Calibre-Web Automated - Full EPUB Fixer History (w/ Paths & Fixes)"
+msgstr ""
+
+#: cps/cwa_functions.py:425
+msgid "✅ All Monitoring Services are running as intended! 👍"
+msgstr ""
+
+#: cps/cwa_functions.py:427
+msgid ""
+"🔴 The Ingest Service is running but the Metadata Change Detector is not"
+msgstr ""
+
+#: cps/cwa_functions.py:429
+msgid ""
+"🔴 The Metadata Change Detector is running but the Ingest Service is not"
+msgstr ""
+
+#: cps/cwa_functions.py:431
+msgid ""
+"⛔ Neither the Ingest Service or the Metadata Change Detector are running"
+msgstr ""
+
+#: cps/cwa_functions.py:433
+msgid "An Error has occurred"
+msgstr ""
+
+#: cps/cwa_functions.py:604 cps/cwa_functions.py:611
+msgid "Calibre-Web Automated - Convert Library"
+msgstr ""
+
+#: cps/cwa_functions.py:724 cps/cwa_functions.py:730
+msgid "Calibre-Web Automated - Send-to-Kindle EPUB Fixer Service"
+msgstr ""
+
+#: cps/cwa_functions.py:815
+msgid "You must be an admin to access this page."
+msgstr ""
+
+#: cps/cwa_functions.py:830
+msgid "Both username and image data are required."
+msgstr ""
+
+#: cps/cwa_functions.py:848
+#, fuzzy
+msgid "Profile picture updated successfully."
+msgstr "Zmazaných {} používateľov"
+
+#: cps/cwa_functions.py:861
+msgid "CWA Profile Picture Management (WIP)"
+msgstr ""
+
+#: cps/db.py:1075 cps/templates/config_edit.html:217
+#: cps/templates/config_view_edit.html:63 cps/templates/email_edit.html:41
+#: cps/web.py:612 cps/web.py:646 cps/web.py:691 cps/web.py:731 cps/web.py:758
+#: cps/web.py:1072 cps/web.py:1109 cps/web.py:1160 cps/web.py:1192
+#: cps/web.py:1231
+msgid "None"
+msgstr "Žiadne"
+
+#: cps/duplicates.py:38 cps/duplicates.py:47
+#, fuzzy
+msgid "Duplicate Books"
+msgstr "Zmazať knihu"
+
+#: cps/editbooks.py:106
+msgid "Missing or invalid book id for format upload"
+msgstr ""
+
+#: cps/editbooks.py:131 cps/editbooks.py:151 cps/templates/book_edit.html:53
+#: cps/templates/layout.html:148
+msgid "Upload done, processing, please wait..."
+msgstr "Nahrávanie ukončené, spracováva sa, počkajte prosím..."
+
+#: cps/editbooks.py:136 cps/editbooks.py:155
+#, fuzzy
+msgid "Failed to queue upload for processing"
+msgstr "Vytváranie cesty k obálke knihy zlyhalo"
+
+#: cps/editbooks.py:171
+msgid "Source or destination format for conversion missing"
+msgstr "Chýba zdrojový alebo cieľový formát pre prevod"
+
+#: cps/editbooks.py:179
+#, python-format
+msgid "Book successfully queued for converting to %(book_format)s"
+msgstr "Kniha bola úspešne zaradená na prevod do %(book_format)s"
+
+#: cps/editbooks.py:183
+#, python-format
+msgid "There was an error converting this book: %(res)s"
+msgstr "Vyskytla sa chyba pri prevode tejto knihy: %(res)s"
+
+#: cps/editbooks.py:298 cps/editbooks.py:967 cps/editbooks.py:1417
+#, fuzzy
+msgid "File type isn't allowed to be uploaded to this server"
+msgstr "Prípona súboru '%(ext)s' nemôže byť nahraná na tento server"
+
+#: cps/editbooks.py:303 cps/editbooks.py:973 cps/editbooks.py:1428
+#, python-format
+msgid "File extension '%(ext)s' is not allowed to be uploaded to this server"
+msgstr "Prípona súboru '%(ext)s' nemôže byť nahraná na tento server"
+
+#: cps/editbooks.py:307 cps/editbooks.py:977 cps/editbooks.py:1433
+msgid "File to be uploaded must have an extension"
+msgstr "Súbor ktorý sa má nahrať musí mať príponu"
+
+#: cps/editbooks.py:643 cps/editbooks.py:1140 cps/web.py:579 cps/web.py:1712
+#: cps/web.py:1757 cps/web.py:1813
+msgid ""
+"Oops! Selected book is unavailable. File does not exist or is not accessible"
+msgstr ""
+"Vybraná kniha nie je dostupná. Súbor neexistuje alebo sa k nemu nedá "
+"pristupovať"
+
+#: cps/editbooks.py:675 cps/editbooks.py:1500
+msgid "User has no rights to upload cover"
+msgstr "Používateľ nemá práva nahrať obálku knihy"
+
+#: cps/editbooks.py:694 cps/editbooks.py:955
+msgid "Identifiers are not Case Sensitive, Overwriting Old Identifier"
+msgstr ""
+"Identifikátory nerozlišujú malé a veľké písmená, prepisuje sa starý "
+"identifikátor"
+
+#: cps/editbooks.py:706 cps/editbooks.py:929 cps/editbooks.py:1267
+#, python-format
+msgid "'%(langname)s' is not a valid language"
+msgstr "'%(langname)s' nie je platný jazyk"
+
+#: cps/editbooks.py:758
+msgid "Metadata successfully updated"
+msgstr "Metadáta boli úspešne aktualizované"
+
+#: cps/editbooks.py:776
+#, python-brace-format
+msgid "Error editing book: {}"
+msgstr "Chyba pri úprave knihy: {}"
+
+#: cps/editbooks.py:873
+msgid ""
+"Uploaded book probably exists in the library, consider to change before "
+"upload new: "
+msgstr ""
+"Nahrávaná kniha pravdepodobne existuje v knižnici, zvážte zmenu pred "
+"nahraním novej: "
+
+#: cps/editbooks.py:985
+#, python-format
+msgid "File %(filename)s could not saved to temp dir"
+msgstr "Súbor %(filename)s nebolo možné uložiť do dočasného adresára"
+
+#: cps/editbooks.py:1005
+#, python-format
+msgid "Failed to Move Cover File %(file)s: %(error)s"
+msgstr "Zlyhal presun súboru obalky %(file)s: %(error)s"
+
+#: cps/editbooks.py:1062 cps/editbooks.py:1064
+msgid "Book Format Successfully Deleted"
+msgstr "Kniha s formátom bola úspešne zmazaná"
+
+#: cps/editbooks.py:1071 cps/editbooks.py:1073
+msgid "Book Successfully Deleted"
+msgstr "Kniha bola úspešne zmazaná"
+
+#: cps/editbooks.py:1125
+msgid "You are missing permissions to delete books"
+msgstr "Nemáte oprávnenia na mazanie kníh"
+
+#: cps/editbooks.py:1175
+msgid "edit metadata"
+msgstr "upraviť metadáta"
+
+#: cps/editbooks.py:1228
+#, fuzzy, python-format
+msgid "Seriesindex: %(seriesindex)s is not a valid number, skipping"
+msgstr "%(seriesindex)s nie je platné číslo, preskakuje sa"
+
+#: cps/editbooks.py:1422
+msgid "User has no rights to upload additional file formats"
+msgstr "Používateľ nemá práva na nahranie dodatočných súborových formátov"
+
+#: cps/editbooks.py:1446
+#, python-format
+msgid "Failed to create path %(path)s (Permission denied)."
+msgstr "Nebolo možné vytvoriť cestu %(path)s (Povolenie zamietnuté)."
+
+#: cps/editbooks.py:1453
+#, python-format
+msgid "Failed to store file %(file)s."
+msgstr "Zlyhalo uloženie súboru: %(file)s."
+
+#: cps/editbooks.py:1478
+#, python-format
+msgid "File format %(ext)s added to %(book)s"
+msgstr "Súborový formát %(ext)s bol pridaný k %(book)s"
+
+#: cps/gdrive.py:43
+msgid ""
+"Google Drive setup not completed, try to deactivate and activate Google "
+"Drive again"
+msgstr ""
+"Nastavenie Google Drive nie je dokončené, skúste deaktivovať a znovu "
+"aktivovať Google Drive"
+
+#: cps/gdrive.py:81
+msgid ""
+"Callback domain is not verified, please follow steps to verify domain in "
+"google developer console"
+msgstr ""
+"Doména spätného volania nie je verifikovaná, prosím, vykonajte kroky na "
+"verifikáciu domény v konzole Google vývojára"
+
+#: cps/helper.py:75
+#, python-format
+msgid "%(format)s format not found for book id: %(book)d"
+msgstr "Formát %(format)s sa nenašiel pre knihu s ID: %(book)d"
+
+#: cps/helper.py:81 cps/tasks/convert.py:77
+#, python-format
+msgid "%(format)s not found on Google Drive: %(fn)s"
+msgstr "%(format)s sa nenašiel na Google Drive: %(fn)s"
+
+#: cps/helper.py:86
+#, python-format
+msgid "%(format)s not found: %(fn)s"
+msgstr "%(format)s sa nenašiel: %(fn)s"
+
+#: cps/helper.py:92 cps/helper.py:221 cps/templates/detail.html:59
+#: cps/templates/detail.html:60 cps/templates/detail.html:130
+msgid "Send to eReader"
+msgstr "Poslať do čítačky"
+
+#: cps/helper.py:93 cps/helper.py:113
+#, fuzzy
+msgid "This Email has been sent via Calibre-Web Automated."
+msgstr "Tento e-mail bol odoslaný skrz Calibre-Web."
+
+#: cps/helper.py:111
+#, fuzzy
+msgid "Calibre-Web Automated Test Email"
+msgstr "Testovací e-mail Calibre-Web"
+
+#: cps/helper.py:112
+msgid "Test Email"
+msgstr "Testovací e-mail"
+
+#: cps/helper.py:129
+#, fuzzy
+msgid "Get Started with Calibre-Web Automated"
+msgstr "Začnite s aplikáciu Calibre-Web"
+
+#: cps/helper.py:134
+#, python-format
+msgid "Registration Email for user: %(name)s"
+msgstr "Registračný e-mail pre používateľa: %(name)s"
+
+#: cps/helper.py:145 cps/helper.py:151
+#, python-format
+msgid "Convert %(orig)s to %(format)s and send to eReader"
+msgstr "Previesť %(orig)s na %(format)s a odoslať do čítačky"
+
+#: cps/helper.py:170 cps/helper.py:174 cps/helper.py:178
+#, python-format
+msgid "Send %(format)s to eReader"
+msgstr "Odoslať %(format)s do čítačky"
+
+#: cps/helper.py:218
+#, python-format
+msgid "%(book)s send to eReader"
+msgstr "%(book)s odoslaná do čítačky"
+
+#: cps/helper.py:223
+#, fuzzy
+msgid "This Email has been sent via Automated."
+msgstr "Tento e-mail bol odoslaný skrz Calibre-Web."
+
+#: cps/helper.py:225
+msgid "The requested file could not be read. Maybe wrong permissions?"
+msgstr "Požadovaný súbor sa nedá čítať. Možne zlé oprávnenia?"
+
+#: cps/helper.py:371
+#, python-brace-format
+msgid "Read status could not set: {}"
+msgstr "Status čítania nie je možné nastaviť: {}"
+
+#: cps/helper.py:394
+#, python-format
+msgid ""
+"Deleting bookfolder for book %(id)s failed, path has subfolders: %(path)s"
+msgstr ""
+"Mazanie zložky pre knihu %(id)s zlyhalo, cesta má vnorené adresáre: %(path)s"
+
+#: cps/helper.py:400
+#, python-format
+msgid "Deleting book %(id)s failed: %(message)s"
+msgstr "Mazanie knihy %(id)s zlyhalo: %(message)s"
+
+#: cps/helper.py:411
+#, python-format
+msgid ""
+"Deleting book %(id)s from database only, book path in database not valid: "
+"%(path)s"
+msgstr ""
+"Mazanie knihy %(id)s iba z databázy, cesta ku knihe v databáze nie je "
+"platná: %(path)s"
+
+#: cps/helper.py:457
+#, python-format
+msgid ""
+"Rename author from: '%(src)s' to '%(dest)s' failed with error: %(error)s"
+msgstr ""
+"Premenovanie autora z: '%(src)s' na '%(dest)s' zlyhalo s chybou: %(error)s"
+
+#: cps/helper.py:526 cps/helper.py:535
+#, python-format
+msgid "File %(file)s not found on Google Drive"
+msgstr "Súbor %(file)s sa nenašiel na Google Drive"
+
+#: cps/helper.py:577
+#, python-format
+msgid "Rename title from: '%(src)s' to '%(dest)s' failed with error: %(error)s"
+msgstr ""
+"Zmena názvu knihy z: '%(src)s' na '%(dest)s' zlyhalo s chybou: %(error)s"
+
+#: cps/helper.py:616
+#, python-format
+msgid "Book path %(path)s not found on Google Drive"
+msgstr "Cesta ku knihe %(path)s sa nenašla na Google Drive"
+
+#: cps/helper.py:676
+msgid "Found an existing account for this Email address"
+msgstr "Pre túto poštovú adresu sa našiel existujúci účet"
+
+#: cps/helper.py:684
+msgid "This username is already taken"
+msgstr "Toto meno používateľa sa už používa"
+
+#: cps/helper.py:698
+msgid "Invalid Email address format"
+msgstr "Neplatný formát poštovej adresy"
+
+#: cps/helper.py:720
+msgid "Password doesn't comply with password validation rules"
+msgstr "Heslo nedodržiava pravidlá validácie"
+
+#: cps/helper.py:866
+msgid ""
+"Python module 'advocate' is not installed but is needed for cover uploads"
+msgstr ""
+"Python modul 'advocate' nie je nainštalovaný ale je potrebný pre nahrávanie "
+"obálok kníh"
+
+#: cps/helper.py:876
+msgid "Error Downloading Cover"
+msgstr "Chyba pri sťahovaní obálky knihy"
+
+#: cps/helper.py:879
+msgid "Cover Format Error"
+msgstr "Chyba formátu obálky knihy"
+
+#: cps/helper.py:882
+msgid ""
+"You are not allowed to access localhost or the local network for cover "
+"uploads"
+msgstr ""
+"Nemáte povolené pristupovať na lokálneho hostiteľa alebo lokálnu sieť na pre "
+"nahrávanie obálok kníh"
+
+#: cps/helper.py:892
+msgid "Failed to create path for cover"
+msgstr "Vytváranie cesty k obálke knihy zlyhalo"
+
+#: cps/helper.py:908
+msgid "Cover-file is not a valid image file, or could not be stored"
+msgstr "Súbor obálky knihy nie je platný súbor s obrázkom alebo nie je uložený"
+
+#: cps/helper.py:925
+msgid "Only jpg/jpeg/png/webp/bmp files are supported as coverfile"
+msgstr "Ako súbor obálky knihy sú podporované iba súbory jpg/jpeg/png/webp/bmp"
+
+#: cps/helper.py:937
+msgid "Invalid cover file content"
+msgstr "Neplatný obsah súboru obalky knihy"
+
+#: cps/helper.py:941
+msgid "Only jpg/jpeg files are supported as coverfile"
+msgstr "Ako súbor obálky knihy sú podporované iba súbory jpg/jpeg"
+
+#: cps/helper.py:1013 cps/helper.py:1170
+msgid "Cover"
+msgstr "Obálka knihy"
+
+#: cps/helper.py:1030
+msgid "UnRar binary file not found"
+msgstr "Binárny súbor pre UnRar sa nenašiel"
+
+#: cps/helper.py:1041
+msgid "Error executing UnRar"
+msgstr "Chyba pri spustení UnRar"
+
+#: cps/helper.py:1049
+msgid "Could not find the specified directory"
+msgstr ""
+
+#: cps/helper.py:1052
+msgid "Please specify a directory, not a file"
+msgstr ""
+
+#: cps/helper.py:1066
+#, fuzzy
+msgid "Calibre binaries not viable"
+msgstr "Do databázy nie je možné zapisovať"
+
+#: cps/helper.py:1075
+#, python-format
+msgid "Missing calibre binaries: %(missing)s"
+msgstr ""
+
+#: cps/helper.py:1077
+#, fuzzy, python-format
+msgid "Missing executable permissions: %(missing)s"
+msgstr "Chýba právo na vykonanie"
+
+#: cps/helper.py:1082
+#, fuzzy
+msgid "Error executing Calibre"
+msgstr "Chyba pri spustení UnRar"
+
+#: cps/helper.py:1172 cps/templates/admin.html:236
+msgid "Queue all books for metadata backup"
+msgstr "Zaradiť všetky knihy na zálohovanie metadát"
+
+#: cps/kobo_auth.py:80
+#, fuzzy
+msgid ""
+"Please access Calibre-Web Automated from non localhost to get valid "
+"api_endpoint for kobo device"
+msgstr ""
+"Prosím, pristupujte k Calibre-Web z nie lokálneho hostiteľa aby ste získali "
+"platný API koncový bod pre Kobo zariadenie"
+
+#: cps/kobo_auth.py:106
+msgid "Kobo Setup"
+msgstr "Nastavenie Kobo"
+
+#: cps/kosync.py:143
+msgid "KOReader Sync Plugin"
+msgstr ""
+
+#: cps/oauth_bb.py:64
+#, python-format
+msgid "Register with %(provider)s"
+msgstr "Zaregistrovať s %(provider)s"
+
+#: cps/oauth_bb.py:108
+msgid "Login failed: Could not connect to the user info endpoint."
+msgstr ""
+
+#: cps/oauth_bb.py:112
+msgid "Login failed: The OAuth provider returned an invalid user profile."
+msgstr ""
+
+#: cps/oauth_bb.py:125
+msgid "Login failed: User profile from provider is incomplete."
+msgstr ""
+
+#: cps/oauth_bb.py:212 cps/remotelogin.py:149
+#, python-format
+msgid "Success! You are now logged in as: %(nickname)s"
+msgstr "Úspech! Teraz ste prihlásený ako: %(nickname)s"
+
+#: cps/oauth_bb.py:222
+#, python-format
+msgid "Link to %(oauth)s Succeeded"
+msgstr "Spojenie na %(oauth)s bolo úspešné"
+
+#: cps/oauth_bb.py:229
+msgid "Login failed, No User Linked With OAuth Account"
+msgstr "Prihlásenie zlyhalo, s OAuth účtom nie je spojený žiadny používateľ"
+
+#: cps/oauth_bb.py:271
+#, python-format
+msgid "Unlink to %(oauth)s Succeeded"
+msgstr "Odpojenie z %(oauth)s bolo úspešné"
+
+#: cps/oauth_bb.py:276
+#, python-format
+msgid "Unlink to %(oauth)s Failed"
+msgstr "Odpojenie z %(oauth)s zlyhalo"
+
+#: cps/oauth_bb.py:279
+#, python-format
+msgid "Not Linked to %(oauth)s"
+msgstr "Nie je pripojený k %(oauth)s"
+
+#: cps/oauth_bb.py:395
+msgid "Failed to log in with GitHub."
+msgstr "Prihlásenie na GitHub zlyhalo."
+
+#: cps/oauth_bb.py:401
+msgid "Failed to fetch user info from GitHub."
+msgstr "Získanie používateľa z GitHub-u zlyhalo."
+
+#: cps/oauth_bb.py:413
+msgid "Failed to log in with Google."
+msgstr "Prihlásenie na Google zlyhalo."
+
+#: cps/oauth_bb.py:419
+msgid "Failed to fetch user info from Google."
+msgstr "Získanie používateľa z Google zlyhalo."
+
+#: cps/oauth_bb.py:431
+#, fuzzy
+msgid "Failed to log in with Generic OAuth."
+msgstr "Prihlásenie na GitHub zlyhalo."
+
+#: cps/oauth_bb.py:477
+msgid "GitHub Oauth error, please retry later."
+msgstr "Chyba GitHub OAuth, skúste to prosím neskôr."
+
+#: cps/oauth_bb.py:480
+#, python-brace-format
+msgid "GitHub Oauth error: {}"
+msgstr "Chyba GitHub OAuth: {}"
+
+#: cps/oauth_bb.py:501
+msgid "Google Oauth error, please retry later."
+msgstr "Chyba Google OAuth, skúste to prosím neskôr."
+
+#: cps/oauth_bb.py:504
+#, python-brace-format
+msgid "Google Oauth error: {}"
+msgstr "Chyba Google OAuth: {}"
+
+#: cps/oauth_bb.py:524 cps/oauth_bb.py:528
+#, fuzzy, python-brace-format
+msgid "OAuth error: {}"
+msgstr "Chyba GitHub OAuth: {}"
+
+#: cps/opds.py:284
+#, python-brace-format
+msgid "{} Stars"
+msgstr "{} Hviezdičiek"
+
+#: cps/remotelogin.py:76 cps/templates/layout.html:131
+#: cps/templates/layout.html:173 cps/templates/login.html:4
+#: cps/templates/login.html:21 cps/web.py:1485
+msgid "Login"
+msgstr "Prihlásiť sa"
+
+#: cps/remotelogin.py:93 cps/remotelogin.py:127
+msgid "Token not found"
+msgstr "Žetón sa nenašiel"
+
+#: cps/remotelogin.py:102 cps/remotelogin.py:135
+msgid "Token has expired"
+msgstr "Žetón expiroval"
+
+#: cps/remotelogin.py:111
+msgid "Success! Please return to your device"
+msgstr "Úspech! Vráťte sa k vašemu zariadeniu"
+
+#: cps/render_template.py:40
+msgid "Books"
+msgstr "Knihy"
+
+#: cps/render_template.py:42
+msgid "Show recent books"
+msgstr "Zobraziť nedávno čítané knihy"
+
+#: cps/render_template.py:43 cps/templates/index.xml:27
+msgid "Hot Books"
+msgstr "Horúce knihy"
+
+#: cps/render_template.py:45
+msgid "Show Hot Books"
+msgstr "Zobraziť horúce knihy"
+
+#: cps/render_template.py:47 cps/render_template.py:52
+msgid "Downloaded Books"
+msgstr "Stiahnuté knihy"
+
+#: cps/render_template.py:49 cps/render_template.py:54
+#: cps/templates/user_table.html:167
+msgid "Show Downloaded Books"
+msgstr "Zobraziť stiahnuté knihy"
+
+#: cps/render_template.py:57 cps/templates/index.xml:36 cps/web.py:469
+msgid "Top Rated Books"
+msgstr "Najlepšie hodnotené knihy"
+
+#: cps/render_template.py:59 cps/templates/user_table.html:161
+msgid "Show Top Rated Books"
+msgstr "Zobraziť najlepšie hodnotené knihy"
+
+#: cps/render_template.py:60 cps/templates/index.xml:63
+#: cps/templates/index.xml:67 cps/web.py:816
+msgid "Read Books"
+msgstr "Prečítané knihy"
+
+#: cps/render_template.py:62
+msgid "Show Read and Unread"
+msgstr "Zobraziť prečítané a neprečítané"
+
+#: cps/render_template.py:64 cps/templates/index.xml:70
+#: cps/templates/index.xml:74 cps/web.py:819
+msgid "Unread Books"
+msgstr "Neprečítané knihy"
+
+#: cps/render_template.py:66
+msgid "Show unread"
+msgstr "Zobraziť neprečítané"
+
+#: cps/render_template.py:67
+msgid "Discover"
+msgstr "Objaviť"
+
+#: cps/render_template.py:69 cps/templates/index.xml:58
+#: cps/templates/user_table.html:159 cps/templates/user_table.html:162
+msgid "Show Random Books"
+msgstr "Zobraziť náhodné knihy"
+
+#: cps/render_template.py:70 cps/templates/book_table.html:106
+#: cps/templates/index.xml:97 cps/web.py:1235
+msgid "Categories"
+msgstr "Kategórie"
+
+#: cps/render_template.py:72 cps/templates/user_table.html:158
+msgid "Show Category Section"
+msgstr "Zobraziť časť Kategórie"
+
+#: cps/render_template.py:73 cps/templates/book_edit.html:100
+#: cps/templates/book_table.html:107 cps/templates/index.xml:106
+#: cps/templates/search_form.html:70 cps/web.py:1115 cps/web.py:1127
+msgid "Series"
+msgstr "Série"
+
+#: cps/render_template.py:75 cps/templates/user_table.html:157
+msgid "Show Series Section"
+msgstr "Zobraziť časť Série"
+
+#: cps/render_template.py:76 cps/templates/book_table.html:105
+#: cps/templates/index.xml:79
+msgid "Authors"
+msgstr "Autori"
+
+#: cps/render_template.py:78 cps/templates/user_table.html:160
+msgid "Show Author Section"
+msgstr "Zobraziť časť Autori"
+
+#: cps/render_template.py:80 cps/templates/book_table.html:111
+#: cps/templates/index.xml:88 cps/web.py:1083
+msgid "Publishers"
+msgstr "Vydavatelia"
+
+#: cps/render_template.py:82 cps/templates/user_table.html:163
+msgid "Show Publisher Section"
+msgstr "Zobraziť časť vydavatelia"
+
+#: cps/render_template.py:83 cps/templates/book_table.html:109
+#: cps/templates/index.xml:115 cps/templates/search_form.html:108
+#: cps/web.py:1207
+msgid "Languages"
+msgstr "Jazyky"
+
+#: cps/render_template.py:86 cps/templates/user_table.html:155
+msgid "Show Language Section"
+msgstr "Zobraziť časť Jazyky"
+
+#: cps/render_template.py:87 cps/templates/index.xml:124 cps/web.py:1167
+msgid "Ratings"
+msgstr "Hodnotenia"
+
+#: cps/render_template.py:89 cps/templates/user_table.html:164
+msgid "Show Ratings Section"
+msgstr "Zobraziť časť Hodnotenia"
+
+#: cps/render_template.py:90 cps/templates/index.xml:133
+msgid "File formats"
+msgstr "Súborové formáty"
+
+#: cps/render_template.py:92 cps/templates/user_table.html:165
+msgid "Show File Formats Section"
+msgstr "Zobraziť časť Súborové formáty"
+
+#: cps/render_template.py:94 cps/web.py:842
+msgid "Archived Books"
+msgstr "Archivované knihy"
+
+#: cps/render_template.py:96 cps/templates/user_table.html:166
+msgid "Show Archived Books"
+msgstr "Zobraziť archivované knihy"
+
+#: cps/render_template.py:99 cps/web.py:903
+msgid "Books List"
+msgstr "Zoznam kníh"
+
+#: cps/render_template.py:101 cps/templates/user_table.html:168
+msgid "Show Books List"
+msgstr "Zobraziť zoznam kníh"
+
+#: cps/render_template.py:104
+msgid "Duplicates"
+msgstr ""
+
+#: cps/render_template.py:106
+#, fuzzy
+msgid "Show Duplicate Books"
+msgstr "Zobraziť najlepšie hodnotené knihy"
+
+#: cps/search.py:40 cps/search.py:427 cps/templates/book_edit.html:256
+#: cps/templates/feed.xml:34 cps/templates/index.xml:12
+#: cps/templates/layout.html:110 cps/templates/layout.html:113
+#: cps/templates/search_form.html:247
+msgid "Search"
+msgstr "Hľadať"
+
+#: cps/search.py:191
+msgid "Published after "
+msgstr "Vydané po "
+
+#: cps/search.py:198
+msgid "Published before "
+msgstr "Vydané pred "
+
+#: cps/search.py:220
+#, python-format
+msgid "Rating <= %(rating)s"
+msgstr "Hodnotenie <= %(rating)s"
+
+#: cps/search.py:222
+#, python-format
+msgid "Rating >= %(rating)s"
+msgstr "Hodnotenie >= %(rating)s"
+
+#: cps/search.py:224
+#, fuzzy, python-format
+msgid "Read Status = '%(status)s'"
+msgstr "Status čítania = %(status)s"
+
+#: cps/search.py:341
+msgid "Error on search for custom columns, please restart Calibre-Web"
+msgstr ""
+"Chyba pri čítaní používateľom definovaných stĺpcov, reštartujte prosím "
+"Calibre-Web"
+
+#: cps/search.py:371 cps/search.py:403 cps/templates/layout.html:121
+msgid "Advanced Search"
+msgstr "Rozšírené hľadanie"
+
+#: cps/shelf.py:34 cps/shelf.py:100
+msgid "Invalid shelf specified"
+msgstr "Vybraná neplatná polica"
+
+#: cps/shelf.py:40
+msgid "Sorry you are not allowed to add a book to that shelf"
+msgstr "Ľutujeme, do tejto police nemôžete pridať knihu"
+
+#: cps/shelf.py:49
+#, python-format
+msgid "Book is already part of the shelf: %(shelfname)s"
+msgstr "Kniha je už na polici: %(shelfname)s"
+
+#: cps/shelf.py:63
+#, python-format
+msgid "%(book_id)s is a invalid Book Id. Could not be added to Shelf"
+msgstr ""
+
+#: cps/shelf.py:83
+#, python-format
+msgid "Book has been added to shelf: %(sname)s"
+msgstr "Kniha bola pridaná do police: %(sname)s"
+
+#: cps/shelf.py:105
+msgid "You are not allowed to add a book to the shelf"
+msgstr "Nemáte povolené pridať knihu do tejto police"
+
+#: cps/shelf.py:123
+#, python-format
+msgid "Books are already part of the shelf: %(name)s"
+msgstr "Táto polica už obssahuje knihu: %(name)s"
+
+#: cps/shelf.py:135
+#, python-format
+msgid "Books have been added to shelf: %(sname)s"
+msgstr "Do police sa pridala kniha: %(sname)s"
+
+#: cps/shelf.py:142
+#, python-format
+msgid "Could not add books to shelf: %(sname)s"
+msgstr "Nemôžem pridať knihu do police: %(sname)s"
+
+#: cps/shelf.py:188
+#, python-format
+msgid "Book has been removed from shelf: %(sname)s"
+msgstr "Kniha bola odstránená z police: %(sname)s"
+
+#: cps/shelf.py:197
+msgid "Sorry you are not allowed to remove a book from this shelf"
+msgstr "Ľutujeme, ale nie ste oprávnený odstrániť knihu z tejto police"
+
+#: cps/shelf.py:207 cps/templates/layout.html:270
+msgid "Create a Shelf"
+msgstr "Vytvoriť policu"
+
+#: cps/shelf.py:215
+msgid "Sorry you are not allowed to edit this shelf"
+msgstr "Ľutujeme, ale nie ste oprávnený upravovať túto policu"
+
+#: cps/shelf.py:217
+msgid "Edit a shelf"
+msgstr "Upraviť policu"
+
+#: cps/shelf.py:226
+msgid "Error deleting Shelf"
+msgstr "Chyba pri mazaní police"
+
+#: cps/shelf.py:228
+msgid "Shelf successfully deleted"
+msgstr "Polica bol úspešne vymazaná"
+
+#: cps/shelf.py:278
+#, python-format
+msgid "Change order of Shelf: '%(name)s'"
+msgstr "Zmeniť poradie police: '%(name)s'"
+
+#: cps/shelf.py:313
+msgid "Sorry you are not allowed to create a public shelf"
+msgstr "Ľutujeme, ale nie ste oprávnený vytvoriť verejnú policu"
+
+#: cps/shelf.py:330
+#, python-format
+msgid "Shelf %(title)s created"
+msgstr "Polica %(title)s bola vytvorená"
+
+#: cps/shelf.py:333
+#, python-format
+msgid "Shelf %(title)s changed"
+msgstr "Polica %(title)s bola zmenená"
+
+#: cps/shelf.py:347
+msgid "There was an error"
+msgstr "Nastala chyba"
+
+#: cps/shelf.py:369
+#, python-format
+msgid "A public shelf with the name '%(title)s' already exists."
+msgstr "Verejná polica s názvom '%(title)s' už existuje."
+
+#: cps/shelf.py:380
+#, python-format
+msgid "A private shelf with the name '%(title)s' already exists."
+msgstr "Súkromná polica s názvom '%(title)s' už existuje."
+
+#: cps/shelf.py:470
+#, python-format
+msgid "Shelf: '%(name)s'"
+msgstr "Polica: '%(name)s'"
+
+#: cps/shelf.py:476
+msgid "Error opening shelf. Shelf does not exist or is not accessible"
+msgstr "Chyba pri otváraní police. Polica neexistuje alebo je neprístupná"
+
+#: cps/tasks_status.py:37 cps/templates/layout.html:159
+#: cps/templates/tasks.html:7
+msgid "Tasks"
+msgstr "Úlohy"
+
+#: cps/tasks_status.py:53
+msgid "Waiting"
+msgstr "Čakajúca"
+
+#: cps/tasks_status.py:55
+msgid "Failed"
+msgstr "Neúspešná"
+
+#: cps/tasks_status.py:57
+msgid "Started"
+msgstr "Spustená"
+
+#: cps/tasks_status.py:59
+msgid "Finished"
+msgstr "Hotová"
+
+#: cps/tasks_status.py:61
+msgid "Ended"
+msgstr "Ukončená"
+
+#: cps/tasks_status.py:63
+msgid "Cancelled"
+msgstr "Zrušená"
+
+#: cps/tasks_status.py:65
+msgid "Unknown Status"
+msgstr "Neznámy stav"
+
+#: cps/updater.py:430 cps/updater.py:441 cps/updater.py:542 cps/updater.py:557
+msgid "Unexpected data while reading update information"
+msgstr "Čítanie aktualizačnej informácie narazilo na neočakávané údaje"
+
+#: cps/updater.py:437 cps/updater.py:549
+msgid "No update available. You already have the latest version installed"
+msgstr ""
+"Nie je dostupná žiadna aktualizácia. Máte nainštalovanú najnovšiu verziu"
+
+#: cps/updater.py:456
+msgid ""
+"A new update is available. Click on the button below to update to the latest "
+"version."
+msgstr ""
+"Je dostupná nová aktualizácia. Ak chcete aktualizovať na najnovšiu verziu, "
+"kliknite na tlačidlo dolu."
+
+#: cps/updater.py:473
+msgid "Could not fetch update information"
+msgstr "Nebolo možné stiahnuť aktualizačnú informáciu"
+
+#: cps/updater.py:484
+msgid "Click on the button below to update to the latest stable version."
+msgstr ""
+"Ak chcete aktualizovať na najnovšiu stabilnú verziu, kliknite na tlačidlo "
+"dolu."
+
+#: cps/updater.py:492 cps/updater.py:506 cps/updater.py:517
+#, python-format
+msgid ""
+"A new update is available. Click on the button below to update to version: "
+"%(version)s"
+msgstr ""
+"Je dostupná nová aktualizácia. Kliknite na tlačidlo dolu, ak chcete "
+"aktualizovať na verziu: %(version)s"
+
+#: cps/updater.py:535
+msgid "No release information available"
+msgstr "Nie je dostupná informácia o vydaní"
+
+#: cps/templates/index.html:6 cps/web.py:481
+msgid "Discover (Random Books)"
+msgstr "Objaviť (Náhodné knihy)"
+
+#: cps/web.py:531
+msgid "Hot Books (Most Downloaded)"
+msgstr "Horúce knihy (Najviac sťahované)"
+
+#: cps/web.py:562
+#, python-format
+msgid "Downloaded books by %(user)s"
+msgstr "Knihy stiahnuté: %(user)s"
+
+#: cps/web.py:595
+#, python-format
+msgid "Author: %(name)s"
+msgstr "Author: %(name)s"
+
+#: cps/web.py:631
+#, python-format
+msgid "Publisher: %(name)s"
+msgstr "Vydavateľ: %(name)s"
+
+#: cps/web.py:659
+#, python-format
+msgid "Series: %(serie)s"
+msgstr "Série: %(serie)s"
+
+#: cps/web.py:673
+msgid "Rating: None"
+msgstr "Hodnotenie: Žiadne"
+
+#: cps/web.py:682
+#, python-format
+msgid "Rating: %(rating)s stars"
+msgstr "Hodnotenie: %(rating)s hviezdičiek"
+
+#: cps/web.py:713
+#, python-format
+msgid "File format: %(format)s"
+msgstr "Súborový formát: %(format)s"
+
+#: cps/web.py:748
+#, python-format
+msgid "Category: %(name)s"
+msgstr "Kategória: %(name)s"
+
+#: cps/web.py:777
+#, python-format
+msgid "Language: %(name)s"
+msgstr "Jazyk: %(name)s"
+
+#: cps/templates/admin.html:17 cps/web.py:1042
+msgid "Downloads"
+msgstr "Stiahnutia"
+
+#: cps/web.py:1194
+msgid "File formats list"
+msgstr "Zoznam súborových formátov"
+
+#: cps/web.py:1349 cps/web.py:1370
+msgid "Please configure the SMTP mail settings first..."
+msgstr "Najskôr nastavte poštový server, prosím..."
+
+#: cps/web.py:1356
+#, python-format
+msgid "Success! Book queued for sending to %(eReadermail)s"
+msgstr "Úspech! Kniha bola zaradená na odoslanie do %(eReadermail)s"
+
+#: cps/web.py:1359 cps/web.py:1388
+#, python-format
+msgid "Oops! There was an error sending book: %(res)s"
+msgstr "Vyskytla sa chyba pri posielaní knihy: %(res)s"
+
+#: cps/web.py:1361
+msgid "Oops! Please update your profile with a valid eReader Email."
+msgstr "Nastavte vo vašom profile platnú e-mailovú adresu pre vašu čítačku."
+
+#: cps/web.py:1378
+msgid "No email addresses selected"
+msgstr ""
+
+#: cps/web.py:1386
+#, fuzzy
+msgid "Success! Book queued for sending to selected addresses"
+msgstr "Úspech! Kniha bola zaradená na odoslanie do %(eReadermail)s"
+
+#: cps/web.py:1405
+msgid "Please wait one minute to register next user"
+msgstr "Počkajte, prosím minútku pred registráciou ďalšieho používateľa"
+
+#: cps/templates/layout.html:132 cps/templates/layout.html:174
+#: cps/templates/login.html:27 cps/templates/register.html:17 cps/web.py:1406
+#: cps/web.py:1410 cps/web.py:1415 cps/web.py:1419 cps/web.py:1425
+#: cps/web.py:1450 cps/web.py:1454 cps/web.py:1467 cps/web.py:1470
+msgid "Register"
+msgstr "Registrovať"
+
+#: cps/web.py:1409 cps/web.py:1517
+#, fuzzy
+msgid "Connection error to limiter backend, please contact your administrator"
+msgstr "Poštový server nie je nastavený, kontaktujte prosím správcu."
+
+#: cps/web.py:1414 cps/web.py:1466
+msgid ""
+"Oops! Email server is not configured, please contact your administrator."
+msgstr "Poštový server nie je nastavený, kontaktujte prosím správcu."
+
+#: cps/web.py:1452
+msgid "Oops! Your Email is not allowed."
+msgstr "Vaša e-mailová adresa nie je povolená."
+
+#: cps/web.py:1455
+msgid "Success! Confirmation Email has been sent."
+msgstr "Úspech! Potvrdzujúci e-mail bol odoslaný."
+
+#: cps/web.py:1500 cps/web.py:1523
+msgid "Cannot activate LDAP authentication"
+msgstr "Nie je možné aktivovať LDAP autentifikáciu"
+
+#: cps/web.py:1513
+msgid "Please wait one minute before next login"
+msgstr "Počkajte, prosím minútku pred opätovným prihlásením"
+
+#: cps/web.py:1532
+#, python-format
+msgid "you are now logged in as: '%(nickname)s'"
+msgstr "ste prihlásený ako: '%(nickname)s'"
+
+#: cps/web.py:1539
+#, python-format
+msgid ""
+"Fallback Login as: '%(nickname)s', LDAP Server not reachable, or user not "
+"known"
+msgstr ""
+"Záložné prihlásenie ako: '%(nickname)s', LDAP server je nedostupný alebo "
+"používateľ je neznámy"
+
+#: cps/web.py:1544
+#, python-format
+msgid "Could not login: %(message)s"
+msgstr "Nemôžem prihlásiť: %(message)s"
+
+#: cps/web.py:1548 cps/web.py:1573
+msgid "Wrong Username or Password"
+msgstr "Nesprávne používateľské meno alebo heslo"
+
+#: cps/web.py:1555
+msgid "New Password was sent to your email address"
+msgstr "Na vašu e-mailovú adresu bolo odoslané nové heslo"
+
+#: cps/web.py:1559
+msgid "An unknown error occurred. Please try again later."
+msgstr "Vyskytla sa neočakávaná chyba. Prosím, skúste to opäť neskôr."
+
+#: cps/web.py:1561
+msgid "Please enter valid username to reset password"
+msgstr "Na resetovanie hesla zadajte platné používateľské meno"
+
+#: cps/web.py:1569
+#, python-format
+msgid "You are now logged in as: '%(nickname)s'"
+msgstr "Teraz ste prihlásený ako: '%(nickname)s'"
+
+#: cps/web.py:1643 cps/web.py:1696
+#, python-format
+msgid "%(name)s's Profile"
+msgstr "Profil pre %(name)s"
+
+#: cps/web.py:1660
+msgid "Success! Profile Updated"
+msgstr "Úspech! Profil bol aktualizovaný"
+
+#: cps/web.py:1664
+msgid "Oops! An account already exists for this Email."
+msgstr "Účet s touto e-mailovou adresou už existuje."
+
+#: cps/web.py:1770
+#, fuzzy
+msgid "Invalid book ID."
+msgstr "Neplatná rola"
+
+#: cps/services/gmail.py:48
+msgid "Found no valid gmail.json file with OAuth information"
+msgstr "Nenašiel sa súbor gmail.json s OAuth informáciou"
+
+#: cps/tasks/clean.py:18
+msgid "Delete temp folder contents"
+msgstr ""
+
+#: cps/tasks/convert.py:98
+#, python-format
+msgid "%(book)s send to E-Reader"
+msgstr "%(book)s bol odoslaný do čítačky"
+
+#: cps/tasks/convert.py:162
+#, python-format
+msgid "Calibre ebook-convert %(tool)s not found"
+msgstr "Nástroj pre prevod ebook-convert %(tool)s sa nenašiel"
+
+#: cps/tasks/convert.py:196
+#, python-format
+msgid "%(format)s format not found on disk"
+msgstr "Formát %(format)s sa nenachádza na disku"
+
+#: cps/tasks/convert.py:200
+msgid "Ebook converter failed with unknown error"
+msgstr "Prevádzač e-kníh zlyhal s neznámou chybou"
+
+#: cps/tasks/convert.py:219
+#, python-format
+msgid "Kepubify-converter failed: %(error)s"
+msgstr "Prevádzač Kepubify zlyhal: %(error)s"
+
+#: cps/tasks/convert.py:239
+#, python-format
+msgid "Converted file not found or more than one file in folder %(folder)s"
+msgstr ""
+"Prevádzaný súbor sa nenašiel alebo viac ako jeden súbor v zložke %(folder)s"
+
+#: cps/tasks/convert.py:274 cps/tasks/convert.py:325
+#, python-format
+msgid "Calibre failed with error: %(error)s"
+msgstr "Calibre zlyhal s chybou: %(error)s"
+
+#: cps/tasks/convert.py:302
+#, python-format
+msgid "Ebook-converter failed: %(error)s"
+msgstr "Prevádzač e-kníh zlyhal: %(error)s"
+
+#: cps/tasks/convert.py:330
+msgid "Convert"
+msgstr "Previesť"
+
+#: cps/tasks/database.py:15
+msgid "Reconnecting Calibre database"
+msgstr "Spojenie s databázou sa znovu naväzuje"
+
+#: cps/tasks/mail.py:268
+msgid "E-mail"
+msgstr "E-mail"
+
+#: cps/tasks/metadata_backup.py:23
+msgid "Backing up Metadata"
+msgstr "Zálohovať metadáta"
+
+#: cps/tasks/thumbnail.py:85
+#, python-format
+msgid "Generated %(count)s cover thumbnails"
+msgstr "Bolo vygenerovaných %(count)s náhľadov obálok kníh"
+
+#: cps/tasks/thumbnail.py:220 cps/tasks/thumbnail.py:433
+#: cps/tasks/thumbnail.py:501
+msgid "Cover Thumbnails"
+msgstr "Náhľad obálky knihy"
+
+#: cps/tasks/thumbnail.py:279
+#, python-brace-format
+msgid "Generated {0} series thumbnails"
+msgstr "Bolo vygenerovaných {0} náhľadov pre série"
+
+#: cps/tasks/thumbnail.py:444
+msgid "Clearing cover thumbnail cache"
+msgstr "Vyrovnávacia pamäť pre obálky kníh sa vyprázdňuje"
+
+#: cps/tasks/upload.py:28 cps/templates/admin.html:21
+#: cps/templates/layout.html:151 cps/templates/user_table.html:145
+msgid "Upload"
+msgstr "Nahrať"
+
+#: cps/templates/admin.html:9
+msgid "Users&nbsp;&nbsp;👤"
+msgstr ""
+
+#: cps/templates/admin.html:14 cps/templates/login.html:9
+#: cps/templates/login.html:10 cps/templates/register.html:9
+#: cps/templates/user_edit.html:10 cps/templates/user_table.html:134
+msgid "Username"
+msgstr "Meno používateľa"
+
+#: cps/templates/admin.html:15 cps/templates/register.html:14
+#: cps/templates/user_edit.html:15 cps/templates/user_table.html:135
+msgid "Email"
+msgstr "E-mail"
+
+#: cps/templates/admin.html:16
+msgid "Send to eReader Email"
+msgstr "Poslať na e-mail čítačky"
+
+#: cps/templates/admin.html:18 cps/templates/layout.html:162
+#: cps/templates/user_table.html:143
+msgid "Admin"
+msgstr "Správca"
+
+#: cps/templates/admin.html:19 cps/templates/login.html:13
+#: cps/templates/login.html:14 cps/templates/user_edit.html:23
+msgid "Password"
+msgstr "Heslo"
+
+#: cps/templates/admin.html:23 cps/templates/detail.html:28
+#: cps/templates/detail.html:41 cps/templates/shelf.html:8
+#: cps/templates/user_table.html:146
+msgid "Download"
+msgstr "Stiahnuť"
+
+#: cps/templates/admin.html:24
+msgid "View Books"
+msgstr "Zobraziť knihy"
+
+#: cps/templates/admin.html:25 cps/templates/book_table.html:47
+#: cps/templates/book_table.html:325 cps/templates/user_table.html:131
+#: cps/templates/user_table.html:148
+msgid "Edit"
+msgstr "Upraviť"
+
+#: cps/templates/admin.html:26 cps/templates/book_edit.html:17
+#: cps/templates/book_table.html:62 cps/templates/book_table.html:141
+#: cps/templates/book_table.html:190 cps/templates/duplicates.html:366
+#: cps/templates/modal_dialogs.html:63 cps/templates/modal_dialogs.html:116
+#: cps/templates/user_edit.html:82 cps/templates/user_table.html:149
+msgid "Delete"
+msgstr "Zmazať"
+
+#: cps/templates/admin.html:27
+msgid "Public Shelf"
+msgstr "Verejná polica"
+
+#: cps/templates/admin.html:56
+msgid "Manage Profile Pictures"
+msgstr ""
+
+#: cps/templates/admin.html:58
+msgid "Import LDAP Users"
+msgstr "Importovať LDAP používateľov"
+
+#: cps/templates/admin.html:65
+#, fuzzy
+msgid "Email Server Settings&nbsp;&nbsp;📬"
+msgstr "Nastavenia poštového servera"
+
+#: cps/templates/admin.html:70 cps/templates/email_edit.html:31
+msgid "SMTP Hostname"
+msgstr "SMTP hostiteľ"
+
+#: cps/templates/admin.html:74 cps/templates/email_edit.html:35
+msgid "SMTP Port"
+msgstr "SMTP port"
+
+#: cps/templates/admin.html:78 cps/templates/email_edit.html:39
+msgid "Encryption"
+msgstr "Šifrovanie"
+
+#: cps/templates/admin.html:82 cps/templates/email_edit.html:47
+msgid "SMTP Login"
+msgstr "SMTP prihlásenie"
+
+#: cps/templates/admin.html:86 cps/templates/admin.html:97
+#: cps/templates/email_edit.html:55
+msgid "From Email"
+msgstr "Z poštovej adresy"
+
+#: cps/templates/admin.html:93
+msgid "Email Service"
+msgstr "Poštová služba"
+
+#: cps/templates/admin.html:94
+msgid "Gmail via Oauth2"
+msgstr "GMail skrz OAuthľ"
+
+#: cps/templates/admin.html:109
+msgid "Configuration&nbsp;&nbsp;⚙️"
+msgstr ""
+
+#: cps/templates/admin.html:112
+msgid "Calibre Database Directory"
+msgstr "Adresár databázy Calibre"
+
+#: cps/templates/admin.html:116 cps/templates/config_edit.html:68
+msgid "Log Level"
+msgstr "Úroveň denníka"
+
+#: cps/templates/admin.html:120
+msgid "Port"
+msgstr "Port"
+
+#: cps/templates/admin.html:125
+msgid "External Port"
+msgstr "Externý port"
+
+#: cps/templates/admin.html:132 cps/templates/config_view_edit.html:28
+msgid "Books per Page"
+msgstr "Kníh na stránku"
+
+#: cps/templates/admin.html:136
+msgid "Uploads"
+msgstr "Nahrávania"
+
+#: cps/templates/admin.html:140
+msgid "Anonymous Browsing"
+msgstr "Anonymné prezeranie"
+
+#: cps/templates/admin.html:144
+msgid "Public Registration"
+msgstr "Verejná registrácia"
+
+#: cps/templates/admin.html:148
+msgid "Magic Link Remote Login"
+msgstr "Vzdialené prihlásenie Magic Link"
+
+#: cps/templates/admin.html:152
+msgid "Reverse Proxy Login"
+msgstr "Prihlásenie na reverznú proxy"
+
+#: cps/templates/admin.html:157 cps/templates/config_edit.html:186
+msgid "Reverse Proxy Header Name"
+msgstr "Meno hlavičky pre reverznú proxy"
+
+#: cps/templates/admin.html:162
+msgid "Edit Calibre Database Configuration"
+msgstr "Upraviť configuráciu databázy Calibre"
+
+#: cps/templates/admin.html:163
+msgid "Edit Basic Configuration"
+msgstr "Upraviť základnú konfiguráciu"
+
+#: cps/templates/admin.html:164
+msgid "Edit UI Configuration"
+msgstr "Upraviť konfiguráciu používateľského rozhrania"
+
+#: cps/templates/admin.html:170
+#, fuzzy
+msgid "Scheduled Tasks&nbsp;&nbsp;⌛"
+msgstr "Naplánované úlohy"
+
+#: cps/templates/admin.html:173 cps/templates/schedule_edit.html:12
+#: cps/templates/tasks.html:18
+msgid "Start Time"
+msgstr "Začiatok"
+
+#: cps/templates/admin.html:177 cps/templates/schedule_edit.html:20
+msgid "Maximum Duration"
+msgstr "Maximálne trvanie"
+
+#: cps/templates/admin.html:181 cps/templates/schedule_edit.html:29
+msgid "Generate Thumbnails"
+msgstr "Generovať náhľady"
+
+#: cps/templates/admin.html:185
+msgid "Generate series cover thumbnails"
+msgstr "Generovať náhľady obálok pre série"
+
+#: cps/templates/admin.html:189 cps/templates/admin.html:228
+#: cps/templates/schedule_edit.html:37
+msgid "Reconnect Calibre Database"
+msgstr "Znovu naviazať spojenie s Calibre databázou"
+
+#: cps/templates/admin.html:193 cps/templates/schedule_edit.html:41
+msgid "Generate Metadata Backup Files"
+msgstr "Vygenerovať záložné súbory pre metadáta"
+
+#: cps/templates/admin.html:200
+msgid "Refresh Thumbnail Cache"
+msgstr "Obnoviť vyrovnávaciu pamäť pre náhľady"
+
+#: cps/templates/admin.html:207
+msgid "CWA Admin Functions&nbsp;&nbsp;⚡"
+msgstr ""
+
+#: cps/templates/admin.html:208
+#, fuzzy
+msgid "CWA Settings"
+msgstr "Nastavenia"
+
+#: cps/templates/admin.html:209
+#, fuzzy
+msgid "Show CWA Stats"
+msgstr "Nastavenia"
+
+#: cps/templates/admin.html:210
+#, fuzzy
+msgid "Check CWA Status"
+msgstr "Stav archivácie"
+
+#: cps/templates/admin.html:211
+#, fuzzy
+msgid "Setup KOReader Sync"
+msgstr "čítačka epub"
+
+#: cps/templates/admin.html:214
+msgid "CWA Library Conversion Service"
+msgstr ""
+
+#: cps/templates/admin.html:215
+msgid "CWA Send-to-Kindle EPUB Fixer Service"
+msgstr ""
+
+#: cps/templates/admin.html:218
+msgid "CWA GitHub"
+msgstr ""
+
+#: cps/templates/admin.html:219
+#, fuzzy
+msgid "CWA Discord Server"
+msgstr "Objaviť"
+
+#: cps/templates/admin.html:223
+#, fuzzy
+msgid "Administration&nbsp;&nbsp;🚀"
+msgstr "Správa"
+
+#: cps/templates/admin.html:224
+msgid "Download Debug Package"
+msgstr "Stiahnuť ladiaci balík"
+
+#: cps/templates/admin.html:225
+msgid "View Logs"
+msgstr "Zobraziť denníky"
+
+#: cps/templates/admin.html:231
+msgid "Restart"
+msgstr "Reštart"
+
+#: cps/templates/admin.html:232
+msgid "Shutdown"
+msgstr "Vypnúť"
+
+#: cps/templates/admin.html:241
+#, fuzzy
+msgid "Version Information&nbsp;&nbsp;📜"
+msgstr "Informácia o verzii"
+
+#: cps/templates/admin.html:246
+msgid "Version"
+msgstr "Verzia"
+
+#: cps/templates/admin.html:247
+msgid "Details"
+msgstr "Detaily"
+
+#: cps/templates/admin.html:254 cps/templates/admin.html:259
+msgid "Current Version"
+msgstr "Aktuálna verzia"
+
+#: cps/templates/admin.html:264 cps/templates/admin.html:269
+msgid "-"
+msgstr ""
+
+#: cps/templates/admin.html:276
+msgid "Check for Update"
+msgstr "Kontrola aktualizácie"
+
+#: cps/templates/admin.html:277
+msgid "Perform Update"
+msgstr "Vykonať aktualizáciu"
+
+#: cps/templates/admin.html:290
+msgid "Are you sure you want to restart?"
+msgstr "Skutočne chcete reštartovať?"
+
+#: cps/templates/admin.html:295 cps/templates/admin.html:309
+#: cps/templates/admin.html:329 cps/templates/config_db.html:103
+#: cps/templates/duplicates.html:389 cps/templates/duplicates.html:411
+msgid "OK"
+msgstr "V poriadku"
+
+#: cps/templates/admin.html:296 cps/templates/admin.html:310
+#: cps/templates/book_edit.html:234 cps/templates/book_table.html:172
+#: cps/templates/book_table.html:191 cps/templates/book_table.html:211
+#: cps/templates/book_table.html:231 cps/templates/book_table.html:251
+#: cps/templates/book_table.html:271 cps/templates/book_table.html:326
+#: cps/templates/book_table.html:362 cps/templates/config_db.html:86
+#: cps/templates/config_edit.html:535 cps/templates/config_view_edit.html:176
+#: cps/templates/cwa_convert_library.html:23
+#: cps/templates/cwa_epub_fixer.html:23 cps/templates/detail.html:112
+#: cps/templates/detail.html:412 cps/templates/duplicates.html:367
+#: cps/templates/modal_dialogs.html:64 cps/templates/modal_dialogs.html:99
+#: cps/templates/modal_dialogs.html:117 cps/templates/modal_dialogs.html:135
+#: cps/templates/schedule_edit.html:45 cps/templates/shelf_edit.html:27
+#: cps/templates/tasks.html:47 cps/templates/user_edit.html:159
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: cps/templates/admin.html:308
+msgid "Are you sure you want to shutdown?"
+msgstr "Skutočne chcete vypnúťť?"
+
+#: cps/templates/admin.html:320
+msgid "Updating, please do not reload this page"
+msgstr "Aktualizuje sa, neskúšajte znovu načítať stránku"
+
+#: cps/templates/author.html:15
+msgid "via"
+msgstr "cez"
+
+#: cps/templates/author.html:23
+msgid "In Library"
+msgstr "V knižnici"
+
+#: cps/templates/author.html:26 cps/templates/index.html:74
+#: cps/templates/search.html:31 cps/templates/shelf.html:20
+msgid "Sort according to book date, newest first"
+msgstr "Triediť podľa dátumu knihy, najnovšie najskôr"
+
+#: cps/templates/author.html:27 cps/templates/index.html:75
+#: cps/templates/search.html:32 cps/templates/shelf.html:21
+msgid "Sort according to book date, oldest first"
+msgstr "Triediť podľa dátumu knihy, najstaršie najskôr"
+
+#: cps/templates/author.html:28 cps/templates/index.html:76
+#: cps/templates/search.html:33 cps/templates/shelf.html:22
+msgid "Sort title in alphabetical order"
+msgstr "Triediť podľa názvu v abecednom poradí"
+
+#: cps/templates/author.html:29 cps/templates/index.html:77
+#: cps/templates/search.html:34 cps/templates/shelf.html:23
+msgid "Sort title in reverse alphabetical order"
+msgstr "Triediť podľa názvu v obrátenom abecednom poradí"
+
+#: cps/templates/author.html:30 cps/templates/index.html:80
+#: cps/templates/search.html:37 cps/templates/shelf.html:26
+msgid "Sort according to publishing date, newest first"
+msgstr "Triediť podľa dátumu vydania, najnovšie najskôr"
+
+#: cps/templates/author.html:31 cps/templates/index.html:81
+#: cps/templates/search.html:38 cps/templates/shelf.html:27
+msgid "Sort according to publishing date, oldest first"
+msgstr "Triediť podľa dátumu vydania, najstaršie najskôr"
+
+#: cps/templates/author.html:56 cps/templates/author.html:113
+#: cps/templates/index.html:30 cps/templates/index.html:113
+#: cps/templates/search.html:67 cps/templates/shelf.html:58
+msgid "reduce"
+msgstr "znížiť"
+
+#: cps/templates/author.html:97
+msgid "More by"
+msgstr "Viac od"
+
+#: cps/templates/book_edit.html:11
+msgid "Delete Book"
+msgstr "Zmazať knihu"
+
+#: cps/templates/book_edit.html:14
+msgid "Delete formats:"
+msgstr "Zmazať formáty:"
+
+#: cps/templates/book_edit.html:25
+msgid "Convert book format:"
+msgstr "Previesť knihu s formátom:"
+
+#: cps/templates/book_edit.html:30
+msgid "Convert from:"
+msgstr "Previesť z:"
+
+#: cps/templates/book_edit.html:32 cps/templates/book_edit.html:39
+msgid "select an option"
+msgstr "vybrať možnosť"
+
+#: cps/templates/book_edit.html:37
+msgid "Convert to:"
+msgstr "Previesť do:"
+
+#: cps/templates/book_edit.html:46
+msgid "Convert book"
+msgstr "Previesť knihu"
+
+#: cps/templates/book_edit.html:53 cps/templates/book_edit.html:71
+#: cps/templates/layout.html:148 cps/templates/layout.html:247
+msgid "Uploading..."
+msgstr "Nahráva sa..."
+
+#: cps/templates/book_edit.html:53 cps/templates/book_edit.html:270
+#: cps/templates/book_table.html:339 cps/templates/layout.html:148
+#: cps/templates/layout.html:316 cps/templates/modal_dialogs.html:34
+#: cps/templates/user_edit.html:178
+msgid "Close"
+msgstr "Zatvoriť"
+
+#: cps/templates/book_edit.html:53 cps/templates/duplicates.html:400
+#: cps/templates/layout.html:148
+msgid "Error"
+msgstr "Chyba"
+
+#: cps/templates/book_edit.html:58
+msgid "Upload Format"
+msgstr "Formát nahrávania"
+
+#: cps/templates/book_edit.html:92 cps/templates/book_edit.html:345
+#: cps/templates/search_form.html:12
+msgid "Author"
+msgstr "Autor"
+
+#: cps/templates/book_edit.html:96 cps/templates/search_form.html:52
+msgid "Tags"
+msgstr "Značka"
+
+#: cps/templates/book_edit.html:104 cps/templates/book_table.html:108
+msgid "Series ID"
+msgstr "ID série"
+
+#: cps/templates/book_edit.html:107
+msgid "Published Date"
+msgstr "Dátum vydania"
+
+#: cps/templates/book_edit.html:116 cps/templates/book_edit.html:346
+#: cps/templates/detail.html:266 cps/templates/listenmp3.html:102
+#: cps/templates/search_form.html:16
+msgid "Publisher"
+msgstr "Vydavateľ"
+
+#: cps/templates/book_edit.html:120 cps/templates/detail.html:231
+#: cps/templates/listenmp3.html:69 cps/templates/user_edit.html:33
+msgid "Language"
+msgstr "Jazyk"
+
+#: cps/templates/book_edit.html:124
+msgid "Rating"
+msgstr "Hodnotenie"
+
+#: cps/templates/book_edit.html:128 cps/templates/book_edit.html:347
+#: cps/templates/search_form.html:154
+msgid "Description"
+msgstr "Popis"
+
+#: cps/templates/book_edit.html:132
+msgid "Identifiers"
+msgstr "Identifikátory"
+
+#: cps/templates/book_edit.html:136 cps/templates/book_edit.html:356
+msgid "Identifier Type"
+msgstr "Typ identifikátora"
+
+#: cps/templates/book_edit.html:137 cps/templates/book_edit.html:357
+msgid "Identifier Value"
+msgstr "Hodnota identifikátora"
+
+#: cps/templates/book_edit.html:138 cps/templates/book_edit.html:358
+#: cps/templates/user_table.html:24
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: cps/templates/book_edit.html:143
+msgid "Add Identifier"
+msgstr "Pridať identifikátor"
+
+#: cps/templates/book_edit.html:147
+msgid ""
+"Fetch Cover from URL (JPEG - Image will be downloaded and stored in database)"
+msgstr "Načítať obálku z URL (JPEG-obrázok sa stiahne a uloží v databáze)"
+
+#: cps/templates/book_edit.html:151
+msgid "Upload Cover from Local Disk"
+msgstr "Nahrať obálku knihy z miestneho disku"
+
+#: cps/templates/book_edit.html:163 cps/templates/search_form.html:46
+#: cps/templates/search_form.html:167
+msgid "Yes"
+msgstr "Áno"
+
+#: cps/templates/book_edit.html:164 cps/templates/search_form.html:47
+#: cps/templates/search_form.html:168
+msgid "No"
+msgstr "Nie"
+
+#: cps/templates/book_edit.html:229
+msgid "View Book on Save"
+msgstr "Zobraziť knihu pri ukladaní"
+
+#: cps/templates/book_edit.html:232 cps/templates/book_edit.html:250
+msgid "Fetch Metadata"
+msgstr "Načítať metadáta"
+
+#: cps/templates/book_edit.html:233 cps/templates/config_db.html:85
+#: cps/templates/config_edit.html:534 cps/templates/config_view_edit.html:175
+#: cps/templates/email_edit.html:65 cps/templates/schedule_edit.html:44
+#: cps/templates/shelf_edit.html:25 cps/templates/shelf_order.html:41
+#: cps/templates/user_edit.html:157
+msgid "Save"
+msgstr "Uložiť"
+
+#: cps/templates/book_edit.html:253
+msgid "Keyword"
+msgstr "Kľúčové slovo"
+
+#: cps/templates/book_edit.html:254
+msgid "Search keyword"
+msgstr "Vyhľadať kľúčové slovo"
+
+#: cps/templates/book_edit.html:266 cps/templates/book_edit.html:342
+msgid "Loading..."
+msgstr "Načítava sa..."
+
+#: cps/templates/book_edit.html:343
+msgid "Search error!"
+msgstr "Chyba pri vyhľadávaní!"
+
+#: cps/templates/book_edit.html:344
+msgid "No Result(s) found! Please try another keyword."
+msgstr "Nič sa nenaslo! Skúste, prosím iné kľúčové slovo."
+
+#: cps/templates/book_edit.html:348
+msgid "Source"
+msgstr "Zdroj"
+
+#: cps/templates/book_table.html:12 cps/templates/book_table.html:108
+#: cps/templates/user_table.html:14 cps/templates/user_table.html:77
+#: cps/templates/user_table.html:100
+msgid "This Field is Required"
+msgstr "Toto pole je povinné"
+
+#: cps/templates/book_table.html:44 cps/templates/book_table.html:171
+msgid "Merge"
+msgstr "Zlúčiť"
+
+#: cps/templates/book_table.html:50 cps/templates/book_table.html:210
+#, fuzzy
+msgid "Archive"
+msgstr "Archivovaný"
+
+#: cps/templates/book_table.html:53 cps/templates/book_table.html:230
+#, fuzzy
+msgid "Unarchive"
+msgstr "Archivovaný"
+
+#: cps/templates/book_table.html:56 cps/templates/book_table.html:250
+#, fuzzy
+msgid "Mark as read"
+msgstr "Označiť ako neprečítané"
+
+#: cps/templates/book_table.html:59 cps/templates/book_table.html:270
+#, fuzzy
+msgid "Mark as unread"
+msgstr "Označiť ako neprečítané"
+
+#: cps/templates/book_table.html:65
+#, fuzzy
+msgid "Add to Shelf"
+msgstr "Pridať do police"
+
+#: cps/templates/book_table.html:67
+#, fuzzy
+msgid " Exchange author & title"
+msgstr "Vymeniť autora a názov"
+
+#: cps/templates/book_table.html:72
+#, fuzzy
+msgid "Select all"
+msgstr "Vytvoriť policu"
+
+#: cps/templates/book_table.html:75
+msgid "Clear all"
+msgstr ""
+
+#: cps/templates/book_table.html:84
+#, fuzzy
+msgid "Update Title Sort automatically  "
+msgstr "Automaticky aktualizovať triedenie podľa názvu"
+
+#: cps/templates/book_table.html:88
+msgid "Update Author Sort automatically"
+msgstr "Automaticky aktualizovať triedeni podľa autora"
+
+#: cps/templates/book_table.html:102 cps/templates/book_table.html:108
+msgid "Enter Title"
+msgstr "Zadajte názov"
+
+#: cps/templates/book_table.html:102 cps/templates/config_view_edit.html:24
+#: cps/templates/shelf_edit.html:8
+msgid "Title"
+msgstr "Názov"
+
+#: cps/templates/book_table.html:103
+msgid "Enter Title Sort"
+msgstr "Zadajte triedenie podľa názvu knihy"
+
+#: cps/templates/book_table.html:103
+msgid "Title Sort"
+msgstr "Triedenie podľa názvu knihy"
+
+#: cps/templates/book_table.html:104
+msgid "Enter Author Sort"
+msgstr "Zadajte triedenie podľa autora knihy"
+
+#: cps/templates/book_table.html:104
+msgid "Author Sort"
+msgstr "Triedenie podľa autora knihy"
+
+#: cps/templates/book_table.html:105
+msgid "Enter Authors"
+msgstr "Zadajte autorov"
+
+#: cps/templates/book_table.html:106
+msgid "Enter Categories"
+msgstr "Zadajte kategórie"
+
+#: cps/templates/book_table.html:107
+msgid "Enter Series"
+msgstr "Zadajte série"
+
+#: cps/templates/book_table.html:109
+msgid "Enter Languages"
+msgstr "Zadajte jazyky"
+
+#: cps/templates/book_table.html:110
+msgid "Publishing Date"
+msgstr "Dátum vydania"
+
+#: cps/templates/book_table.html:111
+msgid "Enter Publishers"
+msgstr "Zadajte vydavateľov"
+
+#: cps/templates/book_table.html:112
+msgid "Enter comments"
+msgstr "Zadajte komentáre"
+
+#: cps/templates/book_table.html:112
+#, fuzzy
+msgid "Comments"
+msgstr "Komentáre"
+
+#: cps/templates/book_table.html:114
+#, fuzzy
+msgid "Archived?"
+msgstr "Archivovaný"
+
+#: cps/templates/book_table.html:116
+#, fuzzy
+msgid "Read?"
+msgstr "Čítať"
+
+#: cps/templates/book_table.html:119 cps/templates/book_table.html:121
+#: cps/templates/book_table.html:123 cps/templates/book_table.html:125
+#: cps/templates/book_table.html:129 cps/templates/book_table.html:131
+#: cps/templates/book_table.html:135
+msgid "Enter "
+msgstr "Zadať "
+
+#: cps/templates/book_table.html:158 cps/templates/book_table.html:182
+#: cps/templates/book_table.html:202 cps/templates/book_table.html:222
+#: cps/templates/book_table.html:242 cps/templates/book_table.html:262
+#: cps/templates/duplicates.html:355 cps/templates/modal_dialogs.html:46
+#: cps/templates/tasks.html:37
+msgid "Are you really sure?"
+msgstr "Naozaj to chcete?"
+
+#: cps/templates/book_table.html:162
+msgid "Books with Title will be merged from:"
+msgstr "Kniha z názvom bude zlúčená s:"
+
+#: cps/templates/book_table.html:166
+msgid "Into Book with Title:"
+msgstr "Na knihu s názvom:"
+
+#: cps/templates/book_table.html:186
+msgid "The following books will be deleted:"
+msgstr ""
+
+#: cps/templates/book_table.html:206
+msgid "The following books will be archived:"
+msgstr ""
+
+#: cps/templates/book_table.html:226
+msgid "The following books will be unarchived:"
+msgstr ""
+
+#: cps/templates/book_table.html:246
+msgid "The following books will be marked read:"
+msgstr ""
+
+#: cps/templates/book_table.html:266
+msgid "The following books will be marked unread:"
+msgstr ""
+
+#: cps/templates/book_table.html:282 cps/templates/detail.html:410
+msgid "Edit Metadata"
+msgstr "Upraviť metadáta"
+
+#: cps/templates/book_table.html:285
+msgid "Edit the fields you want changed. Blank fields will be ignored:"
+msgstr ""
+
+#: cps/templates/book_table.html:340
+#, fuzzy
+msgid "Select a Shelf"
+msgstr "Vytvoriť policu"
+
+#: cps/templates/book_table.html:343
+msgid "Please select a shelf to add the selected books to:"
+msgstr ""
+
+#: cps/templates/book_table.html:345
+msgid "-- Select a Shelf --"
+msgstr ""
+
+#: cps/templates/book_table.html:363 cps/templates/email_edit.html:81
+#: cps/templates/email_edit.html:108 cps/templates/user_table.html:27
+msgid "Add"
+msgstr "Pridať"
+
+#: cps/templates/config_db.html:13
+#, fuzzy
+msgid "Location of Calibre Database (metadata.db file)"
+msgstr "Umiestnenie databázy Calibre"
+
+#: cps/templates/config_db.html:23
+msgid ""
+"CWA is configured so that your Calibre Database (<code>metadata.db</code> "
+"file) should always be somewhere in <code>/calibre-library</code>.\n"
+"        CWA automatically searches whatever directory you've bound to <code>/"
+"calibre-library</code> in your docker-compose file for existing Calibre\n"
+"        Libraries/metadata.db files on start up. If it finds just one "
+"existing library, it mounts it automatically, if it find multiple, by "
+"default\n"
+"        it will mount the largest one automatically and if it doesn't find "
+"any, it will automatically create and mount a new one. For more details,\n"
+"        <a href=\"https://github.com/crocodilestick/Calibre-Web-Automated/"
+"wiki/Configuration#database-configuration\">see here</a>!"
+msgstr ""
+
+#: cps/templates/config_db.html:29
+msgid ""
+"Therefore, when configuring your docker-compose file for CWA, <b>DO NOT "
+"CHANGE THE PATHS IN THE VOLUMES SECTION ON THE RIGHT SIDE OF THE COLONS!</b>"
+msgstr ""
+
+#: cps/templates/config_db.html:30
+msgid ""
+"These paths are internal to CWA only, you can change what they're bind to to "
+"your heart's content on the left-hand side but there's no reason to\n"
+"        change the paths on the right-hand side.<br><br>If you would like "
+"your <code>metadata.db</code> file in a different location to the rest of "
+"your\n"
+"        library, use the <b>Separate Book Files from Library Option below "
+"and there, enter the path to the rest of the library</b>"
+msgstr ""
+
+#: cps/templates/config_db.html:34
+msgid ""
+"E.g. As long as your library's <code>metadata.db</code> file is bound "
+"somewhere within <code>/calibre-library</code>, you could bind the dir\n"
+"        containing the corresponding book files ect. to something like "
+"<code>/books</code> and enter <code>/books</code> in the field that pops up "
+"below\n"
+"        once you've checked the <b>Separate Book Files from Library</b> "
+"option."
+msgstr ""
+
+#: cps/templates/config_db.html:38
+msgid "Split Library Functionality"
+msgstr ""
+
+#: cps/templates/config_db.html:41
+msgid ""
+"<b>Separate Book Files from Library</b> - <code>metadata.db</code> file "
+"should remain in <code>/calibre-library</code>, however your library files "
+"can be wherever you desire"
+msgstr ""
+
+#: cps/templates/config_db.html:54
+msgid "Use Google Drive?"
+msgstr "Používať Google Drive?"
+
+#: cps/templates/config_db.html:59
+msgid "Authenticate Google Drive"
+msgstr "Autentifikovať Google Drive"
+
+#: cps/templates/config_db.html:64
+msgid "Google Drive Calibre folder"
+msgstr "Calibre zložka na Google Drive"
+
+#: cps/templates/config_db.html:72
+msgid "Metadata Watch Channel ID"
+msgstr "ID kanála na sledovanie metadát"
+
+#: cps/templates/config_db.html:75
+msgid "Revoke"
+msgstr "Zrušiť"
+
+#: cps/templates/config_db.html:101
+msgid "New db location is invalid, please enter valid path"
+msgstr "Nové umiestnenie databáze nie je platné, zadajte prosím správnu cestu"
+
+#: cps/templates/config_edit.html:18
+msgid "Server Configuration"
+msgstr "Konfigurácia servera"
+
+#: cps/templates/config_edit.html:25
+msgid "Server Port"
+msgstr "Port servera"
+
+#: cps/templates/config_edit.html:28
+msgid "SSL certfile location (leave it empty for non-SSL Servers)"
+msgstr ""
+"Umiestnenie SSL certifikačného súboru (ponechať prázdne pre nie-SSL servery)"
+
+#: cps/templates/config_edit.html:35
+msgid "SSL Keyfile location (leave it empty for non-SSL Servers)"
+msgstr "Umiestnenie SSL súboru s kľúčom (ponechať prázdne pre nie-SSL servery)"
+
+#: cps/templates/config_edit.html:43
+msgid "Update Channel"
+msgstr "Aktualizovať kanál"
+
+#: cps/templates/config_edit.html:45
+msgid "Stable"
+msgstr "Stabilný"
+
+#: cps/templates/config_edit.html:46
+msgid "Nightly"
+msgstr "Nočný"
+
+#: cps/templates/config_edit.html:50
+msgid "Trusted Hosts (Comma Separated)"
+msgstr "Hostitelia s dôverou (oddelené čiarkou)"
+
+#: cps/templates/config_edit.html:61
+msgid "Logfile Configuration"
+msgstr "Konfigurácia súboru denníka"
+
+#: cps/templates/config_edit.html:77
+msgid "Location and name of logfile (calibre-web.log for no entry)"
+msgstr "Umiestnenie a meno denníkového súboru (calibre-web.log keď nezadané)"
+
+#: cps/templates/config_edit.html:82
+msgid "Enable Access Log"
+msgstr "Povoliť denník pristupu"
+
+#: cps/templates/config_edit.html:85
+msgid "Location and name of access logfile (access.log for no entry)"
+msgstr ""
+"Umiestnenie a meno denníkového súboru pre prístup (access.log keď nezadané)"
+
+#: cps/templates/config_edit.html:96
+#, fuzzy
+msgid "Feature Configuration"
+msgstr "Konfigurácia servera"
+
+#: cps/templates/config_edit.html:104
+msgid "Convert non-English characters in title and author while saving to disk"
+msgstr ""
+"Previesť neanglické znaky v názve a mene autora počas ukladania na disk"
+
+#: cps/templates/config_edit.html:108
+msgid ""
+"Embed Metadata to Ebook File on Download/Conversion/e-mail (needs Calibre/"
+"Kepubify binaries)"
+msgstr ""
+
+#: cps/templates/config_edit.html:112
+msgid "Enable Uploads"
+msgstr "Povoliť nahrávanie"
+
+#: cps/templates/config_edit.html:112
+msgid "(Please ensure that users also have upload permissions)"
+msgstr "(Zaistite, prosím, že používateľ má tiež právo nahrávať)"
+
+#: cps/templates/config_edit.html:116
+msgid "Allowed Upload Fileformats"
+msgstr "Povolené formáty pre nahrávanie"
+
+#: cps/templates/config_edit.html:122
+msgid "Enable Anonymous Browsing"
+msgstr "Povoliť anonymné prechádzanie"
+
+#: cps/templates/config_edit.html:126
+msgid "Enable Public Registration"
+msgstr "Povoliť verejnú registráciu"
+
+#: cps/templates/config_edit.html:131
+msgid "Use Email as Username"
+msgstr "Použiť e-mailovú adresu ako meno používateľa"
+
+#: cps/templates/config_edit.html:136
+msgid "Enable Magic Link Remote Login"
+msgstr "Povoliť vzdialené prihlasovanie Magic Link"
+
+#: cps/templates/config_edit.html:141
+msgid "Enable Kobo sync"
+msgstr "Povoliť synchronizáciu Kobo"
+
+#: cps/templates/config_edit.html:146
+msgid "Proxy unknown requests to Kobo Store"
+msgstr "Proxy neznáme žiadosti na obchod Kobo"
+
+#: cps/templates/config_edit.html:149
+msgid "Server External Port (for port forwarded API calls)"
+msgstr "Externý port servera (pre portovo preposielané API volania)"
+
+#: cps/templates/config_edit.html:154
+msgid "Sync Kobo read progress to Hardcover (Requires API key per user)"
+msgstr ""
+
+#: cps/templates/config_edit.html:161
+msgid "Use Goodreads"
+msgstr "Použiť Goodreads"
+
+#: cps/templates/config_edit.html:165
+msgid "Goodreads API Key"
+msgstr "Goodreads API kľúč"
+
+#: cps/templates/config_edit.html:172
+#, fuzzy
+msgid "Enable Hardcover Sync"
+msgstr "Povoliť synchronizáciu Kobo"
+
+#: cps/templates/config_edit.html:176
+msgid "Hardcover API Key"
+msgstr ""
+
+#: cps/templates/config_edit.html:182
+msgid "Allow Reverse Proxy Authentication"
+msgstr "Povoliť reverznú proxy autentifikáciu"
+
+#: cps/templates/config_edit.html:193
+msgid "Login type"
+msgstr "Typ prihlásenia"
+
+#: cps/templates/config_edit.html:195
+msgid "Use Standard Authentication"
+msgstr "Použiť štandardnú autentifikáciu"
+
+#: cps/templates/config_edit.html:197
+msgid "Use LDAP Authentication"
+msgstr "Použiť LDAP autentifikáciu"
+
+#: cps/templates/config_edit.html:200
+msgid "Use OAuth"
+msgstr "Použiť OAuth"
+
+#: cps/templates/config_edit.html:207
+msgid "LDAP Server Host Name or IP Address"
+msgstr "Hostiteľské meno alebo IP adresa LDAP servera"
+
+#: cps/templates/config_edit.html:211
+msgid "LDAP Server Port"
+msgstr "Port LDAP servera"
+
+#: cps/templates/config_edit.html:215
+msgid "LDAP Encryption"
+msgstr "LDAP šifrovanie"
+
+#: cps/templates/config_edit.html:218
+msgid "TLS"
+msgstr "TLS"
+
+#: cps/templates/config_edit.html:219
+msgid "SSL"
+msgstr "SSL"
+
+#: cps/templates/config_edit.html:223
+msgid ""
+"LDAP CACertificate Path (Only needed for Client Certificate Authentication)"
+msgstr ""
+"Cesta k LDAP CA-certifikátu (potrebná iba pre autentifikáciu certifikátom "
+"klienta)"
+
+#: cps/templates/config_edit.html:230
+msgid ""
+"LDAP Certificate Path (Only needed for Client Certificate Authentication)"
+msgstr ""
+"Cesta k LDAP certifikátu (potrebná iba pre autentifikáciu certifikátom "
+"klienta)"
+
+#: cps/templates/config_edit.html:237
+msgid "LDAP Keyfile Path (Only needed for Client Certificate Authentication)"
+msgstr ""
+"Cesta k LDAP súboru kľúča (potrebná iba pre autentifikáciu certifikátom "
+"klienta)"
+
+#: cps/templates/config_edit.html:246
+msgid "LDAP Authentication"
+msgstr "LDAP autentifikácia"
+
+#: cps/templates/config_edit.html:248
+msgid "Anonymous"
+msgstr "Anonymný"
+
+#: cps/templates/config_edit.html:249
+msgid "Unauthenticated"
+msgstr "Neautentifikovaný"
+
+#: cps/templates/config_edit.html:250
+msgid "Simple"
+msgstr "Jednoduchý"
+
+#: cps/templates/config_edit.html:255
+msgid "LDAP Administrator Username"
+msgstr "Meno používateľa pre LDAP správcu"
+
+#: cps/templates/config_edit.html:261
+msgid "LDAP Administrator Password"
+msgstr "Heslo pre LDAP správcu"
+
+#: cps/templates/config_edit.html:266
+msgid "LDAP Distinguished Name (DN)"
+msgstr "LDAP rozlišovacie meno (DN)"
+
+#: cps/templates/config_edit.html:270
+msgid "LDAP User Object Filter"
+msgstr "Filter pre LDAP objekt používateľa"
+
+#: cps/templates/config_edit.html:275
+msgid "LDAP Server is OpenLDAP?"
+msgstr "LDAP server je OpenLDAP?"
+
+#: cps/templates/config_edit.html:277
+msgid "Following Settings are Needed For User Import"
+msgstr "Pre import používateľa sú potrebné nasledovné nastavenia"
+
+#: cps/templates/config_edit.html:279
+msgid "LDAP Group Object Filter"
+msgstr "Filter pre LDAP objekt skupiny"
+
+#: cps/templates/config_edit.html:283
+msgid "LDAP Group Name"
+msgstr "Meno LDAP skupiny"
+
+#: cps/templates/config_edit.html:287
+msgid "LDAP Group Members Field"
+msgstr "Pole členov LDAP skupiny"
+
+#: cps/templates/config_edit.html:291
+msgid "LDAP Member User Filter Detection"
+msgstr "Detekcia filtra pre LDAP členstvo používateľa"
+
+#: cps/templates/config_edit.html:293
+msgid "Autodetect"
+msgstr "Automatická detekcia"
+
+#: cps/templates/config_edit.html:294
+msgid "Custom Filter"
+msgstr "Filter používateľa"
+
+#: cps/templates/config_edit.html:299
+msgid "LDAP Member User Filter"
+msgstr "Filter pre LDAP členstvo požívateľa"
+
+#: cps/templates/config_edit.html:309
+msgid "Generic OAuth Provider"
+msgstr ""
+
+#: cps/templates/config_edit.html:313
+msgid "OAuth Metadata URL (for auto-discovery)"
+msgstr ""
+
+#: cps/templates/config_edit.html:317
+#, fuzzy
+msgid "Test Metadata"
+msgstr "Načítať metadáta"
+
+#: cps/templates/config_edit.html:320
+msgid "Leave empty to use manual configuration below"
+msgstr ""
+
+#: cps/templates/config_edit.html:326
+msgid "Use Manual Endpoint URLs (override auto-discovery)"
+msgstr ""
+
+#: cps/templates/config_edit.html:327
+msgid ""
+"Check this to manually configure individual OAuth endpoints instead of using "
+"auto-discovery"
+msgstr ""
+
+#: cps/templates/config_edit.html:332
+#, fuzzy
+msgid "Manual Endpoint Configuration"
+msgstr "Upraviť konfiguráciu používateľského rozhrania"
+
+#: cps/templates/config_edit.html:335
+msgid "OAuth Base URL"
+msgstr ""
+
+#: cps/templates/config_edit.html:340
+msgid "Authorization Endpoint"
+msgstr ""
+
+#: cps/templates/config_edit.html:345
+#, fuzzy
+msgid "Token Endpoint"
+msgstr "Žetón sa nenašiel"
+
+#: cps/templates/config_edit.html:350
+msgid "UserInfo Endpoint"
+msgstr ""
+
+#: cps/templates/config_edit.html:358
+#, fuzzy
+msgid "Test Connection"
+msgstr "Chyba spojenia"
+
+#: cps/templates/config_edit.html:367
+#, fuzzy
+msgid "OAuth Scopes"
+msgstr "Nastavenia OAuth"
+
+#: cps/templates/config_edit.html:369
+msgid "Space-separated list of OAuth scopes"
+msgstr ""
+
+#: cps/templates/config_edit.html:373
+#, fuzzy
+msgid "OAuth Client Id"
+msgstr "%(provider)s OAuth klientské ID"
+
+#: cps/templates/config_edit.html:377
+#, fuzzy
+msgid "OAuth Client Secret"
+msgstr "%(provider)s OAuth klientské tajomstvo"
+
+#: cps/templates/config_edit.html:382
+#, fuzzy
+msgid "Field Mapping Configuration"
+msgstr "Zobraziť konfiguráciu"
+
+#: cps/templates/config_edit.html:384
+#, fuzzy
+msgid "Username Field"
+msgstr "Meno používateľa"
+
+#: cps/templates/config_edit.html:386
+msgid "JWT field to extract username from"
+msgstr ""
+
+#: cps/templates/config_edit.html:389
+#, fuzzy
+msgid "Email Field"
+msgstr "Poštová služba"
+
+#: cps/templates/config_edit.html:391
+msgid "JWT field to extract email from"
+msgstr ""
+
+#: cps/templates/config_edit.html:394
+msgid "OAuth group for Admin"
+msgstr ""
+
+#: cps/templates/config_edit.html:398
+msgid "Login Button Text"
+msgstr ""
+
+#: cps/templates/config_edit.html:404
+#, python-format
+msgid "Obtain %(provider)s OAuth Credential"
+msgstr "Získať OAuth prístupové údaje pre %(provider)s"
+
+#: cps/templates/config_edit.html:407
+#, python-format
+msgid "%(provider)s OAuth Client Id"
+msgstr "%(provider)s OAuth klientské ID"
+
+#: cps/templates/config_edit.html:411
+#, python-format
+msgid "%(provider)s OAuth Client Secret"
+msgstr "%(provider)s OAuth klientské tajomstvo"
+
+#: cps/templates/config_edit.html:427
+msgid "External binaries"
+msgstr "Externé binárky"
+
+#: cps/templates/config_edit.html:433
+#, fuzzy
+msgid "Path to Calibre Binaries"
+msgstr "Cesta k Calibre prevádzaču e-kníh"
+
+#: cps/templates/config_edit.html:441
+#, fuzzy
+msgid "Calibre E-Book Converter Settings"
+msgstr "Nastavenie Calibre prevádzača e-kníh"
+
+#: cps/templates/config_edit.html:444
+msgid "Path to Kepubify E-Book Converter"
+msgstr "Cesta Kepubify prevádzaču e-kníh"
+
+#: cps/templates/config_edit.html:452
+#, fuzzy
+msgid "Location of Unrar binary"
+msgstr "Binárny súbor pre UnRar sa nenašiel"
+
+#: cps/templates/config_edit.html:468
+msgid "Security Settings"
+msgstr "Bezpečnostné nastavenia"
+
+#: cps/templates/config_edit.html:476
+msgid "Limit failed login attempts"
+msgstr "Obmedziť neúspešné pokusy o prihlásenie"
+
+#: cps/templates/config_edit.html:480
+msgid "Configure Backend for Limiter"
+msgstr ""
+
+#: cps/templates/config_edit.html:484
+msgid "Options for Limiter Backend"
+msgstr ""
+
+#: cps/templates/config_edit.html:490
+msgid "Check if file extensions matches file content on upload"
+msgstr ""
+
+#: cps/templates/config_edit.html:493
+#, fuzzy
+msgid "Session protection"
+msgstr "Ochrana sedenia"
+
+#: cps/templates/config_edit.html:495
+msgid "Basic"
+msgstr "Základná"
+
+#: cps/templates/config_edit.html:496
+msgid "Strong"
+msgstr "Silná"
+
+#: cps/templates/config_edit.html:501
+msgid "User Password policy"
+msgstr "Zásady pre používateľské heslá"
+
+#: cps/templates/config_edit.html:505
+msgid "Minimum password length"
+msgstr "Minimálna dĺžka hesla"
+
+#: cps/templates/config_edit.html:510
+msgid "Enforce number"
+msgstr "Vyžadovať číslo"
+
+#: cps/templates/config_edit.html:514
+msgid "Enforce lowercase characters"
+msgstr "Vyžadovať malé písmená"
+
+#: cps/templates/config_edit.html:518
+msgid "Enforce uppercase characters"
+msgstr "Vyžadovať veľké písmená"
+
+#: cps/templates/config_edit.html:522
+msgid "Enforce characters (needed For Chinese/Japanese/Korean Characters)"
+msgstr ""
+
+#: cps/templates/config_edit.html:526
+msgid "Enforce special characters"
+msgstr "Vyžadovať špeciálne znaky"
+
+#: cps/templates/config_view_edit.html:17
+msgid "View Configuration"
+msgstr "Zobraziť konfiguráciu"
+
+#: cps/templates/config_view_edit.html:32
+msgid "No. of Random Books to Display"
+msgstr "Počet kníh na náhodné zobrazenie"
+
+#: cps/templates/config_view_edit.html:36
+msgid "No. of Authors to Display Before Hiding (0=Disable Hiding)"
+msgstr "Počet autorov na zobrazenie pred ukrytím (0=Zakázať ukrývanie)"
+
+#: cps/templates/config_view_edit.html:40
+msgid ""
+"Default Theme (users can select their own preferred theme however new users "
+"will receive this theme by default)"
+msgstr ""
+
+#: cps/templates/config_view_edit.html:42
+msgid "Standard Theme"
+msgstr "Štandardná téma"
+
+#: cps/templates/config_view_edit.html:43
+msgid "caliBlur! Dark Theme"
+msgstr "tmavá téma caliBlur!"
+
+#: cps/templates/config_view_edit.html:44
+msgid ""
+"Per-user theme switching enabled; this global default only affects new users "
+"& anonymous"
+msgstr ""
+
+#: cps/templates/config_view_edit.html:48
+msgid "Regular Expression for Ignoring Columns"
+msgstr "Regulárny výraz pre ignorované stĺpce"
+
+#: cps/templates/config_view_edit.html:52
+msgid "Link Read/Unread Status to Calibre Column"
+msgstr "Prepojiť stav Prečítané/Neprečítané do Calibre stĺpca"
+
+#: cps/templates/config_view_edit.html:61
+msgid "View Restrictions based on Calibre column"
+msgstr "Zobraziť obmedzenia založené na Calibre stĺpcoch"
+
+#: cps/templates/config_view_edit.html:70
+msgid "Regular Expression for Title Sorting"
+msgstr "Regulárny výraz pre triedenie podľa názvu knihy"
+
+#: cps/templates/config_view_edit.html:81
+msgid "Default Settings for New Users"
+msgstr "Predvolené nastavenia pre nových používateľov"
+
+#: cps/templates/config_view_edit.html:89 cps/templates/user_edit.html:111
+msgid "Admin User"
+msgstr "Používateľ Správca"
+
+#: cps/templates/config_view_edit.html:93 cps/templates/user_edit.html:116
+msgid "Allow Downloads"
+msgstr "Povoliť sťahovanie"
+
+#: cps/templates/config_view_edit.html:97 cps/templates/user_edit.html:120
+msgid "Allow eBook Viewer"
+msgstr "Povoliť zobrazovač e-knihy"
+
+#: cps/templates/config_view_edit.html:102 cps/templates/user_edit.html:125
+msgid "Allow Uploads"
+msgstr "Povoliť nahrávanie"
+
+#: cps/templates/config_view_edit.html:107 cps/templates/user_edit.html:130
+msgid "Allow Edit"
+msgstr "Povoliť úpravu"
+
+#: cps/templates/config_view_edit.html:112 cps/templates/user_edit.html:135
+msgid "Allow Delete Books"
+msgstr "Povoliť mazanie kníh"
+
+#: cps/templates/config_view_edit.html:117 cps/templates/user_edit.html:141
+msgid "Allow Changing Password"
+msgstr "Povoliť zmenu hesla"
+
+#: cps/templates/config_view_edit.html:121 cps/templates/user_edit.html:145
+msgid "Allow Editing Public Shelves"
+msgstr "Povoliť úpravu verejných políc"
+
+#: cps/templates/config_view_edit.html:124
+msgid "Default Language"
+msgstr "Predvolený jazyk"
+
+#: cps/templates/config_view_edit.html:132
+msgid "Default Visible Language of Books"
+msgstr "Predvolené viditeľné jazyky pre knihy"
+
+#: cps/templates/config_view_edit.html:148
+msgid "Default Visibilities for New Users"
+msgstr "Predvolené viditeľnosti pre nových používateľov"
+
+#: cps/templates/config_view_edit.html:164 cps/templates/user_edit.html:99
+#: cps/templates/user_table.html:154
+msgid "Show Random Books in Detail View"
+msgstr "Ukázať náhodné knihy v detailnom zobrazení"
+
+#: cps/templates/config_view_edit.html:167 cps/templates/user_edit.html:102
+msgid "Add Allowed/Denied Tags"
+msgstr "Pridať Povolené/Zakázané značky"
+
+#: cps/templates/config_view_edit.html:168
+msgid "Add Allowed/Denied custom column values"
+msgstr "Pridať Povolené/Zakázané používateľom definované hodnoty stĺpca"
+
+#: cps/templates/cwa_convert_library.html:10
+#: cps/templates/cwa_epub_fixer.html:10
+#, fuzzy
+msgid "Run Archive"
+msgstr "Archivovaný"
+
+#: cps/templates/cwa_convert_library.html:11
+#: cps/templates/cwa_epub_fixer.html:11 cps/templates/cwa_read_log.html:9
+#, fuzzy
+msgid "Download Log"
+msgstr "Stiahnuť"
+
+#: cps/templates/cwa_convert_library.html:24
+#: cps/templates/cwa_epub_fixer.html:24 cps/templates/index.xml:7
+msgid "Start"
+msgstr "Začať"
+
+#: cps/templates/cwa_settings.html:17
+#, fuzzy
+msgid "Enable/Disable Calibre-Web Automated Services"
+msgstr "Calibre-Web denník: "
+
+#: cps/templates/cwa_settings.html:24
+msgid "Enable CWA Auto-Convert"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:26
+msgid ""
+"On by default, when active all ingested books will automatically be "
+"converted to the target format specified below (epub by default) \n"
+"        <em>EXCEPT</em> those you have specifically told CWA to ignore below."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:35
+msgid "Enable CWA Automatic Cover & Metadata Enforcement Service"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:37
+msgid ""
+"On by default, when active, whenever the Metadata and/or Cover Image is "
+"edited in the Web UI, the CWA Metadata Enforcement service \n"
+"        will then apply those changes the ebook files themselves. Normally "
+"in Stock CW or when this setting is disabled, the changes made \n"
+"        are only applied to what you see in the Web UI, not the ebook files "
+"themselves. This feature currently only supports files in EPUB \n"
+"        or AZW3 format."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:48
+msgid "Enable CWA Kindle EPUB Fixer"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:50
+msgid ""
+"When active, the encoding among other attributes of all EPUB files processed "
+"by CWA will be checked and fixed to ensure maximum \n"
+"        compatibility with Amazon's Send-to-Kindle Service."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:59
+#, fuzzy
+msgid "Web UI Settings"
+msgstr "Nastavenia"
+
+#: cps/templates/cwa_settings.html:66
+msgid "Enable CWA Update Notifications"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:68
+msgid ""
+"When active, you will receive notifications in the Web UI when a new version "
+"of CWA is released"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:76
+msgid "Enable Contribute Translations Notifications"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:78
+msgid ""
+"When disabled, you will no longer receive notifications in the Web UI when "
+"using a language other than English if the translations for your chosen "
+"language are not complete."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:86
+msgid "Enable Blurred Backgrounds on Mobile (&lt;768px)"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:88
+msgid ""
+"When active, the blurred cover background effect is also rendered on small "
+"screens. Disable if you notice scrolling or animation lag."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:93
+#, fuzzy
+msgid "Automatic Backup Settings"
+msgstr "Nastavenia OAuth"
+
+#: cps/templates/cwa_settings.html:100
+msgid "Enable CWA Import Auto-Backup"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:102
+msgid ""
+"When active, a copy of all imported files will be stored in <i>/config/"
+"processed_books/imported</i>"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:110
+msgid "Enable CWA Conversion Auto-Backup"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:112
+msgid ""
+"When active, the originals of ingested files that undergo conversion will be "
+"stored in /config/processed_books/converted"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:120
+msgid "Enable CWA EPUB Fixer Auto-Backup"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:122
+msgid ""
+"When active, the originals of EPUBs processed by the CWA Kindle EPUB Fixer "
+"service will be stored in /config/processed_books/fixed_originals"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:132
+msgid "Enable CWA Auto-Zip Backups"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:134
+msgid ""
+"When active, just before midnight each day, the cwa-auto-zipper service will "
+"make zip archives of all the backed up converted, imported and failed files "
+"from that day. This is to help keep the subdirectories of /config/"
+"processed_books organised and to minimise disk space usage."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:139
+msgid "CWA Auto-Conversion Target Format - EPUB by Default"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:142
+msgid ""
+"When the Auto-Convert feature is active, all ingested books will be "
+"automatically converted to the format chosen here (except those formats "
+"selected in the ignore list below)"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:144
+#, fuzzy
+msgid "Choose a target format:"
+msgstr "Previesť knihu s formátom:"
+
+#: cps/templates/cwa_settings.html:155
+msgid ""
+"NOTE: CWA's Metadata Enforcement service can currently only support file in "
+"either EPUB and AZW3 format. Files in other formats will simply be ignored "
+"by the service"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:160
+msgid "CWA Auto-Convert - Ignored Formats"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:162
+msgid ""
+"The formats selected here will be ignored by CWA's Auto-Conversion feature "
+"when it's active, meaning they will be imported as is."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:187
+msgid "CWA Auto-Ingest - Ignored Formats"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:189
+msgid ""
+"The formats selected here will be ignored by CWA's Auto-Ingest feature, "
+"meaning files in these formats won't be added to the library by CWA during "
+"the ingest process"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:214
+msgid "CWA Auto-Ingest Automerge"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:217
+msgid "Calibre can detect Duplicate Book Titles on Import and depending on the"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:217
+msgid "automerge"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:218
+msgid ""
+"setting. It can be set to delete either instance of a duplicated book or "
+"keep both (default)."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:236
+msgid "Discards duplicate import, keeps library copy"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:240
+msgid "Overwrites library copy with newly imported file"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:244
+msgid "Creates a duplicate record, keeping both copies"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:253
+msgid "Ingest Processing Timeout"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:255
+msgid ""
+"Maximum time (in minutes) to allow for processing a single book before "
+"timing out. Files that timeout are moved to the failed backup folder for "
+"investigation."
+msgstr ""
+
+#: cps/templates/cwa_settings.html:257
+msgid "Timeout (minutes):"
+msgstr ""
+
+#: cps/templates/cwa_settings.html:265
+msgid "Range: 5-120 minutes (default: 15)"
+msgstr ""
+
+#: cps/templates/cwa_stats.html:43 cps/templates/cwa_stats.html:65
+#: cps/templates/cwa_stats.html:87 cps/templates/cwa_stats.html:106
+#: cps/templates/cwa_stats.html:130 cps/templates/cwa_stats.html:149
+msgid "Click to See More"
+msgstr ""
+
+#: cps/templates/detail.html:66
+#, fuzzy
+msgid "Please select at least one email address"
+msgstr "Na vašu e-mailovú adresu bolo odoslané nové heslo"
+
+#: cps/templates/detail.html:67
+#, fuzzy
+msgid "Error sending email"
+msgstr "Chyba pri mazaní police"
+
+#: cps/templates/detail.html:74
+#, fuzzy
+msgid "Select eReader Email Addresses"
+msgstr "Poslať na e-mail čítačky"
+
+#: cps/templates/detail.html:80
+msgid "Choose email addresses:"
+msgstr ""
+
+#: cps/templates/detail.html:84
+#, fuzzy
+msgid "Select All"
+msgstr "Vytvoriť policu"
+
+#: cps/templates/detail.html:100
+#, fuzzy
+msgid "Select format:"
+msgstr "Zmazať formáty:"
+
+#: cps/templates/detail.html:113
+msgid "Send"
+msgstr ""
+
+#: cps/templates/detail.html:150 cps/templates/detail.html:151
+#: cps/templates/detail.html:164 cps/templates/detail.html:165
+msgid "Read in Browser"
+msgstr "Čítať v prezerači"
+
+#: cps/templates/detail.html:174 cps/templates/detail.html:194
+msgid "Listen in Browser"
+msgstr "Počúvať v prezerači"
+
+#: cps/templates/detail.html:224 cps/templates/listenmp3.html:62
+#, python-format
+msgid "Book %(index)s of %(range)s"
+msgstr "Kniha %(index)s z %(range)s"
+
+#: cps/templates/detail.html:275 cps/templates/listenmp3.html:111
+msgid "Published"
+msgstr "Vydané"
+
+#: cps/templates/detail.html:325 cps/templates/listenmp3.html:158
+msgid "Mark As Unread"
+msgstr "Označiť ako neprečítané"
+
+#: cps/templates/detail.html:326 cps/templates/listenmp3.html:158
+msgid "Mark As Read"
+msgstr "Označiť ako prečítané"
+
+#: cps/templates/detail.html:336 cps/templates/listenmp3.html:166
+msgid "Restore from archive"
+msgstr "Obnoviť z archívu"
+
+#: cps/templates/detail.html:337 cps/templates/listenmp3.html:166
+msgid "Add to archive"
+msgstr "Pridať do archívu"
+
+#: cps/templates/detail.html:348 cps/templates/listenmp3.html:177
+msgid "Description:"
+msgstr "Popis:"
+
+#: cps/templates/detail.html:363 cps/templates/listenmp3.html:190
+#: cps/templates/search.html:16
+msgid "Add to shelf"
+msgstr "Pridať do police"
+
+#: cps/templates/detail.html:375 cps/templates/detail.html:394
+#: cps/templates/feed.xml:81 cps/templates/layout.html:267
+#: cps/templates/listenmp3.html:201 cps/templates/listenmp3.html:218
+#: cps/templates/search.html:22
+msgid "(Public)"
+msgstr "(Verejné)"
+
+#: cps/templates/duplicates.html:283
+msgid "CWA Duplicates Manager"
+msgstr ""
+
+#: cps/templates/duplicates.html:285
+msgid ""
+"Books with matching titles and authors. Visual inspection recommended to "
+"identify true duplicates."
+msgstr ""
+
+#: cps/templates/duplicates.html:290
+msgid "Select Duplicates"
+msgstr ""
+
+#: cps/templates/duplicates.html:291
+#, fuzzy
+msgid "Select None"
+msgstr "Vybrať"
+
+#: cps/templates/duplicates.html:292
+#, fuzzy
+msgid "Delete Selected"
+msgstr "Zlúčiť vybrané knihy"
+
+#: cps/templates/duplicates.html:343
+#, fuzzy
+msgid "No Duplicate Books Found"
+msgstr "Nič sa nenašlo"
+
+#: cps/templates/duplicates.html:344
+msgid "Your library has no books with duplicate title and author combinations."
+msgstr ""
+
+#: cps/templates/duplicates.html:345
+msgid ""
+"This search looks for books with identical titles AND authors to avoid false "
+"positives."
+msgstr ""
+
+#: cps/templates/duplicates.html:359
+#, fuzzy
+msgid "The following books will be permanently deleted:"
+msgstr "Táto kniha bude navždy vymazaná z databázy"
+
+#: cps/templates/duplicates.html:363
+msgid "This action cannot be undone!"
+msgstr ""
+
+#: cps/templates/duplicates.html:378
+msgid "Success"
+msgstr ""
+
+#: cps/templates/duplicates.html:385
+msgid "Selected duplicate books have been deleted successfully!"
+msgstr ""
+
+#: cps/templates/duplicates.html:407
+msgid "An error occurred while processing your request."
+msgstr ""
+
+#: cps/templates/email_edit.html:13
+msgid "Email Account Type"
+msgstr "Typ e-mailového účtu"
+
+#: cps/templates/email_edit.html:15
+msgid "Standard Email Account"
+msgstr "Štandardný e-mailový účet"
+
+#: cps/templates/email_edit.html:16
+msgid "Gmail Account"
+msgstr "Gmail účet"
+
+#: cps/templates/email_edit.html:22
+msgid "Setup Gmail Account"
+msgstr "Nastaviť Gmail účet"
+
+#: cps/templates/email_edit.html:24
+msgid "Revoke Gmail Access"
+msgstr "Zrušiť Gmail účet"
+
+#: cps/templates/email_edit.html:42
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#: cps/templates/email_edit.html:43
+msgid "SSL/TLS"
+msgstr "SSL/TLS"
+
+#: cps/templates/email_edit.html:51
+msgid "SMTP Password"
+msgstr "SMTP heslo"
+
+#: cps/templates/email_edit.html:58
+msgid "Attachment Size Limit"
+msgstr "Limit pre veľkosť prílohy"
+
+#: cps/templates/email_edit.html:66
+msgid "Save and Send Test Email"
+msgstr "Uložiť a poslať testovací e-mail"
+
+#: cps/templates/email_edit.html:70 cps/templates/layout.html:90
+#: cps/templates/shelf_order.html:42 cps/templates/user_table.html:174
+msgid "Back"
+msgstr "Naspäť"
+
+#: cps/templates/email_edit.html:74
+msgid "Allowed Domains (Whitelist)"
+msgstr "Povolené domény (Biely zoznam)"
+
+#: cps/templates/email_edit.html:78 cps/templates/email_edit.html:105
+msgid "Add Domain"
+msgstr "Pridať doménu"
+
+#: cps/templates/email_edit.html:86 cps/templates/email_edit.html:96
+msgid "Enter domainname"
+msgstr "Zadajte doménové meno"
+
+#: cps/templates/email_edit.html:92
+msgid "Denied Domains (Blacklist)"
+msgstr "Zakázané domény (Čierny zoznam)"
+
+#: cps/templates/feed.xml:22 cps/templates/layout.html:300
+msgid "Next"
+msgstr "Ďalší"
+
+#: cps/templates/generate_kobo_auth_url.html:6
+msgid ""
+"Open the .kobo/Kobo/Kobo eReader.conf file in a text editor and add (or "
+"edit):"
+msgstr ""
+"Otvoriť súbor .kobo/Kobo/Kobo eReader.conf v textovom editore a pridať "
+"(alebo upraviť):"
+
+#: cps/templates/generate_kobo_auth_url.html:11
+msgid "Kobo Token:"
+msgstr "Kobo žetón:"
+
+#: cps/templates/grid.html:21
+msgid "List"
+msgstr "Zoznam"
+
+#: cps/templates/http_error.html:34
+#, fuzzy
+msgid ""
+"Calibre-Web Automated Instance is unconfigured, please contact your "
+"administrator"
+msgstr ""
+"Inštancia Calibre-Web nie je nastavené, kontaktujte prosím vašeho správcu"
+
+#: cps/templates/http_error.html:44
+msgid "Create Issue"
+msgstr "Vytvoriť hlásenie problému"
+
+#: cps/templates/http_error.html:51
+msgid "Return to Home"
+msgstr "Návrat domov"
+
+#: cps/templates/http_error.html:53
+msgid "Logout User"
+msgstr "Odhlásiť používateľa"
+
+#: cps/templates/index.html:71
+msgid "Sort ascending according to download count"
+msgstr "Zotriediť podľa počtu stiahnutí vzostupne"
+
+#: cps/templates/index.html:72
+msgid "Sort descending according to download count"
+msgstr "Zotriediť podľa počtu stiahnutí zostupne"
+
+#: cps/templates/index.html:78 cps/templates/search.html:35
+#: cps/templates/shelf.html:24
+msgid "Sort authors in alphabetical order"
+msgstr "Zotriediť autorov v abecednom poradí"
+
+#: cps/templates/index.html:79 cps/templates/search.html:36
+#: cps/templates/shelf.html:25
+msgid "Sort authors in reverse alphabetical order"
+msgstr "Zotriediť autorov v obrátenom abecednom poradí"
+
+#: cps/templates/index.html:83
+msgid "Sort ascending according to series index"
+msgstr "Zotriediť podľa čísla série vzostupne"
+
+#: cps/templates/index.html:84
+msgid "Sort descending according to series index"
+msgstr "Zotriediť podľa čísla série zostupne"
+
+#: cps/templates/index.xml:19
+msgid "Alphabetical Books"
+msgstr "Knihy podľa abecedy"
+
+#: cps/templates/index.xml:23
+msgid "Books sorted alphabetically"
+msgstr "Knihy zotriedené podľa abecedy"
+
+#: cps/templates/index.xml:31
+msgid "Popular publications from this catalog based on Downloads."
+msgstr "Populárne publikácie z tohoto katalógu založené na počte stiahnutí."
+
+#: cps/templates/index.xml:40
+msgid "Popular publications from this catalog based on Rating."
+msgstr "Populárne publikácie z tohoto katalógu založené na hodnotení."
+
+#: cps/templates/index.xml:45
+msgid "Recently added Books"
+msgstr "Naposledy pridané knihy"
+
+#: cps/templates/index.xml:49
+msgid "The latest Books"
+msgstr "Najnovšie knihy"
+
+#: cps/templates/index.xml:54
+msgid "Random Books"
+msgstr "Náhodné knihy"
+
+#: cps/templates/index.xml:83
+msgid "Books ordered by Author"
+msgstr "Knihy usporiadané podľa autora"
+
+#: cps/templates/index.xml:92
+msgid "Books ordered by publisher"
+msgstr "Knihy usporiadané podľa vydavateľa"
+
+#: cps/templates/index.xml:101
+msgid "Books ordered by category"
+msgstr "Knihy usporiadané podľa kategórie"
+
+#: cps/templates/index.xml:110
+msgid "Books ordered by series"
+msgstr "Knihy usporiadané podľa série"
+
+#: cps/templates/index.xml:119
+msgid "Books ordered by Languages"
+msgstr "Knihy usporiadané podľa jazyka"
+
+#: cps/templates/index.xml:128
+msgid "Books ordered by Rating"
+msgstr "Knihy usporiadané podľa hodnotenia"
+
+#: cps/templates/index.xml:137
+msgid "Books ordered by file formats"
+msgstr "Knihy usporiadané podľa súborových formátov"
+
+#: cps/templates/index.xml:142 cps/templates/layout.html:265
+#: cps/templates/search_form.html:88
+msgid "Shelves"
+msgstr "Police"
+
+#: cps/templates/index.xml:146
+msgid "Books organized in shelves"
+msgstr "Knihy organizované v policiach"
+
+#: cps/templates/layout.html:90 cps/templates/login.html:30
+msgid "Home"
+msgstr "Domov"
+
+#: cps/templates/layout.html:96
+msgid "Toggle Navigation"
+msgstr "Prepnúť navigáciu"
+
+#: cps/templates/layout.html:111
+msgid "Search Library"
+msgstr "Prehľadávať knižnicu"
+
+#: cps/templates/layout.html:129 cps/templates/layout.html:166
+msgid "Account"
+msgstr "Účet"
+
+#: cps/templates/layout.html:135 cps/templates/layout.html:168
+msgid "Logout"
+msgstr "Odhlásiť sa"
+
+#: cps/templates/layout.html:143
+#, fuzzy
+msgid "Switch Theme"
+msgstr "Štandardná téma"
+
+#: cps/templates/layout.html:162 cps/templates/read.html:78
+#: cps/templates/readcbr.html:70 cps/templates/readcbr.html:96
+#, fuzzy
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: cps/templates/layout.html:164
+#, fuzzy
+msgid "Refresh Library"
+msgstr "Prehľadávať knižnicu"
+
+#: cps/templates/layout.html:205
+msgid "See Changelog"
+msgstr ""
+
+#: cps/templates/layout.html:215
+msgid "Contribute here!"
+msgstr ""
+
+#: cps/templates/layout.html:248
+msgid "Please do not refresh the page"
+msgstr "Prosím, neskúšajte znovu načítať stránku"
+
+#: cps/templates/layout.html:258
+msgid "Browse"
+msgstr "Prechádzať"
+
+#: cps/templates/layout.html:271 cps/templates/stats.html:3
+msgid "About"
+msgstr "O programe"
+
+#: cps/templates/layout.html:285
+msgid "Previous"
+msgstr "Predchádzajúci"
+
+#: cps/templates/layout.html:312
+msgid "Book Details"
+msgstr "Detailu o knihe"
+
+#: cps/templates/list.html:25 cps/templates/list.html:27
+msgid "Filter by initial"
+msgstr ""
+
+#: cps/templates/list.html:43
+msgid "Grid"
+msgstr "Mriežka"
+
+#: cps/templates/listenmp3.html:159
+msgid "Read"
+msgstr "Čítať"
+
+#: cps/templates/listenmp3.html:167
+msgid "Archived"
+msgstr "Archivovaný"
+
+#: cps/templates/login.html:18
+msgid "Remember Me"
+msgstr "Zapamätať si ma"
+
+#: cps/templates/login.html:23
+msgid "Forgot Password?"
+msgstr "Zabudli ste heslo?"
+
+#: cps/templates/login.html:34
+msgid "Log in with Magic Link"
+msgstr "Prihlásiť sa cez Magic Link"
+
+#: cps/templates/login.html:53
+#, fuzzy
+msgid "Log in with SSO"
+msgstr "Prihlásiť sa cez Magic Link"
+
+#: cps/templates/logviewer.html:6
+msgid "Show Calibre-Web Log: "
+msgstr "Ukázať Calibre-Web denník "
+
+#: cps/templates/logviewer.html:8
+#, fuzzy
+msgid "Calibre-Web Log: "
+msgstr "Ukázať Calibre-Web denník "
+
+#: cps/templates/logviewer.html:8
+msgid "Stream output, can't be displayed"
+msgstr "Prúdový výstup, nedá sa zobraziť"
+
+#: cps/templates/logviewer.html:12
+msgid "Show Access Log: "
+msgstr "Ukázať denník prístupu: "
+
+#: cps/templates/logviewer.html:18
+msgid "Download Calibre-Web Log"
+msgstr "Stiahnuť Calibre-Web denník"
+
+#: cps/templates/logviewer.html:21
+msgid "Download Access Log"
+msgstr "Stiahnuť denník prístupu"
+
+#: cps/templates/modal_dialogs.html:6
+msgid "Select Allowed/Denied Tags"
+msgstr "Vybrať Povolené/Zakázané značky"
+
+#: cps/templates/modal_dialogs.html:7
+msgid "Select Allowed/Denied Custom Column Values"
+msgstr "Vybrať Povolené/Zakázané používateľom definované hodnoty stĺpca"
+
+#: cps/templates/modal_dialogs.html:8
+msgid "Select Allowed/Denied Tags of User"
+msgstr "Vybrať Povolené/Zakázané značky pre používateľa"
+
+#: cps/templates/modal_dialogs.html:9
+msgid "Select Allowed/Denied Custom Column Values of User"
+msgstr ""
+"Vybrať Povolené/Zakázané používateľom definované hodnoty stĺpca pre "
+"používateľa"
+
+#: cps/templates/modal_dialogs.html:15
+msgid "Enter Tag"
+msgstr "Zadať štítok"
+
+#: cps/templates/modal_dialogs.html:24
+msgid "Add View Restriction"
+msgstr "Pridať obmedzenie zobrazenia"
+
+#: cps/templates/modal_dialogs.html:50
+msgid "This book format will be permanently erased from database"
+msgstr "Tento formát knihy bude navždy vymazaný z databázy"
+
+#: cps/templates/modal_dialogs.html:51
+msgid "This book will be permanently erased from database"
+msgstr "Táto kniha bude navždy vymazaná z databázy"
+
+#: cps/templates/modal_dialogs.html:52
+msgid "and hard disk"
+msgstr "a pevný disk"
+
+#: cps/templates/modal_dialogs.html:56
+msgid ""
+"Important Kobo Note: deleted books will remain on any paired Kobo device."
+msgstr ""
+"Dôležitá poznámka pre Kobo: zmazané knihy zostanú na každom spárovanom Kobo "
+"zariadení."
+
+#: cps/templates/modal_dialogs.html:57
+msgid ""
+"Books must first be archived and the device synced before a book can safely "
+"be deleted."
+msgstr ""
+"Kniha musí byť najskôr archivovaná a zariadenie synchronizované pred tým než "
+"môže byť kniha bezpečne zmazaná."
+
+#: cps/templates/modal_dialogs.html:76
+msgid "Choose File Location"
+msgstr "Vyberte umiestnenie súboru"
+
+#: cps/templates/modal_dialogs.html:82
+msgid "type"
+msgstr "typ"
+
+#: cps/templates/modal_dialogs.html:83
+msgid "name"
+msgstr "meno"
+
+#: cps/templates/modal_dialogs.html:84
+msgid "size"
+msgstr "veľkosť"
+
+#: cps/templates/modal_dialogs.html:90
+msgid "Parent Directory"
+msgstr "Rodičovský adresár"
+
+#: cps/templates/modal_dialogs.html:98
+msgid "Select"
+msgstr "Vybrať"
+
+#: cps/templates/modal_dialogs.html:134 cps/templates/tasks.html:46
+msgid "Ok"
+msgstr "Ok"
+
+#: cps/templates/osd.xml:5
+#, fuzzy
+msgid "Calibre-Web Automated eBook Catalog"
+msgstr "Katalóg e-kníh Calibre-Web"
+
+#: cps/templates/read.html:7
+msgid "epub Reader"
+msgstr "čítačka epub"
+
+#: cps/templates/read.html:84 cps/templates/readcbr.html:104
+msgid "Light"
+msgstr "Svetlé"
+
+#: cps/templates/read.html:86 cps/templates/readcbr.html:105
+msgid "Dark"
+msgstr "Tmavé"
+
+#: cps/templates/read.html:88
+msgid "Sepia"
+msgstr "Sépia"
+
+#: cps/templates/read.html:90
+msgid "Black"
+msgstr "Čierne"
+
+#: cps/templates/read.html:95
+msgid "Reflow text when sidebars are open."
+msgstr "Preformátovať text keď sú otvorené bočné panely."
+
+#: cps/templates/read.html:100
+msgid "Font Sizes"
+msgstr "Veľkosť písma"
+
+#: cps/templates/read.html:105
+msgid "Font"
+msgstr ""
+
+#: cps/templates/read.html:106
+#, fuzzy
+msgid "Default"
+msgstr "Zmazať"
+
+#: cps/templates/read.html:107
+msgid "Yahei"
+msgstr ""
+
+#: cps/templates/read.html:108
+msgid "SimSun"
+msgstr ""
+
+#: cps/templates/read.html:109
+#, fuzzy
+msgid "KaiTi"
+msgstr "Čakajúca"
+
+#: cps/templates/read.html:110
+#, fuzzy
+msgid "Arial"
+msgstr "Vertikálne"
+
+#: cps/templates/read.html:113
+#, fuzzy
+msgid "Spread"
+msgstr "Čítať"
+
+#: cps/templates/read.html:114
+#, fuzzy
+msgid "Two columns"
+msgstr "Neplatný stĺpec na čítanie"
+
+#: cps/templates/read.html:115
+#, fuzzy
+msgid "One column"
+msgstr "Neplatný stĺpec na čítanie"
+
+#: cps/templates/readcbr.html:8
+msgid "Comic Reader"
+msgstr "Čítačka komiksov"
+
+#: cps/templates/readcbr.html:75
+msgid "Keyboard Shortcuts"
+msgstr "Klávesové skratky"
+
+#: cps/templates/readcbr.html:78
+msgid "Previous Page"
+msgstr "Predchádzajúca stránka"
+
+#: cps/templates/readcbr.html:79 cps/templates/readcbr.html:159
+msgid "Next Page"
+msgstr "Nasledujúca stránka"
+
+#: cps/templates/readcbr.html:80
+msgid "Single Page Display"
+msgstr "Zobrazenie na jednej stránke"
+
+#: cps/templates/readcbr.html:81
+msgid "Long Strip Display"
+msgstr "Zobrazenie dlhý pás"
+
+#: cps/templates/readcbr.html:82
+msgid "Scale to Best"
+msgstr "Zmeniť mierku na najlepšie"
+
+#: cps/templates/readcbr.html:83
+msgid "Scale to Width"
+msgstr "Zmeniť mierku na šírku"
+
+#: cps/templates/readcbr.html:84
+msgid "Scale to Height"
+msgstr "Zmeniť mierku na výšku"
+
+#: cps/templates/readcbr.html:85
+msgid "Scale to Native"
+msgstr "Zmeniť mierku na prirodzenú"
+
+#: cps/templates/readcbr.html:86
+msgid "Rotate Right"
+msgstr "Otočiť doprava"
+
+#: cps/templates/readcbr.html:87
+msgid "Rotate Left"
+msgstr "Otočiť doľava"
+
+#: cps/templates/readcbr.html:88
+msgid "Flip Image"
+msgstr "Prevrátiť obrázok"
+
+#: cps/templates/readcbr.html:101 cps/templates/user_edit.html:53
+msgid "Theme"
+msgstr "Téma"
+
+#: cps/templates/readcbr.html:110
+msgid "Display"
+msgstr "Zobraziť"
+
+#: cps/templates/readcbr.html:113
+msgid "Single Page"
+msgstr "Jedna stránka"
+
+#: cps/templates/readcbr.html:114
+msgid "Long Strip"
+msgstr "Dlhý pás"
+
+#: cps/templates/readcbr.html:119
+msgid "Scale"
+msgstr "Mierka"
+
+#: cps/templates/readcbr.html:122
+msgid "Best"
+msgstr "Najlepšie"
+
+#: cps/templates/readcbr.html:123
+msgid "Width"
+msgstr "Na výšku"
+
+#: cps/templates/readcbr.html:124
+msgid "Height"
+msgstr "Na šírku"
+
+#: cps/templates/readcbr.html:125
+msgid "Native"
+msgstr "Prirodzené"
+
+#: cps/templates/readcbr.html:130
+msgid "Rotate"
+msgstr "Otočiť"
+
+#: cps/templates/readcbr.html:141
+msgid "Flip"
+msgstr "Prevrátiť"
+
+#: cps/templates/readcbr.html:144
+msgid "Horizontal"
+msgstr "Horizontálne"
+
+#: cps/templates/readcbr.html:145
+msgid "Vertical"
+msgstr "Vertikálne"
+
+#: cps/templates/readcbr.html:150
+#, fuzzy
+msgid "Direction"
+msgstr "Popis"
+
+#: cps/templates/readcbr.html:153
+msgid "Left to Right"
+msgstr "Zľava doprava"
+
+#: cps/templates/readcbr.html:154
+msgid "Right to Left"
+msgstr "Sprava doľava"
+
+#: cps/templates/readcbr.html:162
+msgid "Reset to Top"
+msgstr "Resetovať na vrch"
+
+#: cps/templates/readcbr.html:163
+msgid "Remember Position"
+msgstr "Zapamätať si pozíciu"
+
+#: cps/templates/readcbr.html:168
+msgid "Scrollbar"
+msgstr "Posúvatko"
+
+#: cps/templates/readcbr.html:171
+msgid "Show"
+msgstr "Ukázať"
+
+#: cps/templates/readcbr.html:172
+msgid "Hide"
+msgstr "Skryť"
+
+#: cps/templates/readdjvu.html:5
+msgid "DJVU Reader"
+msgstr "DJVU čítačka"
+
+#: cps/templates/readpdf.html:32
+msgid "PDF Reader"
+msgstr "PDF čítačka"
+
+#: cps/templates/readtxt.html:6
+msgid "txt Reader"
+msgstr "textová čítačka"
+
+#: cps/templates/register.html:4
+msgid "Register New Account"
+msgstr "Registrovať nový účet"
+
+#: cps/templates/register.html:10
+msgid "Choose a username"
+msgstr "Vyberte si meno používateľa"
+
+#: cps/templates/register.html:15
+msgid "Your Email"
+msgstr "Váš e-mail"
+
+#: cps/templates/remote_login.html:5
+msgid "Magic Link - Authorise New Device"
+msgstr "Magic Link - Autorizovať nové zariadenie"
+
+#: cps/templates/remote_login.html:7
+msgid "On another device, login and visit:"
+msgstr "Na inom zariadení, prihlásiť sa a navštíviť:"
+
+#: cps/templates/remote_login.html:17
+msgid "Once verified, you will automatically be logged in on this device."
+msgstr "Po verifikácii budete automaticky prihlásený na tomto zariadení."
+
+#: cps/templates/remote_login.html:20
+msgid "This verification link will expire in 10 minutes."
+msgstr "Toto verifikačné prepojenie expiruje za 10 minút."
+
+#: cps/templates/schedule_edit.html:33
+msgid "Generate Series Cover Thumbnails"
+msgstr "Vygenerovať náhľady obálok kníh pre série"
+
+#: cps/templates/search.html:6
+msgid "No Results Found"
+msgstr "Nič sa nenašlo"
+
+#: cps/templates/search.html:7
+msgid "Search Term:"
+msgstr "Vyhľadať výraz:"
+
+#: cps/templates/search.html:9
+msgid "Results for:"
+msgstr "Výsledky pre:"
+
+#: cps/templates/search_form.html:21
+msgid "Published Date From"
+msgstr "Dátum vydania od"
+
+#: cps/templates/search_form.html:31
+msgid "Published Date To"
+msgstr "Dátum vydania do"
+
+#: cps/templates/search_form.html:42
+msgid "Read Status"
+msgstr "Stav čítania"
+
+#: cps/templates/search_form.html:44 cps/templates/search_form.html:165
+msgid "Any"
+msgstr ""
+
+#: cps/templates/search_form.html:45 cps/templates/search_form.html:166
+msgid "Empty"
+msgstr ""
+
+#: cps/templates/search_form.html:60
+msgid "Exclude Tags"
+msgstr "Vylúčiť značky"
+
+#: cps/templates/search_form.html:78
+msgid "Exclude Series"
+msgstr "Vylúčiť série"
+
+#: cps/templates/search_form.html:96
+msgid "Exclude Shelves"
+msgstr "Vylúčiť police"
+
+#: cps/templates/search_form.html:116
+msgid "Exclude Languages"
+msgstr "Vylúčiť jazyky"
+
+#: cps/templates/search_form.html:127
+msgid "Extensions"
+msgstr "Rozšírenia"
+
+#: cps/templates/search_form.html:135
+msgid "Exclude Extensions"
+msgstr "Vylúčiť rozšírenia"
+
+#: cps/templates/search_form.html:145
+msgid "Rating Above"
+msgstr "Hodnotenie lepšie ako"
+
+#: cps/templates/search_form.html:149
+msgid "Rating Below"
+msgstr "Hodnotenie horšie ako"
+
+#: cps/templates/search_form.html:175 cps/templates/search_form.html:187
+#: cps/templates/search_form.html:201
+msgid "From:"
+msgstr "Od:"
+
+#: cps/templates/search_form.html:179 cps/templates/search_form.html:191
+#: cps/templates/search_form.html:211
+msgid "To:"
+msgstr "Do:"
+
+#: cps/templates/shelf.html:13
+msgid "Delete this Shelf"
+msgstr "Zmazať túto poličku"
+
+#: cps/templates/shelf.html:14
+msgid "Edit Shelf Properties"
+msgstr "Upraviť vlastnosti police"
+
+#: cps/templates/shelf.html:17
+msgid "Arrange books manually"
+msgstr "Usporiadať knihy manuálne"
+
+#: cps/templates/shelf.html:18
+msgid "Disable Change order"
+msgstr "Znemožniť zmenu poradia"
+
+#: cps/templates/shelf.html:18
+msgid "Enable Change order"
+msgstr "Povoloť zmenu poradia"
+
+#: cps/templates/shelf.html:28
+#, fuzzy
+msgid "Sort according to book added to shelf, newest first"
+msgstr "Triediť podľa dátumu knihy, najnovšie najskôr"
+
+#: cps/templates/shelf.html:29
+#, fuzzy
+msgid "Sort according to book added to shelf, oldest first"
+msgstr "Triediť podľa dátumu knihy, najstaršie najskôr"
+
+#: cps/templates/shelf_edit.html:14
+msgid "Share with Everyone"
+msgstr "Zdieľať s kýmkoľvek"
+
+#: cps/templates/shelf_edit.html:21
+msgid "Sync this shelf with Kobo device"
+msgstr "Synchronizovať túto policu so zariadením Kobo"
+
+#: cps/templates/shelf_order.html:5
+msgid "Drag to Rearrange Order"
+msgstr "Potiahnite pre zmenu poradia"
+
+#: cps/templates/shelf_order.html:33
+msgid "Hidden Book"
+msgstr "Skryté chyby"
+
+#: cps/templates/stats.html:7
+msgid "Library Statistics"
+msgstr "Štatistiky police"
+
+#: cps/templates/stats.html:12
+msgid "Books in this Library"
+msgstr "Knihy v tejto knižnici"
+
+#: cps/templates/stats.html:16
+msgid "Authors in this Library"
+msgstr "Autori v tejto knižnici"
+
+#: cps/templates/stats.html:20
+msgid "Categories in this Library"
+msgstr "Kategórie v tejto knižnici"
+
+#: cps/templates/stats.html:24
+msgid "Series in this Library"
+msgstr "Série v tejto knižnici"
+
+#: cps/templates/stats.html:29
+msgid "System Statistics"
+msgstr "Systémove štatistiky"
+
+#: cps/templates/stats.html:33
+msgid "Program"
+msgstr "Program"
+
+#: cps/templates/stats.html:34
+msgid "Installed Version"
+msgstr "Nainštalovaná verzia"
+
+#: cps/templates/tasks.html:12
+msgid "User"
+msgstr "Používateľ"
+
+#: cps/templates/tasks.html:14
+msgid "Task"
+msgstr "Úloha"
+
+#: cps/templates/tasks.html:15
+msgid "Status"
+msgstr "Stav"
+
+#: cps/templates/tasks.html:16
+msgid "Progress"
+msgstr "Pokrok"
+
+#: cps/templates/tasks.html:17
+msgid "Run Time"
+msgstr "Čas spustenia"
+
+#: cps/templates/tasks.html:19
+#, fuzzy
+msgid "Message"
+msgstr "Zlúčiť"
+
+#: cps/templates/tasks.html:21
+#, fuzzy
+msgid "Actions"
+msgstr "Akcie"
+
+#: cps/templates/tasks.html:41
+msgid ""
+"This task will be cancelled. Any progress made by this task will be saved."
+msgstr ""
+"Táto úloha bude zrušená. Akýkoľvek pokrok vykonaný v tejto úlohe bude "
+"uložený."
+
+#: cps/templates/tasks.html:42
+msgid ""
+"If this is a scheduled task, it will be re-ran during the next scheduled "
+"time."
+msgstr ""
+"Ak je toto naplánovaná úloha, bude znovu spustená v najbližšom naplánovanom "
+"čase."
+
+#: cps/templates/user_edit.html:20
+msgid "Reset user Password"
+msgstr "Resetovať heslo používateľa"
+
+#: cps/templates/user_edit.html:28
+msgid ""
+"Send to eReader Email Address. Use comma to separate emails for multiple "
+"eReaders"
+msgstr ""
+
+#: cps/templates/user_edit.html:43
+msgid "Language of Books"
+msgstr "Jazyk kníh"
+
+#: cps/templates/user_edit.html:63
+msgid "OAuth Settings"
+msgstr "Nastavenia OAuth"
+
+#: cps/templates/user_edit.html:65
+msgid "Link"
+msgstr "Pripojiť"
+
+#: cps/templates/user_edit.html:67
+msgid "Unlink"
+msgstr "Odpojiť"
+
+#: cps/templates/user_edit.html:74
+msgid "Hardcover API token"
+msgstr ""
+
+#: cps/templates/user_edit.html:79
+msgid "Kobo Sync Token"
+msgstr "Synchronizačný žetón Kobo"
+
+#: cps/templates/user_edit.html:81
+msgid "Create/View"
+msgstr "Vytvoriť/Zobraziť"
+
+#: cps/templates/user_edit.html:85
+msgid "Force full kobo sync"
+msgstr "Vynútiť úplnú synchronizáciu Kobo"
+
+#: cps/templates/user_edit.html:103
+msgid "Add allowed/Denied Custom Column Values"
+msgstr "Pridať povolené/zakázané užívateľom definovaných hodnôt stĺpca"
+
+#: cps/templates/user_edit.html:152
+msgid "Sync only books in selected shelves with Kobo"
+msgstr "Synchronizovať s Kobo iba knihy vo vybraných policiach"
+
+#: cps/templates/user_edit.html:162 cps/templates/user_table.html:169
+msgid "Delete User"
+msgstr "Zmazať používateľa"
+
+#: cps/templates/user_edit.html:174
+msgid "Generate Kobo Auth URL"
+msgstr "Vygenerovať autentifikačné URL pre Kobo"
+
+#: cps/templates/user_table.html:80 cps/templates/user_table.html:103
+msgid "Select..."
+msgstr "Vybrať..."
+
+#: cps/templates/user_table.html:124
+msgid "Remove Selections"
+msgstr "Odstrániť výbery"
+
+#: cps/templates/user_table.html:131
+msgid "Edit User"
+msgstr "Upraviť používateľa"
+
+#: cps/templates/user_table.html:134
+msgid "Enter Username"
+msgstr "Upraviť meno používateľa"
+
+#: cps/templates/user_table.html:135
+msgid "Enter Email"
+msgstr "Zadať e-mail"
+
+#: cps/templates/user_table.html:136
+msgid "Enter eReader Email"
+msgstr "Zadať e-mail pre čítačku"
+
+#: cps/templates/user_table.html:136
+msgid "eReader Email"
+msgstr "e-mail pre čítačku"
+
+#: cps/templates/user_table.html:137
+msgid "Locale"
+msgstr "Nastavenie jazyka"
+
+#: cps/templates/user_table.html:138
+msgid "Visible Book Languages"
+msgstr "Viditeľné jazyky kníh"
+
+#: cps/templates/user_table.html:139
+msgid "Edit Allowed Tags"
+msgstr "Upraviť povolené znaťky"
+
+#: cps/templates/user_table.html:139
+msgid "Allowed Tags"
+msgstr "Povolené značky"
+
+#: cps/templates/user_table.html:140
+msgid "Edit Denied Tags"
+msgstr "Upraviť zakázané značky"
+
+#: cps/templates/user_table.html:140
+msgid "Denied Tags"
+msgstr "Zakázané značky"
+
+#: cps/templates/user_table.html:141
+msgid "Edit Allowed Column Values"
+msgstr "Upraviť povolené hodnoty stĺpca"
+
+#: cps/templates/user_table.html:141
+msgid "Allowed Column Values"
+msgstr "Povolené hodnoty stĺpca"
+
+#: cps/templates/user_table.html:142
+msgid "Edit Denied Column Values"
+msgstr "Upraviť zakázané hodnoty stĺpca"
+
+#: cps/templates/user_table.html:142
+msgid "Denied Column Values"
+msgstr "Zakázané hodnoty stĺpca"
+
+#: cps/templates/user_table.html:144
+msgid "Change Password"
+msgstr "Zmeniť heslo"
+
+#: cps/templates/user_table.html:147
+msgid "View"
+msgstr "Zobraziť"
+
+#: cps/templates/user_table.html:150
+msgid "Edit Public Shelves"
+msgstr "Upraviť verejné police"
+
+#: cps/templates/user_table.html:152
+msgid "Sync selected Shelves with Kobo"
+msgstr "Synchronizovať vybrané police s Kobo"
+
+#: cps/templates/user_table.html:156
+msgid "Show Read/Unread Section"
+msgstr "Zobraziť sekciu Prečítané/Neprečítané"
+
+#, python-format
+#~ msgid "File %(file)s uploaded"
+#~ msgstr "Súbor %(file)s bol nahraný"
+
+#~ msgid "Ratings list"
+#~ msgstr "Zoznam hodnotení"
+
+#~ msgid "Merge selected books"
+#~ msgstr "Zlúčiť vybrané knihy"
+
+#, fuzzy
+#~ msgid "Clear selections"
+#~ msgstr "Odstrániť výbery"
+
+#, fuzzy
+#~ msgid "Edit selected books"
+#~ msgstr "Zlúčiť vybrané knihy"
+
+#, fuzzy
+#~ msgid "Archive selected books"
+#~ msgstr "Zlúčiť vybrané knihy"
+
+#, fuzzy
+#~ msgid "Unarchive selected books"
+#~ msgstr "Zlúčiť vybrané knihy"
+
+#, fuzzy
+#~ msgid "Mark selected books as read"
+#~ msgstr "Zlúčiť vybrané knihy"
+
+#, fuzzy
+#~ msgid "Mark selected books as unread"
+#~ msgstr "Zlúčiť vybrané knihy"
+
+#, fuzzy
+#~ msgid "Mark Book as Read or Unread"
+#~ msgstr "Označiť ako neprečítané"
+
+#, fuzzy, python-format
+#~ msgid "%(seriesindex)s is not a valid number, skipping"
+#~ msgstr "%(seriesindex)s nie je platné číslo, preskakuje sa"
+
+#~ msgid "Calibre-Web configuration updated"
+#~ msgstr "Konfigurácia Calibre-Web bola aktualizovaná"
+
+#~ msgid ""
+#~ "Are you sure you want delete Calibre-Web's sync database to force a full "
+#~ "sync with your Kobo Reader?"
+#~ msgstr ""
+#~ "Naozaj chcete zmazať synchronizačnú databázu Calibre-Web aby ste vynútili "
+#~ "úplnú synchronizáciu s vašou Kobo čítačkou?"
+
+#~ msgid "Calibre-Web Test Email"
+#~ msgstr "Testovací e-mail Calibre-Web"
+
+#~ msgid "This Email has been sent via Calibre-Web."
+#~ msgstr "Tento e-mail bol odoslaný skrz Calibre-Web."
+
+#~ msgid "Get Started with Calibre-Web"
+#~ msgstr "Začnite s aplikáciu Calibre-Web"
+
+#~ msgid ""
+#~ "Please access Calibre-Web from non localhost to get valid api_endpoint "
+#~ "for kobo device"
+#~ msgstr ""
+#~ "Prosím, pristupujte k Calibre-Web z nie lokálneho hostiteľa aby ste "
+#~ "získali platný API koncový bod pre Kobo zariadenie"
+
+#~ msgid ""
+#~ "Calibre-Web will search for updated Covers and update Cover Thumbnails, "
+#~ "this may take a while?"
+#~ msgstr ""
+#~ "Calilbre-Web vyhľadá aktualizované obálky a aktualizuje ich náhľady, môže "
+#~ "to chvíľu trvať?"
+
+#, fuzzy
+#~ msgid "This Email has been sent via  Autmoated."
+#~ msgstr "Tento e-mail bol odoslaný skrz Calibre-Web."
+
+#, fuzzy
+#~ msgid "This Email has been sent via  Automated."
+#~ msgstr "Tento e-mail bol odoslaný skrz Calibre-Web."
+
+#, fuzzy
+#~ msgid "Downloads per User"
+#~ msgstr "Stiahnutia"
+
+#, fuzzy
+#~ msgid "This Email has been sent via  Autoated."
+#~ msgstr "Tento e-mail bol odoslaný skrz Calibre-Web."
+
+#, fuzzy
+#~ msgid "unknown error"
+#~ msgstr "Chyba spojenia"
+
+#, fuzzy
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr "Nemôžem prihlásiť: %(message)s"
+
+#, fuzzy
+#~ msgid "{value!r} is not a valid boolean."
+#~ msgstr "E-mail nie je z platnej domény"
+
+#, fuzzy
+#~ msgid "directory"
+#~ msgstr "Smer"
+
+#, fuzzy
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr "Do databázy nie je možné zapisovať"
+
+#, fuzzy
+#~ msgid "Repeat for confirmation"
+#~ msgstr "Konfigurácia funkčnosti"
+
+#, fuzzy
+#~ msgid "Value must be an iterable."
+#~ msgstr "Hodnota musí byť pravda alebo nepravda"
+
+#~ msgid "Users"
+#~ msgstr "Používatelia"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfigurácia"
+
+#~ msgid "Click the cover to load metadata to the form"
+#~ msgstr "Kliknite na oblálku aby ste načítali metadáta do formulára"
+
+#~ msgid "Series Index"
+#~ msgstr "Číslo v sérii"

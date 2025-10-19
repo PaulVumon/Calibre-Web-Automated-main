@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<style>
+  .container h1 {
+    text-align: center;
+  }
+
+  .container p {
+    text-align: center;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .image-box {
+      height: 300px;
+      width: -webkit-fill-available;
+  }
+
+  .lead-line {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .pp-content {
+      background-color: #1f2c3554;
+      width: -webkit-fill-available;
+      max-width: 80rem;
+      justify-self: anchor-center;
+      padding: 30px;
+      margin-top: 2rem;
+  }
+
+  .pp-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  </style>
+{% endblock %}
+
+{% block body %}
+<div class="discover">
+  <h2>{{title}}</h2>
+
+  <div class="pp-content">
+      <h2 class="lead-line">This feature is currently still in development.</h2>
+
+      <p style="padding:2rem;">
+        To upload a profile picture, please use the following form. Note: The image data must be in Base64 format.
+        You can convert an image to Base64 using various online tools. If you use a website such as
+        <a href="https://www.base64-image.de" target="_blank" rel="noopener noreferrer">www.base64-image.de</a>,
+        then make sure you use the version that starts with the line "data:image/png;base64," not the URL version.
+        <br><br>
+        To display the image as a round shape, it must already be in PNG format with a round frame applied.
+        It is recommended to use images no larger than 100x100px to avoid using excessive storage space.
+      </p>
+      
+      <form method="POST" action="{{ url_for('profile_pictures.set_profile_picture')}}">
+      
+        <div class="form-wrapper">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+          <div class="form-group">
+            <label for="username">Username to add the image to:</label>
+            <input type="text" style="width: -webkit-fill-available;" class="form-control" id="username" name="username" required aria-describedby="usernameHelp" />
+            <small id="usernameHelp" class="form-text text-muted">Enter the exact username for the profile picture assignment.</small>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="image_data">Base64 Image Data:</label>
+            <textarea class="form-control image-box" id="image_data" name="image_data" rows="30" required aria-describedby="imageDataHelp"></textarea>
+            <small id="imageDataHelp" class="form-text text-muted">Paste the full Base64 encoded PNG image data here.</small>
+          </div>
+      </div>
+
+      <div class="pp-buttons">
+        <a class="btn btn-default" href="{{ url_for('admin.admin') }}">Back to Admin Page</a>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+      </div>
+      
+    </form>
+  </div>
+</div>
+{% endblock %}
+<!--
+  This template is for the profile picture upload page in Calibre-Web Automated.
+  It includes a form for uploading Base64 encoded images and provides instructions for users.
+  The form submits the data to the server for processing.
+-->
