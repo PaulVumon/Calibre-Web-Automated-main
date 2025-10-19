@@ -800,6 +800,31 @@ def migrate_Database(_session):
     migrate_user_table(engine, _session)
     migrate_oauth_provider_table(engine, _session)
     migrate_config_table(engine, _session)
+    migrate_book_shelf_table(engine, _session)
+
+def migrate_book_shelf_table(engine, _session):
+    try:
+        # Check if last_modified column exists in book_shelf_link table
+        connection = engine.connect()
+        result = connection.execute(text("PRAGMA table_info(book_shelf_link)"))
+        columns = [row[1] for row in result.fetchall()]
+
+        if 'last_modified' not in columns:
+            log.info('Adding last_modified column to book_shelf_link table')
+            # Add the last_modified column
+            connection.execute(text("""
+                ALTER TABLE book_shelf_link
+                ADD COLUMN last_modified DATETIME DEFAULT CURRENT_TIMESTAMP
+            """))
+            connection.commit()
+            log.info('Successfully added last_modified column to book_shelf_link table')
+        else:
+            log.debug('last_modified column already exists in book_shelf_link table')
+
+        connection.close()
+    except Exception as e:
+        log.error(f'Error migrating book_shelf_link table: {e}')
+        _session.rollback()
 
 def clean_database(_session):
     # Remove expired remote login tokens
