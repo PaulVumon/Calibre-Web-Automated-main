@@ -992,3 +992,92 @@ def add_selected_to_shelf():
             'message': f'Successfully added {success_count} books to shelf {shelf.name}.',
             'added_count': success_count
         }), 200
+
+
+@shelf.route("/shelf/add_book/<int:shelf_id>/<int:book_id>", methods=["POST"])
+@login_required
+def add_book_to_shelf(shelf_id, book_id):
+    """AJAX endpoint to add a single book to a shelf"""
+    if not current_user.role_edit_shelfs():
+        return jsonify({'status': 'error', 'message': 'You are not allowed to add books to this shelf'}), 403
+
+    shelf = ub.session.query(ub.Shelf).filter(ub.Shelf.id == shelf_id).first()
+    if not shelf:
+        return jsonify({'status': 'error', 'message': 'Shelf not found'}), 404
+
+    # Check if shelf belongs to current user or is public
+    if shelf.user_id != current_user.id and not shelf.is_public:
+        return jsonify({'status': 'error', 'message': 'You are not allowed to add books to this shelf'}), 403
+
+    # Check if book exists
+    book = calibre_db.get_book(book_id)
+    if not book:
+        return jsonify({'status': 'error', 'message': 'Book not found'}), 404
+
+    try:
+        # Check if book is already in shelf
+        book_in_shelf = ub.session.query(ub.BookShelf).filter(ub.BookShelf.shelf == shelf_id,
+                                                           ub.BookShelf.book_id == book_id).first()
+        if book_in_shelf:
+            return jsonify({
+                'status': 'info',
+                'message': f"Book '{book.title}' is already in shelf '{shelf.name}'."
+            }), 200
+
+        # Add book to shelf
+        max_order = ub.session.query(func.max(ub.BookShelf.order)).filter(ub.BookShelf.shelf == shelf_id).scalar() or 0
+        shelf.books.append(ub.BookShelf(shelf=shelf.id, book_id=book_id, order=max_order + 1))
+        ub.session.commit()
+
+        log.info(f"Added book {book_id} ('{book.title}') to shelf '{shelf.name}'")
+        return jsonify({
+            'status': 'success',
+            'message': f"Added book '{book.title}' to shelf '{shelf.name}'."
+        }), 200
+
+    except Exception as e:
+        ub.session.rollback()
+        log.error(f"Error adding book to shelf: {e}")
+        return jsonify({'status': 'error', 'message': 'Failed to add book to shelf'}), 500
+
+
+@shelf.route("/shelf/create_and_add_book/<int:book_id>", methods=["POST"])
+@login_required
+def create_and_add_book_to_shelf(book_id):
+    """AJAX endpoint to create a new shelf and add a book to it"""
+    if not current_user.role_edit_shelfs():
+        return jsonify({'status': 'error', 'message': 'You are not allowed to create shelves'}), 403
+
+    # Check if book exists
+    book = calibre_db.get_book(book_id)
+    if not book:
+        return jsonify({'status': 'error', 'message': 'Book not found'}), 404
+
+    try:
+        # Create new shelf with book title
+        shelf_name = book.title[:50]  # Limit shelf name length
+        existing_shelf = ub.session.query(ub.Shelf).filter(ub.Shelf.name == shelf_name,
+                                                         ub.Shelf.user_id == current_user.id).first()
+        if existing_shelf:
+            # Shelf already exists, add book to it
+            return add_book_to_shelf(existing_shelf.id, book_id)
+
+        # Create new shelf
+        shelf = ub.Shelf(name=shelf_name, user_id=current_user.id, is_public=0)
+        ub.session.add(shelf)
+        ub.session.flush()  # Get the shelf ID
+
+        # Add book to new shelf
+        shelf.books.append(ub.BookShelf(shelf=shelf.id, book_id=book_id, order=1))
+        ub.session.commit()
+
+        log.info(f"Created new shelf '{shelf_name}' and added book {book_id} ('{book.title}')")
+        return jsonify({
+            'status': 'success',
+            'message': f"Created new shelf '{shelf_name}' and added book '{book.title}'."
+        }), 200
+
+    except Exception as e:
+        ub.session.rollback()
+        log.error(f"Error creating shelf and adding book: {e}")
+        return jsonify({'status': 'error', 'message': 'Failed to create shelf and add book'}), 500

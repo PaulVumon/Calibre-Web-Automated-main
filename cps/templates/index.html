@@ -1,5 +1,28 @@
 {% import 'image.html' as image %}
 {% extends "layout.html" %}
+{% block header %}
+<style>
+.book-grid-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+}
+
+.add-book-grid {
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.add-book-grid:hover {
+    opacity: 1;
+}
+
+.cover {
+    position: relative;
+}
+</style>
+{% endblock %}
 {% block body %}
 {% if current_user.show_detail_random() and page != "discover" %}
 <div class="discover random-books">
@@ -8,7 +31,7 @@
    {% for entry in random %}
     <div class="col-sm-3 col-lg-2 col-xs-6 book session" id="books_rand">
       <div class="cover">
-          <a href="{{ url_for('web.show_book', book_id=entry.Books.id) }}" 
+          <a href="{{ url_for('web.show_book', book_id=entry.Books.id) }}"
              {% if simple==false %}data-toggle="modal" data-target="#bookDetailsModal" data-remote="false"{% endif %}
              data-book-id="{{ entry.Books.id }}"
              data-book-formats="{% for format in entry.Books.data %}{{ format.format.lower() }}{% if not loop.last %},{% endif %}{% endfor %}"
@@ -18,6 +41,15 @@
                 {% if entry[2] == True %}<span class="badge read glyphicon glyphicon-ok"></span>{% endif %}
               </span>
           </a>
+          <!-- Bouton Add to Shelf individuel sur le livre -->
+          <div class="book-grid-actions">
+            <button class="btn btn-xs btn-primary add-book-grid"
+                    data-book-id="{{ entry.Books.id }}"
+                    data-book-title="{{ entry.Books.title }}"
+                    title="{{_('Add this book to a shelf')}}">
+              <span class="glyphicon glyphicon-list"></span>
+            </button>
+          </div>
       </div>
       <div class="meta">
         <a href="{{ url_for('web.show_book', book_id=entry.Books.id) }}" {% if simple==false %}data-toggle="modal" data-target="#bookDetailsModal" data-remote="false"{% endif %}>
@@ -95,7 +127,7 @@
     {% for entry in entries %}
     <div class="col-sm-3 col-lg-2 col-xs-6 book session" id="books">
       <div class="cover">
-          <a href="{{ url_for('web.show_book', book_id=entry.Books.id) }}" 
+          <a href="{{ url_for('web.show_book', book_id=entry.Books.id) }}"
              {% if simple==false %}data-toggle="modal" data-target="#bookDetailsModal" data-remote="false"{% endif %}
              data-book-id="{{ entry.Books.id }}"
              data-book-formats="{% for format in entry.Books.data %}{{ format.format.lower() }}{% if not loop.last %},{% endif %}{% endfor %}"
@@ -105,6 +137,15 @@
               {% if entry[2] == True %}<span class="badge read glyphicon glyphicon-ok"></span>{% endif %}
             </span>
           </a>
+          <!-- Bouton Add to Shelf individuel sur le livre -->
+          <div class="book-grid-actions">
+            <button class="btn btn-xs btn-primary add-book-grid"
+                    data-book-id="{{ entry.Books.id }}"
+                    data-book-title="{{ entry.Books.title }}"
+                    title="{{_('Add this book to a shelf')}}">
+              <span class="glyphicon glyphicon-list"></span>
+            </button>
+          </div>
       </div>
       <div class="meta">
         <a href="{{ url_for('web.show_book', book_id=entry.Books.id) }}" {% if simple==false %}data-toggle="modal" data-target="#bookDetailsModal" data-remote="false"{% endif %}>
@@ -161,4 +202,189 @@
   {% endif %}
   </div>
 </div>
+
+<!-- Modal pour Add to Shelf pour les livres -->
+<div class="modal fade" id="addBookToShelfModal" tabindex="-1" role="dialog" aria-labelledby="addBookToShelfModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addBookToShelfModalLabel">{{_('Add Book to Shelf')}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{_('Selected book')}}: <strong id="selectedBookName"></strong></p>
+
+        <div class="radio">
+          <label>
+            <input type="radio" name="shelfOption" value="existing" checked>
+            {{_('Use existing shelf')}}
+          </label>
+        </div>
+
+        <select id="shelfSelect" name="shelf" class="form-control">
+          {% for shelf in user_shelves %}
+            <option value="{{ shelf.id }}">{{ shelf.name }}</option>
+          {% endfor %}
+          {% if not user_shelves %}
+            <option value="" disabled>{{_('No shelves found')}}</option>
+          {% endif %}
+        </select>
+
+        <div class="radio" style="margin-top: 15px;">
+          <label>
+            <input type="radio" name="shelfOption" value="create">
+            {{_('Create new shelf with book title'}}
+          </label>
+        </div>
+
+        <div id="newShelfInfo" class="alert alert-info" style="margin-top: 10px; display: none;">
+          <strong>{{_('New shelf will be created')}}:</strong> <span id="newShelfName"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancelAddBookToShelfBtn" type="button" class="btn btn-default" data-dismiss="modal">{{_('Cancel')}}</button>
+        <input id="confirmAddBookToShelfBtn" type="button" class="btn btn-primary" value="{{_('Add')}}">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% block js %}
+<script>
+$(document).ready(function() {
+    // Variables globales pour le modal
+    let currentBookId = null;
+    let currentBookTitle = null;
+
+    // Boutons individuels sur les livres
+    $('.add-book-grid').on('click', function(e) {
+        e.stopPropagation();
+
+        currentBookId = $(this).data('book-id');
+        currentBookTitle = $(this).data('book-title');
+
+        openBookModal();
+    });
+
+    // Fonction pour ouvrir le modal
+    function openBookModal() {
+        if (!currentBookId || !currentBookTitle) {
+            console.error('Missing book ID or title');
+            return;
+        }
+
+        $('#selectedBookName').text(currentBookTitle);
+        $('#newShelfName').text(currentBookTitle);
+        $('#addBookToShelfModal').modal('show');
+    }
+
+    // Gestion des options de shelf
+    $('input[name="shelfOption"]').on('change', function() {
+        const option = $(this).val();
+        if (option === 'create') {
+            $('#shelfSelect').prop('disabled', true);
+            $('#newShelfInfo').show();
+        } else {
+            $('#shelfSelect').prop('disabled', false);
+            $('#newShelfInfo').hide();
+        }
+    });
+
+    // Bouton Confirm du modal
+    $('#confirmAddBookToShelfBtn').on('click', function() {
+        const shelfOption = $('input[name="shelfOption"]:checked').val();
+
+        if (!currentBookId || !currentBookTitle) {
+            console.error('Missing book data');
+            return;
+        }
+
+        let ajaxUrl;
+        let confirmMessage;
+
+        if (shelfOption === 'create') {
+            // Créer une nouvelle shelf
+            ajaxUrl = '/shelf/create_and_add_book/' + currentBookId;
+            confirmMessage = "Create a new shelf named '" + currentBookTitle + "' and add this book to it?";
+        } else {
+            // Utiliser une shelf existante
+            const shelfId = $('#shelfSelect').val();
+            if (!shelfId) {
+                alert('{{_("Please select a shelf")}}');
+                return;
+            }
+            ajaxUrl = '/shelf/add_book/' + shelfId + '/' + currentBookId;
+            confirmMessage = "Add book '" + currentBookTitle + "' to this shelf?";
+        }
+
+        // Confirmation
+        if (!confirm(confirmMessage)) {
+            return;
+        }
+
+        // Désactiver le bouton pendant la requête
+        $('#confirmAddBookToShelfBtn').prop('disabled', true).val('{{_("Adding...")}}');
+
+        // Envoyer la requête AJAX
+        console.log('Adding book', currentBookId, 'with option:', shelfOption);
+        console.log('AJAX URL:', ajaxUrl);
+
+        $.ajax({
+            url: ajaxUrl,
+            method: 'POST',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            success: function(response) {
+                $('#addBookToShelfModal').modal('hide');
+
+                if (response.status === 'success') {
+                    // Message de succès
+                    const flashHtml = '<div class="alert alert-success alert-dismissible">' +
+                        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        response.message +
+                        '</div>';
+                    $('body').prepend(flashHtml);
+                } else if (response.status === 'info') {
+                    // Message d'info
+                    const flashHtml = '<div class="alert alert-info alert-dismissible">' +
+                        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        response.message +
+                        '</div>';
+                    $('body').prepend(flashHtml);
+                } else {
+                    // Message d'erreur
+                    const flashHtml = '<div class="alert alert-danger alert-dismissible">' +
+                        '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                        response.message +
+                        '</div>';
+                    $('body').prepend(flashHtml);
+                }
+            },
+            error: function(xhr, status, error) {
+                $('#addBookToShelfModal').modal('hide');
+                console.error('AJAX Error:', xhr.status, status, error);
+                console.error('Response Text:', xhr.responseText);
+
+                // Message d'erreur détaillé
+                const flashHtml = '<div class="alert alert-danger alert-dismissible">' +
+                    '<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                    '<strong>Error ' + xhr.status + ':</strong> ' + error + '<br>' +
+                    '<small>' + xhr.responseText + '</small>' +
+                    '</div>';
+                $('body').prepend(flashHtml);
+            },
+            complete: function() {
+                // Réactiver le bouton
+                $('#confirmAddBookToShelfBtn').prop('disabled', false).val('{{_("Add")}}');
+            }
+        });
+    });
+
+    // Bouton Cancel du modal
+    $('#cancelAddBookToShelfBtn').on('click', function() {
+        $('#addBookToShelfModal').modal('hide');
+    });
+});
+</script>
 {% endblock %}
